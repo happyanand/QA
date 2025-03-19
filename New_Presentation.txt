@@ -1,0 +1,103 @@
+Create Table Emp
+(
+ Emp_ID varchar(20),
+ Emp_Name varchar(25),
+ Salary Numeric,
+ Mob_Num Numeric,
+);  
+
+
+Select * from emp;
+
+insert into Emp values('Emp_01','Anand',10000,9080578851);
+insert into Emp values('Emp_02','Kumar',14000,9080548851);
+insert into Emp values('Emp_03','Gokul',12000,9080378851);
+insert into Emp values('Emp_04','Rahul',18000,9080572851);
+insert into Emp values('Emp_05','Saran',13000,9380572851);
+insert into Emp values('Emp_06','Ramu',15000,9085572851);
+insert into Emp values('Emp_07','Sekar',11000,9080972851);
+
+
+
+
+Update Emp
+Set Mob_Num = 9089578451
+Where Emp_ID = 'Emp_01';
+
+Update Emp
+Set Salary = 21000
+Where Emp_ID = 'Emp_02';
+
+Update Emp
+Set Emp_ID = 'Emp_10'
+Where Emp_ID = 'Emp_03';
+
+Update Emp
+Set Emp_Name = 'Karan'
+Where Emp_ID = 'Emp_04';
+
+Update Emp
+Set Mob_Num = 9089278451
+Where Emp_ID = 'Emp_05';
+
+
+Update Emp
+Set Emp_Name = 'Aravind'
+Where Emp_ID = 'Emp_06';
+
+Update Emp
+Set Salary = 19000
+Where Emp_ID = 'Emp_07';
+
+
+
+    Dim cnt As ADODB.Connection
+    Dim rst As ADODB.Recordset
+    
+    Row_Max = Sheets("New").UsedRange.Rows.Count
+    
+    Dim sqlcmd As String
+    Dim sht As Worksheet
+    Set sht = ThisWorkbook.Sheets("New")
+    
+    
+    Set cnt = New ADODB.Connection
+    Set rst = New ADODB.Recordset
+    
+    
+    Dim server_name As String
+    Dim database_name As String
+    cnt.ConnectionString = "driver={SQL Server};server=SPBLRLTU627\SQLEXPRESS01;database=tempdb"
+    cnt.Open
+    sqlcmd = "Create Table Target(Emp_ID varchar(20),Emp_Name varchar(25),Salary Numeric,Mob_Num Numeric)"
+    cnt.Execute (sqlcmd)
+    For I = 2 To Row_Max - 1
+        sqlcmd = "INSERT INTO Emp(Emp_ID,Emp_Name,Salary,Mob_Num)Values('" & sht.Cells(I, 1) & "','" & sht.Cells(I, 2) & "','" & sht.Cells(I, 3) & "','" & sht.Cells(I, 4) & "')"
+        cnt.Execute (sqlcmd)
+    Next
+    '    sqlcmd = "Create Table Target(Old varchar(20),New varchar(25))"
+'    cnt.Execute (sqlcmd)
+'    For I = 1 To Row_Max
+'        sqlcmd = "INSERT INTO Target Values('" & sht.Cells(I, 1) & "','" & sht.Cells(I, 2) & "')"
+'        cnt.Execute (sqlcmd)
+'    Next
+'    MsgBox "Connected Successfully"
+
+
+
+
+
+
+
+
+insert into Emp (Emp_Name) values ('Anand');
+
+Alter table Emp
+ add  Emp_Name varchar(20);
+
+ update emp
+ set Emp_Name = 'Anand'
+ where salary = 500;
+
+ Delete from Emp
+ where Emp_Name = 'Anand';

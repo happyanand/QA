@@ -1,0 +1,245 @@
+Sub Compare_Two_Excel_Sheets_Highlight_Differences()
+    'Define Fields
+    Dim iRow As Double, iCol As Double, oRow As Double
+    Dim iRow_Max As Double, iCol_Max As Double
+    Dim sh1 As Worksheet, sh2 As Worksheet
+    Dim shOut As Worksheet
+    
+    'Sheets to be compared
+    Set sh1 = ThisWorkbook.Sheets(1)
+    Set sh2 = ThisWorkbook.Sheets(2)
+    Set shOut = ThisWorkbook.Sheets(3)
+    
+    'Max Rows
+    iRow_Max = sh1.UsedRange.Rows.Count
+    iCol_Max = sh1.UsedRange.Columns.Count
+    
+    'Read Data From Each Sheets of Both Excel Files & Compare Data
+    For iRow = 1 To iRow_Max
+    For iCol = 1 To iCol_Max
+        sh1.Cells(iRow, iCol).Interior.Color = xlNone
+        sh2.Cells(iRow, iCol).Interior.Color = xlNone
+        
+        'Compare Data From Excel Sheets & Highlight the Mismatches
+        If sh1.Cells(iRow, iCol) <> sh2.Cells(iRow, iCol) Then
+           sh1.Cells(iRow, iCol).Interior.Color = vbRed
+           sh2.Cells(iRow, iCol).Interior.Color = vbYellow
+           
+           'Write Differences to Output sheet
+           oRow = oRow + 1
+           shOut.Cells(oRow, 1) = sh1.Cells(iRow, iCol)
+           shOut.Cells(oRow, 2) = sh2.Cells(iRow, iCol)
+        End If
+    Next iCol
+    Next iRow
+    
+    'Process Completed
+    MsgBox "Task Completed"
+    
+End Sub
+
+
+
+
+
+
+
+
+
+Sub Compare_Sheets()
+
+Dim sh1 As Worksheet
+Dim sh2 As Worksheet
+Dim sh3 As Worksheet
+
+Dim rows_Count_sh1 As Integer
+Dim column_count_sh1 As Integer
+
+Dim rows_Count_sh2 As Integer
+Dim column_count_sh2 As Integer
+
+Dim rows_maxCount As Integer
+Dim column_maxcount As Integer
+
+
+Set sh1 = ThisWorkbook.Sheets("Home")
+Set sh2 = ThisWorkbook.Sheets("Sheet2")
+Set sh3 = ThisWorkbook.Sheets("Sheet3")
+
+rows_Count_sh1 = sh1.UsedRange.Rows.Count
+column_count_sh1 = sh1.UsedRange.Columns.Count
+
+
+rows_Count_sh2 = sh2.UsedRange.Rows.Count
+column_count_sh2 = sh2.UsedRange.Columns.Count
+
+
+For Each i In sh1.Range("A2:A" & rows_Count_sh1)
+    
+    emp_id_sh1 = i
+    
+    salary = i.Offset(0, 1)
+    
+    dob = i.Offset(0, 2)
+    
+    Debug.Print "irow : " & i.Row
+    
+    For Each j In sh2.Range("A2:A" & rows_Count_sh2)
+    
+        emp_id_sh2 = j
+        
+        Debug.Print "jrow : " & j.Row
+        
+        If emp_id_sh1 = emp_id_sh2 Then
+        
+            Debug.Print "match"
+
+        End If
+        
+    Next
+        
+Next
+
+    
+End Sub
+
+
+Alt+F11 open Macros:
+Alt+F8 Run Macros:
+F8 Execute row by row 
+
+'Select a cell:  Range("C2").Select
+
+'Select a Range:  Range("A1:C2").Select
+
+'Select a UsedRange : Sheets("Sheet1").UsedRange.Select
+
+'Navigate to Another worksheet: Sheets("Sheet2").Activate
+
+'Offset the Active cell :  ActiveCell.Offset(1,2).Select   here 1-->row and 2-->column
+
+'Put Data into Cell : ActiveCell.Value = "Hi" (or) Range("B2").Value = "Hey"
+	Select Sheet : Sheets("Sheet2").range("C5").Value = "More Text"
+	Select Row,Column : ActiveCell.Offset(2,2).Value = "Offset"
+
+Get the Value : Range("A2").Value
+
+Get the Value and Set a variable equal to it : abcValue = Range("A2").Value
+
+Get Last Row of the WorkSheet :
+
+Last_Row_Number = Sheets("Sheet1").Range("A" & Rows.Count).End(xlUp).Row
+
+		(or)
+
+Last_Row_Number = Sheets("Sheet1").Cells(Rows.Count,1).End(xlUp).Row
+
+Set the Value : Range("A2").Value = "Hi" (or) Range("B2").Value = Range("A2").Value
+
+Display Value (or) Message in Pop-Up Window : MsgBox "Hi" (or) MsgBox VariableName
+
+Get the value from the sheet : abcValue = Sheets("Sheet1").Range("A2").Value
+
+Put value into Specific Cell : Sheets("Sheet1").Range("A2").value = abcvalue  (or)  Sheets("Sheet1").Range("A2").value = Sheets("Sheet2").Range("D2").value
+
+Put Value into Active Cell : ActiveCell.Value = abcValue
+
+Print The Values : Debug.Print Value
+
+For Each Loop:(pre determine Range)
+
+For Each c In Range("A2:A4") 
+	
+	MsgBox c.Value
+
+Next c
+
+or
+
+Set myRange = Range("A2:A4")
+
+For Each c In myRange
+    
+'Visible Value from the cell
+    MsgBox c.Value
+'Formula from the cell
+    MsgBox c.Formula
+
+Next c
+
+For Each Loop:(User determine Range)
+
+For Each c In Selection
+
+    MsgBox c.Value
+
+Next c
+
+
+IF condition:
+
+If c.Value = 2000 Then
+    
+   	 MsgBox "cell" & c.Address & "equals 2000"
+    
+
+ElseIf c.Value = 3000 Then
+    
+   	 MsgBox "cell" & c.Address & "equals 3000"
+
+Else
+    
+        MsgBox "Not Equal"
+    
+End If
+	
+
+Found What We want next Exit the Loop : Exit For
+
+
+For Loop:
+
+For i = 1 to 5  
+
+   MsgBox Cells(i,2).Value
+
+Next i
+
+Increament By 2 :
+
+For i = 1 to 5  Step 2
+
+   MsgBox Cells(i,2).Value
+
+Next i
+
+For Loop Reverse:
+
+For i = 5 To 1 Step -1
+
+   MsgBox Cells(i, 2).Value
+
+Next i
+
+
+Copy Data to new WorkSheet:
+
+//Sheets("Sheet1").Cells(i,1).EntireRow.Copy Sheets("Sheet2").Cells(Last_Row_Number,1)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

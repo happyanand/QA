@@ -1,0 +1,23 @@
+//Excel:
+
+Data Filtering - crtl + Shift + L (or) Alt + A + T
+Formulas
+Functions
+
+Charts (Pie,Bar,Column,Line)
+Pivot Tables
+macros
+
+//Database/SQL:
+Relational database
+NoSQL - Mango DB
+
+//Programming:
+R
+Python
+SAS
+
+
+//Data Visualization Tool:
+Tableau
+Power BI

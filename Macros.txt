@@ -1,0 +1,1205 @@
+Sub Compare_Two_Excel_Sheets_Highlight_Differences()
+    'Define Fields
+    Dim iRow As Double, iCol As Double, oRow As Double
+    Dim iRow_Max As Double, iCol_Max As Double
+    Dim sh1 As Worksheet, sh2 As Worksheet
+    Dim shOut As Worksheet
+    
+    'Sheets to be compared
+    Set sh1 = ThisWorkbook.Sheets(1)
+    Set sh2 = ThisWorkbook.Sheets(2)
+    Set shOut = ThisWorkbook.Sheets(3)
+    
+    'Max Rows
+    iRow_Max = sh1.UsedRange.Rows.Count
+    iCol_Max = sh1.UsedRange.Columns.Count
+    
+    'Read Data From Each Sheets of Both Excel Files & Compare Data
+    For iRow = 1 To iRow_Max
+    For iCol = 1 To iCol_Max
+        sh1.Cells(iRow, iCol).Interior.Color = xlNone
+        sh2.Cells(iRow, iCol).Interior.Color = xlNone
+        
+        'Compare Data From Excel Sheets & Highlight the Mismatches
+        If sh1.Cells(iRow, iCol) <> sh2.Cells(iRow, iCol) Then
+           sh1.Cells(iRow, iCol).Interior.Color = vbRed
+           sh2.Cells(iRow, iCol).Interior.Color = vbYellow
+           
+           'Write Differences to Output sheet
+           oRow = oRow + 1
+           shOut.Cells(oRow, 1) = sh1.Cells(iRow, iCol)
+           shOut.Cells(oRow, 2) = sh2.Cells(iRow, iCol)
+        End If
+    Next iCol
+    Next iRow
+    
+    'Process Completed
+    MsgBox "Task Completed"
+    
+End Sub
+
+
+
+
+
+
+
+
+
+
+Sub Compare_Excel_values()
+    'Define Fields
+    Dim Row As Integer
+    Dim Col As Integer
+    Dim oRow As Integer
+    
+    Dim Row_Max As Integer
+    Dim Col_Max As Integer
+    
+    Dim sh1 As Worksheet
+    Dim sh2 As Worksheet
+    Dim sh3 As Worksheet
+    
+    'Sheets to be compared
+    Set sh1 = ThisWorkbook.Sheets(1)
+    Set sh2 = ThisWorkbook.Sheets(2)
+    Set sh3 = ThisWorkbook.Sheets(3)
+    
+    'Max Rows
+    Row_Max = sh1.UsedRange.Rows.Count
+    Col_Max = sh1.UsedRange.Columns.Count
+    
+    'Read Data From Each Sheets of Both Excel Files & Compare Data
+    For Row = 1 To Row_Max
+        For Col = 1 To Col_Max
+        
+         
+            'sh1.Cells(Row, Col).Interior.Color = xlNone
+            'sh2.Cells(Row, Col).Interior.Color = xlNone
+        
+            'Compare Data From Excel Sheets & Highlight the Mismatches
+                If sh1.Cells(Row, Col) <> sh2.Cells(Row, Col) Then
+                    sh1.Cells(Row, Col).Interior.Color = vbGreen
+                    sh2.Cells(Row, Col).Interior.Color = vbBlue
+           
+            'Write Differences to Output sheet
+                    oRow = oRow + 1
+                    sh3.Cells(oRow, 1) = sh1.Cells(Row, Col)
+                    sh3.Cells(oRow, 2) = sh2.Cells(Row, Col)
+                End If
+            Next Col
+       Next Row
+    
+    'Process Completed
+    MsgBox "Executed Successfully"
+    
+End Sub
+
+
+
+
+
+
+
+
+
+
+
+
+
+Sub Compare_Sheets()
+
+Dim sh1 As Worksheet
+Dim sh2 As Worksheet
+Dim sh3 As Worksheet
+
+Dim rows_Count_sh1 As Integer
+Dim column_count_sh1 As Integer
+
+Dim rows_Count_sh2 As Integer
+Dim column_count_sh2 As Integer
+
+Dim rows_maxCount As Integer
+Dim column_maxcount As Integer
+
+
+Set sh1 = ThisWorkbook.Sheets("Home")
+Set sh2 = ThisWorkbook.Sheets("Sheet2")
+Set sh3 = ThisWorkbook.Sheets("Sheet3")
+
+rows_Count_sh1 = sh1.UsedRange.Rows.Count
+column_count_sh1 = sh1.UsedRange.Columns.Count
+
+
+rows_Count_sh2 = sh2.UsedRange.Rows.Count
+column_count_sh2 = sh2.UsedRange.Columns.Count
+
+
+For Each i In sh1.Range("A2:A" & rows_Count_sh1)
+    
+    emp_id_sh1 = i
+    
+    salary = i.Offset(0, 1)
+    
+    dob = i.Offset(0, 2)
+    
+    Debug.Print "irow : " & i.Row
+    
+    For Each j In sh2.Range("A2:A" & rows_Count_sh2)
+    
+        emp_id_sh2 = j
+        
+        Debug.Print "jrow : " & j.Row
+        
+        If emp_id_sh1 = emp_id_sh2 Then
+        
+            Debug.Print "match"
+
+        End If
+        
+    Next
+        
+Next
+
+    
+End Sub
+
+
+Alt+F11 open Macros:
+Alt+F8 Run Macros:
+F8 Execute row by row 
+F5 Run Macros
+
+
+
+'Select a cell:  Range("C2").Select
+
+'Select a Range:  Range("A1:C2").Select
+
+'Select a UsedRange : Sheets("Sheet1").UsedRange.Select
+
+'Navigate to Another worksheet: Sheets("Sheet2").Activate
+
+'Offset the Active cell :  ActiveCell.Offset(1,2).Select   here 1-->row and 2-->column
+
+'Put Data into Cell : ActiveCell.Value = "Hi" (or) Range("B2").Value = "Hey"
+	Select Sheet : Sheets("Sheet2").range("C5").Value = "More Text"
+	Select Row,Column : ActiveCell.Offset(2,2).Value = "Offset"
+
+			
+ActiveCell.Value = "Test"
+
+ActiveCell.Value = 20
+
+[b2].Value = 40
+
+[A2:A10] = "Demo"
+
+Cells(2,3).Value = "Sample"
+
+Range("A1").Value = "Trail"
+
+
+
+Get the Value : Range("A2").Value
+
+Get the Value and Set a variable equal to it : abcValue = Range("A2").Value
+
+Get Last Row of the WorkSheet :
+
+Last_Row_Number = Sheets("Sheet1").Range("A" & Rows.Count).End(xlUp).Row
+
+		(or)
+
+Last_Row_Number = Sheets("Sheet1").Cells(Rows.Count,1).End(xlUp).Row
+
+Set the Value : Range("A2").Value = "Hi" (or) Range("B2").Value = Range("A2").Value
+
+Display Value (or) Message in Pop-Up Window : MsgBox "Hi" (or) MsgBox VariableName
+
+Get the value from the sheet : abcValue = Sheets("Sheet1").Range("A2").Value
+
+Put value into Specific Cell : Sheets("Sheet1").Range("A2").value = abcvalue  (or)  Sheets("Sheet1").Range("A2").value = Sheets("Sheet2").Range("D2").value
+
+Put Value into Active Cell : ActiveCell.Value = abcValue
+
+Print The Values : Debug.Print Value
+
+For Each Loop:(pre determine Range)
+
+For Each c In Range("A2:A4") 
+	
+	MsgBox c.Value
+
+Next c
+
+or
+
+Set myRange = Range("A2:A4")
+
+For Each c In myRange
+    
+'Visible Value from the cell
+    MsgBox c.Value
+'Formula from the cell
+    MsgBox c.Formula
+
+Next c
+
+//For Each Loop:(User determine Range)
+
+For Each c In Selection
+
+    MsgBox c.Value
+
+Next c
+
+
+IF condition:
+
+If c.Value = 2000 Then
+    
+   	 MsgBox "cell" & c.Address & "equals 2000"
+    
+
+Else If c.Value = 3000 Then
+    
+   	 MsgBox "cell" & c.Address & "equals 3000"
+
+Else
+    
+        MsgBox "Not Equal"
+    
+End If
+	
+
+Found What We want next Exit the Loop : Exit For
+
+
+//For Loop:
+
+For i = 1 to 5  
+
+   MsgBox Cells(i,2).Value
+
+Next i
+
+//Increament By 2 :
+
+For i = 1 to 5  Step 2
+
+   MsgBox Cells(i,2).Value
+
+Next i
+
+//For Loop Reverse:
+
+For i = 5 To 1 Step -1
+
+   MsgBox Cells(i, 2).Value
+
+Next i
+
+
+//Copy Data to new WorkSheet:
+
+//Sheets("Sheet1").Cells(i,1).EntireRow.Copy Sheets("Sheet2").Cells(Last_Row_Number,1)
+
+MsgBox: "Should we Continue", vbYesNoCancel + vbCritical , "My Title"
+
+Sub Exit : Exit Sub
+
+//Get User Input :
+
+Sub GetUserInput()
+InputBox "Enter The value"
+
+End Sub
+
+
+//Select All the Values in Excel:
+
+First cursor in A1 cell (or) Select A1 cell
+ctrl+shift+down --->Range(Selection, Selection.End(xlDown)).Select
+ctrl+shift+Right --->Range(Selection, Selection.End(xlToRight)).Select
+
+
+Font :
+
+Range("a1 : a10") = "Test"
+Range("a1 : a10").Font.Name = "Arial"
+Range("a1 : a10").Font.Size = 20
+Range("a1 : a10").Font.Bold = True
+Range("a1 : a10").Font.Underline = True
+
+
+		(or)
+
+
+Range("a1 : a10") = "Test1"
+
+With Range("a1 : a10").Font
+ 
+    .Name = "Arial"
+    .Size = 20
+    .Bold = True
+    .Underline = True
+
+End With
+
+
+
+//Allignment:
+
+HorizontalAlignment : Range("a1 : a10").HorizontalAlignment = xlLeft (or) Right
+VerticalAlignment   : Range("a1 : a10").VerticalAlignment = xlTop (or) Center (or) Bottom
+
+
+//Colors Cell:
+
+8 Standard Colors:
+
+Range("a1 : a10").Font.Color = vbWhite 
+Range("a1 : a10").Font.Color = vbBlack
+Range("a1 : a10").Font.Color = vbYellow
+Range("a1 : a10").Font.Color = vbRed
+Range("a1 : a10").Font.Color = vbGreen
+Range("a1 : a10").Font.Color = vbCyan
+Range("a1 : a10").Font.Color = vbMagneta
+Range("a1 : a10").Font.Color = vbBlue
+
+Index upto 1 to 56 only
+
+//56 Colors
+
+For x = 1 To 56 
+   Cells(x,1).Value = x
+   Cells(x,2).Interior.ColorIndex = x
+Next
+
+
+Range("a1 : a10").Font.ColorIndex = 1
+
+//Backround Color:
+
+Range("a1 : a10").Interior.Color = vbWhite
+Range("a1 : a10").Interior.ColorIndex = 1
+
+
+
+//Copy and Paste Cell:
+
+1st Method:
+
+Range("B1:B10") = Range("A1:A10").Value
+
+2nd Method:
+
+Range("A1:A10").Copy
+Range("B1:B10").PasteSpecial
+Application.CutCopyMode = False
+
+
+//Paste cell:
+
+Range("B1:B10").PasteSpecial xlPasteFormats
+Range("B1:B10").PasteSpecial xlPasteColumnWidths
+Range("B1:B10").PasteSpecial xlPasteValues
+Application.CutCopyMode = False
+
+//Clear cell:
+
+Range("B1:B10").ClearFormats
+Range("B1:B10").ClearComments
+Range("B1:B10").ClearHyperLinks
+Range("B1:B10").Clear
+
+
+//Delete cell:
+
+Range("B3").Delete
+Range("B3:B10").Delete
+Range("B3").EntireRow.Delete
+Range("B3").EntireColumn.Delete
+
+
+//Insert Rows and Column:
+
+Range("C:C").Insert
+Range("1:1").Insert
+Range("b5").EntireColumn.Insert
+Range("b5").EntireRow.Insert
+
+//Column Width:
+
+Range("a1").ColumnWidth = 15
+Range("a4").Columns.ColumnWidth = 4
+Range("a1").Columns.AutoFit
+
+
+//Select cell:
+
+Range("a2").Select
+Range("a1 : a10").Select
+
+//Activate Cell:
+
+Range("a2").Activate
+Range("a1 : a10").Activate
+
+//Hide Column:
+
+Range("a:a").Columns.Hidden = True
+Range("a:c").Columns.Hidden = True
+Range("a:c").Columns.Hidden = False
+
+//Hide Rows:
+
+Range("1:1").Rows.Hidden = True
+Range("1:10").Rows.Hidden = True
+Range("1:10").Rows.Hidden = False
+
+
+
+//Sheet Referencing:
+
+Sheets(1).Range("a1:a10") = "Excel VBA"
+	(or)
+Sheets("Sheet1").Range("a1:a10") = "Excel VBA"
+
+
+//Sheets Add : Sheets.Add (or) Worksheets.Add
+
+Worksheets.Add after:=Sheets("Kumar")
+Worksheets.Add before:=Sheets("Anand")
+
+//Get Sheets Name:
+
+MsgBox (Sheets(1).Name)
+
+
+//Add Name : Sheets.Add.Name = "SheetName"
+
+//Rename_Sheets : Sheets(1).Name = "Hello" (or) Sheets("Sheet1").Name = "World"
+
+//Copy Sheets : Sheets(1).Copy
+
+Sheets("Sheet1").Copy after:=Sheets("Sheet1")
+Sheets("Sheet1").Copy before:=Sheets("Sheet1")
+
+
+//Move Sheets : Sheets(1).Move
+
+Sheets("Sheet1").Move after:=Sheets("Sheet1")
+Sheets("Sheet1").Move before:=Sheets("Sheet1")
+
+
+//Hide and Unhide Sheets :
+
+Sheets("Sheet1").Visible = False   //Hide
+Sheets("Sheet1").Visible = True    //Unhide
+
+
+//Protect Sheet :
+
+Sheets("Sheet1").Protect Password:=123
+Sheets("Sheet1").Unprotect Password:=123
+
+
+//Activate Sheet : jump into Particular sheet
+
+Sheets("Sheet1").Activate
+
+
+//Select Sheet  :  
+
+Sheets("Sheet1").Select
+
+
+
+//WorkBook:
+
+Add WorkBook : Workbooks.Add
+Workbooks.Add.SaveAs Filename:="D:\Demobook.xlsx"
+
+
+//Get Workbook Name:
+
+MsgBox (ActiveWorkbook.Name)  --> Current Excel name
+	(or)
+MsgBox (ThisWorkBook.Name)
+
+Workbooks("Book1.xlsx").Activate
+
+MsgBox (ActiveWorkbook.Name)
+	(or)
+MsgBox (ThisWorkBook.Name)
+
+
+//Write Some Data into the Workbook and Save and Close WorkBook :
+
+Workbooks("Book1.xlsx").Sheets(1).Range("a1:a10") = "Excel VBA"
+
+Workbooks("Book1.xlsx").Save
+Workbooks("Book1.xlsx").Close
+
+
+//Open Workbook Write something save and close:
+
+Workbooks.Open Filename:="D:\Demobook.xlsx"
+Workbooks("Demobook.xlsx").Sheets(1).Range("a1:a10") = "Excel VBA"
+Workbooks("Demobook.xlsx").Save
+Workbooks("Demobook.xlsx").Close
+
+
+//Delete WorkBook:
+
+Kill ("D:\Book1.xlsx")
+Kill ("D:\Demobook.xlsx")
+
+
+//Create Folder : MkDir ("D:\Anand")
+
+
+//Variables :
+
+var1 = "Sample"
+Range("C1").Value = var1
+Range("C3:c5").Value = var1
+
+
+//Command Block :
+
+View-Toolbar-Edit-Command-Uncommand-Doupleclick-Drap to Edit
+
+
+//For Loop :
+
+For x = 1 To 10
+   MsgBox x
+      (or)
+   Debug.Print x
+Next
+
+//Increament By 2 :
+
+For x = 1 To 10 Step 2
+   Debug.Print x
+Next
+
+
+//Decreament By 2 :
+
+For x = 10 To 1 Step -2
+   Debug.Print x
+Next
+
+
+For x = 1 To 10
+   Cells(x,1).value = x
+Next
+
+For x = 1 To 10 Step 2
+   Cells(x,1).value = x
+Next
+
+For x = 1 To 10 Step 2
+   Cells(x,2).value = x
+Next
+
+
+//56 Colors
+
+For x = 1 To 56 
+   Cells(x,1).Value = x
+   Cells(x,2).Interior.ColorIndex = x
+Next
+
+
+//Diagonal Loop :
+
+For x = 1 To 10
+   Cells(x,x).value = x
+Next
+
+//Workbook SheetName Count and Name
+
+For x = 1 To ThisWorkbook.Sheets.Count
+  Debug.Print  ThisWorkbook.Sheets(x).Name
+Next
+
+
+//For Each Loop Based on Objects :
+
+For Each sht In ThisWorkbook.Sheets
+  Debug.Print sht.Name
+Next
+
+
+//Do While Loop :
+
+Before the Value Should Present in the First Column:
+
+Dim i As Integer
+i = 1
+Do While Cells(i,1).Value <> ""
+  Cells(i,1).Value = i
+  Cells(i,2).Value = Cells(i,1).Value + 10
+  i = i+1
+Loop
+
+
+//Do While Loop Infinite Times:
+
+Dim i As Integer
+i = 1
+Do While Cells(i,1).Value = ""
+  Cells(i,1).Value = i
+  Cells(i,2).Value = Cells(i,1).Value + 10
+  i = i+1
+Loop
+
+
+//Do Untill : (It will Check For True Statements once the condition is True Stop the Execution Untill it will Execute for False Codition)
+
+Dim i As Integer
+i = 1
+Do Until i > 8
+  Cells(i, 1).Value = i
+  i = i + 1
+Loop
+
+
+//Errors :
+
+3 Types of Errors:
+
+1)Syntax Error :(only one Statement) MsgBox a 400
+2)Compilation Error :(More Than one Line) 
+  For i = 1 To 10
+   MsgBox i ///Without Next
+3)Runtime Error : MsgBox 6 + 8 (not giving Error Message Logical Mistakes) 
+
+
+//Error Handling :
+
+On Error Resume Next
+
+    Debug.Print 10
+    Debug.Print 10 / 0   //This Line as an Error
+    Debug.Print 20
+    
+    (or)
+
+On Error GoTo abc
+
+    Debug.Print 10
+    Debug.Print 10 / 0   //This Line as an Error
+    Debug.Print 20
+
+Done:
+	Exit Sub
+
+abc :
+    Debug.Print "Some Error is Occured"
+
+//Debugging :
+
+1)Locals Window
+2)Step Into (or) F8
+3)Watch (Select Variable and Add to Watch)
+4)BreakPoint (or) F9 (stop Exection at Particular Line)
+
+//Immediate Window :
+
+View Menu Example: ?5>3 True
+?Sheets.Count
+?Range("A4").Value
+
+//Number to Text Code :
+
+
+//IF Condition : If Range("a2").Value >=35 Then Range("C2").Value = "Pass"
+
+
+//Else Condition : 
+
+If Range("a2").Value >=35 Then 
+	Range("C2").Value = "Pass"
+Else
+	Range("C2").Value = "Fail"
+End If
+
+
+//IF-ElseIf-Else :
+
+IF Range("A2").Value <= 35 Then
+	Range("C2").Value = "Fail"
+ElseIF Range("A2").Value <= 60 Then
+	Range("C2").Value = "C Grade"
+ElseIF Range("A2").Value <= 80 Then
+	Range("C2").Value = "B Grade"
+Else
+	Range("C2").Value = "A Grade"
+End If	
+
+
+//And Operator :
+
+IF Range("A2").Value >= 0 And Range("A2").Value < 35 Then
+	Range("C2").Value = "Fail"
+ElseIF Range("A2").Value >= 35 And Range("A2").Value <= 60 Then
+	Range("C2").Value = "C Grade"
+ElseIF Range("A2").Value >= 61 AndRange("A2").Value < 80 Then
+	Range("C2").Value = "B Grade"
+ElseIF Range("A2").Value >= 81 AndRange("A2").Value <= 100 Then
+	Range("C2").Value = "A Grade"
+Else
+	Range("C2").Value = "Invalid"
+End If	
+
+
+//For Loop If Condition :
+
+For x = 2 to 5
+ If  Range(x,1).value >=35 Then
+	Range(x,2).value = "Pass"
+ Else  
+	Range(x,2).value = "Fail"
+ End If
+Next
+
+
+//Switch Case Statement : (Instead of Using Multiple If Else Statements We you Switch Case)
+
+var1 = InputBox("Enter The Week")
+Select Case var1
+    Case 1: Debug.Print ("Sunday")
+    Case 2: Debug.Print ("Monday")
+    Case 3: Debug.Print ("Tuesday")
+    Case 4: Debug.Print ("Wednesday")
+    Case 5: Debug.Print ("Thursday")
+    Case 6: Debug.Print ("Friday")
+    Case 7: Debug.Print ("Saturday")
+    
+    Case Else: Debug.Print ("Invalid")
+End Select
+
+
+//Message Box :
+
+MsgBox "Welcome"
+MsgBox 1000
+MsgBox #18/12/2022#
+
+MsgBox "Welcome", 1
+MsgBox "Welcome", 2
+MsgBox "Welcome", 3
+MsgBox "Welcome", 4
+MsgBox "Welcome", 5
+MsgBox "Welcome", 6
+MsgBox "Welcome", 7
+
+	(or)
+
+MsgBox "Welcome", vbOKCancel
+MsgBox "Welcome", vbRetryCancel
+MsgBox "Welcome", vbYesNo
+MsgBox "Welcome",vbAbortRetryIgnore
+
+Icon and Sound Only Change :
+
+MsgBox "Welcome", 16  //Error (x)	(or)	MsgBox "Welcome", vbCritical
+MsgBox "Welcome", 32  //Help (?)	(or)	MsgBox "Welcome", vbQuestion
+MsgBox "Welcome", 48  //Warning (!)	(or)	MsgBox "Welcome", vbExclamation
+MsgBox "Welcome", 64  //Informtion (i)	(or)	MsgBox "Welcome", vbInformation
+
+OK Button and Cancel Button Values :
+
+a = MsgBox("Welcome", 1)
+If a = 1 Then
+    Debug.Print "Ok Button was Pressed"
+Else
+    Debug.Print "Cancel Button was Pressed"
+End If
+
+a = MsgBox("Welcome", 2)
+If a = 1 Then
+    Debug.Print "Ok Button was Pressed"
+Else
+    Debug.Print "Cancel Button was Pressed"
+End If
+
+//MessageBox Title : MsgBox "Welcome", vbOKCancel, "MS Excel"
+
+
+//Total Number of Rows and Columns in Excel Sheets :
+
+x = Rows.Count
+Debug.Print x
+y = Columns.Count
+Debug.Print y
+
+
+//String Functions : Get (First 2 Charectors and Last 2 Charectors) (Seperate the Values)
+
+For x = 2 To 8
+    Cells(x, 2).Value = Left(Cells(x, 1).Value, 2)
+    Cells(x, 3).Value = Right(Cells(x, 1).Value, 3)
+Next x
+
+//UpperCase and LowerCase :
+
+For x = 1 To 8
+    Cells(x, 2).Value = UCase(Cells(x, 1).Value)
+    Cells(x, 3).Value = LCase(Cells(x, 1).Value)
+Next x
+
+//String Reverse :
+
+For x = 1 To 8
+    Cells(x, 2).Value = StrReverse(Cells(x, 1).Value)
+Next x
+
+
+//Functions : (without use Sub) (in excel =Add+tab(2,3))
+
+Function Add2Numbers(x As Integer, Y As Integer) As Integer
+Add2Numbers = x + Y
+End Function
+
+
+//Add Dates :
+
+'Adding Days, Months and Year
+Debug.Print DateAdd("d", 1, Mydate)
+Debug.Print DateAdd("m", 1, Mydate)
+Debug.Print DateAdd("yyyy", 1, Mydate)
+
+'Adding Hours, Minutes, Seconds
+Debug.Print DateAdd("h", 1, "31 dec 2020 12:00:00")
+Debug.Print DateAdd("n", 1, "31 dec 2020 12:00:00")
+Debug.Print DateAdd("s", 1, "31 dec 2020 12:00:00")
+
+'Get Day, Month,Year
+Mydate = #12/18/1998#
+Debug.Print Day(Mydate)
+Debug.Print Month(Mydate)
+Debug.Print Year(Mydate)
+
+//Current Date (or) Today Date :
+
+Dim a As Variant
+a = Date
+Debug.Print a
+
+//Convert Text into Date :
+
+Dim a As Variant
+a = CDate("18 Dec 1998")
+Debug.Print a
+
+//Get Current Date and Time : Debug.Print Now
+//Get Current Time : Debug.Print Time()
+//Get Current Hour : Debug.Print Hour(Time)		(or)	Debug.Print Hour("12:50:10")
+//Get Current Time : Debug.Print Minute(Time)		(or)	Debug.Print Minute("12:50:10")
+//Get Current Time : Debug.Print Second(Time)		(or)	Debug.Print Second("12:50:10")
+
+//Time Functions :
+
+Debug.Print TimeSerial(3, 4, 5)
+Debug.Print TimeSerial(12, 59, 59)
+
+Debug.Print TimeValue("20:19")
+Debug.Print TimeValue("3:10:10")
+Debug.Print TimeValue("2:10:8")
+
+//Arrays :
+
+//1D Array Static :
+
+marks(0) = 10
+marks(1) = 20
+marks(2) = 30
+marks(3) = 40
+
+For i = 0 To 3
+    Debug.Print marks(i)
+Next
+
+//2D Array Static :
+
+Dim a(2, 2) As Integer
+
+a(0, 0) = 10
+a(0, 1) = 20
+a(0, 2) = 30
+
+a(1, 0) = 40
+a(1, 1) = 50
+a(1, 2) = 60
+
+a(2, 0) = 70
+a(2, 1) = 80
+a(2, 2) = 90
+
+For i = 0 To 2
+    For j = 0 To 2
+        Debug.Print a(i, j)
+    Next
+Next
+
+
+//1D Array Dynamic
+
+Dim a() As Integer
+
+ReDim a(2)
+
+a(0) = 10
+a(1) = 20
+a(2) = 30
+
+ReDim Preserve a(4)   //It will take it old Value also
+
+For i = 0 To 2
+    Debug.Print a(i)
+Next i
+
+
+
+//Connect Excel to SQL Server :
+
+Before Connect Click on Tools Menu under References Microsoft Active Data Object 6.1 Library
+
+Sub DbConnection()
+
+    Dim cn As ADODB.Connection
+    Set cn = New ADODB.Connection
+    Dim rs As ADODB.Recordset
+    Set rs = New ADODB.Recordset
+    
+    
+    Dim server_name As String
+    Dim database_name As String
+    cn.ConnectionString = "driver={SQL Server};server=SPBLRLTU627\SQLEXPRESS01;database=tempdb"
+    cn.Open
+
+    MsgBox "Connected"
+End Sub
+
+//Connect to Excel and Paste the values Current sheet :
+Sub DbConnection()
+
+    Dim cn As ADODB.Connection
+    Set cn = New ADODB.Connection
+    Dim rs As ADODB.Recordset
+    Dim r As Integer
+    
+    Dim server_name As String
+    Dim database_name As String
+    cn.ConnectionString = "driver={SQL Server};server=SPBLRLTU627\SQLEXPRESS01;database=master"
+    cn.Open
+    
+    MsgBox "Connected"
+
+    Set rs = New ADODB.Recordset
+    rs.ActiveConnection = cn
+    rs.Open "Select * From [master].[dbo].[Emp]"
+
+    r = 1
+    Do While Not rs.EOF
+        Cells(r, 1) = rs.Fields(0)
+        Cells(r, 2) = rs.Fields(1)
+        Cells(r, 3) = rs.Fields(2)
+        Cells(r, 4) = rs.Fields(3)
+        Cells(r, 5) = rs.Fields(4)
+        rs.MoveNext
+        r = r + 1
+    Loop
+End Sub
+
+
+    Set rs = New ADODB.Recordset
+    rs.ActiveConnection = cn
+    rs.Open
+    Range("A1").CopyFromRecordset rs
+        rs.Close
+    cn.Close
+
+
+//Get Server Name
+
+Select @@ServerName
+
+
+//How to Create Button :
+
+Developer Tab -->Insert --> form Ctrl button or Active Control Button
+		(or)
+Insert Tab --> Illurations --> Shapes -->Rectangle --> drag into excel
+Right click on button --> click on size and properties --> properties --> Move but don't with sizes
+
+
+//Remove GridLines inside the box :
+
+view Tab --> uncheck Gridlines
+	(or)
+Select cell Click on Backround Color select white color
+
+
+Sheets(1).Copy after:=Sheets(1)
+    Sheets(2).Name = "NEW"
+    Worksheets.Add after:=Sheets("NEW")
+    Sheets(2).Range("C4").Value = 18000
+    Sheets(2).Range("D6").Value = 9080578891#
+    Sheets(2).Range("B2").Value = "Aravind"
+    Sheets(2).Range("A5").Value = "Emp_06"
+    Sheets(2).Range("E3").Value = #1/25/2020#
+    Sheets(2).Range("B8").Value = "Krishna"
+    Sheets(2).Range("C9").Value = 12000
+    Sheets(3).Name = "Differences"
+
+
+
+
+
+
+//Insert Values into Sql Server: 
+
+Sub Source_DB()
+
+    Dim cnt As ADODB.Connection
+    Dim rst As ADODB.Recordset
+    
+    Row_Max = Sheets(1).UsedRange.Rows.Count
+    
+    Dim sqlcmd As String
+    Dim sht As Worksheet
+    Set sht = ThisWorkbook.Sheets(1)
+    
+    Set cnt = New ADODB.Connection
+    Set rst = New ADODB.Recordset
+    
+    
+    Dim server_name As String
+    Dim database_name As String
+    cnt.ConnectionString = "driver={SQL Server};server=SPBLRLTU627\SQLEXPRESS01;database=tempdb"
+    cnt.Open
+    
+    For I = 2 To Row_Max
+        sqlcmd = "INSERT INTO Emp(Emp_ID,Emp_Name,Salary,Mob_Num)Values('" & sht.Cells(I, 1) & "','" & sht.Cells(I, 2) & "','" & sht.Cells(I, 3) & "','" & sht.Cells(I, 4) & "')"
+        cnt.Execute (sqlcmd)
+    Next
+    MsgBox "Done"
+   
+End Sub
+
+
+//Get Values into SQL Server and Store into Excel:
+
+Sub Source_DB()
+
+    Dim cnt As ADODB.Connection
+    Dim rst As ADODB.Recordset
+    Dim col_Max As Integer
+    
+    
+    col_Max = ThisWorkbook.Sheets(1).UsedRange.Columns.Count
+    Debug.Print col_Max
+    
+    Dim sqlcmd As String
+    Dim sht As Worksheet
+    Set sht = ThisWorkbook.Sheets(1)
+    
+    Set cnt = New ADODB.Connection
+    Set rst = New ADODB.Recordset
+    
+    
+    Dim server_name As String
+    Dim database_name As String
+    cnt.ConnectionString = "driver={SQL Server};server=SPBLRLTU627\SQLEXPRESS01;database=tempdb"
+    cnt.Open
+    
+    With rst
+        .ActiveConnection = cnt
+        .Open "Select * From [tempdb].[dbo].[Emp]"
+    End With
+    
+    Set sht = ThisWorkbook.Sheets.Add
+    With sht
+        For col = 0 To col_Max - 1
+            .Cells(1, col + 1).Value = rst.Fields(col).Name
+        Next col
+        Range("A2").CopyFromRecordset Data:=rst
+    End With
+
+End Sub
+
+
+
+Create Table Emp
+(
+ Emp_ID varchar(20),
+ Emp_Name varchar(25),
+ Salary Numeric,
+ Mob_Num Numeric,
+);
+
+Create Table Target
+(
+ Old varchar(20),
+ New varchar(25)
+);
+
+Select * from Target;
+
+INSERT INTO Emp (Emp_ID, Emp_Name, Salary,Mob_Num)
+VALUES ('Emp_09', 'Naveen',18000,9243018851);
+
+
+
+
+
+
+'Sub connect_to_SQLServer(ByVal server_name As String, ByVal database_name As String, SQL_Statement As String)
+'Dim strConn As String
+'Dim wsReport As Worksheet
+'Dim col As Integer
+'
+'    Dim cn As ADODB.Connection
+'    Set cn = New ADODB.Connection
+'    Dim rs As ADODB.Recordset
+'    Dim r As Integer
+'
+'    Dim server_name As String
+'    Dim database_name As String
+'    cn.ConnectionString = "driver={SQL Server};server=SPBLRLTU627\SQLEXPRESS01;database=tempdb"
+'    cn.Open
+'
+    'MsgBox "Connected"
+
+   ' Set rs = New ADODB.Recordset
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
