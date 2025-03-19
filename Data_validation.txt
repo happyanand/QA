@@ -1,0 +1,136 @@
+Create Table Src_1
+(
+ Emp_ID varchar(20),
+ First_Name varchar(25),
+ Last_Name varchar(25),
+ Email_ID varchar(20),
+ Mob_Num Numeric
+);
+
+insert into Src_1 values('Emp_01','Anand','R','anand@gmail.com',9080578851);
+insert into Src_1 values('Emp_02','Kumar','K','Kumar@gmail.com',9080548851);
+insert into Src_1 values('Emp_03','Gokul','S','Gokul@gmail.com',9080378851);
+
+
+Select * from Src_1;
+
+
+Create Table Src_2
+(
+ Emp_ID varchar(20),
+ First_Name varchar(25),
+ Last_Name varchar(25),
+ Email_ID varchar(20),
+ Mob_Num Numeric
+);
+
+
+insert into Src_2 values('Emp_04','Rahul','D','Rahul@gmail.com',9080572851);
+insert into Src_2 values('Emp_05','Saran','M','Saran@gmail.com',9380572851);
+
+
+
+Select * from Src_2;
+
+Create Table Tar_1
+(
+ Emp_ID varchar(20),
+ First_Name varchar(25),
+ Last_Name varchar(25),
+ Email_ID varchar(20),
+ Mob_Num Numeric
+);
+
+insert into Tar_1 values('Emp_01','Anand','R','anand@gmail.com',9080578851);
+insert into Tar_1  values('Emp_02','Kumar','K','Kumar@gmail.com',9080548851);
+
+Select * from Tar_1;
+
+Create Table Tar_2
+(
+ Emp_ID varchar(20),
+ First_Name varchar(25),
+ Last_Name varchar(25),
+ Email_ID varchar(20),
+ Mob_Num Numeric
+);
+
+insert into Tar_2 values('Emp_04','Rahul','D','Rahul@gmail.com',9089572851);
+insert into Tar_2 values('Emp_05','Saran','M','Saran@gmail.com',9380572851);
+insert into Tar_2 values('Emp_06','Ramu','N','Ramu@gmail.com',9085572851);
+
+
+Select * from Tar_2;
+
+
+Create Table Src_1
+(
+ Emp_ID varchar(20),
+ First_Name varchar(25),
+ Last_Name varchar(25),
+ Email_ID varchar(20),
+ Mob_Num Numeric
+);
+
+insert into Src_1 values('Emp_01','Anand','R','anand@gmail.com',9080578851);
+insert into Src_1 values('Emp_02','Kumar','K','Kumar@gmail.com',9080548851);
+insert into Src_1 values('Emp_03','Gokul','S','Gokul@gmail.com',9080378851);
+
+
+Select * from Src_1;
+
+
+Create Table Src_2
+(
+ Emp_ID varchar(20),
+ First_Name varchar(25),
+ Last_Name varchar(25),
+ Email_ID varchar(20),
+ Mob_Num Numeric
+);
+
+
+insert into Src_2 values('Emp_04','Rahul','D','Rahul@gmail.com',9080572851);
+insert into Src_2 values('Emp_05','Saran','M','Saran@gmail.com',9380572851);
+insert into Src_2 values('07','Karan','L','karan@gmail.com',9380572051);
+insert into Src_2 values('Emp_09','','S','Maga@gmail.com',9380862851);
+insert into Src_2 values('Emp_10','Kiran','','Kiran@gmail.com',9380862851);
+insert into Src_2 values('Emp_12','Saran','A','Saran@123',9380862951);
+
+
+
+Select * from Src_2;
+
+Create Table Tar_1
+(
+ Emp_ID varchar(20),
+ First_Name varchar(25),
+ Last_Name varchar(25),
+ Email_ID varchar(20),
+ Mob_Num Numeric
+);
+
+insert into Tar_1 values('Emp_01','Anand','R','anand@gmail.com',9080578851);
+insert into Tar_1  values('Emp_02','Kumar','K','Kumar@gmail.com',9080548851);
+
+Select * from Tar_1;
+
+Create Table Tar_2
+(
+ Emp_ID varchar(20),
+ First_Name varchar(25),
+ Last_Name varchar(25),
+ Email_ID varchar(20),
+ Mob_Num Numeric
+);
+
+insert into Tar_2 values('Emp_04','Rahul','D','Rahul@gmail.com',9089572851);
+insert into Tar_2 values('Emp_05','Saran','M','Saran@gmail.com',9380572851);
+insert into Tar_2 values('Emp_06','Ramu','N','Ramu@gmail.com',9085572851);
+insert into Tar_2 values('Emp_10','Kiran','','Kiran@gmail.com',9380862851);
+
+Select * from Tar_2;
+
+
+
+

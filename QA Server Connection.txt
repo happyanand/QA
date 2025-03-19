@@ -1,0 +1,46 @@
+ '       Select * From [OutputDb].[dbo].[Categories]"
+ '       "Select * From [OutputDb].[dbo].[CatSource]"
+'        .Open "Select * From [OutputDb].[dbo].[Cat1]"
+'        .Open "Select * From [OutputDb].[dbo].[Cat1]"
+'        .Open "Select * From [OutputDb].[dbo].[Cat1]"
+'        .Open "Select * From [OutputDb].[dbo].[Cat1]"
+'        .Open "Select * From [OutputDb].[dbo].[Cat1]"
+'        .Open "Select * From [OutputDb].[dbo].[Cat1]"
+'        .Open "Select * From [OutputDb].[dbo].[Cat1]"
+'        .Open "Select * From [OutputDb].[dbo].[Cat1]"
+'        .Open "Select * From [OutputDb].[dbo].[Cat1]"
+'        .Open "Select * From [OutputDb].[dbo].[Cat1]"
+'        .Open "Select * From [OutputDb].[dbo].[Cat1]"
+'        .Open "Select * From [OutputDb].[dbo].[Cat1]"
+'        .Open "Select * From [OutputDb].[dbo].[Cat1]"
+'        .Open "Select * From [OutputDb].[dbo].[Cat1]"
+'        .Open "Select * From [OutputDb].[dbo].[Cat1]"
+'        .Open "Select * From [OutputDb].[dbo].[Cat1]"
+'        .Open "Select * From [OutputDb].[dbo].[Cat1]"
+'        .Open "Select * From [OutputDb].[dbo].[Cat1]"
+'        .Open "Select * From [OutputDb].[dbo].[Cat1]"
+'        .Open "Select * From [OutputDb].[dbo].[Cat1]"
+'        .Open "Select * From [OutputDb].[dbo].[Cat1]"
+'        .Open "Select * From [OutputDb].[dbo].[Cat1]"
+     
+
+
+
+cnt.ConnectionString = "driver={SQL Server};server=SPBLRLTU627\SQLEXPRESS01;database=OutputDb"
+    cnt.Open
+    
+    With rst
+        .ActiveConnection = cnt
+        .Open "Select * From [OutputDb].[dbo].[Cat1],[Categories]"
+        
+
+
+
+Emp_ID varchar(20),Emp_Name varchar(25),Dept_Name varchar(25),Salary Numeric
+
+
+
+
+
+
+   
