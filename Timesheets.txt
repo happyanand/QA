@@ -1,0 +1,1084 @@
+
+
+
+28/11/22  --->  Involved in Data Validation using Pentaho tool Check for both Valid and Invalid Data Updated in Excel Sheets using Microsoft Excel Writer
+
+29/11/22  --->  Email ID Validation using Pentaho tool Check for both Valid and Invalid Email IDs using Mail Validator Updated in Results
+
+30/11/22  --->  Restore a database in the QA server, Local MS Server, and Understand the Pentaho transformations like Comparision of a table, Merge Join
+
+01/12/22  --->  Involved in Mobile Number Validation checks for both valid and invalid Numbers and stored in Excel. Restore a database to VM server
+
+02/12/22  --->  Prepare the Report in multiple formats like Pdf, Excel, and Text using Pentaho Report Designer and Generate a Pie Chart, Bar Chart Report
+
+05/12/22  --->  Verifying Data Rules for Null, Date, Phone, Email, String Formats and Value Properties for Min Value, Max Value, and Between Values
+ 
+06/12/22  --->  I just understood the User Training Guide Document related to MISK Project Login into the application based on the user Credentials
+
+07/12/22  --->  Requirement Understanding KT session Explore the application like Login, Contacts(Create, Edit, Copy, Upload), Segments (Create, Export)
+
+08/12/22  --->  Involved in MISK Project working on the Modules. Document All those modules like Login, Contacts, Segments, Lead Scoring Models
+
+09/12/22  --->  Attend the Daily Standup meeting on MISK Project and document the Modules like Component Library, Forms, Landing Page, Email Management, and Campaign Management (Single, Multiple)
+
+12/12/22  --->  KT session on Misk Project Modules like Campaign Management and Report & Analytics. Explore the application by Referring user manual 
+
+13/12/22  --->	MISK Oracle Sales and Services and Partner Management Implementation. Test the application based on Testcase Document
+
+14/12/22  --->  Involved in Contact Management and Partner Management Modules on MISK Oracle Sales and Services Create, Edit contacts and Partners
+
+15/12/22  --->  Test the application based on the test script documents and find the defects in contact, Partner, and Service Management Modules
+
+16/12/22  --->  Working on MGC Test Script for Marketing. Events, Settings Module and Making the documents for both the Modules and found Defects
+
+20/12/22  --->  Find the defects in Contact, Partner, and Service Management Modules in MISK Oracle Sales and Services and Document the Defect
+
+21/12/22  --->  Verify Partner can create service requests through an Outlook Email account and able to receive an acknowledgment for newly create SR
+
+22/12/22  --->  Check for Primary contact of the newly created Service Request and Verify user is able to give responses through the application
+
+23/12/22  --->  Service Request page to Validate the data flow between outlook and the application. Verify the Status, Smart text, Response, and Approval
+
+26/12/22  --->  Enrolled in the course MS Excel Fundamentals at Speridian University to take course overview, Mouse Features and Creating Basic Formulas
+
+27/12/22  --->  MS Excel Fundamentals course Header, Footer, Split Screen, Extension, Commands and MS Word Sorting, Water Mark, Page Color, Page Setup Margin, Orientation, Size, Insert (Table, Images, Videos) 
+
+28/12/22  --->	Involved in MS Excel Fundamentals Course Navigating Workbook, Page Setup & Print Option, Working with Rows, Columns and Cells, Moving Data, Formulas & Functions, Working with Sheets
+
+29/12/22  --->  MS Excel Formatting Worksheets (Cells, Numbers, Border, Shading, Styles, Painter) and Creating Charts, Types of Charts, Editing Chart
+
+30/12/22  --->  Learning for MS Excel Fundamentals Course Sorting, Filtering, Outlining and Subtotaling, Working with Names, Views & Macros and MS Word Restrict Editing, Mail Merge, Export Document, Styles
+
+02/01/23  --->  Involved in KT session on O360 Expense Module and MS Excel Fundamentals Course Working with views, Linking Files, Advanced Formula Creation, Pivot Tables
+
+03/01/23  --->	Working on UI/UX Checklist in the Expense module Expense Request, Assign Expense on Behalf pages, and writing all the fields like Element, Font Style, Font Size, Font Color, BG Color, Padding, Width, Height, ImageSource, File Size in MS Excel Sheets
+
+04/01/23  --->	O360 in the Expense module Approvals, Expense Approvals pages, and Ticket module New Ticket pages wrote all the fields in MS Excel
+		
+05/01/23  --->	Understanding O360 Sample dashboard screen Properties, File size, Text weight, Border radius, Shadow, Linear Gradient, spaces between components and Excel Pivot Charts, Slicers, Customizing Ribbons
+
+06/01/23  --->	MS Excel Fundamentals course learning for Functions, Shortcuts and Watching Selenium Framework tutorials setup Maveen project, reading values from the Property file, and executing test cases
+
+09/01/23  --->	Involved in Selenium Framework Try to automate Jpetstore application Login into Homepage using TestNG suite and learning for MS Excel Fundamentals course Date and Time Functions
+
+10/01/23  --->	Selenium Framework Tutorial Externalize locators from Test Script and Remove Hardcoded file path. Excel Fundamentals Course Text, Logical Functions and Attended Management Connect Meeting
+
+11/01/23  --->	Excel Fundamentals Course Lookup Functions & Financial Functions and Selenium Framework Tutorial Create and use TestNG XML
+
+12/01/23  --->	Selenium Framework Tutorial Data Driven Testing with TestNG Data Provider and Practicing for SQL query Exercise. Attended SQL Quiz.
+
+13/01/23  --->	Learn Statistical Functions on MS Excel Fundamentals and Selenium Framework Tutorials for reading Excel File Selenium with Apache POI
+
+16/01/23  --->	A short call to discuss the payroll testing Learn for Testing Concepts and Involved in Excel Fundamentals Connecting to other Workbooks.
+
+17/01/23  --->	Involved in Regression Testcases Calculating Functional Points Modules like BA & CA & Employee Dashboard, BA Audits, BA Employee Administration, BA Load roster, Enrollment roster, terminate roster, BA&CA Employee Alerts, and Notifications, BA Review, CA Employee Administration in Excel.
+
+18/01/23  --->	Calculating Functional Points Modules like Renewal Manage Coverage - BA QE Enrollment, BA re-enrollment, BA Update Covered Members, CA QE Enrollment, CA re-enrollment, CA Employer Enrollment
+
+19/01/23  --->	Functional Points Modules like Renewal Manage Coverage Employee re-enrollment, Employee QE Enrollment, Employee Change Plan, CA Update Covered Members, Employee Update Covered Members, CA Employer Enrollment in Excel
+
+20/01/23  --->	Expand more test cases on Functional Points and Involved in new modules like Renewal Manage Coverage - BA Change Plan, BA Employer Enrolment, Employee terminate coverage.
+
+23/01/23  --->	Involved in Selenium Automation Framework Learn for TestNG annotations like before suite, before method, before Test, before class, after suite, after method, after class, after Test and Synchronization
+
+24/01/23  --->	Learn Selenium Automation Framework concepts like Handling Popups and their types, Frames, JavaScript Executor, TestNG Listener (On Test Start, On Test Success, On Test Failure, On Test Skipped) 
+
+25/01/23  --->	Exploring Selenium timeout exceptions like Implicit wait and Explicit wait Go through Page Object Model, Page Factory Differences
+
+27/01/23  --->	MS Excel Fundamentals course involved Introduction to Tables, Table References, Table Styles, Pivot table, Data Analysis, and Verification Using TestNG Soft Assert and Hard Assert difference.. 
+
+30/01/23  --->	Training on API Testing Postman Tool Go through methods like GET, POST, PUT, PATCH, DELETE. In the GET method check the status code and In POST method Token check, Header check, Response Time
+
+31/01/23  --->	Involved in API Testing Postman Tool in the POST method Data Driven API Testing -Excel Data CSV or JSON format multiple value insertion and Export report through command prompt. Update Data using PUT method and Upgrade the Forti client VPN version.
+
+01/02/23  --->	KT Session on VIP Star Network Empass Health Care Project Explore the Application in the admin portal and compare the Figma link
+
+02/02/23  --->	Test the Functionality of an Application To find the defects in the admin portal and  Add New Events check for the Patient Portal page
+
+03/02/23  --->	Involved in Empass Health care Project to Manage Events Tab add the New Events check for Edit Events, Event address, Lab Testing, Vaccinations, Event Schedule, Generate Slots Save Draft and Publish
+
+06/02/23  --->	Learn JAVA methods, and OOPS  concepts like(Encapsulation, Inheritance, Polymorphism, Abstraction), ArrayList, LinkedList, HashMap, , Scanner Class, Exceptions, and Threads. Attend JAVA Quiz.
+
+07/02/23  --->	Just go through the Benefitalign US Healthcare Basic Training Microsoft PowerPoint Presentation and Microsoft Word Documents
+
+08/02/23  --->	Understand the US Health Care System Introduction, Multiple Players, Insurence Overview, Health Insurance Terminologies, Types, and Health Care Laws in USA
+
+09/02/23  --->	The Broker Engage Agency Admin User Guide Documents Understand the Introduction, Getting Start with the Application, Manage the Notifications, Quotes for Individual  and Family
+
+10/02/23  --->	Involved in Managing the Quotes for Medicare Advantage, Employer Groups, Managing the Application for individuals and families, Employers, Managing the Marketplace Login, Agency Contacts
+
+13/02/23  --->	Understand the US Health Care System Managing the Communication Centre, Managing the Carrier Appointments, Configuring Carrier Appointments, Customizing the Plans
+
+14/02/23  --->	Involved in Selenium Automation Framework Automate Jpetstore application Login into the Homepage using the TestNG suite and Go through the MS Power Point  Health Insurance Terminologies
+
+15/02/23  --->	Import maven project file into Eclipse Understand Baseclass, External Reports, Listeners class, Pages claim, Pages Notepad and Utilities
+
+16/02/23  --->	Understand the flow of Selenium Automation Framework in Data Driven Testing with TestNG data provider Read Test Data from Excel Files using Apache POI and go through Log files, Screenshots
+
+17/02/23  --->	Go through the Selenium Automation Framework to understand handle Frames, Alert Popup, Checkbox, Radio Buttons, Drop Down, Handle Multiple Windows, Keyboard Events, Perform Drag and Drop	
+
+20/02/23  --->	Involved in Selenium Automation Framework Properties File Read, Write and just go through the Benefitalign EE Automation KT Session
+
+21/02/23  --->	Understanding KT session Explore the application in Employee Administration Page Add, View, Edit and Terminate Employee Details
+
+22/02/23  --->	Writing Smoke Test cases for following features like Login, Home, FBMC-Direct Bill Research, Employee Administration, Group Information, Benefits Information, Manage Coverage, View Coverage, Renewal, Carrier Response Update, Reports, Comments Roster, Logout Pages
+
+23/02/23  --->	Writing Sanity Test cases for following features Like Login, Tenant & Group Dashboards, Add Employee, Activate Employee
+
+24/02/23  --->	Writing Sanity Test cases for following features like Submit Employee, Activate and Enroll Employees, Decline All Coverage, Terminate Medical
+
+27/02/23  --->	Writing Sanity Testcases for following features Terminate Ancillary, Summary Verification, CC Letter Verification, Reenroll Medical
+
+28/02/23  --->	Writing Sanity Test cases for following features Change Plan Medical, Change Plan Ancillary, Change coverage amount, QE on Medical
+
+01/03/23  --->	Writing Sanity Test cases for the following features Terminate Medicare, Reenroll Medicare, Change Plan Medicare, QE Medicare
+
+02/03/23  --->	Writing Sanity Test cases for the following features QE Ancillary, Update covered Members - Medical, Update covered Members -  Ancillary, Terminate Employee, Employee Rehire & Enroll
+
+03/03/23  --->	Writing Sanity Test cases for the following features Reinstate Employee, Cascade Scenario (Class, Sub group, Address change, DOB, Medicare flag, Dependent add or remove).
+
+06/03/23  --->	Writing Sanity Test cases for the following features Retro enrollment with a retro period, Retro termination with a retro period
+
+07/03/23  --->	Involved in Sanity Testcase Execution Check all the test case flows are working Properly for All the groups and find out the issues.
+
+08/03/23  --->	Sanity Testcase Preparation and Executing Application list out All issues that we are facing with each group and make Excel notes
+
+09/03/23  --->	Writing Verification Steps for Sanity Test cases All the test case flows and Download & Install JDK files, Setup the Path, Verify JDK Installation
+
+10/03/23  --->	Go through the Selenium Automation Framework to understand handle Frames, Alert Popup, Drop Down, Handle Multiple Windows
+
+13/03/23  --->	List out All issues that we are facing with each group and prepare a note by executing all the test case flows with the application
+
+14/03/23  --->	Discuss all issues and queries that we are facing with each group and Verify all the Testcase flows are working well
+
+15/03/23  --->	Write all the Test Data in Excel Sheet based on the sanity test case flows and get VPN access to try to open the Automation Script URL
+
+16/03/23  --->	Understanding the Framework Concepts Attending Automation Demo Sessions and Preparing Test data for All the test case flows
+
+17/03/23  --->	Writing Sanity test cases for following features Like Login, Tenant Dashboards in Speridian tenant and Modifying the Test data based on Automation Scripts. Verify flows of Speridian and IHA tenants.
+
+20/03/23  --->	Writing Sanity test cases for Speridian tenants following features Like Account Dashboard, Add, Activate, Submit, Activate, and Enroll Employee, Decline All Coverage, Terminate Medical and Ancillary
+
+21/03/23  --->	Involved in Converting Sanity test cases into Automation Script found locators for the following features Terminate Medical, Terminate Ancillary, Summary Verification, Reenroll Medical, Reenroll Ancillary
+
+23/03/23  --->	Writing Test Scripts for Sanity Testcases in FBMC Tenant. Creating Pages like Terminate Medical and Terminate Ancillary flows
+
+24/03/23  --->	Converting Sanity test cases into Automation Script for the following features Summary Verification, View Benefits, CC Letter Verification
+
+27/03/23  --->	Writing Test Scripts for Sanity Testcases in FBMC Tenant. Creating Pages like Reenroll Medical, Reenroll Ancillary, Change Plan Medical
+
+28/03/23  --->	Executing Automation Test Scripts for Sanity Testcases in FBMC Tenant Page Terminate Medical, Summary Verification, View Benefits
+
+29/03/23  --->	Writing Test Scripts for Sanity Testcases in FBMC Tenant. Executing Pages like Terminate Ancillary, CC Letter Verification
+
+30/03/23  --->	Executing Automation Test Scripts for Sanity Testcases in FBMC Tenant Pages like Reenroll Medical, Reenroll Ancillary
+
+31/03/23  --->	Involved in Converting Sanity test cases into Automation Script. Creating Pages like Change Plan Medical and Change Plan Ancillary
+
+03/04/23  --->	Writing Test Scripts for Sanity Testcases in FBMC Tenant. Creating Pages like QE Medical and QE Ancillary. Verifying all the Testcase flow
+
+04/04/23  --->	Executing Automation Test Scripts for Sanity Testcases in FBMC Tenant Pages like Terminate Medical and Add Employee pages
+
+05/04/23  --->	Involved in Converting Sanity test cases into Automation Scripts. Creating Pages like Terminate Employee, Employee Rehire and Enroll
+
+06/04/23  --->	Verifying View Summary pdf file present in the recently downloaded file and Fetching Termination Date from Excel file for all the flows
+
+10/04/23  --->	Writing Test Scripts for Sanity Testcases. Executing Automation Test Scripts for Terminate Medical including Add, Activate and Enroll
+
+11/04/23  --->	Involved in Converting Sanity test cases into Automation Scripts. Writing Test Scripts for Terminate Ancillary flows
+
+12/04/23  --->	Executing Automation Test Scripts for Terminate Ancillary. Writing Test Scripts for Summary Verification include Add, Activate and Enroll
+
+13/04/23  --->	Verifying Automation Test Scripts for Summary Verification, CC Letter Verification, View Benefits and SBC
+
+14/04/23  --->	Executing Automation Test Scripts for Sanity Testcases in FBMC Tenant Pages like Terminate Medical and Reenroll Medical plans
+
+17/04/23  --->	Involved in Converting Sanity test cases into Automation Scripts. Writing Test Scripts for Reenroll Ancillary and Change Plan Medical
+
+18/04/23  --->	Executing Automation Test Scripts for Change Plan Ancillary. Writing Test Scripts for QE Medical and QE Ancillary, View Benefits
+
+19/04/23  --->	Writing Test Scripts for Sanity Testcases in FBMC Tenant. Creating Pages like Change Coverage Amount and Executing Test Scripts
+
+20/04/23  --->	Verifying Automation Test Scripts for Terminate Medical, Terminate Ancillary, Summary Verification, CC Letter Verification
+
+21/04/23  --->	Executing Automation Test Scripts for Change Plan Medical and Ancillary. Verifying Test Scripts for Change Coverage Amount
+
+24/04/23  --->	Writing Test Scripts for Sanity Testcases in Speridian Tenant. Executing Login Test Scripts Speridian Tenant
+
+25/04/23  --->	Involved in Converting Sanity test cases into Automation Scripts. Writing Test Scripts for Login Test
+
+26/04/23  --->	Push and Commit the code from Eclipse Project files into GitHub Repositories for FBMC tenant
+
+27/04/23  --->	Verifying Automation Test Scripts for Terminate Medical, Terminate Ancillary, Summary Verification flows in Speridian Tenant
+
+28/04/23  --->	Executing Automation Test Scripts for UAT enviroinment checking for performance.Involved in Converting Sanity test cases into Automation Scripts. Writing Test Scripts for Reenroll Medical, Reenroll Ancillary
+
+02/05/23  --->	Writing Test Scripts for Sanity Testcases in Speridian Tenant. Executing QE Medical and QE Ancillary Testcase flows
+
+03/05/23  --->	Involved in Converting Sanity test cases into Automation Scripts. Adding Firstname and Lastname for all the flows 
+
+04/05/23  --->	Executing Automation Test Scripts ReEnroll Medical and ReEnroll Ancillary in UAT enviroinment checking for performance.
+
+05/05/23  --->	Push and Commit all the codes from Eclipse Project files into GitHub Repositories for Both FBMC and Speridian tenant
+
+08/05/23  --->	Writing Test Scripts for Sanity Testcases in Speridian Tenant. Executing Change Coverage Amount flow in UAT environment
+
+09/05/23  --->	Involved in Converting Sanity test cases into Automation Scripts. Executing Enroll with Rate Edit plan in UAT environment
+
+10/05/23  --->	Executing Automation Test Scripts CC Letter Verification and Verifying all the flows execution time in UAT environment
+
+11/05/23  --->	Verifying Automation Test Scripts for Terminate Medical, Terminate Ancillary, Summary Verification, View Benefits in Speridian Tenant
+
+12/05/23  --->	Writing Test Scripts for Sanity Testcases in Speridian Tenant. Executing ReEnroll Medical & Ancillary, Change Plan Medical & Ancillary
+
+15/05/23  --->	Executing all the Automation Test Scripts Change Coverage Amount and View Benefits & SBC. Verifying Speridian Tenant flows
+
+16/05/23  --->	Involved in Converting Sanity test cases into Automation Scripts. Executing Enroll with Rate Edit plan in UAT environment
+
+17/05/23  --->	Verifying Automation Test Scripts for Terminate Medical, Terminate Ancillary, Summary Verification, View Benefits in FBMC Tenant
+
+18/05/23  --->	Executing Automation Test Scripts for UAT environment checking for performance. Involved in writing Test Scripts for Medicare plans
+
+19/05/23  --->	Executing Automation All the Test Scripts for QA environment. Enroll with Rate Edit plan, Terminate Medicare, Change Plan Medicare
+
+22/05/23  --->	Verifying Automation Test Scripts for Speridian Enroll with Rate Edit plan in UAT environment, QE Medicare and ReEnroll Medicare
+
+23/05/23  --->	Implementing all the flows using the Fake name generator creates First Name and Last Name. Verify all the flows and generate a report
+
+24/05/23  --->	Involved in Converting Sanity test cases into Automation Scripts. Executing Rehire and Enroll, checking IHA tenant
+
+25/05/23  --->	Executing Automation All the Test Scripts for QA and UAT environment. Speridian Enroll and maintenance with rate edit plan 
+
+26/05/23  --->	Writing Test Scripts for Sanity Testcases in IHA Tenant. Executing Login Tenant Dashboard, Account Dashboard, Add Employee
+
+29/05/23  --->	Writing Test Scripts for Sanity Testcases in IHA Tenant. Terminate Medical Locators and Pages. Executing Speridian Tenant flows
+
+30/05/23  --->	Involved in Converting Sanity test cases into Automation Scripts. Executing Terminate Medical, Summary Verification
+
+31/05/23  --->	Verifying Automation Test Scripts for Terminate Medical, Summary Verification, Reenroll Medical in IHA tenant
+
+01/06/23  --->	Executing Automation Test Scripts in IHA tenant for Change Plan Medical, Terminate Medical, Summary Verification 
+
+02/06/23  --->	Writing Test Scripts for Sanity Testcases in IHA Tenant. Executing QE on Medical, Reenroll Medical, Change Plan Medical
+
+05/06/23  --->	Writing Test Scripts for Sanity Testcases in IHA Tenant. Executing Terminate Employee, ReHire and Enroll Employee
+
+06/06/23  --->	Involved in Converting Sanity test cases into Automation Scripts. Executing Reinstate Employee in IHA Tenant. 
+
+07/06/23  --->	Writing Test cases for IHA Tenant. Add Employee, Activate and Enroll, Summary Verification, Terminate Medical
+
+08/06/23  --->	Writing Test cases for IHA Tenant. Reenroll Medical, Terminate Employee, Rehire and Enroll, Reinstate
+
+09/06/23  --->	Writing Test cases for IHA Tenant. Update Covered Medical, Retro Enrollment and Retro Termination
+
+12/06/23  --->	Involved in Converting Sanity test cases into Automation Scripts. Executing Add Employee, Activate and Enroll
+
+13/06/23  --->	Executing Automation Test Scripts in IHA tenant for Change Plan Medical, Terminate Medical, QE on Medical
+
+14/06/23  --->	Executing Automation Test Scripts in IHA tenant for Terminate Medical, Summary Verification, Update Covered Members - Medical
+
+15/06/23  --->	Involved in Converting Sanity test cases into Automation Scripts. Executing All the IHA Test Scripts
+
+16/06/23  --->	Executing Automation Test Scripts in IHA tenant for All the Test Case flows. Check for all the Validations
+
+19/06/23  --->	Providing KT recordings for the FBMC, Speridian and IHA Tenants. Explain all the Test case flows
+
+20/06/23  --->	Exploring the GitHub Access and Applications Account Summary details in FBMC Tenant
+
+21/06/23  --->	Understanding more flows in FBMC, Speridian and IHA tenants
+
+22/06/23  --->	Involved in Converting Sanity test cases into Automation Scripts.
+
+23/06/23  --->	Push and Commit the code from Eclipse Project files into GitHub Repositories for FBMC, IHA, Speridian Tenants
+
+26/06/23  --->	Executing All the IHA flows and Generating Reports 
+
+27/06/23  --->	Verifying all the IHA tenant Test case flows in UAT Test Environment
+
+28/06/23  --->	Executing All the FBMC flows in UAT Environment and Generating Reports 
+
+30/06/23  --->	Executing All the FBMC and IHA flows in UAT Environment
+
+03/07/23  --->	Executing All the FBMC and Speridian flows in UAT Environment
+
+04/07/23  --->	Executing All the FBMC and IHA flows in UAT Environment
+
+05/07/23  --->	Executing All the FBMC and IHA flows in UAT Test Environment
+
+06/07/23  --->	Executing All the IHA flows in UAT Test Environment and Creating BA and Employee User for all the Tenants
+
+07/07/23  --->	Executing Medicare Plans for FBMC Tenant and Executing BA and Employee user for all the tenants
+
+10/07/23  --->	Test Scripting to collaborate multiple IHA flows into one single flow.
+
+11/07/23  --->	Test Scripting to collaborate multiple IHA flows into one single flow.
+
+12/07/23  --->	Include summary verification after every transactions
+
+13/07/23  --->	Validating the IHA flow in UAT environment
+
+14/07/23  --->	Switch the code from old framework to new framework
+
+17/07/23  --->	Migration of Pages from old framework to new framework
+
+18/07/23  --->	Migration of Test Scripts old framework to new framework
+
+19/07/23  --->	Migration of Test datas old framework to new framework
+
+20/07/23  --->	Modifying the IHA Test Scripts and Pages from old to new framework
+
+21/07/23  --->	Migration of Pages and Test Scripts from old framework to new framework
+
+24/07/23  --->	Migration of Test Scripts from Old to new framework for Speridian
+
+25/07/23  --->	Migration of Test Scripts from Old to new framework for FBMC Tenant
+
+26/07/23  --->	Creation of Combined Flows script in a single Test Script IHA 
+
+27/07/23  --->	Creation of Combined Flows script in a single Test Script FBMC
+
+29/07/23  --->	Modifying Combined Flows script in a single Test Script FBMC
+
+31/07/23  --->	Modifying Combined Flows script in a single Test Script FBMC
+
+01/08/23  --->	Providing application KT for FBMC, Speridian and IHA Tenants
+
+02/08/23  --->	Understanding the regression test suite testcases
+
+03/08/23  --->	Pages modificaiton to fix the logic when using different groups.
+
+04/08/23  --->	Test scripts modification to fix the Test data issues
+
+07/08/23  --->	Executing old Test Scripts for IHA Tenants.
+
+08/08/23  --->	Executing old Test Scripts for Speridian Tenants.
+
+09/08/23  --->	Executing old Test Scripts for FBMC Tenants.
+
+10/08/23  --->	Fixed 2 TCs which was failing by updating xpaths, Test Data
+
+11/08/23  --->	Executing old Test Scripts for Speridian and IHA Tenants.
+
+14/08/23  --->	Creating new script for Employee Login using a single customer
+
+16/08/23  --->	Script Creation in new framework Employee Login
+
+17/08/23  --->	Creating new script for Employee Login using a single customer
+
+18/08/23  --->	Script Creation in new framework Employee Login FBMC Tenant
+
+21/08/23  --->	Creating new script for Employee Login using a single customer
+
+22/08/23  --->	Script execution in new framework in FBMC Tenant
+
+23/08/23  --->	Creating new script for Employee Login using a single customer
+
+24/08/23  --->	Creating new script for Employee Login using a single customer and Executing FBMC Employee
+
+25/08/23  --->	Script execution in new framework in IHA Tenant
+
+28/08/23  --->	Creating new script for Employee Login using a single customer for Speridian Tenant
+
+29/08/23  --->	Creating new script for Employee Login using a single customer
+
+30/08/23  --->	Creating new script for FBMC Renewal Admin and Executing FBMC BA Login flows. 
+
+31/08/23  --->	Modified the test scripts by updating xpath's and some changes in the page and Executing FBMC BA Login flows to get the execution time
+
+01/09/23  --->	Creating new script for FBMC Renewal Admin and Executing FBMC BA Login flows. 
+
+04/09/23  --->	Creating new script for FBMC Admin Renewal Center and Executed FBMC, Speridian Employee flows
+
+05/09/23  --->	Creating new script for FBMC Admin Renewal Center and Executed FBMC, Speridian Employee flows
+
+06/09/23  --->	Creating new script for FBMC Admin Renewal Center
+
+07/09/23  --->	Modified the Terminate Employee and Executing BA user failed Testcases
+
+08/09/23  --->	Annual Team Building activity - Out of the Office
+
+
+
+
+01/09/2022 to 02/09/2022 --->	Onboding Process
+
+05/09/2022 to 09/09/2022 --->	SQL Training
+
+12/09/2022 to 13/09/2022 --->	Testcase Writing
+
+14/09/2022 to 21/09/2022 --->	Postman API Training
+
+22/09/2022 to 28/09/2022 --->	Selenium Training
+
+29/09/2022 to 18/10/2022 --->	ETL Testing Excel Macros - Shikhar
+
+19/10/2022 to 31/10/2022 --->	Selenium Frameworks
+
+02/11/2022 to 14/11/2022 --->	Empass Health care project - Anil & Sanjay
+
+15/11/2022 to 05/12/2022 --->	Pentaho Data Integration Tool - Jyothis & Vinay
+
+06/12/2022 to 25/12/2022 --->	Client Name - MISK Foundation Project Name - MISK CRM Implementation - Ami & Megha PM Name : Sarathchandran Kundanatt
+
+26/12/2022 to 31/12/2022 --->	MS Excel Fundamental Course Speridian Univercity
+
+01/01/2023 to 10/01/2023 --->	O360 UI/UX Testing
+
+11/01/2023 to 25/01/2023 --->	Regression Testcases Calculating Functional Points
+
+27/01/2023 to 06/02/2023 --->	VIP Stat Network Empass HealthCare Project
+
+07/02/2023 to		 --->	Medicare Project Benefitalign HealthCare
+
+
+Resume Points:
+
+
+	29/09/2022 to 18/10/2022 --->	ETL Testing Excel Macros - Shikhar
+	
+	02/11/2022 to 14/11/2022 --->	Empass Health care project - Anil & Sanjay
+
+	15/11/2022 to 05/12/2022 --->	Pentaho Data Integration Tool - Jyothis & Vinay
+
+	06/12/2022 to 25/12/2022 --->	Client Name - MISK Foundation Project Name - MISK CRM Implementation - Ami & Megha PM Name : Sarathchandran Kundanatt
+
+
+QA Consultant:
+
+	Project Name	: IHA EE Solution and Support - BenifitAlign FFM Portal - Elisa Cheng, FBMC EE Solution and Support - BenifitAlign FFM Portal - Tamara White
+	Client Name	: FBMC Benefits Management Inc, Independant Health Association, Inc.
+	Start Date	: 01-Mar-2023
+	End Date	: 29-Feb-2024
+	PM Name		: Santhosh SivasankaranKutty
+
+
+
+
+
+Reg to WFO
+
+
+Hi Gopal
+
+	I currently located in TamilNadu. so please requesting to grant permission to come office two week once.
+
+
+
+
+
+Power outage at my place please expect delay in response
+
+
+
+
+dropdown
+buttons
+custom elements
+
+
+01/03/24 ---> Started learning API Testing and exploring postman tool 
+	
+04/03/24 ---> Started learning Playwright-JAVA by going through the tutorials
+
+05/03/24 ---> Learning Playwright, Interact with different types of input fields(Type, Fill, Keyboard TAB, getAttribute, clear, isEditable)
+
+06/03/24 ---> Learning Playwright, Interact with different types of Button fields(isEnabled, isDisabled)
+
+07/03/24 ---> Learning Playwright, Interact with different types of Select Drop-down (Single Select, Multi Select Drop-downs)
+
+08/03/24 ---> Learning SQL - Structured Query Language(DDL,DQL,DML,DCL,TCL)
+
+11/03/24 ---> Learning Playwright, Interact with different types of radio and check boxes using methods like click(), isSelected() and isEnabled()
+
+12/03/24 ---> Learning Playwright, Interact with different types of Multi Select using Action, Mouse Actions() and Keyboard Actions
+
+13/03/24 ---> Learning Playwright, Interact with different types of frames/iframes (parentFrame and childFrame) and Interact with Elements
+
+14/03/24 ---> Writing Components name EVPoint Application based on Screen name, Element Name and Element Type in Excel Sheet
+
+15/03/24 ---> Writing Components name EVPoint Application in Excel Sheet and Learning Playwright, Drag and Drop (Source to Target)
+
+18/03/24 ---> Learning Playwright, Interact with different type of Simple Tables (allTextContents and textContent) Methods
+
+19/03/24 ---> Learning Playwright, Interact with different types of dialog boxes Accept the Alert, Dismiss the Alert 
+
+20/03/24 ---> Learning Playwright, Interact with different Page Creation and Tab Creation in the Same browser 
+
+21/03/24 ---> Learning Playwright, Interact with different types of Files Upload and Download (Excel, PDF, Text)
+
+22/03/24 ---> Learning Playwright, Interact with Forms (First Name, Last Name, Email, Address, State, Postal Code)
+
+25/03/24 ---> Learning Playwright, Interact with Forms (Phone Number, Country Code, Country, Date of Birth, Gender, State)
+
+26/03/24 ---> Learning Playwright, Interact with Forms (Terms and Conditions and Submit) Interact with Calendar Elements 
+
+27/03/24 ---> Working on Speridian Sharepoint Data Migration from old Sharepoint Folders and Files to new Sharepoint Folders
+
+28/03/24 ---> Speridian Sharepoint Removed Unwanted, duplicate, Empty files and Folders. Created new flyers folder and moved all the flyers files
+
+01/04/24 ---> Speridian Sharepoint Data Migration Created corporate folder and moved HR folder and files. Created new folders for Prayan
+
+02/04/24 ---> Sharepoint  Migration Created the Videos folder and moved all the videos. Created new HR folders based on the locations
+
+03/04/24 ---> Sharepoint  Migration Created Case Studies folder Verify all the files are moved correctly and new Document, PPT files convert into Pdf
+
+04/04/24 ---> Sharepoint Migration Verify All the Case Studies are present in the new Sharepoint and Move the new Case Study files to the new Link
+
+05/04/24 ---> Sharepoint Migration deleted  Empty files. Uploaded Success Stories to the Case Study folder and Copied files mentioned in Excel
+
+08/04/24 ---> Sharepoint Migration Verify PDF files uploaded to the new site and PPT, WordDocument files uploaded into the Case Study folder
+
+09/04/24 ---> Go through the Accessibility Testing KT video recordings installed NVDA Tool and Added WCAG Color contrast checker Plug-Ins and Extensions
+
+10/04/24 ---> Added Zoom text-only Plug-Ins and Extensions. Go through the Accessibility Testing KT video recordings Implementing NVDA Tool
+
+12/04/24 ---> Go through the Web Content Accessibility Guidelines divided uo Three levels of conformance WCAG Leval A, AA, AAA and four Principles
+
+15/04/24 ---> Go through the Oracle Cloud Training from the Oracle Cloud Cx Practice. Overall Cloud understanding link recordings
+
+16/04/24 ---> Oracle Fusion Cloud Applications (Human Capital Management, Enterprise Resource Planning, Supply Chain Manufacturing)
+
+17/04/24 ---> Oracle Customer Experience Best Practice Process Overview and Attend Key Performance Indicators, Emerging Technologies quiz
+
+18/04/24 ---> Learning Oracle Sales Force Automation SFA and applicable to job roles Sales Representatives, Implementer, Administrator, IT Analyst
+
+19/04/24 ---> KT Session on ESNE Application and Go through the Application user stories based on BDD documents. Test case conversion in BDD
+
+22/04/24 ---> Test case conversion in BDD. User Stories of User Enrollment, User Management, Role Management, Module Management
+
+23/04/24 ---> Writing Test Cases for Login Business Scenario based on the following components Username, Password Text field and Login Button
+
+24/04/24 ---> Writing Test Case design Techniques Equivalance Class Partitioning (Field, Valid, Invalid) and Boundary Value Analysis (Field, Min, Max)
+
+25/04/24 ---> Writing Functional Points for ESNE Application Enhancement on Account Creation, New requirement User stories for User Enrollment
+
+26/04/24 ---> Writing Functional Points for ESNE Application on User Management using Admin Credentials and writing Username input fields
+
+29/04/24 ---> Writing BDD format When[Condition] for Username and Password [Invalid, Invalid], [Valid, Invalid], [Invalid, Valid] Combinations
+
+30/04/24 ---> Accessibility Testing for Speridian Application and Find the defects using tolls WCAG Contrast Checker, A11y extension
+
+02/05/24 ---> Writing Level AA - AAA Features based on Contrast and Size. Find out the defects and Write the SQL query in BDD format(When Condition)
+
+03/05/24 ---> Writing SQL Query ESNE application BDD format and Doing accessibility Testing for Speridian Application, find the defects
+
+06/05/24 ---> Colour Contrast Accessibility Validator, A11y extension and WCAG Contrast Checker tools supporting features in a single workbook
+
+07/05/24 ---> Writing BDD format for Facebook Sign Up page following fields like first name, last name, Password, DOB, Mobile number and Gender
+
+08/05/24 ---> Writing SQL query for SignUp - DB Table Creation and Insert Table columns, values for SignUp - Base State SignUp Page fields
+
+09/05/24 ---> Writing SQL query for facebook SignUp page fields First name, SurName, Mobile number or email address, New password, Date of birth
+
+10/05/24 ---> Go through Data Integration ETL Tool Pentaho and Installation Guide, Data Validation source and Target database, SQL server connections
+
+13/05/24 ---> Explore Pentaho Tool Data Validation and Compare the Source and Target Tables Data Using Merge rows(diff), Append Streams, Sort rows
+
+14/05/24 ---> Given KT for Data Integration ETL Tool Pentaho Installation process and download the JDK, JRE jar files setup system environment path
+
+15/05/24 ---> Discuss about Beacon Follow up and collection Management Banking project and Planned for KT sessions, go through the given module names
+
+16/05/24 ---> Started KT recordings Module Domain Overview Basic application workflow Core application, Call cenetr application, Agency, Payment portal
+
+17/05/24 ---> Going through KT recordings Module Empanelment & De empanelment, Bank Allocation summary and bank regularization summary, My Desk, Payout
+
+20/05/24 ---> Going through KT recordings Module DRR, Alerts and notification, Non coperative customer, Banned customer, Mobile application (Android & IOS)
+
+21/05/24 ---> Explore the Application based on KT recordings and Started writing Functional Points based on Test Cases for Automation Estimation
+
+22/05/24 ---> Writing Functional Points Modules like Agency Management, Security Management, Payout Configuration, Disposition, Collection Agency
+
+23/05/24 ---> Writing Functional Points Modules like Call Centre My Desk, Configuration, Alerts & Notifications, Summary Reports, Analytics
+
+24/05/24 ---> Writing Functional Points Modules like Notice Tracking, DRR, Agent Tracking, Q @ A form, Support Request, Call Centre, Disposition
+
+27/05/24 ---> Writing Functional Points modules to be prioritized. Agency module in core, My Desk,  Analytics and Agency Application not included
+
+28/05/24 ---> Writing Functional Points modules to be Alerts and Notifications, Summary reports, Notice tracking, Q @ A form, Disposition
+
+30/05/24 ---> Writing Functional Points modules to be DRR, Agent Tracking, Support Request, Dashboard, Master payout configuration
+
+31/05/24 ---> Writing Functional Points modules to be Add new agent, Agent list, Upload invoice, Updation of disposition, Role management 
+
+03/06/24 ---> Writing Functional Points modules to be Risk profiling, Risk mapping, Financial and Non-financial parameters configuration
+
+04/06/24 ---> Writing Functional Points modules to be Account Filteration, Updation to collection officer, View template list, Support request
+
+05/06/24 ---> Go through the KT recordings Overview and Telephony on CustomerEngage Project to get an overall idea on the application.
+
+06/06/24 ---> Started CustomerEngage Project learning modlues like Dialer, Admin Functionalities, setup greatings based on the KT recordings 
+
+07/06/24 ---> Explore modules like setup Caller ID, Assigned and UnAssigned Number, Make Admin, Pull & Remove the number in DNC
+
+Timesheet Allocated after 10/06/2024 - BA Tech - Quaity Assurance - CustomerEngage Project
+10/06/24 ---> Go through the KT recordings, Got the Automation Framework overview(Pom.xml)  and GitLab URL for CustomerEngage Project
+
+11/06/24 ---> Explore Automation Framework and Got the VPN, Application URL, UserName, and Password Gone through the application
+
+12/06/24 ---> Go through the TestCases and Automation Framework. Executed some of the test scripts to verify the generated Test reports.
+
+13/06/24 ---> Clone the Git repository for new project files like Sales_Set1 and Sales_Set2. Configured and Install Jenkins application
+
+14/06/24 ---> Clone the Git repository for project files like Regression_CTI_NonVoice and Create a new branch in the Git repository
+
+18/06/24 ---> Go through the given high priority of CTI test cases in Phase 1 deliverables and Done the Environmental Path setup
+
+19/06/24 ---> Started writing Test Scripts based on the Given Test Cases like Enter Invalid Phone Number, Validation Dial Functionality
+
+20/06/24 ---> Writing Test Scripts based on the Given Test Cases like Directly Call Number verify the details and Call Disconnected
+
+21/06/24 ---> Writing Test Scripts based on the Given Test Cases like User Accept the Call, Decline the Call, Mute the Call
+
+24/06/24 ---> Writing Test Scripts based on the Test Cases like Default Login to the CTI profile and Call triggered on clicking the hyperlink for all agents
+
+25/06/24 ---> Writing Test Scripts based on the Given Test Cases like Send Outbound SMS and List outbound SMS under ‘SENT’ 
+
+26/06/24 ---> Writing Test Scripts based on the Test Cases like Receive inbound SMS and view it in ‘INBOX’ and Send Outbound SMS from Missed Calls/Call Logs screens
+
+27/06/24 ---> Writing Test Scripts like User able to view the customer details under Basic information tab and View All the Opportunity Records
+
+28/06/24 ---> Writing Test Scripts based on the Test Cases like the User being able to edit customer information and Creating new users for Script execution
+
+01/07/24 ---> Writing Test Scripts like Customer created on lead to opportunity conversion validate user is able to edit customer information
+
+02/07/24 ---> Created a new git repository for the Customer module. Committed and Pushed. Provided CTI Demo. Checked for Disposition Test cases
+
+03/07/24 ---> Writing Test Scripts The User can navigate the carriers screen and The fields in the carrier grid page. Execute customer Test Scripts.
+
+04/07/24 ---> Writing Test Scripts based on the Test Cases like the User is able to edit Carrier details and User is able to create a new Carrier
+
+05/07/24 ---> Writing Test Scripts based on the Test Cases like User can add details under Collaborations and Created Redmine for Agent Appointments.
+
+08/07/24 ---> Writing Test Scripts based on the Test Cases the User is able to View the Quote details and Create a new branch for the Quotes Repository.
+
+09/07/24 ---> Writing Test Scripts based on the Test Cases the User is able to Edit Quote Details, Reset and clear the filter criteria, and Search Records.
+
+10/07/24 ---> Writing Test Scripts based on the Test Cases User can select and assign the lead to a different owner by clicking on Manage Leads & Assign
+
+11/07/24 ---> Writing Test Scripts based on the Test Cases The User can select one of the call dispositions, and the User can Edit Lead Details.
+
+12/07/24 ---> Writing Test Scripts based on the Test Cases User can navigate to leads screen, Enter values in other fields and navigate to Lead details
+
+15/07/24 ---> Writing Test Scripts based on the Test Cases, the User is able to edit Policy details and Search records using the search functionalities.
+
+16/07/24 ---> Writing Test Scripts based on the Test Cases CTI Call Logs Tab the User can Quick message, Delete logs, Number search Validations.
+
+17/07/24 ---> Writing Test Scripts based on the Test Cases the User can Search with Name and Disposition KT for Sync, Non Sync Agent Popup 
+
+18/07/24 ---> Writing Test Scripts based on the Test Cases like Disposition Popup Type Non Sync Agent Popup only Entered Mandatory Fields
+
+19/07/24 ---> Writing Test Scripts based on the Test Cases like TC CTI Call Disposition Validation Mandatory and Non Mandatory Fields
+
+22/07/24 ---> Writing Test Scripts based on Test Cases like TC CTI Call Disposition new Number Popup and New Lead Popup Validations.
+
+23/07/24 ---> Writing Test Scripts based on Test Cases like TC CTI Call Disposition Inbound Calls Popup and Disposition Dropdown
+
+24/07/24 ---> Writing Test Scripts based on Test Cases like TC CTI Call Disposition Outbound Calls Popup and Disposition Dropdown.
+
+25/07/24 ---> Writing Test Scripts based on Test Cases like TC CTI Call Disposition Inbound Submit and Outbound Cancel dispositions.
+
+26/07/24 ---> Writing Test Scripts based on Test Cases like TC CTI Call Disposition Calls from New number Minimize and Maximize Disposition Dropdown.
+
+29/07/24 ---> Writing Test Scripts CTI Disposition Calls Non-Sync Agent New number Inbound Calls and Transfer Lead or Customer Numbers.
+
+30/07/24 ---> Writing Test Scripts CTI Call Disposition Outbound Calls Transfer and CTI Non-Voice Quick dail, Missed call count and SSE notification.
+
+31/07/24 ---> Writing Test Scripts CTI Non-Voice Missed call SSE notification, Play voicemail, Player Play & Pause Download Voicemail, Number search.
+
+01/08/24 ---> Writing Test Scripts CTI Non-Voice Name Search, Delete Logs and CTI Non-Voice Outbound Conference to Agent Offline Activity Status
+
+02/08/24 ---> Writing Test Scripts CTI Non-Voice Outbound Conference to Agent Offline Admin CallLogs, CTI CallLogs and BeRight Back Activity Status
+
+05/08/24 ---> Writing Test Scripts CTI Non-Voice Outbound Conference to Agent BeRight Back Activity Status, Admin CallLogs and CTI CallLogs
+
+06/08/24 ---> Writing Test Scripts CTI Non-Voice Broadcasting Conference to Agent Offline Activity Status, Admin CallLogs, CTI CallLogs
+
+07/08/24 ---> Writing Test Scripts CTI Non-Voice BestFit RingLess Transfer to Agent Offline Activity Status, Admin CallLogs and CTI CallLogs
+
+08/08/24 ---> Writing Test Scripts CTI Non-Voice BestFit RingLess Transfer to Agent BeRightBack Activity Status, Admin CallLogs and CTI CallLogs
+
+09/08/24 ---> Writing Test Scripts CTI Non-Voice BestFit RingLess Conference to Agent Offline Activity Status, Admin CallLogs and CTI CallLogs
+
+12/08/24 ---> Writing Test Scripts CTI Non-Voice BestFit Ringing 10 secs Transfer to Agent Offline Activity Status, Admin CallLogs and CTI CallLogs
+
+13/08/24 ---> Writing Test Scripts CTI Non-Voice BestFit Ringing 10 secs Transfer to Agent Custom Message Activity Status, Admin and CTI CallLogs
+
+14/08/24 ---> Creating Regression Repository, Added Regression Test cases in the Test data sheets and Executing Regression for UAT environment
+
+16/08/24 ---> Writing Test Scripts CTI Non-Voice Round Robin Transfer to Agent Offline Activity Status, Admin CallLogs, and CTI CallLogs
+
+19/08/24 ---> Writing Test Scripts CTI Non-Voice Round Robin Conference to Agent Offline Activity Status, Admin CallLogs and CTI CallLogs
+
+20/08/24 ---> Writing Test Scripts CTI Non-Voice Round Robin Conference to Agent Custom Message Activity Status, Admin CallLogs and CTI CallLogs
+
+20/08/24 ---> Executing Regression Test cases like Leads, Quotes, Policies, Carriers in QA environment and fixing the failure Test cases
+
+21/08/24 ---> Creating Prod Repository, Added CE PROD Sanity Automation Suite Minimum Critical Scenarios and Executing Regression Test cases UAT
+
+22/08/24 ---> Got the Production URL, Created new users. Added CE PROD Sanity Automation Suite Minimum Critical Scenarios, and fixed the failures
+
+27/08/24 ---> Added PROD, Verify by clicking Live/Scheduled report tab and Verify whether user is able to schedule reports using create schedule option
+
+28/08/24 ---> Executed PROD Sanity Automation Suite, Added Test Cases in PROD Sanity, Create a new Service Request and Collaborations
+
+29/08/24 ---> Executed UAT Regression Suite, Added Test Cases in PROD Sanity, Attach a file inside the SR and Close, Download the attached file
+
+30/08/24 ---> SSO implementation for CTI cases, Added existing service accounts created by the IT team. For using those users executed the Scripts
+
+02/09/24 ---> Created methods SSO Login. Using SSO link login in the QA Environment. Exclude BMW, Transfer/Conference and Call forwarding  
+
+03/09/24 ---> SSO implementation for CTI cases. Modified All Scenarios and Base Class. Executed some Test Scripts CTI cases.
+
+04/09/24 ---> Executed SSO implementation CTI cases Test Scripts. Modified All Scenarios and Methods. Fixing failed SSO implementation CTI cases.
+
+05/09/24 ---> Modified Xpaths and Methods based on the CTI flow. Executed SSO  implementation CTI Test Cases. Fixing the failure Test Scripts.
+
+06/09/24 ---> Executed Regression for UAT Release Modules like Leads, Quotes, Policies, Carriers. SSO implementaion for CTI Test Cases.
+
+10/09/24 ---> Executed CE Production Sanity Automation Suite Minimum Critical Scenarios. Fixed the failure of Test Scripts.
+
+11/09/24 ---> Executed SSO implementation CTI cases. Fixing failed SSO implementation Modules Leads, Quotes, Policies, and Carriers.
+
+12/09/24 ---> Executed new Production Sanity Automation Suite Minimum Critical Scenarios. Fixed the failure of Test Scripts.
+
+13/09/24 ---> Executed SSO implementation CTI cases and Fixed the failure Test Scripts. Executed new Production Sanity Automation Suite.
+
+14/09/24 ---> Executed Production Regression Automation Suite Minimum Critical Scenarios. Fixed the failure of Test Scripts.
+
+16/09/24 ---> Executed CE Production Sanity Automation Suite Minimum Critical Scenarios. Fixed the failure of Test Scripts.
+
+17/09/24 ---> Executed CE Regression SET3 Carrier Test Cases and Fixed the failure of Test Scripts.
+
+18/09/24 ---> Executed CE Regression SET3 Policy Module Test Cases and Fixed the failure of Test Scripts.
+
+19/09/24 ---> Executed Carriers, Quotes, and Policies in SSO UAT and Worked on CE Regression SET3 Leads Module Test Cases
+
+20/09/24 ---> Executed Leads, Quotes, Carriers, and Policies in SSO PP and Worked on CE Regression SET3 Quotes Module Test Cases
+
+23/09/24 ---> Executed CE Production Sanity Automation Suite Minimum Critical Scenarios. Fixed the failure of Test Scripts.
+
+24/09/24 ---> Worked on Regression Sales SET2 Policy Test Cases and fixed the failed test cases.
+
+25/09/24 ---> Executed Leads Test Cases in the UAT Environment and Worked on Regression SET3 Policy, Carriers Test cases.
+
+26/09/24 ---> Worked on Regression SET3 Quotes and Carrier Test Cases and fixed the failed test cases.
+
+27/09/24 ---> Executed Regression SET3 Policies, Carriers Test Cases in both QA and UAT Environment.  
+
+30/09/24 ---> Executed CE Production Sanity Automation Suite Minimum Critical Scenarios. Worked on Regression SET3.
+
+01/10/24 ---> Worked on Regression SET3 Carriers Module Test Cases. Combined the flows executed and fixed the failures.
+
+03/10/24 ---> Worked on Regression SET3 Leads and Carriers Module Test Cases. Combined the flows executed and fixed the failures.
+
+04/10/24 ---> Executed CE UAT and Production Regression Automation Suite, Modules like Leads, Quotes, Policies, and Carriers.
+
+07/10/24 ---> Executed CE Production Sanity Automation Suite Minimum Critical Scenarios. Worked on Customer_ImportCustomerAndPolicies.
+
+08/10/24 ---> Worked on Regression SET3 Carriers and Policies Module Test Cases. Executed and fixed the failures.
+
+09/10/24 ---> Worked on the Regression SET3 Leads and Carriers Module. Combined all the Test cases, executed them, and fixed the failures.
+
+10/10/24 ---> Worked on the Carriers Module Optimization. Added the Validations for Carrier Test cases based on the demo.
+
+14/10/24 ---> Executed CE Production Sanity Automation Suite Minimum Critical Scenarios. Worked on Carriers Test Cases.
+
+15/10/24 ---> Worked on the Regression SET3 Quotes Module. Combined all the Test cases, executed them, and fixed the failures.
+
+16/10/24 ---> Worked on the Regression SET3 Leads Module. Combined all the Test cases, executed them, and fixed the failures.
+
+17/10/24 ---> Worked on the Regression SET3 Policies Module. Combined all the Test cases, executed them, and fixed the failures.
+
+18/10/24 ---> Worked on Leads and Carriers module test cases. Added validations and deleted the created lead and Action tasks. 
+
+21/10/24 ---> Executed CE Production Sanity Automation Suite and Executed Regression SET3 Leads, Quotes, Policies, and Carriers in QA.
+
+22/10/24 ---> Worked on Regression SET3 Carriers module updations and Executed. Added Agent Appointment, and Carrier Group test cases.
+
+23/10/24 ---> Executed Regression SET3 in UAT environment. Worked on CTI NonVoice test scripts executed them, and fixed the failures.
+
+24/10/24 ---> Executed Regression SET3 in UAT and Production environment. Worked on CTI NonVoice test scripts and executed in Production.
+
+25/10/24 ---> Worked on Regression SET3 Carriers, Quotes, and Policies module updates and executed. Added validations and deleted the Action tasks.
+
+28/10/24 ---> Executed Regression SET3 modules like Leads, Opportunities, Quotes, Policies, and Carriers in the Production Environment and Worked on CTI cases.
+
+29/10/24 ---> Working on Regression SET4 CTI module cases like CTI_Inbound_calls_forwarding_option, Missed_call_to_Agent, Voicemail_To_Agent
+
+30/10/24 ---> Working on Regression SET4 CTI module cases like CTI_AdminSMS_Call_SMS_MMS_Inbound, CTI_Logs_Status_SSE_notification_Status
+
+31/10/24 ---> Executed Regression modules like Leads, Opportunities, Quotes, Policies, and Carriers in the UAT and Production Environment 
+
+04/11/24 ---> Executed CE Production Sanity Automation Suite and Re-executed failed test cases. Worked on Regression SET4 CTI cases.
+
+05/11/24 ---> Worked on Regression SET4 CTI module cases and executed QA, UAT, and Prod environments. Executed Regression suite in UAT.
+
+06/11/24 ---> Executed CE Production Regression Automation Suite and Re-executed failed test cases. Worked on Regression SET4 CTI cases.
+
+07/11/24 ---> Executed CE Production Sanity Automation Suite. Executed UAT Sanity Automation Suite and Re-executed failed test cases.
+
+08/11/24 ---> Worked on Regression SET4 CTI module Disposition cases and UAT Sanity Automation Suite failed test cases.
+
+11/11/24 ---> Executed UAT Regression Automation Suite, and Production Sanity Automation Suite. Re-executed failed test cases.
+
+12/11/24 ---> Executed OtherCTIFeatures cases and Worked on Regression CTI cases. Created new users for CTI call disposition.
+
+13/11/24 ---> Working on Regression Call Disposition CTI cases and Fixing the failures. Executed UAT Regression Suite.
+
+14/11/24 ---> Executed UAT Sanity Automation Suite and Production Sanity Automation Suite. Working on Regression CTI cases.
+
+15/11/24 ---> Working on Regression CTI cases. Executed UAT Sanity Automation Suite and Production Sanity Automation Suite.
+
+18/11/24 ---> Working on Regression Call Disposition CTI cases and Executed Production Sanity Automation Suite.
+
+19/11/24 ---> Working on Regression Call Disposition CTI cases. Executed Mandatory, Non-Mandatory Fields and Disposition Dropdown.
+
+20/11/24 ---> Working on Regression CTI cases. Executed UAT Sanity Automation Suite and Production Sanity Automation Suite.
+
+21/11/24 ---> Working on Regression Call Disposition CTI cases. Executed Production Sanity Automation Suite.
+
+22/11/24 ---> Working on Landing Page Creation and Publish Test Case. Regression Call Disposition CTI cases.
+
+25/11/24 ---> Executed UAT Sanity Automation Suite and Production Sanity Automation Suite. Working on Regression CTI cases.
+
+26/11/24 ---> Working on Regression Call Disposition CTI cases. Executed Mandatory, Non-Mandatory Fields and Disposition Dropdown.
+
+27/11/24 ---> Working on Regression Call Disposition CTI cases. Executed Production Sanity Automation Suite.
+
+28/11/24 ---> Working on Regression Call Disposition CTI cases. Setup Local Jenkins and Executed CTI cases.
+
+29/11/24 ---> Leave
+
+02/12/24 ---> Working on Regression Call Disposition CTI cases. Executed Production Sanity Automation Suite.
+
+03/12/24 ---> Working on Regression Call Disposition Inbound and Outbound Call Transfer. Executed Production Sanity Automation Suite.
+
+04/12/24 ---> Working on Regression Call Disposition CTI cases. Executing Local Jenkins and Resolving failures.
+
+05/12/24 ---> Preparing for the Call Disposition CTI Demo. Working on Regression Call Disposition CTI cases. 
+
+06/12/24 ---> Working on Regression CTI cases. Executed UAT Sanity Automation Suite and Production Sanity Automation Suite.
+
+09/12/24 ---> Working on Regression Call Disposition CTI cases. Executing Local Jenkins and Resolving failures.
+
+10/12/24 ---> Working on Regression Inbound and Outbound Call Transfer. Executed Production Sanity Automation Suite.
+
+11/12/24 ---> QA Outing
+
+13/12/24 ---> Working on Regression CTI cases. Executing Local Jenkins in UAT environment and Resolving failures.
+
+16/12/24 ---> Working on Regression CTI cases. Executing Local Jenkins in Production environment and Resolving failures.
+
+17/12/24 ---> Executing Local Jenkins in Prod and UAT environment. Going through the Vendor Test cases. Explored in the application.
+
+19/12/24 ---> Executed CTI Regression cases in QA Environment and Executed Production Sanity Automation Suite.
+
+20/12/24 ---> Working on Regression Call Disposition CTI cases. Executing Local Jenkins and Resolving failures.
+
+23/12/24 ---> Working on regression CDR CTI cases in Prod, QA, and UAT environments, and resolving failures.
+
+24/12/24 ---> Working on inbound and outbound CDR CTI cases related to call transfer. Received the KT call scripts
+
+26/12/24 ---> Explore the Call Script Test cases in the application and Started Working on Call Script Test Cases.
+
+27/12/24 ---> Working on Regression Call Scripts Assignment for Agent Number for CTI Test Cases.
+
+30/12/24 ---> Working on Regression Call Scripts Assignment for Agent Number Priority of Call Script.
+
+31/12/24 ---> Executed Leads, Quotes, Opportunities, Policies, Carriers and CTI Test cases using new credentials.
+
+02/01/25 ---> Working on Regression Call Scripts Change call script(UPDATE) and Remove Call script for CTI Test Cases.
+
+03/01/25 ---> Working on CTI cases removed unwanted phone numbers and user credentials, and executed regression call scripts for all environments.
+
+06/01/25 ---> Executed UAT Regression Suite Opportunities, Policies, Agent, Commission, Landing Page, Carriers and Prod Sanity Automation Suite
+
+07/01/25 ---> Executed QA Regression Suite Sales Opportunities, Policies, Agent, Commission, Landing Page, Carriers and Checked failed Cases
+
+08/01/25 ---> Executed UAT and Prod Regression Automation Suite Sales Leads, Quotes, Opportunities, Policies, Carriers, CTI cases. 
+
+09/01/25 ---> Executed UAT Regression Automation Suite Sales Leads, Quotes, Opportunities, Policies, Carriers and CTI cases.
+
+10/01/25 ---> Executed Production Regression Automation Suite Sales Leads, Quotes, Opportunities, Policies, Carriers and CTI Call Dispo and Script
+
+13/01/25 ---> Working on Regression Automation Suite Sales Leads, Quotes, Opportunities, Policies, Carriers and CTI Call Disposition and Call Script
+
+16/01/25 ---> Executed Production Regression Automation Suite Sales Leads, Quotes, Opportunities, Policies, Carriers and CTI Call Dispo and Script
+
+17/01/25 ---> Executed AWS PP Environment Regression Automation Suite Sales Leads, Quotes, Opportunities, Policies, and Carriers in Cognito mode.
+
+20/01/25 ---> Executed UAT Sanity Automation Suite Sales Leads, Quotes, Opportunities, Policies, and Carriers
+
+21/01/25 ---> Executed Production Sanity Suite and Installed software configurations and Applications. Call Scripts Demo.
+
+22/01/25 ---> Executed Production Sanity Suite Sales Leads, Quotes, Opportunities, Policies, and Carriers and Installed Java, Jenkins.
+
+23/01/25 ---> Executed Production Sanity Suite Sales Marketing, Admin, Dashboard, Agents and Reports and Executed in Jenkins.
+
+24/01/25 ---> Executed Production Sanity Suite Sales Leads, Quotes, Opportunities, Policies, and Carriers and Executed CTI Cases in Jenkins.
+
+27/01/25 ---> Executed AWS PP Regression Automation Suite Sales Leads, Quotes, Opportunities, Policies, and Carriers in Cognito mode
+
+28/01/25 ---> Executed Production Sanity Suite and QA Regression Suite Sales Leads, Opportunities, Agents, Commission, Carriers and  CTI Cases
+
+29/01/25 ---> Executed AWS PP Regression Automation Suite Sales Leads, Quotes, Opportunities, Policies, and Carriers and Exploring schedule Jenkins job.
+
+30/01/25 ---> Executed UAT Regression Automation Suite Sales Leads, Opportunities, Carriers and Other CTI Cases, Call Disposition, Call Scripts.
+
+31/01/25 ---> Executed UAT Regression Automation Suite Sales Leads, Opportunities, Carriers, Commission, Admin Cases and Schedule Job in Jenkins.
+
+03/02/25 ---> Executed Production Sanity Suite Sales Leads, Quotes, Opportunities, Policies, and Carriers and Executed CTI Cases in Jenkins.
+
+04/02/25 ---> Executed UAT, Production Regression Automation Suite Sales Leads in Local Jenkins and Resolved the failures.
+
+05/02/25 ---> Executed UAT, Production Regression Automation Suite Sales Opportunities in Local Jenkins and Schedule Job in Jenkins.
+
+06/02/25 ---> Executed UAT, Production Regression Automation Suite Carriers in Local Jenkins and Resolved the failures.
+
+07/02/25 ---> Executed UAT, Production Regression Automation Suite Policy cases in Local Jenkins and Resolved the failures.
+
+10/02/25 ---> Executed UAT, Production Regression Automation Suite Marketing test cases in Local Jenkins and Resolved the failures.
+
+11/02/25 ---> Executed UAT, Production Regression Automation Suite Service test cases in Local Jenkins and Resolved the failures.
+
+12/02/25 ---> Executed UAT, Production Regression Automation Suite Reports test cases in Local Jenkins and Resolved the failures.
+
+13/02/25 ---> Executed UAT, Production Regression Automation Suite Commission test cases in Local Jenkins and Resolved the failures.
+
+14/02/25 ---> Executed Production Regression Automation Suite Agent test cases in Local Jenkins and Resolved the failures.
+
+17/02/25 ---> Executed UAT, Production Regression Automation Suite Sales Leads in Server Jenkins and Schedule Job in Server Jenkins.
+
+18/02/25 ---> Executed UAT, Production Regression Automation Suite Customer test cases in Local Jenkins and Resolved the failures.
+
+19/02/25 ---> Executed UAT, Production Regression Automation Suite Landing Page test cases in Local Jenkins and Resolved the failures.
+
+20/02/25 ---> Executed UAT, Production Regression Automation Suite Admin test cases in Local Jenkins and Resolved the failures.
+
+21/02/25 ---> Executed UAT, Production Regression Automation Suite Commission test cases in Sever Jenkins and Resolved the failures.
+
+24/02/25 ---> Executed UAT Regression Suite Sales Opportunities, Carriers, Commission, Agents and Other CTI Cases, Call Disposition, Call Scripts.
+
+25/02/25 ---> Executed Prod Regression Suite Other CTI Cases, Call Disposition, Call Scripts, Conference RL, RG, Broadcasting
+
+26/02/25 ---> Executed Prod Regression Suite Sales Opportunities, Carriers, Commission, Agents and Other CTI Cases, Call Disposition, Conference, Call Scripts.
+
+27/02/25 ---> Executed UAT, Production Regression Suite Other CTI Cases, Call Disposition, Call Scripts, Conference in Local Jenkins.
+
+28/02/25 ---> Executed Production Sanity Suite and Resolved the failures. Executed UAT Regression Suite in Local Jenkins.
+
+03/03/25 ---> Executed Production and UAT Sanity Suite in Local Jenkins and Resolved the failures.
+
+04/03/25 ---> Committed all the code changes, created merge requests, and merged them into the master. Executed the Prod on the server.
+
+05/03/25 ---> Executed Production Sanity Automation suite in server Jenkins and Resolved the failures.
+
+06/03/25 ---> Executed UAT Sanity Automation suite in Local Jenkins and Call Script CTI cases.
+
+07/03/25 ---> Executed UAT Sanity Automation suite in Local Jenkins and find the issue in upload file attachments.
+
+10/03/25 ---> Executed Production Sanity Automation suite in Local Jenkins and Call Script CTI cases.
+
+11/03/25 ---> Executed UAT Regression Automation suite in Local Jenkins and Resolved failed cases.
+
+12/03/25 ---> Executed SET2 Regression Automation suite in Local Jenkins and Resolved failed cases.
+
+13/03/25 ---> Executed SET1 Regression Automation suite in Local Jenkins and Resolved failed cases.
+
+14/03/25 ---> Executed UAT Regression Suite Sales Opportunities, Carriers, Commission, Agents and Other CTI Cases, Call Disposition, Conference, Call Scripts.
+
+17/03/25 ---> Executed Prod Regression Suite Sales Opportunities, Carriers, Commission, Agents and Other CTI Cases, Call Disposition, Conference, Call Scripts.
+
+18/03/25 ---> Working on Jenkins Server Prod Regression Automation Suite and Exploring the WebDriver Time out waiting for driver server failures. 
+
+19/03/25 ---> Executed Prod Regression Automation Suite in Local Jenkins and Server Jenkins Sales Opportunities, Carriers, Commission, Agents.
+
+20/03/25 ---> 
+
+21/03/25 ---> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+7
+Writing Test Scripts CTI Non-Voice BestFit RingLess Transfer to Agent Offline and BeRightBack Activity Status, Admin and CTI CallLogs
+8
+Writing Test Scripts CTI Non-Voice BestFit RingLess Conference to Agent Offline Activity Status, Admin CallLogs and CTI CallLogs
+9
+
+
+
+
+
+Taking Sample Application Link : https://letcode.in/test
+
+These are the Topies covered:
+	Input fields
+	Button fields
+	Select Drop-down
+	Frames/iframes
+	Drag and Drop
+	Simple Tables
+	Files Upload and Download
+	Forms
+	Radio and Check boxes
+
+
+
+
+
+
+
+
+Different Page Creation
+Different Tab Creation Same browser
+Text Input field
+Button Field
+Select Drop-Down
+Alert Popup Dialog - Facing Issue
+Radio Button
+Multi-Select - All Select using Shift
+Multi-Select - only Particular Select using Control
+Frames
+Elements
+Drag - Facing Issue
+Drop
+Table
+Upload File - Facing Issue
+Download File
+Forms
+
+
+
+Screenshot
+Test Reports
+
+
+
+
+
+
+
+
+
+
+
+
+
+
