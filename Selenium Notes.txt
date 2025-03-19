@@ -1,0 +1,387 @@
+//Dropdown
+
+package Selenium;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class Dropdown 
+{
+	public static void main(String[] args) throws InterruptedException 
+	{
+		System.setProperty("webdriver.chrome.driver", "./Software/chromedriver.exe");
+		WebDriver driver=new ChromeDriver();
+		Thread.sleep(1000);
+		driver.manage().window().maximize();
+		driver.get("file:///D:/QA/MultiSelect.html");
+		Thread.sleep(2000);
+		WebElement ele = driver.findElement(By.id("Menu"));
+		ele.click();
+		Select s=new Select(ele);
+		boolean b = s.isMultiple();
+		System.out.println(b);
+        s.selectByValue("Gobi");
+        s.selectByIndex(2);
+        s.selectByVisibleText("Noodalls");
+        WebElement fs = s.getFirstSelectedOption();
+        System.out.println(fs.getText());
+        List<WebElement> as = s.getAllSelectedOptions();
+        int size=as.size();
+        for(int i=0;i<size;i++)
+        {
+        	String se=as.get(i).getText();
+        	System.out.println(se);
+        }
+		Thread.sleep(2000);
+		s.deselectAll();
+		Thread.sleep(2000);
+		List<WebElement> op=s.getOptions();
+		int size1=op.size();
+		for(int i=0;i<size1;i++)
+		{
+			String opt=op.get(i).getText();
+			System.out.println(opt);
+		}
+		System.out.println(s.getWrappedElement().getText());
+		driver.quit();
+	}
+}
+
+
+//Get URL,Title,PageSource
+
+package Selenium;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Get_Url_Title_Pagesource 
+{
+	public static void main(String[] args) throws InterruptedException 
+	{
+		System.setProperty("webdriver.chrome.driver", "./Software/chromedriver.exe");
+		WebDriver driver=new ChromeDriver();
+		Thread.sleep(1000);
+		driver.manage().window().maximize();
+		driver.get("https://reqres.in/");
+		Thread.sleep(2000);
+		String title=driver.getTitle();
+		System.out.println(title);
+		String url=driver.getCurrentUrl();
+		System.out.println(url);
+		Thread.sleep(2000);
+		String page=driver.getPageSource();
+		System.out.println(page);
+		Thread.sleep(2000);
+		driver.quit();
+	}
+}
+
+
+//SendKeys Keyboard Functionalities:
+
+
+package Selenium;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Sendkeys_Keyboards 
+{
+	public static void main(String[] args) throws InterruptedException 
+	{
+		
+		System.setProperty("webdriver.chrome.driver", "./Software/chromedriver.exe");
+		WebDriver driver=new ChromeDriver();
+		Thread.sleep(1000);
+		driver.manage().window().maximize();
+		driver.get("file:///D:/QA/Selenium/Keys.html");
+		Thread.sleep(2000);
+		WebElement ele = driver.findElement(By.xpath("//input[@values='Anand']"));
+		ele.sendKeys("Anandhakumar");
+		Thread.sleep(2000);
+		ele.sendKeys(Keys.ENTER);
+		Thread.sleep(2000);
+		ele.sendKeys(Keys.CONTROL+"a");
+		Thread.sleep(2000);
+		ele.sendKeys(Keys.CONTROL+"c");
+		Thread.sleep(2000);
+		WebElement ele1 = driver.findElement(By.xpath("//input[@values='kumar']"));
+		ele1.sendKeys(Keys.CONTROL+"av");
+		Thread.sleep(2000);
+		ele1.sendKeys(Keys.CONTROL+"a", Keys.BACK_SPACE);
+		Thread.sleep(2000);
+		ele.clear();
+		Thread.sleep(2000);
+		ele1.sendKeys("Kumar");
+		Thread.sleep(2000);
+		ele1.sendKeys(Keys.CONTROL+"a", Keys.DELETE);
+		Thread.sleep(2000);
+		driver.close();
+	}
+}
+
+
+//Navigate Functions:
+
+package Selenium;
+
+import java.awt.AWTException;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+
+public class Navigation 
+{
+	public static void main(String[] args) throws InterruptedException, AWTException 
+	{
+		System.setProperty("webdriver.edge.driver", "./Software/msedgedriver.exe");
+		WebDriver driver=new EdgeDriver();
+		Thread.sleep(1000);
+		driver.manage().window().maximize();
+		driver.get("https://www.google.com");
+		Thread.sleep(2000);
+		System.out.println(driver.getTitle());
+		driver.navigate().to("https://reqres.in/");
+		Thread.sleep(2000);
+		System.out.println(driver.getTitle());
+		driver.navigate().back();
+		Thread.sleep(2000);
+		System.out.println(driver.getTitle());
+		driver.navigate().refresh();
+		Thread.sleep(2000);
+		driver.navigate().forward();
+		System.out.println(driver.getTitle());
+		Thread.sleep(2000);
+		driver.close();
+	}
+}
+
+
+//Robot Keys: Lauch from Microsoft Edge
+
+package Selenium;
+
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+
+public class Robot_Key_MicrosoftEdge 
+{
+	public static void main(String[] args) throws InterruptedException, AWTException 
+	{
+		System.setProperty("webdriver.edge.driver", "./Software/msedgedriver.exe");
+		WebDriver driver=new EdgeDriver();
+		Thread.sleep(1000);
+		driver.manage().window().maximize();
+		driver.get("https://www.google.com");
+		Thread.sleep(2000);
+		Robot robot = new Robot();
+		robot.keyPress(KeyEvent.VK_CONTROL);
+		robot.keyPress(KeyEvent.VK_T);
+		robot.keyRelease(KeyEvent.VK_CONTROL);
+		robot.keyRelease(KeyEvent.VK_T);
+		Thread.sleep(2000);
+		driver.navigate().to("https://reqres.in/");
+		Thread.sleep(2000);
+		driver.close();
+	}
+}
+
+
+//JavaScriptExecution:(ScrollBy):
+
+package Selenium;
+
+import java.io.IOException;
+
+import org.apache.poi.EncryptedDocumentException;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Scrollby 
+{
+	public static void main(String[] args) throws InterruptedException, EncryptedDocumentException, IOException 
+	{
+		System.setProperty("webdriver.chrome.driver", "./Software/chromedriver.exe");
+		WebDriver driver=new ChromeDriver();
+		Thread.sleep(1000);
+		driver.manage().window().maximize();
+		driver.get("https://reqres.in/");
+		Thread.sleep(2000);
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		for(int i=0;i<15;i++)
+		{
+			js.executeScript("window.scrollBy(0,500)");
+			Thread.sleep(500);
+		}
+		for(int j=0;j<15;j++)
+		{
+			js.executeScript("window.scrollBy(0,-500)");
+			Thread.sleep(500);
+		}
+		driver.close();
+	}
+}
+
+
+//TestNG:
+
+package Testng;
+
+import org.testng.annotations.*;
+
+public class Sample 
+{
+	@BeforeTest
+	public void loginToApplication()
+	{
+		System.out.println("Login To Application");
+	}
+	@BeforeMethod
+	public void ConnectedToDB()
+	{
+		System.out.println("DB Connected");
+	}
+	@AfterMethod
+	public void DisConnectedToDB()
+	{
+		System.out.println("DB DisConnected");
+	}
+	
+	@AfterTest
+	public void logoutFromApplication()
+	{
+		System.out.println("Logout from Application");
+	}
+	@Test(priority = 1,description="This is a Login Test")
+	public void atest1()
+	{
+		System.out.println("test1");
+	}
+	@Test(priority = 2,description="This is a Logout Test")
+	public void atest2()
+	{
+		System.out.println("test2");
+	}
+}
+
+
+//Verify Title Using Assert:
+
+package Testng;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+public class Assert1 
+{
+	@Test
+	public void titleTest() throws InterruptedException
+	{
+		System.setProperty("webdriver.chrome.driver", "./Software/chromedriver.exe");
+		WebDriver driver=new ChromeDriver();
+		Thread.sleep(1000);
+		driver.manage().window().maximize();
+		driver.get("https://www.google.com/");
+		Thread.sleep(1000);
+		String ExpectedTitle = "Google";
+		String ActualTitle = driver.getTitle();
+		Assert.assertEquals(ExpectedTitle,ActualTitle);
+		driver.close();
+	}
+}
+
+//Verify Title Using SoftAssert:(Error in Title)
+
+package Testng;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
+
+public class SoftAssert1 
+{
+	@Test
+	public void titleTest() throws InterruptedException
+	{
+		SoftAssert softassert = new SoftAssert();
+		System.setProperty("webdriver.chrome.driver", "./Software/chromedriver.exe");
+		WebDriver driver=new ChromeDriver();
+		Thread.sleep(1000);
+		driver.manage().window().maximize();
+		driver.get("https://www.google.com/");
+		Thread.sleep(1000);
+		String ExpectedTitle = "Googleele";
+		String ActualTitle = driver.getTitle();
+		System.out.println("Verig=fing Title");
+		System.out.println(ExpectedTitle);
+		System.out.println(ActualTitle);
+		softassert.assertEquals(ExpectedTitle,ActualTitle,"title verification failed");
+		driver.close();
+	}
+}
+
+
+//Group Testcases:
+
+package Testng;
+
+import org.testng.annotations.Test;
+
+@Test(groups = "User-Registration")
+public class Group_Testcases 
+{
+	@Test(priority = 1,groups="Regression")
+	public void atest1()
+	{
+		System.out.println("test1");
+	}
+	@Test(priority = 2,groups="Regression")
+	public void atest2()
+	{
+		System.out.println("test2");
+	}
+	@Test(groups={"Regression","bvt"})
+	public void atest3()
+	{
+		System.out.println("test3");
+	}
+	@Test(groups="bvt")
+	public void atest4()
+	{
+		System.out.println("test4");
+	}
+}
+
+
+
+
+
+
+
+
+Selenium Tutorials:
+
+https://speridiantec.sharepoint.com/sites/QASperidian/_layouts/15/stream.aspx?id=%2Fsites%2FQASperidian%2FShared%20Documents%2FGeneral%2FSelenium%20Automation%20Framework%2FAutomation%20Framework%20Walkthrough%5FShany%2Emp4&referrer=Teams%2ETEAMS%2DELECTRON&referrerScenario=recent%2Drecent
+
+
+
+
+
+
