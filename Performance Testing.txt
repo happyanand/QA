@@ -1,0 +1,15 @@
+Performance Testing:
+	Testing the Stability and Response Time of an application by applying Load
+
+Types:
+	1)Load
+	2)Stress
+	3)Scalability
+	4)Volume
+	5)Soke or Endurance Testing
+
+Performance Testing Tool: JMeter
+	1)Thread Groups - Simulators means (no of Users send multiple Requests)
+	2)Sampleres  -  FTP,HTTP,JDBC Requests,BSF,Access Log,SMTP Samplers
+	3)Listeners  -	Show Results in different format (Graphs,Table,Tree,Log)
+	4)Configurations  - CSV Data set config, HTTP cookie Manager, Login Config Elements, HTTP Requests defaults, FTP Requests defaults
