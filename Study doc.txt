@@ -120,7 +120,7 @@ Scrum Model:
 	Step by step Procedure which helps team to work together and develop a new s/w
 
 Release:
-	Starting from gathering the requirement followed by develop the s/w tests the s/w for multiple cycles and deploy s/w into the production server 
+	Starting from gathering the requirement followed by develop the s/w tests the s/w for multiple cycles and deploy s/w into the production serever 
 	Combination of sprints is called release
 
 Epic:
@@ -493,7 +493,7 @@ Combine Multiple String:
 	str1.concat(str2).concat(str3) 
 
 How choose Testcases for Automation :
-	First Test for Manualy atleast one time. Then you should go for Automation
+	First Test for Manualy atleast one time you should go for Automation
 
 8 types of Locators:
 	TagName
@@ -519,7 +519,7 @@ When to use wait Statement:
 
 Desired Capability : Key and Value you want specify
 
-When you wil get stale Element Reference Exception : The page will get Refreshed we need to use findBy anotation
+When you wil get stale Element Reference Exception : The page will get Refreshed 
 
 How to find Number of Element Present in the Dropdown: Get Text / Get Attribute
 
@@ -553,7 +553,6 @@ What are the use of Annotations in TestNG:
 	Parameters
 
 What is main role of XML file in TestNG:
-Execute the Automation Test Scripts
 
 How to pass the parameter to test methods
 	@Parameters or High Test Context
@@ -569,7 +568,7 @@ What is Object Repository
 	
 What are the main components in your framework:
 	Based on Page Object Model values classes
-	Configuration file, pom.XML file, TestNG XML file, Log4G Property file and Utilites- Excel files, Screen Shots, Config.propertyfile will stored into utilities
+	Configuration file pom.XML file, TestNG XML file, Log4G Property file and Utilites- Excel files, Screen Shots, Config.propertyfile will stored into utilities
 	
 What is Basicaly Maveen pom.xml contains Plugins Dependencies Selenium,Testng,Junit,JXL,Appache Poi
 
@@ -594,8 +593,8 @@ How to skip testcase condition in TestNG:
 
 
 What is the use of Listners Annotations
-	TestNG providers different type of Listners in case event get's triggred mostly used Itech Listerner Interface in that have methods ON test Start, 
-ON test success,ON test Failure, ON test Skipped
+	TestNG providers different type of Listners in case event get's triggred mostly used Itech Listerner Interface in that have methods ON test Start, ON test success, 
+ON test Failure, ON test Skipped
 
 How can run testcases in parallel:
 	We Will provide attribute test level and class level one is Parallel and another Thread count
@@ -671,7 +670,7 @@ Public Webelement Gmailuserid WebEdit
 
 Public Action Class:
 	Actions a = new Actions(webelemnet reference);
-	a.doubleclick();
+	a.doubleclcick();
 	
 
 PageAction Class:
@@ -838,31 +837,16 @@ Properties File (Read and Write):
 
 
 
-SQL:
 
-4 th Maximum Salary:
 
-select sal
-from emp a
-where 4 = (select count(distinct(sal))
-           from emp b
-	   where a.sal <= b.sal);
 
-5 th Minimum Salary:
 
-select sal
-from emp a
-where 5 = (select count(distinct(sal))
-	   from emp b
-	   where a.sal >= b.sal);
+
 	 
 
-2 rd Maximum Salary:
 
-select max(sal)
-from emp
-where sal < (select max(sal)
-	     from emp);
+
+
 
 
 
@@ -952,58 +936,7 @@ Otherwise most of the time with the BDMP team will be handling all these sponsor
 Project: Medicare
 
 
-Resume Points:
 
-
-Experience Summary 
-
-•	1.5 years of experience in Software Testing which majorly involves Automation Testing.
-•	Good knowledge of STLC, SDLC and experience in Agile Methodology.
-•	Expertise in designing and execution of Test cases for both Manual and Automation and Defect life cycle.
-•	Expertise in Automation of Test Cases using Selenium Java and TestNG framework.
-•	Experience in establishing Automation Frameworks for Selenium (Java).
-•	Experience in performing different types of testing like Functional, Mobile, Cross Browser and Regression testing.
-•	Involved in Smoke, Integration, GUI, Sanity and End to End testing. 
-•	Knowledge in User Acceptance Testing and Testing on Production environment
-•	Familiar with Programming Fundamentals (Object-oriented Programming)
-•	Defect tracking and project management tools – JIRA, Redmine 
-
-Technical Skills  
-•	Agile, Various Levels of Testing including Functional testing, Smoke Testing, Regression Testing, Sanity Testing Manual and Automation Testing (Selenium Java).
-•	Automation Testing (POM Framework), TestNG, 
-•	Test Case designing and execution, Defect Logging and Retesting
-•	Java, SQL, MySQL, SQL Server, ETL Automation Excel Macros. 
-
-Projects Summary 
-
-Project: EmployeeEngage (BenefitAlign)
-Organization: Speridian Technologies
-Designation:  Associate
-Duration: Mar 2023 – Feb 2024
-Tools: Eclipse (Selenium - Java), POM, TDD, Extent Reports, GitLab
-
-Project Description
-
-EmployeeEngage is cloud based SAAS application designed for enrolling to the various Insurance plans provided. User has the privilege to track the end to end progress of the application starting from enrolling for an Insurance till claiming it
-
-Roles and Responsibilities
-
-	Understanding the Requirements and Functional specifications of the Application, preparing traceability matrix to ensure that all requirements are covered with respective test cases and used Redmine for tracking, reporting and managing bug life cycle during the testing process.
-	Working with different stakeholders, which includes Business Analyst, QA Team, Developers.
-	Developed functional scripts and rerunning those scripts again at the time of Regression testing.
-	Adept in scripting using Java-Selenium and POM automation framework, designing and implementing Selenium with TDD framework.
-	Good Understanding of requirements and peer review.
-	Involved in defining test strategies and creating comprehensive test plans.
-	Attended Daily Standups on Task status updates.
-	Experienced in creating and maintaining automation scripts using Selenium with Java.
-	Performing different types of testing like Functional, Regression testing.
-
-
-Educational Qualification:
-
-B.Tech - Information Technology
-
-Software Testing (Manual, SQL, Java, Selenium) Course in Qspider
 
 
 
