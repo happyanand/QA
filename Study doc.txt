@@ -1,0 +1,1060 @@
+Functional Testing:
+	Testing each and every components of an application throughly or regorusly against customer requirement specification is called as Functional Testing
+
+Types:
+	Over Testing
+	Under Testing
+	Optimize Testing 
+
+
+Functional Testing:
+
+Testing functional requirements and specifications of an application
+It verifies the operations and actions of an application.
+it is based on customer’s requirements.
+It is performed before non-functional testing.
+Check login functionality.
+
+Examples of Functional Testing Types:
+Unit testing
+Smoke testing
+User Acceptance
+Integration Testing
+Regression testing
+Localization
+Globalization
+Interoperability
+
+
+Non Functional Testing:
+
+it is performed to verify the non-functional requirements of the application
+It verifies the behavior of an application.
+It is based on expectations of customer.
+It helps to improve the performance of the application.
+The dashboard should load in 2 seconds.
+
+Examples of Non-functional Testing Types
+Performance Testing
+Volume Testing
+Scalability
+Usability Testing
+Load Testing
+Stress Testing
+Compliance Testing
+Portability Testing
+Disaster Recover Testing
+
+Alpaha Testing & Beta Testing
+
+Alpha Testing is performed by the Testers within the organization whereas Beta Testing is performed by the end users.
+Alpha Testing is performed at Developer’s site whereas Beta Testing is performed at Client’s location.
+Reliability and Security testing are not performed in-depth in Alpha Testing while Reliability, Security and Robustness are checked during Beta Testing.
+Alpha Testing involves both Whitebox and Blackbox testing whereas Beta Testing mainly involves Blackbox testing.
+
+User Acceptance Testing (UAT), or application testing: 
+	is the final stage of any software development or change request lifecycle before go-live. 
+	It is the final stage of any development process to determine that the software does what it was designed to do in real-world situations
+
+
+Software Testing:
+	The process of catching or identifing defect in the software is called software testing
+
+Purpose of Testing: 
+	Developer develop the software there might be some defect so we want to test the software/application 
+
+Error Free Software to Customer:
+	Impossible to send s/w to defect free try to launch defect free
+
+When There is No Requirement How to Test s/w : 
+	Exploratory Testing : Understand the Application identify all possible scenarios document the scenarios and Test that Application
+
+There is One Login Module How to Test that:
+	Ask for Requirement. Understand Requirement,Write Test cases.First Test for Smoke Testing Basic and Critical Features
+
+How to Test Amount Field: 
+	Apply for Testcase Design Technic - Boudary Value Analysis - The input is range of values then design the testcase for A,A+1,A-1 and B,B+1,B-1
+
+When Dev Say Defect is not Reproduceable:
+	Technology not support, Environment issues
+
+
+2 Passitive and 2 Negative Scenarios for whatsapp application:
+	To check that when user is login to whatsapp application
+	To Check that when user update status into the application
+
+	To Check that when user A switch off the internet and send to user B
+	To Check that when user enter invalid credentials try to login
+	To Check that when user A send message to user B message recevied by user C   
+
+End to End Testing/ System Testing:
+	Navigating to all feature check wheter last feature working expected or not.
+	It's End to End Testing Done by Test Engineer
+
+Integration Testing:
+	Testing the Dataflow between two or more modules
+
+InFormal Testing:
+	Some Companies not Document for any Defect,Traceability Matrix,Testcase, Test Plan
+
+Formal Testing:
+	They Documents Every thing and Conduct Meetings
+
+Usability Testing:
+	Test the user friendliness of the application
+
+Agile Model:
+	It is an Iterative and Incremental Approach.As a company we will flexible to takeup all the requirement changes develop the changes and Test the changes give the
+quality software to the customer with the short span of time
+
+Agile Flavours:
+	Scrum Model
+	Extreme Programming
+	Feature Driven Development/ Test Driven Development
+	Crystal clear
+	Lean and Kanbon
+	DSDM(Dynamic System Development Method)
+	ASDM(Adaptive Software Development Method)
+
+Scrum Model:
+	Step by step Procedure which helps team to work together and develop a new s/w
+
+Release:
+	Starting from gathering the requirement followed by develop the s/w tests the s/w for multiple cycles and deploy s/w into the production server 
+	Combination of sprints is called release
+
+Epic:
+	Complete set of Requiremet is called epic
+
+Story:
+	Stories are features/modules/functionalites
+	one epic consists of multiple stories
+	
+Story Point:
+	is a rough estimation given by Developer and TE to develop and Test every inditual stories
+
+Scrum Meeting:(Daily Standup meeting)
+	Conducted by scrum master. will stritly bounded for 15mins
+	What did Yesterday
+	what will do today
+	Any abstracles or Imprediments
+
+Agile Meeting's:
+	Sprint Planning
+	Scrum Meeting
+	Sprint Retrospective
+	Release Retrospective
+	Bug Triage
+	Product Backlog gromming
+
+Who is Scrum Master:
+	Is a Person.he will responsible for conduct daily Standup meeting,Allocate task to dev,TE
+
+
+Release Management/Configuration Management:
+	The Process of preparing the build, Installing the build into different server,uninstalling the build,Developing s/w and Testing s/w and Deploy s/w into 
+Production this entire process is called Release Management
+
+Patch:
+	is a piece of s/w which consist of modified program.To install patch not required to uninstall build
+
+Build:
+	Developer will write the code do whitebox testing compile the code, copress the code into a file that compressed file is called build
+
+Test Cycle:
+	Total Time taken to test one complete build
+
+Capacity:
+	Total amount of available hours of every indidual engineers for the given sprint	
+
+Velocity:
+	Total amount of work completed by every indidual engineers in the given sprint
+
+Release Notes:
+	It's a Document given to customer. Created by TE.it contains Pending and Open Defect Document, Procedure to install s/w, Version of s/w
+
+Deliverables:
+	These are Output/Outcomes of Testing team given to customer by end of the project
+	Test Plan
+	Testcase and Test Scenario Document
+	Traceability Matrix
+	Testscript Document
+	Defect Report
+	Release Notes
+	Graps and Matrics
+
+Test Approach:
+	we will decide how we go about and test the project in feature
+	part of Testplan
+
+Test Statergy:
+	It is a Document prepared by PM at organisational level which consists of multiple testplan and projects.
+
+Top Quality of Software Tester:
+	TE will understand Req
+	write Testcases and Scenarios
+	TE do Optimize Testing
+	TE know Log Defect into the tool
+	TE do Testcase Execution
+	TE conduct brainstroming meeting
+
+Regression and Retesting Differences:
+Release Condidate - Confirmation
+unchanged or old  - When Dev fix the defect test that application defect is fixed or not
+Done pass testcases - Done Fail Testcases
+Generic - 	Planning
+go for Automation - Don't go for Automation
+takes low priority - High Priority
+
+
+Smoke and Sanity Testing:
+
+Shadow / wide Testing  - Narrow or deep Testing
+Passitive Testing - Both Possitive and Negative Testing
+Here we have Doc Testcase - Don't have testcase document
+Go for Automation - Don't go for Automation
+Both Dev and TE will Do - Only TE will Do
+
+
+Performance Testing:
+	Testing the stability and responce time of an application by appling the load
+	Load - Designed number of users
+	Stablity - ability to handle users
+	
+types:
+	Load - less than desired number of users
+	Stress - Greter than desired number of users
+	Scalability - Greter than desired number of users check break point of the application
+	Volume - Appling huge amount of Data
+	Scoke/Endurance - Appling load for Particular Period of Time
+
+
+Bigbang Method:
+	It is an non incremental integration Testing.
+	Don't no who is the parent and child module mix the module and check dataflow between the modules
+
+Principal's in S/W Testing:
+	TE test the s/w to show the presence of defect in the s/w
+	we should not do exhastive testing
+	we should do early testing
+	we should follow pestiside paradox
+	we should follow defect clustering
+	we should do optimize testing
+	we can't possible to give 100% defect free s/w	
+
+Pestiside Paradox:
+	if you execute same set of testcase's this testcase's might not found any other defect's.that why we should keep on reviewing and updating the testcases 
+
+ 
+Defect Clustering:
+	Some of the modules contains more number of defects.because of the defects we should divided into some other modules
+
+	When bugs are not properly distributed all over the application then some minor quantity of features causes a major quality-related issue in an application 
+which is called defect clustering.
+
+Testcase:
+	It step by step procedure to test a feature which gives all possible scenarios for one particular requirement.
+
+Structure of Testcase:
+	Header
+	Body
+	Footer
+
+Header:
+	Testcase Name/Testcase ID
+	Project Name
+	Release Name
+	Requirement Number
+	Module Name
+	Pre condition 
+	Test data/Test Harmness
+	Post condition
+	Severity
+	Testcase type
+	Brief discription
+	Testcase execution hours
+
+Body:
+	Stepno	Action/Discription	input	ExpectedResult	ActualResult	Status	Comments
+
+Footer:
+	Author
+	Reviewed By
+	Approved By
+	Approval Date
+
+
+Test Plan:
+	It is document which drives all the future testing activites
+
+Stages:
+	Objective
+	Scope
+	Test Methodology
+	Test Approach
+	Assumption
+	Risk
+	Backup Plan
+	Roles and Responsibilities
+	Scheduling
+	Defect Tracking
+	Test Bed/ Test Environment
+	Entry and Exit Critria
+	Test Autoation
+	Deliverables
+	Templates
+
+Defect:
+	If a feature/functionality is not working according to the customer requirement
+	Deviation from the customer requirement specification
+
+Severity:
+	Impact of the customer bussiness work flow according to the customer requirement
+
+types:
+	Blocker
+	Critical
+	Major	
+	Minor
+
+Priority:
+	Impartance given to developer to fix the defect
+
+Types:
+	High
+	Medium
+	Low
+
+Defect Life Cycle:
+	New/Open
+	Assigned
+	Fixed 
+	Closed
+	Reopen
+	Invalid or It's not a defect or rejected
+	Duplicate
+	Defect can't be fixed or won't fixed
+	Issue is not reproduceable or work for me
+	Fix the defect in future releases or Postponed
+	Request for enhancement
+	
+Request for Enhancement:
+	TE find a defect in the s/w and this defect is not part of requirement.then dev will tell it is RFE. 
+
+Defect Report:
+	Defect ID
+	Project Name
+	Release Name
+	Module Name
+	Build Number
+	Status
+	Severity
+	Priority
+	Reporter
+	Testcase name
+	Test Environment
+	Test data
+	Assigned to
+	Bug Summary
+	Detailed Discription
+		OS, OS version, Browser, Browser Version
+	Steps to reproduce
+	Observation
+	Excepted result
+	Actual Result
+	Attach Screenshot
+	CC
+	Coments
+
+
+Drawbacks of Manual Testing:
+	Time taken is more
+	More resource utilization
+	it is tradious or monotones job
+	there will be no consistancy in testing
+
+When to go for Automation:
+	Product is completly stable
+	There are more number of regression testcases
+	Product is manualy tested for one or two releases
+	When there are no blocker,critical defects
+	When there are No major requirements changes done by customer
+	Once after doing manual testing for 3 to 5 test cycles
+
+SDLC:
+	It is a step by step procedure/standard procedure to develop a new software
+
+	Waterfall model
+	Sperial model
+	V & V model
+	Prototype model
+	Derived model
+	Hybrid model
+	Agile model
+
+V & V Model: ( Verification & Validation)
+
+Verification:
+	Verifing CRS, SRS, HLD, LLD check whether it is according to the customer requirement
+
+Validation: 
+	Testing the functionality/behavior of an application by applying the testcases
+
+
+STLC:
+	It is a step by step procedure/standard procedure to Test a new software
+	
+	SDLC is a part of STLC
+	Defect life cycle is a part of STLC
+	Every company should follow STLC in order to test any new projects
+
+Stages:
+	System Study
+	Write Test Plan
+	Write Testcases
+	Prepare Traceability matrix
+	Testcase execution
+	Defect Tracking
+	Testcase exection report
+	Project closure meeting/Retrospective meeting
+
+
+Write Test Plan:
+	System Study
+	identify all possible scenarios
+	write testcases
+	Review Testcases
+	Fix the review comments
+	Testcase approval
+	Store testcases in testcase repository
+
+Test Statergy:
+	Set of Guidelines.How the testing needs to be done.
+
+
+
+Traceability Matrix:RTM - Requirement Traceability matrix 
+	Traceability matrix is a document which ensure that each and every requirement got atleast one test cases.
+
+
+
+
+
+Automation Selenium :
+
+Java:
+
+Inheritance: 
+	Inheriting properties from one class to another class
+
+Purpose : 
+	Code Reusability using Extends Keyword
+
+Static Keyword:
+	Any Member which is declared with keyword static is called static member of the class
+	Static is one class
+	Once intialize canot reinitialize
+
+Super Keyword:
+	Refers Parent Class
+	
+Access Modifier:
+	Public - Any where
+	Private - Inside class only
+	Protected - Inside Package Outside package use Inheritance extends keyword
+	Default - within the package. It cannot be accessed from outside the package.
+
+Abstract Class : Keyword as Abstract in Abstract method, We can create object for Abstract class
+
+Interface : Mandatory should present abstract, It support Multiple Inheritance, We canot create object for Interface class
+
+
+In iterface Methods are default Public
+
+Drawback of ForEachLoop :
+	We canot print Element in Reverse order
+	we canot print alternative elements
+	here we don't spicify any condition
+	it support for only Array or Collection Type
+	
+for(Datatype VariableName : Array/Collection Type)
+	{
+	}
+
+Why we need to handle Exception:
+	If there is an exception. if canot handle that exception rest of the code canot execute
+
+How to handle that exception:
+	Using Try & Catch or Throws
+
+If don't know the exception which will occure we can give just Exception
+
+Combine Multiple String:
+	str1.concat(str2).concat(str3) 
+
+How choose Testcases for Automation :
+	First Test for Manualy atleast one time. Then you should go for Automation
+
+8 types of Locators:
+	TagName
+	ID
+	Name
+	Class Name
+	Linktext
+	PartialLinktext
+	Css Selector
+	Xpath 
+
+Which one mostly prefered
+	Xpath because handle Partialy Dynamic Element(We use contains Method), Completly Dynamic Element
+
+Get Text : 
+	Return Innertext of Element 
+
+Get Attribute Value :
+	Value of any attribute
+
+When to use wait Statement:
+	Synchronization problems occured time.Automation Script will execute faster but system will take some time
+
+Desired Capability : Key and Value you want specify
+
+When you wil get stale Element Reference Exception : The page will get Refreshed we need to use findBy anotation
+
+How to find Number of Element Present in the Dropdown: Get Text / Get Attribute
+
+Appache Poi Data Driven Testing : Methods  GetSheetAt,GetRow,GetCell,GetStringValue
+
+Which features are you used in Framenworks from Testng :
+	Prioritize
+	Data Providers
+	Parameters
+
+How will execute the methods:
+	Based on Prioritise
+	By default Alphabetical order
+	
+	If I don't Spesify Means Consider O Priority after will execute Priority 1
+
+What are the use of Annotations in TestNG:
+	Controll the order of Execution
+	Before Method
+	After Method
+	Before Class
+	After Class
+	Before Test
+	After Test
+	Before Suite
+	After Suite
+	Before Group
+	After Group
+	Find By
+	Data Provider
+	Parameters
+
+What is main role of XML file in TestNG:
+Execute the Automation Test Scripts
+
+How to pass the parameter to test methods
+	@Parameters or High Test Context
+
+Listerners:
+	On test Success
+	On test Failure
+	On test skip
+
+What is Object Repository
+	Using Page Object Model we can create page object repository  repository means all the webelements in one location
+
+	
+What are the main components in your framework:
+	Based on Page Object Model values classes
+	Configuration file, pom.XML file, TestNG XML file, Log4G Property file and Utilites- Excel files, Screen Shots, Config.propertyfile will stored into utilities
+	
+What is Basicaly Maveen pom.xml contains Plugins Dependencies Selenium,Testng,Junit,JXL,Appache Poi
+
+
+Using Command Promot to Test the Application:
+	nvm, clean, Test, Install using this run your project command promot
+
+Diff Junit and Testng
+
+Parameters Canot be passed in Junit Passed in TestNG & Prepare report
+
+Same Priority will have two methods which one execute first - Based on Alphabetical order
+
+How to run testmethod multiple times in Loop any Parameters:
+	Based on Invocation Count Parameter method set Time 
+
+If you execute two testcases it will execute within 60 sec above that time mark it has fail how to do:
+	Timeout attribute assign value to Timeout.If this doesn't executed within time frame then Timeout Exception
+
+How to skip testcase condition in TestNG:
+	Mark the Testcase as Skipped 
+
+
+What is the use of Listners Annotations
+	TestNG providers different type of Listners in case event get's triggred mostly used Itech Listerner Interface in that have methods ON test Start, 
+ON test success,ON test Failure, ON test Skipped
+
+How can run testcases in parallel:
+	We Will provide attribute test level and class level one is Parallel and another Thread count
+
+What is Factory and Data Provider Annotation:
+	  If your Declare Factory run all the test methods and Data providers indidual test methods only
+
+
+What is Before suite and After Suite:
+	Before suite will execute before all the methods.Before suite multiple tests in one suite. After suite will execute after all the methods
+
+What are the challenges faced using selenium:
+	OTP,Captcha,Animation,Subtitle canot possible to handle
+	if you Take a screenshot PMG only supported others not supported
+	if you take a particular web element canot be possible in selenium 
+
+Image Based Automation use Sequaly
+
+How to Automate Desktop Application:
+	Paversial used to perform click action various desktop Application
+
+How to handle Partial elements:
+	Using contains methods to handle Partial elements
+
+How will you locate element in text xpath:
+	//tagname[text() = textvalue]
+
+Diff b/w Absolute xpath and relative xpath which one is reliable to go for 
+	Absolute xpath / single forward slash navigate parent to imidiate child
+	Relative xpath // double forward slash navigate parent to any child
+
+HTML unit driver is one of the fastest among all this driver 
+
+Difference B/W Get and Navigate Xpath and CSS selector
+
+Get :	Not store History.Back,Refresh,Forward actions not possible
+Naviagete : Store History.Back,Refresh,Forward actions also possible
+
+CSS : Faster,Search for Single Direction,Handle only one Element,Canot Handle Dynamic Elements
+Xpath : Slower,Seach for Multiple Direction,Handle Multiple Elements,Handle Dynamic Elements
+
+How to Pass values inside Textfield Which method use:
+	Send Keys or JavaScript Executor
+
+How to check chekbox :
+	 isSelected Method will check the checkbox True or False will return
+
+Multiple Windows Possible In Selenium:
+	Driver.getwindowHandles() get the windows Name return list of id's
+	Driver.Switchtowindow() Control the window
+
+
+What is BDD,Cuccumber,Data Driven,Key Driven,POM,Page Factory
+
+
+
+
+What is POM(Page Object Model):
+	Java Design Pattern .Which is mainly used to store data into pagewise and it is used to handle stale Element Reference Exception
+	Maintaning or Managing all the page objects in properway in different jars
+	Organising page Elements 
+	Create separate object repository to store object locators
+	For each web page there should be a seperate class
+	The page class will have all object locators and preferably action methods for the corresponding page
+
+What is Page Factory:
+	Extended design Pattern. Which will create the object of the POM class.it will initialize findby, findby Gen, find by Annotation, findby init element	
+	
+Page Factory Class:
+	@FindBy(xpath = ".//[id = 'Email']")
+
+Public Webelement Gmailuserid WebEdit
+
+Public Action Class:
+	Actions a = new Actions(webelemnet reference);
+	a.doubleclick();
+	
+
+PageAction Class:
+	publicclassPageActions_Login
+	{
+		Webdriver driver;
+		PageObjects
+		class
+		publicPageActions_Login(WebDriver driver)
+		{
+			this.driver = driver;
+		}
+	}
+
+What are the difference b/w Actions and Action:
+	Actions - class (Move to Element,Drag and Drop,Double click, Right Click)
+	Action - Interface (It represents single user intraction Class)
+
+
+Possible to identify Button Colors:
+	Using JavaScript Executor
+
+What is Jenkins:
+	We use Junkins in cuccumber framework.CI/CD - Continuous Integraion and Continuos Development Process. Mainly used for Regression Test scripts.Deployment.
+Project build,Project Test 
+
+
+
+Class 1 : Identification methods
+Class 2 : Operational methods
+
+Login
+Home
+Customer
+Transactions
+
+Every page contains one class
+Every class contains identification methods
+Main Class - Operational methods
+
+driver.findElement().---->identification methods     SendKeys(); Operational methods
+
+
+
+TestNG:(TDD - Test Driven Development Frame work)
+	TestNG is a Unit Testing Framework.Basically to perform Whitebox Testing.
+	
+Advantages:
+	To run multiple scripts at one shot
+	To generate report or result
+	To achive Parallel execution
+	To perform Verfication
+	To Set Prioritize
+	We can pass Parameters
+	Data Providers for passing bulk Data
+	We can able to group the test scenario
+	We can use Assertion(Hard Assert and soft Assert)
+	Parallel Execution
+	We have Nine Annotations
+	
+
+Verification using TestNG:
+	We use class called Assert Class
+
+Soft Assert:
+	In real time Eventhrow the testcase fails if we want to continue with execution we go for SoftAssert
+
+Action Class:
+	Mouse Hover - MoveToElement().Perform() Perform is Mandatory
+	Drag and Drop - dragAndDrop()
+	DoubleClick - doubleclick()
+	Right Click - contextClick()
+
+Select Class:
+	To handle Drop Down use Select class
+	Single select - Canot Deselect
+	Multiple Select - Deselect Possible
+
+Handling Popups:
+	Alert and Confirmation Popup - driver.switchto.alert() Altert interface there are four methods accept,dismiss,getText,SendKeys
+	Hidden Division Popup
+	File Upload
+	File Download
+	Child Browser Popup - getwindowhandles - driver.switch.window()
+
+Frames:
+	Developing a page inside another webpage is called Frame
+	Developer will use <iframe> tag
+	
+	driver.switchTo.frame()
+
+JavaScript Executor:
+	To handle Disable Elements
+	it is use to pass the data inside textfield without using sendkeys method
+	clear the data without using clear method
+	It is used to perform scroll action
+
+Data Driven Testing:
+	Testing Application for Multiple Data
+	Store the data inside the database,excel sheet, JSON
+	Excel Stadalone but selenium support only web based application
+	we fetch data from excel sheet we use jar files called Appache POI
+
+Synchronization:
+	The Process of matching selenium speed with the application speed without using thread.sleep
+
+Two types:
+	Implicit wait driver.manage.timeouts.implicitwait(10,Timeunit.Seconds)
+	Explicit wait
+
+
+What are Repository:
+	Local Repository it is present in local machine .m2 directory
+	Central Repository
+	Remote Repository
+
+Element is not loaded means what will do:
+	Wait or Refresh the page
+
+
+Continuous Integration:
+	Software Development Process main thing integrated into the system
+
+Which Assert is most preferable to use Hard Assert or Soft Assert:
+	Answer : It's Totally depands on the scenario. Which we are testing
+
+How to disable Testcases in TestNG:
+	We can mention testcases Exclude
+
+How you Run Automation:
+	It is handling via Junkings tool and it is an Open source tool
+
+How many Testcases do you Automate in a Day:
+	It's depands on Size and complexity.May be 5 to 6 Testcases per day  
+
+
+Upload a File Automation Selenium Possible:
+	Click method, Action Class, Robort Class, Auto IT
+
+
+TakeScreenShot:
+	
+	Date currentDate = new Date();
+	String screenshotfilename  = currentdate.tostring().replace(" ","-").replace(":","-");
+	System.out.println(screenshotfilename);
+	
+	WebDriverManager.chromedriver.setup();
+	WebDriver driver = new ChromeDriver();
+	driver.get(url);
+	File ScreenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+	FileUtiles.copyFile(screenshotFile, new File(".//screenshot//" + screenshotfilename + ".png"));
+
+
+
+Properties File (Read and Write):
+	
+	Properties properties = new Properties();
+	FileInputStream fis = new FileInputStream("location will give"  C:\\);
+	properties.load(fis);
+	System.out.println(properties.getProperty("browser"));
+	
+	properties.setProperty("testdata","231223");
+	properties.store(outputstream, "This Customer Data from Tc2");
+
+
+
+SQL:
+
+4 th Maximum Salary:
+
+select sal
+from emp a
+where 4 = (select count(distinct(sal))
+           from emp b
+	   where a.sal <= b.sal);
+
+5 th Minimum Salary:
+
+select sal
+from emp a
+where 5 = (select count(distinct(sal))
+	   from emp b
+	   where a.sal >= b.sal);
+	 
+
+2 rd Maximum Salary:
+
+select max(sal)
+from emp
+where sal < (select max(sal)
+	     from emp);
+
+
+
+
+
+
+
+
+Projects Process:
+
+	MISK Project: It's a Goverment project.They conduct few events.They will have a lot of partners.They register all their partners into the application.
+Whenever they conduct any kind of programs,So the partners should get should have an option to enroll into the application, enroll into the events.
+So each and every time.whenever there is any program is going on so may be they will get notified by the through emails or something.
+so they will log into the partner portal and they will create a enrollments.And for those programs. programs are nothing but events.
+All the things done by marketing, but in sales CRM, we are handling the complete CRM module. CRM is nothing but a partner relationship management.
+And second thing is you are handling the one more service request part.So we'll start with the first Misk Foundation and Misk Art.
+what is Misk foundation? Misk Art is? When it comes to the Miss Foundation.Miss Foundation as a two types, one is partnership and second one is sponsorship.
+In case of Misk foundation,it's a one business unit and inside that there will be a set of users will be there from the misk thing and this is the flow to achieve the partnership and sponsorship.
+How this flow will means who all can approve, who is the responsible for each and every stages.Whenever if anyone want to enroll for any kind of programs.
+first they have to go and create a partner in the system, if the partner is there, if the partner is active, then only they can go and enroll further programs.
+under partner management. They have partners. So all the people who are the Misk employees, those they will get an option to create a partners.
+So partners should get created and activated.partners are nothing but every company they will usually help of these organizations to generate more revenue.
+My understand nothing but dealers.whenever they use the dealers.they will get a dealer login.But here it's a partner is nothing but It's a different thing.
+So partners they will maintain because they will contact us some events. So the partners can enroll further those events.
+They have created this partner.after getting the partner,the user will activate the partner once they activate the partner, 
+this partner contact will get an option to log into the partner portal and raise a request.
+the partner does not have any approval because it is just creating and activating, so all the approvals will come in the partnership and sponsorship.
+This contact is the mandatory to activate the partner. If you don't have a contact, this is partner contact not normal contact.
+There is a difference between the normal contact partner contact.normal contact will not get the option to the partner portal. Only partner contacts will get an option to the partner portal.
+once whenever they want to activate the partner they have to give this partner contact once they give partner contact then they will get the user of the this person will receive a username and password.
+Log into the partner portal. So now logged in with the normal user. Consider this as a miskuser. Now I log in with this partner portal.
+Each and every contact.If they want to add multiple contacts, those people also will get it.
+It's one to many relationship, so each and every contact also if they need it right, so it then they can provide otherwise it's up to them.
+To activate the users they have to do these steps they have to go to the partner contact and manage user details.
+automatically user could create it and the partner contact will receive e-mail.
+what do they do? what is their responsibility? They have to whenever there is an event, they have to register for the event. 
+How they can register it is they can just go to the partners?There is an enrollment tab in this in this enrollment tab, they will option to create an enrollment 
+when they are creating enrollment, they'll come to know for which type they are.Whether they are listening for the Misk Foundation or Misk Art. 
+if they're going with Misk Foundation, then They will have a partnership and sponsorship. If they go with the Misk Art, 
+they will have a proactive and reactive. I'll go with the first misk foundation then. This is the business side anyway. 
+So this is the type they can select partnership or sponsorship here. The program is nothing but an event. So which program they are planning to go for it. 
+So let's say they are going further misk global form.For them so they can select this event and the type and stage. Anyway, start from the beginning,
+fill the partnership details request card. So I fill the request card. This will be assigned to the BDMP team.this BDMP team will be receiving this enrollments.
+These guys are responsible for reviewing all the partner requests.We will review all the partner requests.Who other team also can raise the request 
+this other team is belongs to the Misk team. So when they log into the system they can see all the partners, they can open any one of the partner and raise their request.
+Misk employee also can create the enrollment and partners also can create the enrollment.both the request will come to the BDMP team. 
+So these BDMP team will review all the request cards then they will send it further legal management team.
+Whenever they send this to the legal management team.legal management team will receive their notifications and all the things e-mail and everything. 
+So these guys are responsible for approving this. So do the risk assessment.These guys will do all the these request cards, do the risk assessment.
+Let me go with this one proactive and reactive because even proactive and reactive is exactly same. If you go to the proactive. 
+proactive it will start the request from the other e-mail.his all the proactive request will be done by the other MA teams. 
+Other MA teams will have access to create this one.Just consider.this is one team.we have one user called other MA teams. 
+They just go to the partners partner management, so they will select which partner they want to raise this proactive.
+Request. Then they'll go to enrollments. They'll just click on create enrollment, then they'll select business unit like Miss art and program, let's say ART event.
+Then type proactive. Then says start from the beginning which date.generally when you go to your partner management.
+this partner management has first is partners, enrollment is nothing but whatever they create request programs are nothing but events announcements
+when they create any program, right is nothing but an event. So they will.They are conducting the event on next month,next week from 14th through 18th. 
+First they will create a event. Then they will go to announcement. They will announce this is the event is going on. If you want to enroll you can go on enroll it.
+Participate because of Sometimes the user licenses, they may not give for the all the people so that time they will reach out to the other team employees.
+They will call create a.He enrollment on behalf of us, so that's why the these other MA team will log into the system. They'll go to here.
+They will create an enrollment on behalf a partner.wherever there is a required for the let's say there is a in this process they require the approval from CEO,
+they can just go to the whichever the step is there you see here then they will.Change the state stays to here, then automatically they'll CEO will receive it approval.
+It'll keep on going and it'll follow the entire process until wherever they require the any approvals.So the main difference between the proactive is 
+proactive will be raise the request by Other MA teams.Though this proactive will be credited by the MA teams. So when it comes to reactive, reactive will be created by the partner.
+Now we'll go to sponsorship. Sponsorship is bit different from the all these flows how the sponsorship flow will work is. Sponsorship flow will start with the.
+Contacts not from the partner contact. we have a contacts also there normal contacts.They will check whether this in the system, whether contact is present or not.
+If the contact is not present they'll create manually.That is the process. If the then In the ellqua what do they do? They create a target list.
+Running campaign because they are announcing his sponsorship.So all the partners who are eligible, they will their target list they will fill the all the people.
+who are they will apply all the filters.whether they'll pick up from the contacts all the contacts data from there they'll pick up that filters and they'll make the target list.
+to the target list they will send mass emails to the target. People will receive all the marks emails.So the maximum you can see we will receive Maximals mass emails which will be received to the partners.
+So this partners, they will get an e-mail.Once they receive an e-mail, if they're interested, they can go and register further this sponsorship.
+They have to provide a target list parameters.How do they make the target list that they provide then? Then we can include in our document,
+So this way whenever they send a campaign and they will receive an e-mail and so if they go and if the people are the partners are interested 
+they will the registered as they interested and that response will be captured to eloqua.even will also receive the all the information of that. partners The name contact and everything.
+whenever they go and register their details in the link right see whenever they click on that link the e-mail they will have a one form.
+there are two-minute from the ship form and they have to submit it.So automatically contact will create lead. Now once we will submit the form
+So from the lead.they will create a meeting with the person and they will go. It will if it is successful then they will go and create a partner.
+Then they'll go and create a partner, and they'll also go and create a sponsorship request.Let's say we have received this lead from the.they'll come to another. 
+This lead is interested in this Sponsorship.This way this again this will also whenever they request anything.
+This sponsorship also it'll go to the BDMP team only one step in this it'll go to the legal department
+otherwise it will always stay with a BDMP team only.So once that it will go to the only one time it will go to the legal department approval.
+Otherwise most of the time with the BDMP team will be handling all these sponsorship.
+
+
+
+
+Project: Medicare
+
+
+Resume Points:
+
+
+Experience Summary 
+
+•	1.5 years of experience in Software Testing which majorly involves Automation Testing.
+•	Good knowledge of STLC, SDLC and experience in Agile Methodology.
+•	Expertise in designing and execution of Test cases for both Manual and Automation and Defect life cycle.
+•	Expertise in Automation of Test Cases using Selenium Java and TestNG framework.
+•	Experience in establishing Automation Frameworks for Selenium (Java).
+•	Experience in performing different types of testing like Functional, Mobile, Cross Browser and Regression testing.
+•	Involved in Smoke, Integration, GUI, Sanity and End to End testing. 
+•	Knowledge in User Acceptance Testing and Testing on Production environment
+•	Familiar with Programming Fundamentals (Object-oriented Programming)
+•	Defect tracking and project management tools – JIRA, Redmine 
+
+Technical Skills  
+•	Agile, Various Levels of Testing including Functional testing, Smoke Testing, Regression Testing, Sanity Testing Manual and Automation Testing (Selenium Java).
+•	Automation Testing (POM Framework), TestNG, 
+•	Test Case designing and execution, Defect Logging and Retesting
+•	Java, SQL, MySQL, SQL Server, ETL Automation Excel Macros. 
+
+Projects Summary 
+
+Project: EmployeeEngage (BenefitAlign)
+Organization: Speridian Technologies
+Designation:  Associate
+Duration: Mar 2023 – Feb 2024
+Tools: Eclipse (Selenium - Java), POM, TDD, Extent Reports, GitLab
+
+Project Description
+
+EmployeeEngage is cloud based SAAS application designed for enrolling to the various Insurance plans provided. User has the privilege to track the end to end progress of the application starting from enrolling for an Insurance till claiming it
+
+Roles and Responsibilities
+
+	Understanding the Requirements and Functional specifications of the Application, preparing traceability matrix to ensure that all requirements are covered with respective test cases and used Redmine for tracking, reporting and managing bug life cycle during the testing process.
+	Working with different stakeholders, which includes Business Analyst, QA Team, Developers.
+	Developed functional scripts and rerunning those scripts again at the time of Regression testing.
+	Adept in scripting using Java-Selenium and POM automation framework, designing and implementing Selenium with TDD framework.
+	Good Understanding of requirements and peer review.
+	Involved in defining test strategies and creating comprehensive test plans.
+	Attended Daily Standups on Task status updates.
+	Experienced in creating and maintaining automation scripts using Selenium with Java.
+	Performing different types of testing like Functional, Regression testing.
+
+
+Educational Qualification:
+
+B.Tech - Information Technology
+
+Software Testing (Manual, SQL, Java, Selenium) Course in Qspider
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

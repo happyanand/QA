@@ -1,0 +1,221 @@
+Fileinputstream file = new fileinputstream("configproprtiesfilepath");
+properties pro = new properties()
+pro.load(file)
+return pro
+
+//Implicitlywait
+driver.manage().timeouts().implicitlywait(Duration.ofseconds(30))
+
+
+Config Properties:
+public static Properties configloader() throws IOException {
+fileinputstream file = new fileinputstreeam(.src\\test\\resources\\config.properties);
+Properties properties = new Properties();
+properties.load(file);
+return properties;
+
+
+Screenshots:
+public static String getScreenshot(WebDriver driver, String screenshotName) throws Exception {
+TakeScreenshot ts = (takesScreenshot) driver;
+File src = ts.getScreenshotAs(OutputType.File);
+Designation = system.getPropertity("user.dir");
+File finalDesignation = new File(Designation);
+fileutils.CopyFile(src,finaldesignation);
+return designation;
+}
+
+		TakesScreenshot ts = (TakesScreenshot) driver;
+		File source = ts.getScreenshotAs(OutputType.FILE);
+		//after execution, you could see a folder "FailedTestsScreenshots" under src folder
+		destination = System.getProperty("user.dir") + "/FailedTestsScreenshots/"+screenshotName+".png";
+		File finalDestination = new File(destination);
+		FileUtils.copyFile(source, finalDestination);
+		//Returns the captured file path
+		return destination;
+
+
+Public Static void Submit(){
+ try{
+	waitForPageLoad();
+	click(btn_submit);
+	Extentsuccessmessage("Successfully clicked  submit button");
+}catch(Exception e){
+	System.out.println("An Exception occured : " +e.getMessage());
+	e.printStackTrace();
+}
+
+
+
+public static String getScreenshot(webdriver driver, String Screeshotname){
+ takescreenshot ts = (TakesScreenshot) driver;
+ file src = ts.getScreenshotAs(OutputType.FILE);
+ properties designation = System.getProperty("user.dir")+"/FailedScreenshot/"+screenshotName+".png";
+ File finaldesignation  = new File(designation);
+ FileUtils.copyFile(src, finalDesignation);
+ return designation;
+}
+
+
+
+public static Properties configloader(){
+ Fileinputstream file = new FileInputStream(".\\src\\test\\config.properties");
+ Properties pro = new Properties();
+ pro.load(file);
+ return pro;
+}
+
+public static setup(){
+ String Browser = configloader.getProperty("Browser");
+ String URL = configloader.getProperty("URL");
+ String Username = configloader.getProperty("Username");
+ String Password = configloader.getProperty("Password");
+}
+
+driver.manage().timeouts().implicitlyWait(duration.ofseconds(30));
+
+public static selectByIndex(By by, Int index){
+ Webelement element = findElement(by);
+ select s = new Select(element);
+ s.selectByIndex(index);
+}
+
+public static void jSClick(webElement element){
+ javascriptExecutor js = (javascriptExecutor) driver;
+ js.executeScript("arguments[0].click();",element);
+}
+
+
+public static void mousehover(webElement element){
+ new Actions(driver).moveToElement(element).build().perform();
+}
+
+public static void rightclick(webElement element){
+ Actions act = new Actions(driver);
+ act.contextClick(element).perform();
+}
+
+public static void acceptAlert(){
+ Alert alert = driver.switchTo().alert();
+ alert.accept();
+}
+
+
+public static void switchToWindow(int index){
+ Linkedlist<String> windowsid = new Linkedlist<String>(getwindowHandles())
+ if(index < 0 || index > windowsid.size()){
+  driver.switchTo().window(windowsid.get(index));
+}
+
+public static void switchToParentWindow(){
+ Linkedlist<String> windowsId = new Linkedlist(getWindowHandles());
+ driver.switchTo().window(windowId.get(0));
+}
+
+
+public static void configloader(){
+ FileInputStream file = new FileInputStream(".\\src\\test\\config.properties");
+ Properties properties  = new Properties();
+ properties.load(file);
+ return properties;
+} 
+
+public static void TakesScreenshot(webdriver driver, String ScreenshotName){
+ TakescreenShot ts = (TakesScreenshot) driver;
+ File src = ts.getScreenshotAs(OutputType.FILE);
+ Properties designation = system.getProperty("user.dir")+\FailedScreenshot\ "+ScreenshotName+".png;
+ File finaldesignation = new File(designation);
+ FileUtils.copyFile(src, finaldesignation);
+ return designation;
+}
+
+public static void switchToWindow(int Index){
+ Linkedlist<String> windowsId = new Linkedlist<String>(getwindowHandles());
+ if(index < 0 || index > windowsId.size()){
+  driver.switchTo.window(windowsID.get(Index));
+}
+
+
+public static void switchFrame(int index){
+ driver.switchTo.frame(index);
+}
+
+
+public void scrollDown(){
+ JavascriptExecutor js = (JavascriptExecutor) driver;
+ js.executeScript("window.scrollBy(0,document.body.Height)");
+}
+
+
+public static void selectdropdownvalues(By locator, By value){
+ click(locator);
+ By i = By.select("//option[text() = "' + value + '"]");
+ click(i);
+}
+
+public static void pagerefresh(){
+ driver.navigate().refresh();
+}
+
+
+
+
+public static void Takescreenshot(webdriver driver, String Screeshotname){
+ TakeScreenShot ts = (TakesScreenshot) driver;
+ File src = ts.getScreenshotAs(OutputType.FILE);
+ designation = system.getProperty("user.dir")+"/Failed Screenshot/"+ScreenShotName+".png";
+ File finaldesignation = new File(designation);
+ FileUtils.copyFILE(src,finaldesignation);
+ return designation;
+}
+
+
+public static Properties configLoader(){
+ FileInputStream fis = new FileInputStream(".\\src\\test\\config.properties");
+ Properties properties = new Properties();
+ properties.load(fis);
+ return properties;
+}
+
+
+public static void switchToWindow(int Index){
+ Linkedlist<String> windowsID = new Linkedlist<String>(getwindowHandles());
+ if(index < 0 || index > windowsID.size()){
+  driver.switchTo.window(windowsID.get(Index)));
+}
+
+
+	@DataProvider(name = "TestData")
+	public static Object[][] gettestdate() throws IOException {
+
+		Object[][] objectarry = null;
+		java.util.List<Map<String, String>> completedata = com.Utility.ExcelReader.getdata();
+
+		objectarry = new Object[completedata.size()][1];
+
+		for (int i = 0; i < completedata.size(); i++) {
+			objectarry[i][0] = completedata.get(i);
+		}
+		return objectarry;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

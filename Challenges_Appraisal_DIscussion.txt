@@ -1,0 +1,27 @@
+Challenges:
+
+1)While push and pull the code facing conflicts problem, Daily basis push and pull the latest code from master branch
+2)Executing Scripts in Eclipse don't switch the application or tab or window otherwise script got failed
+3)Switch Application to do different task while running scripts
+4)Jenkins Executing scripts in headless mode
+5)Robot Class Issue for click used Action Class
+6)Screen maximize not possible Jenkins used zoom out
+7)Multiple jobs executing at same time laptop slowness issue got new laptop
+8)Every Release or Build we need to start Jenkins Manually so Jenkins Schedule
+9)Jenkins Schedule Job will execute Automatically based on Time Day Date Months
+10)Reports We need to Check manually and Send to Everyone
+11)Sent Reports through Automation based on Mail id Added in TO and CC
+12)before just Sending Reports without Subject. Now Added Subject like Prod or UAT or QA based on Environment execution it will add subject and send the reports.
+13)Robot Class Issue for File Upload in Jenkins server Exploring 
+
+1)How many Release Happening Weekly or Monthly
+2)How many Manual QA - 14
+
+
+
+
+
+
+
+
+
