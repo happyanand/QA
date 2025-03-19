@@ -1,0 +1,8 @@
+BA Tech – Quality Assurance:
+
+1. Understanding the Requirements and Functional specifications of the Application,  and used Redmine for defect tracking, reporting and managing bug life cycle during the testing process.
+2. Attended Daily Standups on Task status updates.
+3. Working with different stakeholders, which includes Business Analyst, QA Team, Developers.
+4. Involved in Developed functional scripts and re-running those scripts again at the time of Regression testing.
+5. Involved in Writing Test script using Java-Selenium and Designing POM Page and Updating the Functional Scripts.
+6. Performing different types of Manual testing like Functional, Sanity Testing, Integration Testing, If in case of Test script failed.
