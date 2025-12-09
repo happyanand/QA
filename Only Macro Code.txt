@@ -424,6 +424,235 @@ Where Emp_ID = 'Emp_07';
 
 
 
+Multiple Tables:
+
+Create Table Emp
+(
+ Emp_ID varchar(20),
+ Emp_Name varchar(25),
+ Salary Numeric,
+ Mob_Num Numeric,
+ Date_of_Joining Date
+);  
+
+insert into Emp values('Emp_01','Anand',10000,9080578851,'2020-01-11');
+insert into Emp values('Emp_02','Kumar',14000,9080548851,'2020-01-21');
+insert into Emp values('Emp_03','Gokul',12000,9080378851,'2020-01-15');
+insert into Emp values('Emp_04','Rahul',18000,9080572851,'2020-03-31');
+insert into Emp values('Emp_05','Saran',13000,9380572851,'2020-02-05');
+insert into Emp values('Emp_06','Ramu',15000,9085572851,'2021-06-07');
+
+Select * from Emp;
+
+Create Table Dept
+(
+ Emp_ID varchar(20),
+ Dept_ID varchar(20),
+ Dept_Name varchar(25),
+ Mob_Num Numeric,
+);
+
+
+insert into Dept values ('Emp_01','Dept_01', 'QA',9243078851);
+insert into Dept values ('Emp_02','Dept_02', 'JAVA',9343078851);
+insert into Dept values ('Emp_03','Dept_03', 'Microsoft',9253078851);
+insert into Dept values ('Emp_04','Dept_04', 'L&D',9243058851);
+insert into Dept values ('Emp_05','Dept_05', 'HR',9243076851);
+insert into Dept values ('Emp_06','Dept_06', 'Finance',9246078851);
+
+Select * from Dept;
+
+select a.Emp_ID,Emp_Name,Dept_Name,Salary from Emp a,Dept b where a.Emp_ID = b.Emp_ID
+
+
+Connect to Source DB:
+
+Sub Source_DB()
+    Dim cnt As ADODB.Connection
+    Dim rst As ADODB.Recordset
+    Dim Col_Max As Integer
+    
+    Dim sqlcmd As String
+    Dim sht As Worksheet
+    Set sht = ThisWorkbook.Sheets(1)
+    
+    Set cnt = New ADODB.Connection
+    Set rst = New ADODB.Recordset
+    
+    Dim server_name As String
+    Dim database_name As String
+    
+    cnt.ConnectionString = "driver={SQL Server};server=SPBLRLTU627\SQLEXPRESS01;database=tempdb"
+    
+    cnt.Open
+    
+    With rst
+        .ActiveConnection = cnt
+        .Open "select a.Emp_ID,Emp_Name,Dept_Name,Salary from Emp a,Dept b where a.Emp_ID = b.Emp_ID"
+    End With
+    
+    Set sht = ThisWorkbook.Sheets.Add
+    sht.Name = "Old"
+    
+    Col_Max = rst.Fields.Count
+    
+    With sht
+        For Col = 0 To Col_Max - 1
+            .Cells(1, Col + 1).Value = rst.Fields(Col).Name
+        Next Col
+        Range("A2").CopyFromRecordset Data:=rst
+    End With
+    Cells.EntireColumn.AutoFit
+    MsgBox "Connected"
+End Sub
+
+Update Emp
+Set Emp_Name = 'Karan'
+Where Emp_ID = 'Emp_04';
+
+Update Emp
+Set Salary = 18000
+Where Emp_ID = 'Emp_06';
+
+Update Dept
+Set Dept_Name = 'Cloud'
+Where Dept_ID = 'Dept_03';
+
+Update Dept
+Set Dept_Name = 'Devops'
+Where Dept_ID = 'Dept_05';
+
+Update Emp
+Set Salary = 21000
+Where Emp_ID = 'Emp_02';
+
+
+Fetch Updated DB:
+
+Sub Updated_DB()
+
+    Dim cnt As ADODB.Connection
+    Dim rst As ADODB.Recordset
+    Dim Col_Max As Integer
+    
+    Dim sqlcmd As String
+    Dim sht As Worksheet
+    Set sht = ThisWorkbook.Sheets(1)
+    
+    Set cnt = New ADODB.Connection
+    Set rst = New ADODB.Recordset
+    
+    Dim server_name As String
+    Dim database_name As String
+    cnt.ConnectionString = "driver={SQL Server};server=SPBLRLTU627\SQLEXPRESS01;database=tempdb"
+    cnt.Open
+    
+    With rst
+        .ActiveConnection = cnt
+        .Open "select a.Emp_ID,Emp_Name,Dept_Name,Salary from Emp a,Dept b where a.Emp_ID = b.Emp_ID"
+    End With
+    
+    Set sht = ThisWorkbook.Sheets.Add
+    sht.Name = "New"
+    
+    Col_Max = rst.Fields.Count
+    
+    With sht
+        For Col = 0 To Col_Max - 1
+            .Cells(1, Col + 1).Value = rst.Fields(Col).Name
+        Next Col
+        Range("A2").CopyFromRecordset Data:=rst
+    End With
+    Cells.EntireColumn.AutoFit
+    MsgBox "Connected"
+    
+End Sub
+
+
+Run Compare Values:
+
+Sub Compare_Values()
+
+ 'Define Fields
+    Dim Row As Integer
+    Dim Col As Integer
+    Dim oRow As Integer
+    
+    Dim Row_Max As Integer
+    Dim Col_Max As Integer
+    
+    Dim sh1 As Worksheet
+    Dim sh2 As Worksheet
+    Dim sh3 As Worksheet
+    
+    'Sheets to be compared
+    Set sh1 = ThisWorkbook.Sheets(1)
+    Set sh2 = ThisWorkbook.Sheets(2)
+    Set sh3 = ThisWorkbook.Sheets(3)
+    
+    'Max Rows
+    Row_Max = sh1.UsedRange.Rows.Count
+    Col_Max = sh1.UsedRange.Columns.Count
+    
+    'Read Data From Each Sheets of Both Excel Files & Compare Data
+    For Row = 1 To Row_Max
+        For Col = 1 To Col_Max
+                    
+            'Compare Data From Excel Sheets & Highlight the Mismatches
+                If sh1.Cells(Row, Col) <> sh2.Cells(Row, Col) Then
+                    sh1.Cells(Row, Col).Interior.Color = vbGreen
+                    sh2.Cells(Row, Col).Interior.Color = vbYellow
+           
+            'Write Differences to Output sheet
+                    oRow = oRow + 1
+                    sh3.Cells(oRow, 1) = sh1.Cells(Row, Col)
+                    sh3.Cells(oRow, 2) = sh2.Cells(Row, Col)
+                    
+                End If
+            Next Col
+       Next Row
+    
+    sh3.Name = "Differences"
+    
+    'Process Completed
+    MsgBox "Executed Successfully"
+
+End Sub
+
+
+Target DB Update:
+
+Sub Target_DB()
+
+    Dim cnt As ADODB.Connection
+    Dim rst As ADODB.Recordset
+    
+    Row_Max = Sheets("New").UsedRange.Rows.Count
+    
+    Dim sqlcmd As String
+    Dim sht As Worksheet
+    Set sht = ThisWorkbook.Sheets("New")
+    
+    
+    Set cnt = New ADODB.Connection
+    Set rst = New ADODB.Recordset
+
+    
+    Dim server_name As String
+    Dim database_name As String
+    cnt.ConnectionString = "driver={SQL Server};server=SPBLRLTU627\SQLEXPRESS01;database=tempdb"
+    cnt.Open
+    sqlcmd = "Create Table Target(Emp_ID varchar(20),Emp_Name varchar(25),Dept_Name varchar(25),Salary Numeric)"
+    cnt.Execute (sqlcmd)
+    
+    For I = 2 To Row_Max
+        sqlcmd = "INSERT INTO Target(Emp_ID,Emp_Name,Dept_Name,Salary)Values('" & sht.Cells(I, 1) & "','" & sht.Cells(I, 2) & "','" & sht.Cells(I, 3) & "','" & sht.Cells(I, 4) & "')"
+        cnt.Execute (sqlcmd)
+    Next
+    
+    MsgBox "Updated Successfully"
+    
+End Sub
 
 
 

@@ -1,0 +1,104 @@
+<a href="actions/Catalog.action">Enter the Store</a>
+
+Enter the StoreEnter the Store
+Thread.sleep(1000);
+//*[@id="Content"]
+
+package Base_package;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+
+public class Base_Class 
+{
+	public WebDriver driver;
+	
+	@BeforeMethod
+	
+	public void OpenAppln() throws InterruptedException
+	{
+		System.setProperty("webdriver.chrome.driver", "./Software/chromedriver.exe");
+		WebDriver driver=new ChromeDriver();
+		Thread.sleep(1000);
+		driver.manage().window().maximize();
+		driver.get("https://petstore.octoperf.com/actions/Catalog.action");
+	}
+	
+	
+	@AfterMethod
+	public void CloseAppln() throws InterruptedException
+	{
+		Thread.sleep(1000);
+		driver.quit();
+	}
+}
+
+
+package Base_package;
+
+import org.testng.annotations.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+
+
+public class Test_Class extends Base_Class
+{
+	@Test
+	public void login() throws InterruptedException
+	{
+		//driver.findElement(By.xpath("//a[@text()='Enter the Store']")).click();
+		
+		//driver.findElement(By.id("Content")).click();
+		
+		//Thread.sleep(1000);
+		 WebElement ele=driver.findElement(By.xpath("//a[.='Sign In']"));
+		 ele.click();
+		Thread.sleep(1000);
+		driver.findElement(By.xpath("//input[name='username']")).sendKeys("j2ee");
+		Thread.sleep(1000);
+		driver.findElement(By.xpath("//input[name='password']")).sendKeys("j2ee");
+		Thread.sleep(1000);
+		System.out.println(driver.getTitle());
+	}
+}
+
+
+
+
+
+Hi sir. Good evening. Shikhar given task completed. I have not been assigned with any of the project.kindly allocate me a project.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,19 @@
+https://www.figma.com/proto/mjh9HplZtLKdYhsD5WOw7i/Access-Health---patient-portal?node-id=263%3A853&scaling=scale-down-width&page-id=0%3A1&starting-point-node-id=263%3A853
+
+https://uiregistration.accesshealthapp.com/
+
+https://www.figma.com/proto/J9dX91osHksWecKeotdUi3/Lab-testing-module---Access-Health?page-id=0%3A1&node-id=1265%3A7161&viewport=-792%2C-1167%2C0.4&scaling=min-zoom&starting-point-node-id=3604%3A5773
+
+
+
+Empass Healthcare project KT session and Project Exploration for that application, Test Case Execution on Register page, R&D for BRD
+
+Empass Healthcare project Explore the application test the Functionalities of an Application and Find the Defects
+
+Empass Healthcare project Explore the application, Understand the Functionalities of an Application, Test Case Execution on Lab Page
+
+Empass Healthcare project KT session and Exploration for that application test the User Interface on lab page and Find the Defects
+
+Hi Good Morning, compare to figma link I found this kind of UI defects. if it is wrong kindly let me know.
+
+lab,provider,service-register,confirmation

@@ -1,3 +1,59 @@
+Create Table [tempdb].[dbo].[Emp]
+(
+ Emp_ID varchar(20),
+ Emp_Name varchar(25),
+ Salary Numeric,
+ Mob_Num Numeric,
+);  
+
+
+Select * from [tempdb].[dbo].[Emp];
+
+insert into [tempdb].[dbo].[Emp] values('Emp_01','Anand',10000,9080578851);
+insert into [tempdb].[dbo].[Emp] values('Emp_02','Kumar',14000,9080548851);
+insert into [tempdb].[dbo].[Emp] values('Emp_03','Gokul',12000,9080378851);
+insert into [tempdb].[dbo].[Emp] values('Emp_04','Rahul',18000,9080572851);
+insert into [tempdb].[dbo].[Emp] values('Emp_05','Saran',13000,9380572851);
+insert into [tempdb].[dbo].[Emp] values('Emp_06','Ramu',15000,9085572851);
+insert into [tempdb].[dbo].[Emp] values('Emp_07','Sekar',11000,9080972851);
+
+Update [tempdb].[dbo].[Emp]
+Set Mob_Num = 9089578451
+Where Emp_ID = 'Emp_01';
+
+Update [tempdb].[dbo].[Emp]
+Set Salary = 21000
+Where Emp_ID = 'Emp_02';
+
+Update [tempdb].[dbo].[Emp]
+Set Emp_ID = 'Emp_10'
+Where Emp_ID = 'Emp_03';
+
+Update [tempdb].[dbo].[Emp]
+Set Emp_Name = 'Karan'
+Where Emp_ID = 'Emp_04';
+
+Update [tempdb].[dbo].[Emp]
+Set Mob_Num = 9089278451
+Where Emp_ID = 'Emp_05';
+
+
+Update [tempdb].[dbo].[Emp]
+Set Emp_Name = 'Aravind'
+Where Emp_ID = 'Emp_06';
+
+Update [tempdb].[dbo].[Emp]
+Set Salary = 19000
+Where Emp_ID = 'Emp_07';
+
+Select * From [tempdb].[dbo].[Emp]
+
+
+
+
+
+
+
 Create Table Emp
 (
  Emp_ID varchar(20),
