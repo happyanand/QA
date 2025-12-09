@@ -1,0 +1,157 @@
+JavaScript:
+
+Save file .js extension
+(eg)basics.js
+
+Print the values comment:
+console.log("Hello World")
+
+Run java Script Comment:
+node basics.js
+
+Output value:
+Hello World
+
+Single line comment
+//
+
+Multi line comment
+/*
+
+*/
+
+var a = 10
+console.log(a)	o/p = 10
+
+let b = 12 //ES6 version
+console.log(typeof(b))	o/p number
+
+var c = 23.4
+console.log(typeof(c))	o/p number
+
+let d = "Anand"
+console.log(typeof(d))	o/p string
+
+let required = true
+console.log(typeof(required))	o/p Boolean
+
+var c = a+b
+console.log(c)	o/p = 22
+
+//we cannot redeclare let keyword but possible with var
+let c=a+b //it will throw an error
+//we can reassign is allowed let
+c= a+b
+
+Not equal
+console.log(!required)	o/p false
+
+Constant we cannot redeclare
+const k = "kumar"
+console.log(k)	o/p = kumar
+
+
+const flag = true;
+if(flag)
+{
+ console.log("Condition Satisfied");
+}
+else
+{
+ console.log("Condition not Satisfied");
+}
+
+Not true like false
+if(!flag)
+{
+ console.log("Condition Satisfied");
+}
+else
+{
+ console.log("Condition not Satisfied");
+}
+
+let i=0;
+while(i<10)
+{
+ i++;
+ console.log("i = "+i);
+}
+
+for(let i=0;i<10;i++)
+{
+ console.log(i);
+}
+
+
+let n = 0;
+for(let k=1;k<=100;k++)
+{
+ if(k%2==0 && k%5==0)
+ {
+   n++;
+   console.log(k);
+ }
+ if(n==3)
+ {
+  break;
+ }
+}
+
+Arrays:
+var marks = [20,12,23,45,23]
+console.log(marks[2]); //23
+var marks[2] = 32;
+console.log(marks); //[20,12,32,45,23]
+console.log(marks.length) //5
+marks.push(10)
+console.log(marks); //[20,12,32,45,23,10]
+marks.pop()
+console.log(marks); //[20,12,32,45,23]
+marks.unshift(18)
+console.log(marks); //[18,20,12,32,45,23]
+console.log(marks.indexof(23)); //5
+console.log(marks.includes(28)); //false
+submarks = marks.slice(2,5);
+console.log(submarks); //[12,32,45]
+
+var sum = 0
+for(let i=0;i<marks.length;i++)
+{
+  console.log(i);
+  sum = sum + marks[i];
+  console.log(sum);
+}
+console.log(sum); 
+
+//Reduce filter map
+let total = marks.reduce((sum,mark)=>sum+mark,0);
+console.log(total); 
+
+//Print even Number
+var marks = [20,12,23,45,23]
+var evennum = []
+for(let i=0;i<marks.length;i++)
+{
+ if(marks%2==0)
+ {
+  evennum.push(marks[i]);
+ }
+}
+consoe.log(evennum);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

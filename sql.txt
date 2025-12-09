@@ -1,0 +1,139 @@
+Nth maximum n-1 rows
+
+SELECT  max(price)
+from Products as a 
+where 4< (SELECT count(distinct(price)) from products as b where a.price<=b.price);
+
+Top 5 Maximum Price
+
+SELECT * from products
+order by price Desc
+LIMIT 5;
+
+SELECT TOP (5) salary
+FROM Emp
+GROUP BY salary
+ORDER BY salary DESC
+
+
+Second Maximum
+
+SELECT ProductName,max(price) as Second_Max from products
+where price < (select max(price) from products);
+
+
+CREATE TABLE STUDENTS (  
+ID INT                           NOT NULL,  
+NAME VARCHAR (20) NOT NULL,  
+AGE INT                         NOT NULL,  
+ADDRESS CHAR (25),  
+PRIMARY KEY (ID)  
+);  
+
+ALTER TABLE Customers
+ADD Email varchar(255);
+
+ALTER TABLE Customers
+DROP COLUMN Email;
+
+Alter table Customers
+Rename State to States
+
+DROP TABLE Shippers;
+
+TRUNCATE TABLE Categories;
+
+RENAME tableName TO newTableName;
+
+INSERT INTO Customers (CustomerName, City, Country)
+VALUES ('Cardinal', 'Stavanger', 'Norway');
+
+UPDATE Shippers
+SET CustomerID = 20
+WHERE CustomerID = null;
+
+Delete from table_name Where <Condition>
+
+DQL-Select
+DDL-Create,Alter(Add,Drop,Rename),Drop,Truncate,Rename
+DML-Insert,Update,Delete
+DCL-Grante,Revoke
+TCL-Commit,Rollback,SavePoint
+
+
+Joins 
+
+Inner Join
+
+SELECT FirstName ||" "||LastName as FullName,OrderID from Employees,Orders
+Where Employees.EmployeeID=Orders.EmployeeID;
+
+SELECT FirstName || " "||LastName as FullName,OrderID from Employees Inner Join Orders
+on Employees.EmployeeID=Orders.EmployeeID;
+
+Self Join
+
+SELECT ProductName,Price 
+FROM [Products] 
+Where Price in (select  price from Products where ProductName = "Chais");
+
+CustomerName length equal to 10:
+
+select  CUSTOMERNAME FROM CUSTOMERS 
+WHERE LENGTH (Trim(CUSTOMERNAME))=10
+
+SQL Tutorials:
+
+https://speridiantec.sharepoint.com/sites/QASperidian/_layouts/15/stream.aspx?id=%2Fsites%2FQASperidian%2FShared%20Documents%2FGeneral%2FSelenium%20Automation%20Framework%2FAutomation%20Framework%20Walkthrough%5FShany%2Emp4&referrer=Teams%2ETEAMS%2DELECTRON&referrerScenario=recent%2Drecent
+
+https://speridiantec.sharepoint.com/sites/QASperidian/_layouts/15/stream.aspx?id=%2Fsites%2FQASperidian%2FShared%20Documents%2FGeneral%2FSelenium%20Automation%20Framework%2FAutomation%20Framework%20Walkthrough%5FShany%2Emp4&referrer=Teams%2ETEAMS%2DELECTRON&referrerScenario=recent%2Drecent
+
+https://speridiantec.sharepoint.com/sites/QASperidian/_layouts/15/stream.aspx?id=%2Fsites%2FQASperidian%2FShared%20Documents%2FGeneral%2FSelenium%20Automation%20Framework%2FAutomation%20Framework%20Walkthrough%5FShany%2Emp4&referrer=Teams%2ETEAMS%2DELECTRON&referrerScenario=recent%2Drecent
+
+
+Stored Procedure : Stored Multiple Queries in Delimiter
+
+delimiter //
+
+create procedure SelectAllCustomers()
+Begin
+	Select * from Customers;
+End //
+
+delimiter ;
+
+call SelectAllCustomers();
+
+
+Pass Parameter in Stored Procedure:
+
+delimiter //
+
+create procedure SelectAllCustomersByCity(In mycity varchar(50))
+Begin
+	Select * from Customers where city = mycity;
+End //
+
+delimiter ;
+
+call SelectAllCustomersByCity('Singapore');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

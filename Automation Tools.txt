@@ -1,0 +1,12 @@
+Automation Tools
+1)Zappier - Workflow Automation
+2)Google AI Studio - Based on Voice Assistant will do
+3)ChatGPT - Modify sentence and Video Transcript
+4)Udio AI music - Describe song
+5)11ElevenLabs AI text to Speech - Generate voice based on Speed
+6)perplexity AI Search Engine - Based on sources will give output
+7)descript AI video Editing - Based on Document 
+
+
+
+

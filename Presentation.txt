@@ -1,0 +1,218 @@
+
+	ETL Data Automation
+
+
+//Create Table :
+
+Create Table Dept
+(
+ Dept_ID varchar(20),
+ Dept_Name varchar(25),
+ Salary Numeric,
+ Mob_Num Numeric,
+ Date_of_Joining Date
+);
+
+Select * from Dept;
+
+//Insert Data Into table : 
+
+INSERT INTO Dept (Dept_ID, Dept_Name, Salary,Mob_Num,Date_of_Joining)
+VALUES ('Dept_01', 'QA',10000,9243078851,'2020-01-01');
+
+INSERT INTO Dept(Dept_ID, Dept_Name, Salary,Mob_Num,Date_of_Joining)
+VALUES ('Dept_02', 'JAVA',15000,9080578851,'2020-01-11');
+
+INSERT INTO Dept(Dept_ID, Dept_Name, Salary,Mob_Num,Date_of_Joining)
+VALUES ('Dept_03', 'Microsoft',12000,9083578851,'2020-01-21');
+
+INSERT INTO Dept(Dept_ID, Dept_Name, Salary,Mob_Num,Date_of_Joining)
+VALUES ('Dept_04', 'L&D',14000,9283578851,'2020-01-15');
+
+INSERT INTO Dept(Dept_ID, Dept_Name, Salary,Mob_Num,Date_of_Joining)
+VALUES ('Dept_05', 'HR',17000,9283078851,'2020-03-31');
+
+INSERT INTO Dept(Dept_ID, Dept_Name, Salary,Mob_Num,Date_of_Joining)
+VALUES ('Dept_06', 'Finance',13000,9253078851,'2020-02-05');
+
+
+//Get Server Name
+
+Select @@ServerName : SPBLRLTU627\SQLEXPRESS01
+
+//Open Excel:
+
+//Connect SQL server to Excel :
+
+In excel click on Data Connect to DataBase Server
+
+//Save Excel Macros format:
+
+//Rename Sheet is OLD: (Under Developer Tab VBA Insert Module)
+
+Sub Rename()
+	Sheets(1).Name = "OLD"
+End Sub
+
+//Copy Sheet OLD to NEW Sheet:
+
+Sub CopySheet()
+    Sheets(1).Copy after:=Sheets(1)
+    Sheets(2).Name = "NEW"
+End Sub
+
+//Add new Sheet Differences:
+
+Sub Newsheet():
+	Worksheets.Add after:=Sheets("NEW")
+	Sheets("Sheet3").Name = "Differences"
+End Sub
+
+//Open SQL Server:
+//Import Excel into SQL Server : (Task under Import Data)
+
+// Refresh the Server :
+
+//Update Values into New Table :
+
+
+Update Dept
+Set Mob_Num = 9089578451
+Where Dept_ID = 'Dept_01';
+
+Update Dept
+Set Salary = 21000
+Where Dept_ID = 'Dept_02';
+
+Update Dept
+Set Dept_ID = 'Dept_10'
+Where Dept_ID = 'Dept_03';
+
+Update Dept
+Set Dept_Name = 'Devops'
+Where Dept_ID = 'Dept_04';
+
+Update Dept
+Set Date_of_Joining = '2020-04-02'
+Where Dept_ID = 'Dept_05';
+
+//Create New Excel Sheet: Use Macros Buttons : 
+
+//Refresh Excel:
+
+//Open VBA:(Tools Tab References Add Microsoft ActiveX Data Object 6.1 Library)
+//Create Module Source:	Write Source Macros :
+
+Sub Source_Connection()
+
+    Dim cn As ADODB.Connection
+    Set cn = New ADODB.Connection
+    Dim rs As ADODB.Recordset
+    Dim r As Integer
+    
+    Dim server_name As String
+    Dim database_name As String
+    cn.ConnectionString = "driver={SQL Server};server=SPBLRLTU627\SQLEXPRESS01;database=AdventureWorks2017"
+    cn.Open
+    
+    MsgBox "Connected"
+    
+End Sub
+
+
+//Create Module Run: Write Run
+
+Sub Compare_Excel()
+
+
+ 'Define Fields
+    Dim Row As Integer
+    Dim Col As Integer
+    Dim oRow As Integer
+    
+    Dim Row_Max As Integer
+    Dim Col_Max As Integer
+    
+    Dim sh1 As Worksheet
+    Dim sh2 As Worksheet
+    Dim sh3 As Worksheet
+    
+    'Sheets to be compared
+    Set sh1 = ThisWorkbook.Sheets(1)
+    Set sh2 = ThisWorkbook.Sheets(2)
+    Set sh3 = ThisWorkbook.Sheets(3)
+    
+    'Max Rows
+    Row_Max = sh1.UsedRange.Rows.Count
+    Col_Max = sh1.UsedRange.Columns.Count
+    
+    'Read Data From Each Sheets of Both Excel Files & Compare Data
+    For Row = 1 To Row_Max
+        For Col = 1 To Col_Max
+        
+            'Compare Data From Excel Sheets & Highlight the Mismatches
+                If sh1.Cells(Row, Col) <> sh2.Cells(Row, Col) Then
+                    sh1.Cells(Row, Col).Interior.Color = vbGreen
+                    sh2.Cells(Row, Col).Interior.Color = vbYellow
+           
+            'Write Differences to Output sheet
+                    oRow = oRow + 1
+                    sh3.Cells(oRow, 1) = sh1.Cells(Row, Col)
+                    sh3.Cells(oRow, 2) = sh2.Cells(Row, Col)
+                   ' sh3.Cells(oRow, 3) = sh2.Cells(Row, Col)
+                End If
+            Next Col
+       Next Row
+       
+    
+    'Process Completed
+    MsgBox "Executed Successfully"
+
+End Sub
+
+
+//Open Excel: Create Target Buttons - Assign Target Macros
+
+Sub Target_Connection()
+
+    Dim cn As ADODB.Connection
+    Set cn = New ADODB.Connection
+    Dim rs As ADODB.Recordset
+    Dim r As Integer
+    
+    Dim server_name As String
+    Dim database_name As String
+    cn.ConnectionString = "driver={SQL Server};server=SPBLRLTU627\SQLEXPRESS01;database=AdventureWorks2017"
+    cn.Open
+    
+    MsgBox "Connected"
+    
+End Sub
+
+
+
+
+
+Create Table Emp
+(
+ Emp_ID varchar(20),
+ Emp_Name varchar(25),
+ Salary Numeric,
+ Mob_Num Numeric,
+);
+
+
+Emp_ID	Emp_Name	Salary	Mob_Num
+Emp_01	Anand	10000	9243078851
+Emp_02	Kumar	15000	9080578851
+Emp_03	Rahul	12000	9083578851
+Emp_04	Gokul	14000	9283578851
+Emp_05	Rakesh	17000	9283078851
+Emp_06	Lokesh	16000	9253078851
+Emp_07	Ganesh	13000	9253078851
+Emp_08	Gobi	11000	9253078851
+
+
+
+
+

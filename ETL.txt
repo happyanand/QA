@@ -1,0 +1,265 @@
+ETL Testing
+-------------------
+1) What is Data ware housing
+2) Features of data warehouse
+3) OLTP & OLAP Systems
+4) Database V/s Data warehouse
+5) ETL V/S Database Testing
+6) What is Data model
+7) Types of Data models
+8) Star schema & Snowflake schema
+9) SCD (Slowly Changing Dimensions )
+10) ETL V/S BI Tools
+
+//ETL(Extract/Transform/Load) Tools and BI(Bussiness Intelligence) Tools
+
+//ETL Tool:
+
+Informatica Power Center (Dev & Test)
+Query Surge (testing Tool)
+MS MSSQLSERVER SSIS (ETL Testing) 
+
+
+//Bussiness Intelligence Tools :
+
+Bussiness Objects
+Cognos
+Tableau
+Quickview
+
+
+What is ETL?
+
+ETL stands for Extract/Transform/Load. it is the process of How data loaded from source System to the data warehouse 
+
+//Types of Data Load :
+
+1)Full Load(Bulk Load) : Data Loading at First Time (Fresh Data)
+2)Incremental Load (Refresh Load) : Modified Data
+
+//Data Cleansing or Data Scrubbring
+
+Removing Irrelevant and Redudent data. Correcting Incorrect and Incomplete data.
+
+Irrelevent : Deleting Data Which are not Required.
+Redudent : Deleting Duplicate Data
+Incorrect : Updating incorrect values with correct values
+Incomplete : Updating incomplete values with correct values
+
+//Data Masking : Secure the Data
+
+Hiding/Encrypting the Sensitive Data
+
+Data Masking Techniques :
+
+Replacing subset data with dummy Charecters(ex:aaa)
+Replacing subset data with dummy Numbers(ex:111)
+Replacing subset data with dummy Random numbers(ex:1678)
+Replacing subset data with dummy Special Charecters(ex:xxx)
+Replacing subset data with dummy Shuffling Charecters and Numbers
+
+//ODS (Operational Data Source) :
+
+Integrated Data from different bussiness Sources
+Get the data from Transational Database
+Limited period of History data (30 to 90 days)
+
+//Staging Area :
+intermediate storage area used for data processing for Extract,Transform and load
+
+//Data Warehouse :
+
+Data Warehouse is also known as EDW(Enterprise data warehouse) used for reporting and data analysis and core component of bussiness unit
+DWs are central repositories of integrated data from one or more disparate sources
+
+//Data Mart :
+
+Data Mart is the subset of Data warehouse and specific bussiness Line or team
+
+//Data Retention - Archiving or Purging
+
+Data Retention is how the data need to be available in the database (or) Deleting the historical data
+
+//why Data Retention Policy required :
+performance impact
+Cost high
+Old Record may not be useful
+
+Purging : Deleting data from database crosses the defined retentiontime
+Archiving : Moving data to another database
+
+
+//ETL Testing Life Cycle/Process :
+
+1.Requirement Analysis
+2.Test Planning
+3.Test Design
+4.Test Execution
+5.Defect Retesting
+6.Test Closure/Sign off
+
+1.Requirement Analysis : 
+Required for 
+Data Model(how many tables,what kind of data table contain,What are the Relationship b/w tables) 
+Mapping Documents(What are the sources and Target and Transformation technique to apply)
+
+2.Test Planning :(How to test,What to test, When to test)
+
+3.Test Design : (Data type, Data Length, Relationship)
+
+4.Test Execution : Executing the test cases
+
+5.Defect Retesting : Fix the defect, Impact analysis
+
+6.Sign off : Push the Code to next level 
+
+
+//ETL Scenarios :
+
+Table Structure Verification : Column Name, data Type,data length of the target table
+Constraint Check : All the Constraint available
+Index check : index created with required columns
+Source Data validation  : Record source table count
+Data Count Check : Comparing target data count against source data count along with the major filter or Joining Condition
+Data Comparison Check : Source data Correctly moved to the Target table
+Duplicate Data Validation : Dplicate record will be rejected
+Data with primarykey and foreign key check : Different test data for parent and child table
+Null check : Null and NotNull column and verify the data will be rejected
+Data Precision check : Source table with different pression and loaded data has different pression
+All business transformation rules validation : TSD(Transformation Specification Document) needs to be tested keep separate testcases for every transformation
+
+//Transformation :
+
+Active Transformation : The output record count may or may not equal to input record count eg:Filter Transformation based on the age limit 25 to 40
+Passive Transformation : The output record count is equal to input record count eg:expression transformation concatenate firstname and Lastname
+
+
+//Types of Transformation :
+
+Filter Transformation (Active)
+Expression Transformation (Active)
+Aggeregator Transformation (Active)
+Joiner Transformation (Active)
+Union Transformation (Active)
+Sorter Transformation (Passive)
+Rank Transformation (Passive)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
