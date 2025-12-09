@@ -1,0 +1,51 @@
+Changes:
+
+data propeties files:
+	speridianAdmin=tpaadmin@Speridian.com
+	speridianAdminPwd=password$123
+
+Employee page Search name, first name 
+
+Home Page:
+
+ @Step("Search for the group")
+    public void searchGroup(String groupName){
+        driver.pageLoadWait();
+        driver.waitForElementClickable(Home.searchButtonId);
+         try{
+            Thread.sleep(3000);
+        }
+        catch (Exception e){
+
+        }
+        driver.type(Home.txtSearchId,groupName);
+        driver.click(Home.searchButtonId);
+        By groupGridXpath= By.xpath("//span[text()='"+groupName+"']/ancestor::a");
+        driver.click(groupGridXpath);        
+    }
+
+
+Enrollment Page:
+
+ @Step("Submit Enrollment")
+    public void submitEnrollment(){
+        driver.pageLoadWait();
+        driver.click(Enrollment.submit);
+        try{
+            Thread.sleep(7000);
+        }
+        catch (Exception e){
+
+        }
+    }
+
+
+
+
+config properties:
+
+speridianUrlUAT= https://uat-ee.benefitalign.com/EmployerEngage/Speridian/
+
+
+
+

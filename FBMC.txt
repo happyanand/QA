@@ -1,0 +1,487 @@
+Terminate Medicare - St. Lucie Public Schools
+ReEnroll Medicare - St. Lucie Public Schools
+Change Plan Medicare - St. Lucie Public Schools
+Change coverage amount - Pensacola State College
+Enroll and maintenance with Rate edit plan - St. Lucie Public Schools
+QE Medicare - Jackson Health System
+Retro enrollment with retro period - Jackson Health System
+Retro termination with retro period - Jackson Health System
+
+
+
+Change coverage amount
+Change Plan Ancillary
+Terminate Ancillary
+ReEnroll Ancillary
+QE Ancillary
+Update covered member Ancillary
+QE Medicare
+Retro enrollment with retro period
+Retro termination with retro period
+
+
+
+
+
+
+
+Employee Registration and Enrollment notification
+Add and Edit Beneficiary
+Enroll employee
+Decline all coverage
+Terminate Medical
+Terminate Ancillary
+Summary Verification
+Application Document
+Reenroll Medical
+Reenroll Ancillary
+Change Plan Medical
+Change Plan Ancillary
+QE on Medical
+QE Ancillary
+Update covered Members -  Medical
+Update covered Members -  Ancillary
+Employee Rehire &Enroll
+Employee reinstate
+360
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//*[@id="listView"]/li[1]/a/i
+
+//ul[@id='listView']//i[@class='fa fa-home']
+
+//ul[@id='listView']//i[@class='fa fa-home']
+//a[@aria-label='Login']
+//span[@id='btnSearch']//i[@class='material-icons'][normalize-space()='search']
+//input[@id='txtSearch']
+//a[@data-redirecturl='/ih/SupportUser/SupportUserList']
+//a[normalize-space()='More']
+
+
+
+
+//span[normalize-space()='Support User']
+
+//a[@data-redirecturl='/employerengage/speridian/Speridian/ReviewEmployee']
+//h5[normalize-space()='Review Employee Transactions']
+//ul[@id='listView']//li[3]//ul[1]//li[3]//a[1]
+
+//button[normalize-space()='Advance Search']
+
+//div[@class='col-md-3 col-sm-6 col-xs-12']//input[@id='FirstName']
+
+//input[@id='btnSearchAdvanced']
+
+//input[@id='ancillarySubmit']
+
+//input[@id='abtnWarningOk']
+
+
+987-76-5432
+
+Review Employee Transactions
+//form[@id='form0']//input[@id='KeyWordSearch']
+//i[@class='fa fa-search']
+//li[@class='name theme-text']
+
+
+ public static By btn_ReviewEmployee=By.xpath("//h5[normalize-space()='Review Employee Transactions']");
+    public static By txt_searchSSN =By.xpath("//form[@id='form0']//input[@id='KeyWordSearch']");
+    public static By icon_search =By.xpath("//i[@class='fa fa-search']");
+    public static By btn_submit =By.xpath("//input[@id='maintananceSubmit']");
+    public static By btn_ok =By.xpath("//input[@id='btnWarningOk']");
+
+
+//a[15]//div[1]//div[1]//div[1]//ul[1]//li[1]
+
+//input[@id='medicalSubmit']
+
+//input[@id='maintananceSubmit']
+//*[@id="btnWarningOk"]
+
+
+
+
+
+
+
+Enroll employee(Enrolled Employee)
+
+Decline all coverage
+QE on Medical
+QE Ancillary
+Update covered Members -  Medical
+Update covered Members -  Ancillary
+Cascade Scenario
+
+
+
+Terminate Medical
+Terminate Ancillary
+Summary Verification
+Reenroll Medical
+Reenroll Ancillary
+Change Plan Medical
+Change Plan Ancillary
+
+
+
+
+
+<!--<selenium.version>3.141.59</selenium.version>-->
+
+//input[@id='PaymentPreference_IsRecurringPaymentScheduled']
+
+//input[@id='PaymentPreference_IsRecurringPaymentScheduled']
+
+
+
+<!--<selenium.version>3.141.59</selenium.version>-->
+
+//input[@id='PaymentPreference_IsRecurringPaymentScheduled']
+
+//input[@id='PaymentPreference_IsRecurringPaymentScheduled']
+
+
+
+//div[@id='PresentCont_1']//a[@id='enrollMedical']
+
+enrollMedical
+
+//a[@id='enrollMedical']
+
+//span[@id='BtnSubmitEnrollment']
+
+
+
+
+//div[@id='PresentCont_16']//a[@id='lnkChangePlan']
+
+
+//span[@id='BtnSubmitChangePlan']
+
+//div[@id='PresentCont_16']//a[@id='lnkChangeFamily']
+
+//div[@id='PresentCont_1']//a[@id='lnkChangeFamily']
+
+//a[@class='btn btn-sm btn-primary']
+
+//span[normalize-space()='My Profile']
+
+//input[@id='BtnDependentAdd']
+
+
+//a[@id='BtnQEGotoProfile']
+
+
+
+
+//Terminate Medical Plan
+public void enterTerminationDate(Map<Object, Object> testdata) throws InterruptedException
+{
+	WaitForPageLoad();
+	click(terminationDate);
+	input(terminationDate,testdata.get("TerminationDate1").toString());  
+	selectByRandom(QualifyingEvent); 
+	click(submit);   
+	ExtentSuccessMessage("Successfully Terminated Medical Plan");
+}
+
+//selectQualifyingevent
+public void selectQualifyingevent() throws InterruptedException
+{
+	selectByRandom(QualifyingEvent); 
+	click(submit);   
+	ExtentSuccessMessage("Successfully Terminated Medical Plan");
+}
+
+
+//QETerminationDate
+public void QETerminationDate(Map<Object, Object> testdata) throws InterruptedException
+{
+	WaitForPageLoad();
+	click(terminationDate);
+	input(terminationDate,testdata.get("TerminationDate2").toString());  
+}
+
+
+
+
+
+
+//Terminate Ancillary Plan
+
+public void terminateDentalplan() throws InterruptedException
+{
+    click(clickDental);
+    scrollToElement(clickDental);
+    ExtentSuccessMessage("Successfully clicked on DentalPlan");
+	scrollUpVertically();
+	ExtentSuccessMessage("Successfully srolled down");
+    click(terminateDental);
+    ExtentSuccessMessage("Successfully clicked on Dental");
+}
+
+public void enterTerminationDate(Map<Object, Object> testdata) throws InterruptedException
+{
+	WaitForElementToBeVisible(terminationDate);
+	click(terminationDate);
+    input(terminationDate,testdata.get("TerminationDate1").toString()); 
+}
+
+//QETerminationDate
+public void QETerminationDate(Map<Object, Object> testdata) throws InterruptedException
+{
+	WaitForPageLoad();
+	click(terminationDate);
+	input(terminationDate,testdata.get("TerminationDate2").toString());  
+}
+
+
+
+
+
+
+
+
+//Terminate Ancillary Plan
+
+public void terminateDentalplan(Map<Object, Object> testdata) throws InterruptedException
+{
+    click(clickDental);
+    scrollToElement(clickDental);
+    ExtentSuccessMessage("Successfully clicked on DentalPlan");
+	scrollUpVertically();
+	ExtentSuccessMessage("Successfully srolled down");
+    click(terminateDental);
+    ExtentSuccessMessage("Successfully clicked on Dental");
+	WaitForElementToBeVisible(terminationDate);
+	click(terminationDate);
+    input(terminationDate,testdata.get("TerminationDate1").toString()); 
+    selectByRandom(QualifyingEvent);
+    click(submit);
+    ExtentSuccessMessage("Successfully Terminated Dental Plan");
+}
+
+
+	Alfred Joseph
+
+Ada Lewis
+
+//a[1]//div[1]//div[1]//div[1]//ul[1]//li[1]
+
+//*[@id="mCSB_1_container"]/a[1]/div/div/div/ul/li[1]
+
+//a[normalize-space()='Logout']
+
+
+//*[@id="menuList"]/li[3]/a
+
+
+Enroll employee(Enrolled Employee)
+Decline all coverage
+Terminate Medical
+Summary Verification
+Reenroll Medical
+Change Plan Medical
+QE on Medical
+Update covered Members -  Medical
+Cascade Scenario
+
+
+//h5[normalize-space()='Renewal Center']
+
+//input[@id='btnKeyWordSearch3']
+//button[@id='btnKeyWordSearch']//i[@class='material-icons'][normalize-space()='search']
+//*[@id="btnKeyWordSearch"]/i
+
+//a[@class='NEnrollRedirect btn btn-sm outline-bt']
+//*[@id="divViewCoverageMain"]/div/div[2]/div[1]/div/ul[2]/li[3]/a
+
+//*[@id="listView"]/li[4]/a
+
+//a[@class='NEnrollRedirect btn btn-sm outline-bt']
+//input[@id='BtnSubmit']
+
+Test:
+
+cascadeScenario.searchemployee(ssn);
+
+Pages:
+
+////"Search for the Employee")////
+public void searchemployee(String username) throws InterruptedException{
+	WaitForPageLoad();
+    try{
+        Thread.sleep(3000);
+    }
+    catch (Exception e){
+
+    }
+    click(txtKeywordSearch);
+    input(txtKeywordSearch, username);
+    click(btnKeywordSearch);
+    Thread.sleep(9000);
+    click(clickName);
+    Thread.sleep(9000);
+
+}
+
+//div[@id='divCobSelect']//label[@class='btn btn-default Yesnoclass'][normalize-space()='No']
+
+//a[@id='BtnGotoProfile']
+
+//label[@class='btn btn-default']
+
+//*[@id="divCobSelect"]/div/label[2]
+
+//a[@id='BtnSubmitEnrollment']
+
+//input[@id='BtnSubmit']
+//input[@id='BtnSubmit']
+
+
+//*[@id="divViewCoverageMain"]/div/div[2]/div[1]/div/ul[1]/li/div/div/div[2]/a
+
+//a[@class="NEnrollRedirect btn btn-primary"]
+
+//h4[normalize-space()='Dental']
+//a[@id='BtnGotoProfile']
+
+(//label[@class='btn btn-default addtoselect Yesnoclass'])[3]
+
+
+
+
+
+			
+//		employeeAdministration.searchEmployee(testdata.get("Emp_Name").toString());
+//		viewCoveragePage.editEnrollment();
+//		cascadeScenario.clickSubmit();
+//		enrollmentPage.declineAllCoverage();
+//		enrollmentPage.addAdditionalInsurance(false,testdata);
+//		enrollmentPage.clickNext();
+//		if(testdata.get("PaymentMethod").toString().equalsIgnoreCase("ACH")) {
+//            enrollmentPage.addProfileWithACH(false, "Chase", "021300077", false);
+//        }
+//        else {
+//            enrollmentPage.addProfileWithPensionAuthority(false);
+//        }	
+//        enrollmentPage.submitEnrollment();
+
+
+
+//h5[normalize-space()='Renewal Center']
+
+
+(//label[contains(@class,'btn btn-default addtoselect Yesnoclass')]//*[@data-categoryvalue="Dental"])[1]//parent :: label
+
+(//label[contains(@class,'btn btn-default addtoselect Yesnoclass')]//*[@data-categoryvalue="Dental"])[1]//parent::label
+
+(//label[@class='btn btn-default addtoselect Yesnoclass'])//*[@data-categoryvalue='"+value+"'][1]
+
+
+
+Crystal Gerhold Jr.
+Amya Schmidt V
+
+
+(//*[contains(@class,'Enroll-Decline')]//*[@data-categoryvalue='Vision'])
+
+
+ WebElement webelements = driver.findElement(By.xpath(Xpath));
+
+
+
+public void CheckOnCheckBox(By Element) throws InterruptedException {
+		WebElement checkboElement = driver.findElement(Element);
+		String getElementText = checkboElement.getAttribute("value");
+		if (getElementText.contains("false")) {
+			click(Element);
+			ExtentSuccessMessage("Successfully click on Checkbox");
+		} else {
+			ExtentSuccessMessage("Checkbox already checked");
+			click(Element);
+			click(Element);
+			ExtentSuccessMessage("Checkbox checked two times");
+		}
+
+
+
+(//*[contains(text(),'Child /Dependent')]//ancestor::li//*[contains(@class,'customCheckbox'])[1]
+
+
+
+
+
+
+
+
+
+
+Renewal Center:
+
+//		//Select Plan
+//		enrollmentPage.selectPlans(false);
+//		scrollUpVertically();
+//		changePlanAncillary.clickDental();
+//		cascadeScenario.clickChild();
+//		changePlanAncillary.clickDental();
+//		changePlanAncillary.clickVision();
+//		updateCoveredMembersMedical.clickSpouse();
+//		changePlanAncillary.clickVision();
+//		
+//		//Decline Plan
+//		renewalCenter.leagalcheckbox();
+//		renewalCenter.hearingcheckbox();
+
+
+
+			
+//		employeeAdministration.searchEmployee(testdata.get("Emp_Name").toString());
+//		viewCoveragePage.editEnrollment();
+//		cascadeScenario.clickSubmit();
+//		enrollmentPage.declineAllCoverage();
+//		enrollmentPage.addAdditionalInsurance(false,testdata);
+//		enrollmentPage.clickNext();
+//		if(testdata.get("PaymentMethod").toString().equalsIgnoreCase("ACH")) {
+//            enrollmentPage.addProfileWithACH(false, "Chase", "021300077", false);
+//        }
+//        else {
+//            enrollmentPage.addProfileWithPensionAuthority(false);
+//        }	
+//        enrollmentPage.submitEnrollment();
+
+
+//		employeeAdministration.searchEmployee(testdata.get("Emp_Name").toString());
+
+
+		
+
+		//Add and Enroll Employee
+		Home_Page.SelectGroupname(GroupName);
+		
+		//Group_Page.clickRenewalCenter();
+		Group_Page.clickEmployeeAdministration();
+		employeeAdministration.clickAddEmployee();
+
+
+
+
+public static By effectiveDate = By.cssSelector("input#Item1_EffectiveDate");

@@ -1,0 +1,232 @@
+ChangeCoverageAmountTest - done
+QE_on_MedicalTest - done
+TerminateMedicalTest - done
+ViewBenefitsTest  - done
+
+CascadeScenarioTest 
+UpdateCoveredMembersMedicalTest - done
+TerminateMedicareTest
+
+QE_on_MedicareTest - medicare yes
+ReEnroll_MedicareTest
+
+
+
+Speridian_QE_on_AncillaryTest - done
+Speridian_ReEnoll_Medical_Test - done
+Speridian_ReEnroll_Ancillary_Test - done
+
+Speridian_CascadeScenarioTest
+Speridian_RetroEnrollmentRetroPeriod
+Speridian_RetroTerminationRetroPeriod
+Speridian_UpdateCoveredMembersMedicalTest
+
+
+Speridian_EnrollAndMaintainanceWithRateEditPlan - employee class full time - Create seperate class
+
+
+
+
+Employee Page: Create seperate class page
+
+work details:
+
+if(driver.isDisplayed(Employee.annualSalary)) {
+        	driver.sendKeys(Employee.annualSalary, data.get("Annual Salary"));
+        }
+
+
+Employee Page: Create seperate class page 
+
+addPersonalInformation:
+
+driver.click(Employee.medicareEligible);
+
+//input[@id='EmployeeVM_AnnualSalary']
+
+employee class full time 
+
+driver.click(Employee.medicareEligible);
+
+
+
+
+Employee Class:
+
+	//tobaccoUse - under
+
+	public static By medicareEligibleReason = By.id("EmployeeVM_Person_PersonalDetails_MedicareEligibilityReasonId_chzn");
+	public static By ESRDstartDate  = By.xpath("//input[@id='EmployeeVM_Person_PersonalDetails_ESRDStartDate']");
+    
+	
+
+
+
+
+medicare page:
+
+TerminateMedicareTest
+QE_on_MedicareTest
+ReEnroll_MedicareTest 
+Speridian_EnrollAndMaintainanceWithRateEditPlan - employee class full time 
+
+
+Medicare_Emp_page:
+
+addPersonalInformation:
+
+  driver.click(Employee.medicareEligible);
+	        if(driver.isDisplayed(Employee.sponsorRelation)){
+	            driver.selectByRandom(Employee.sponsorRelation);    
+	        }
+	        
+	        if(driver.isDisplayed(Employee.ESRDstartDate)) {
+	        	driver.selectByRandom(Employee.medicareEligibleReason);
+	        	driver.sendKeys(Employee.ESRDstartDate, data.get("ESRDDATE"));
+	        }
+	        
+
+
+
+
+
+		if(driver.isDisplayed(Employee.sponsorRelation)){
+	            driver.selectByRandom(Employee.sponsorRelation);    
+	        }
+	        
+	        if(driver.isDisplayed(Employee.medicareEligibleReason)){
+	        	driver.selectByRandom(Employee.medicareEligibleReason);
+	        }
+	        
+	        if(driver.isDisplayed(Employee.ESRDstartDate)) {
+	        	driver.sendKeys(Employee.ESRDstartDate, data.get("ESRDDATE"));
+	        }
+
+
+
+
+
+
+
+
+Login
+Tenant Dashboard
+Account Dashboard
+Add Employee
+Activate Employee
+Submit Employee
+Activate and Enroll Employee
+Decline All Coverage
+Terminate Medical
+Terminate Ancillary
+Summary Verification
+View benefits and SBC
+ReEnroll Medical
+ReEnroll Ancillary
+Change Plan Medical
+Change Plan Ancillary
+Change coverage amount
+Enroll and maintenance with Rate edit plan
+QE on Medical
+QE Ancillary
+Update covered Members -  Medical
+Update covered Members -  Ancillary
+"Cascade Scenario 
+(Class, Sub group, Address change, DOB,Medicare flag, Dependent add or remove)"
+Retro enrollment with retro period
+Retro termination with retro period
+
+
+
+
+CC Letter verification
+Terminate Medicare
+ReEnroll Medicare
+Change Plan Medicare
+QE Medicare
+Terminate Employee
+Employee Rehire & Enroll
+Reinstate employee
+
+
+
+
+
+Employee Class:
+
+
+//Work Details
+
+public static By employeeFullTime=By.xpath("//*[@id='EmployeeVM_ClassId_chzn']/a");
+public static By EmployeeFullTime=By.xpath("//li[@id ='EmployeeVM_ClassId_chzn_o_2']");
+public static By EmployeeFBMC=By.xpath("//li[@id ='EmployeeVM_ClassId_chzn_o_1']");
+
+Medicare_Emp_page:
+
+addPersonalInformation:
+
+//contact details above:
+
+		 driver.click(Employee.medicareEligible);
+	        if(driver.isDisplayed(Employee.sponsorRelation)){
+	            driver.selectByRandom(Employee.sponsorRelation);    
+	        }
+	        
+	        if(driver.isDisplayed(Employee.medicareEligibleReason)){
+	        	driver.selectByRandom(Employee.medicareEligibleReason);
+	        }
+	        
+	        if(driver.isDisplayed(Employee.ESRDstartDate)) {
+	        	driver.sendKeys(Employee.ESRDstartDate, data.get("ESRDDATE"));
+	        }
+	        
+
+Medicare page Class:
+ //Work Details
+
+
+		driver.click(Employee.employeeClass);
+	       	driver.sendKeys(Employee.employeeFullTime, "FT-Full Time");
+        	driver.click(Employee.EmployeeFullTime);
+
+
+
+
+
+Test file:
+
+Terminate Medicare
+QE Medicare
+Reenroll Medicare
+Speridian Enroll with rate editplan
+Speridian Reinstate Employee 
+
+Emp_FBMC_Page emppage=new Emp_FBMC_Page(DriverFactory.getDriver());
+emppage.addPersonalInformation(data);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

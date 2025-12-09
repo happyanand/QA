@@ -1,0 +1,201 @@
+Contacts-- Anand
+Accounts--Speridian
+Segments--City_Segments
+Lead Scoring Moedel--City Lead Scoring Model
+Uploading Image-Image
+Email Header--MISK Email Header
+Email Footer--MISK Email Footer
+Create a Form--User form
+Landing Page--User Landing Page
+Create Email Group--Group Mail
+Email Name--Misk_Email
+HTML Document Name-- MiskNewsletter.html
+Campain Name--Reference Simple Campain
+Multiple Campaign--Reference MultiStep Campaign
+Segment Members--Segment Members City 
+
+this URL and user name for Marketting
+
+https://login.eloqua.com/?CheckFrame=false
+Eloqua - Customer Login
+
+Company Name: MiskFoundation
+Username: Ahmed.Nasr
+Password: SpTeSa221234
+
+this URL and user name for Sales/service
+
+https://fa-ewoe-test-saasfaprod1.fa.ocs.oraclecloud.com/
+
+speridian.admin
+Misk@12345
+
+
+
+Contact Management - Anandhakumar
+Partner Management - ArunKumar
+Partner contacts   - Sanjaykumar
+Programs 	   - Trail Version of Misk
+Enrollments - Misk Foundation - Misk Leadership Development-9055
+Enrollments - Misk Foundation - Misk Leadership Development-9056
+Enrollments - Misk Art - Proactive - Arun Kumar-9059
+Enrollmentst  - Misk - Reactive - Arun Kumar-9060
+Service request  -Payment Button Not Enabled
+
+
+Create Contact - Karan Kumar
+
+
+Contact Management - Manoj Kumar
+Partner Management - 
+
+
+
+
+Contact Management - Aravind Kumar
+Partner Management - Ramu
+Partner contacts   - Ravi Krishnan
+Programs 	   - Misk Goals
+Enrollments - Misk Foundation - Misk Leadership Development-9055
+Enrollments - Misk Foundation - Misk Leadership Development-9056
+Enrollments - Misk Art - Proactive - Arun Kumar-9059
+Enrollmentst  - Misk - Reactive - Arun Kumar-9060
+Service request  -Payment Button Not Enabled
+
+
+
+Events:
+
+Name - Misk Events
+
+
+Contact Management - Guru Moorthy
+Partner Management - Naveen
+Partner contacts   - Praveen Kumar
+Programs 	   - Carrier Events
+Enrollments - Misk Foundation - Misk Leadership Development-9055
+Enrollments - Misk Foundation - Misk Leadership Development-9056
+Enrollments - Misk Art - Proactive - Arun Kumar-9059
+Enrollmentst  - Misk - Reactive - Arun Kumar-9060
+Service request  -Payment Button Not Enabled
+
+
+
+Contact Management - Krishna Kumar
+Partner Management - Arjun
+Primary contact    - Ashok Kumar
+Partner contacts   - Praveen Kumar
+Programs 	   - Carrier Events
+
+
+Partner --> Create Partner Contact --> Create Entrollments (Event) --> Bussiness Units --> Misk Foundation & Misk Art 
+--> Misk Foundation - Partnership & Sponsorship
+--> Misk Art - Proactive & Reactive
+--> Proactive Created by - Misk Users
+--> Reactive Created by - Partners
+
+
+
+Projects Process:
+
+	MISK Project: It's a Goverment project.They conduct few events.They will have a lot of partners.They register all their partners into the application.
+Whenever they conduct any kind of programs,So the partners should get should have an option to enroll into the application, enroll into the events.
+So each and every time.whenever there is any program is going on so may be they will get notified by the through emails or something.
+so they will log into the partner portal and they will create a enrollments.And for those programs. programs are nothing but events.
+All the things done by marketing, but in sales CRM, we are handling the complete CRM module. CRM is nothing but a partner relationship management.
+And second thing is you are handling the one more service request part.So we'll start with the first Misk Foundation and Misk Art.
+what is Misk foundation? Misk Art is? When it comes to the Miss Foundation.Miss Foundation as a two types, one is partnership and second one is sponsorship.
+In case of Misk foundation,it's a one business unit and inside that there will be a set of users will be there from the misk thing and this is the flow to achieve the partnership and sponsorship.
+How this flow will means who all can approve, who is the responsible for each and every stages.Whenever if anyone want to enroll for any kind of programs.
+first they have to go and create a partner in the system, if the partner is there, if the partner is active, then only they can go and enroll further programs.
+under partner management. They have partners. So all the people who are the misk employees, those they will get an option to create a partners.
+So partners should get created and activated.partners are nothing but every company they will usually help of these organizations to generate more revenue.
+My understand nothing but dealers.whenever they use the dealers.they will get a dealer login.But here it's a partner is nothing but It's a different thing.
+So partners they will maintain because they will contact us some events. So the partners can enroll further those events.
+They have created this partner.after getting the partner,the user will activate the partner once they activate the partner, 
+this partner contact will get an option to log into the partner portal and raise a request.
+the partner does not have any approval because it is just creating and activating, so all the approvals will come in the partnership and sponsorship.
+This contact is the mandatory to activate the partner. If you don't have a contact, this is partner contact not normal contact.
+There is a difference between the normal contact partner contact.normal contact will not get the option to the partner portal. Only partner contacts will get an option to the partner portal.
+once whenever they want to activate the partner they have to give this partner contact once they give partner contact then they will get the user of the this person will receive a username and password.
+Log into the partner portal. So now logged in with the normal user. Consider this as a miskuser. Now I log in with this partner portal.
+Each and every contact.If they want to add multiple contacts, those people also will get it.
+It's one to many relationship, so each and every contact also if they need it right, so it then they can provide otherwise it's up to them.
+To activate the users they have to do these steps they have to go to the partner contact and manage user details.
+automatically user could create it and the partner contact will receive e-mail.
+what do they do? what is their responsibility? They have to whenever there is an event, they have to register for the event. 
+How they can register it is they can just go to the partners?There is an enrollment tab in this in this enrollment tab, they will option to create an enrollment 
+when they are creating enrollment, they'll come to know for which type they are.Whether they are listening for the Misk Foundation or Misk Art. 
+if they're going with Misk Foundation, then They will have a partnership and sponsorship. If they go with the Misk Art, 
+they will have a proactive and reactive. I'll go with the first misk foundation then. This is the business side anyway. 
+So this is the type they can select partnership or sponsorship here. The program is nothing but an event. So which program they are planning to go for it. 
+So let's say they are going further misk global form.For them so they can select this event and the type and stage. Anyway, start from the beginning,
+fill the partnership details request card. So I fill the request card. This will be assigned to the BDMP team.this BDMP team will be receiving this enrollments.
+These guys are responsible for reviewing all the partner requests.We will review all the partner requests.Who other team also can raise the request 
+this other team is belongs to the Misk team. So when they log into the system they can see all the partners, they can open any one of the partner and raise their request.
+Misk employee also can create the enrollment and partners also can create the enrollment.both the request will come to the BDMP team. 
+So these BDMP team will review all the request cards then they will send it further legal management team.
+Whenever they send this to the legal management team.legal management team will receive their notifications and all the things e-mail and everything. 
+So these guys are responsible for approving this. So do the risk assessment.These guys will do all the these request cards, do the risk assessment.
+Let me go with this one proactive and reactive because even proactive and reactive is exactly same. If you go to the proactive. 
+proactive it will start the request from the other e-mail.his all the proactive request will be done by the other MA teams. 
+Other MA teams will have access to create this one.Just consider.this is one team.we have one user called other MA teams. 
+They just go to the partners partner management, so they will select which partner they want to raise this proactive.
+Request. Then they'll go to enrollments. They'll just click on create enrollment, then they'll select business unit like Miss art and program, let's say ART event.
+Then type proactive. Then says start from the beginning which date.generally when you go to your partner management.
+this partner management has first is partners, enrollment is nothing but whatever they create request programs are nothing but events announcements
+when they create any program, right is nothing but an event. So they will.They are conducting the event on next month,next week from 14th through 18th. 
+First they will create a event. Then they will go to announcement. They will announce this is the event is going on. If you want to enroll you can go on enroll it.
+Participate because of Sometimes the user licenses, they may not give for the all the people so that time they will reach out to the other team employees.
+They will call create a.He enrollment on behalf of us, so that's why the these other MA team will log into the system. They'll go to here.
+They will create an enrollment on behalf a partner.wherever there is a required for the let's say there is a in this process they require the approval from CEO,
+they can just go to the whichever the step is there you see here then they will.Change the state stays to here, then automatically they'll CEO will receive it approval.
+It'll keep on going and it'll follow the entire process until wherever they require the any approvals.So the main difference between the proactive is proactive will be raise the request by Other MA teams.
+Though this proactive will be credited by the MA teams. So when it comes to reactive, reactive will be created by the partner.
+Now we'll go to sponsorship. Sponsorship is bit different from the all these flows how the sponsorship flow will work is. Sponsorship flow will start with the.
+Contacts not from the partner contact. we have a contacts also there normal contacts.They will check whether this in the system, whether contact is present or not.
+If the contact is not present they'll create manually.That is the process. If the then In the ellqua what do they do? They create a target list.
+Running campaign because they are announcing his sponsorship.So all the partners who are eligible, they will their target list they will fill the all the people.
+who are they will apply all the filters.whether they'll pick up from the contacts all the contacts data from there they'll pick up that filters and they'll make the target list.
+to the target list they will send mass emails to the target. People will receive all the marks emails.So the maximum you can see we will receive Maximals mass emails which will be received to the partners.
+So this partners, they will get an e-mail.Once they receive an e-mail, if they're interested, they can go and register further this sponsorship.
+They have to provide a target list parameters.How do they make the target list that they provide then? Then we can include in our document,
+So this way whenever they send a campaign and they will receive an e-mail and so if they go and if the people are the partners are interested 
+they will the registered as they interested and that response will be captured to eloqua.even will also receive the all the information of that. partners The name contact and everything.
+whenever they go and register their details in the link right see whenever they click on that link the e-mail they will have a one form.
+there are two-minute from the ship form and they have to submit it.So automatically contact will create lead. Now once we will submit the form
+So from the lead.they will create a meeting with the person and they will go. It will if it is successful then they will go and create a partner.
+Then they'll go and create a partner, and they'll also go and create a sponsorship request.Let's say we have received this lead from the.they'll come to another. 
+This lead is interested in this Sponsorship.This way this again this will also whenever they request anything.
+This sponsorship also it'll go to the BDMP team only one step in this it'll go to the legal department
+otherwise it will always stay with a BDMP team only.So once that it will go to the only one time it will go to the legal department approval.
+Otherwise most of the time with the BDMP team will be handling all these sponsorship.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

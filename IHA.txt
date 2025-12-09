@@ -1,0 +1,368 @@
+
+
+
+Manage coverage:
+
+//*[@id="listView"]/li[3]/a
+
+
+
+Carrier Response Update:
+
+//*[@id="listView"]/li[3]/ul/li[3]/a/span
+
+//span[normalize-space()='Carrier Response Update']
+
+
+Action Drop down:
+
+//a[@class='chzn-single chzn-default']
+//a[@class='chzn-single chzn-default chzn-error selected']
+//*[@id="TransType_chzn"]/a
+
+
+
+
+//*[@id="TransType_chzn_o_1"]
+id=TransType_chzn_o_1
+
+id=TransType_chzn_o_2
+
+
+click Search Drop down:
+
+//button[@id='btnAdvancedToggle']//i[@class='fa fa-angle-down']
+
+//i[@class='fa fa-angle-up']
+
+//*[@id="btnAdvancedToggle"]/i
+
+
+SSN:
+
+/html[1]/body[1]/div[4]/div[2]/div[1]/div[1]/div[1]/form[1]/div[2]/div[1]/div[3]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/input[2]
+//*[@id="SSN_mask"]
+
+
+First Name:
+
+//div[@class='col-md-3 col-sm-6 col-xs-12']//input[@id='FirstName']
+
+
+
+Search Button:
+
+//input[@id='btnSearchFor_MemberInfo_Advanced']
+
+//*[@id="btnSearchFor_MemberInfo_Advanced"]
+
+
+Member ID:
+
+//input[@id='individualmemberid']
+
+//*[@id="individualmemberid"]
+
+click Submit:
+
+//input[@value='Submit']
+
+//*[@id="mCSB_1_container"]/table/tbody/tr[1]/td[9]/input
+
+
+Member ID: 11 digits
+
+
+Action : Update Status
+
+//a[@class='btn btn-sm btn-default btn_statusUpdate']
+
+//*[@id="tableContact"]/tbody/tr[2]/td[11]/a
+
+
+popup OK:
+
+//*[@id="btnPopUpSuccessResponseOk"]
+
+Staus Active:
+
+//div[@class='premium_cart_section tick_active']
+
+//*[@id="PresentCont_1"]/div/div/div/div[2]/div[2]/div/text()
+
+
+//*[@id="PresentCont_1"]/div/div/div/div[2]/div[2]/div/label[5]
+
+Active                                        
+
+//div[@class='premium_cart_section tick_active']
+
+
+Employee Class:
+
+//*[@id="Item1_EmployeeVM_EmploymentStatusId_chzn"]
+//*[@id="Item1_EmployeeVM_EmploymentStatusId_chzn"]/a
+//a[@class='chzn-single chzn-default selected']
+id=Item1_EmployeeVM_EmploymentStatusId_chzn
+driver.selectByRandom(Employee.employeeClass);
+
+
+
+
+
+Cobra Enrollment NO:
+
+//label[@class='btn btn-default btn_radio_program Yesnoclass']
+//*[@id="dv_selection"]/div/div[2]/div/div/label[2]
+
+continue button:
+
+//a[@id='a_continueSelection']
+//*[@id="a_continueSelection"]
+
+
+
+
+
+
+
+
+
+Test file:
+		commonUtil.launchUrl(System.getProperty("IHAURL"));
+		sa.assertTrue(loginPage.isLoginPageDisplayed(),"Login page should be displayed");
+		loginPage.sigin(System.getProperty("IHAAdmin"),System.getProperty("IHAAdminPwd"));
+		String userName=homePage.getLoggedInUserName();
+		sa.assertEquals(userName, Home.IHAAdmin,"User should be navigated to the HomePage");
+		homePage.searchGroup(data.get("GroupName"));
+		groupPage.clickEmployeeAdministration();
+		employeeAdministration.clickAddEmployee();
+		String ssn=employeePage.addIHAPersonalInformation(data);
+		//employeePage.addDependent(data);
+		//employeePage.addAttachment(data.get("AttachmentPrivate"));
+		//employeePage.addNotes(data.get("NotesPrivate"));
+		employeePage.activateAndEnroll();
+		terminateMedical.enterEffectiveDate(data.get("EffectiveDate"));
+		List<Map<String,String>> selectedPlanDetails=enrollmentPage.selectPlans(false);
+		//enrollmentPage.addAdditionalInsurance(true,data);
+		enrollmentPage.submitEnrollment();
+		enrollmentSummaryPage.verifyEnrolledPlanInfoDisplayed(selectedPlanDetails);
+		terminateMedical.clickCloseButton();         
+		terminateMedical.clickManageCoverage();
+		terminateMedical.CarrierResponseUpdate();
+		terminateMedical.updateMemberID();
+		terminateMedical.enterMemberID(ssn);
+		terminateMedical.clickManageCoverage();	
+		terminateMedical.clickViewCoverage();        	
+		terminateMedical.searchemployee(ssn);    	
+		//terminateMedical.clickMedicalDropdown();
+		terminateMedical.scrollDown();
+		terminateMedical.clickterminateMedical();
+		
+
+
+Page file:
+
+	@Step("Click ManageCoverage")
+    public void clickManageCoverage() throws InterruptedException{
+        driver.pageLoadWait();
+        Thread.sleep(8000);
+        driver.click(TerminateMedical.clickManageCoverage);
+        driver.pageLoadWait();
+ 	}
+	
+	@Step("Click CarrierResponseUpdate")
+    public void CarrierResponseUpdate(){
+        driver.pageLoadWait();
+        driver.click(TerminateMedical.clickCarrierResponseUpdate);
+        driver.pageLoadWait();
+    }
+    
+    @Step("Click ViewCoverage")
+    public void clickViewCoverage(){
+        driver.pageLoadWait();
+        driver.click(TerminateMedical.clickViewCoverage);
+        driver.pageLoadWait();
+    }
+    
+    
+    @Step("Search for the Employee")
+    public void searchemployee(String ssn) throws InterruptedException{
+        driver.pageLoadWait();
+        driver.click(TerminateMedical.txtKeywordSearch);
+        driver.type(TerminateMedical.txtKeywordSearch, ssn);
+        driver.click(TerminateMedical.btnKeywordSearch);
+        driver.pageLoadWait();
+        Thread.sleep(8000);
+        driver.click(TerminateMedical.clickName);
+        Thread.sleep(5000);
+    }
+		
+    
+    @Step("Select Action Dropdown")
+    public void updateMemberID(){    
+    	 driver.click(TerminateMedical.clickActionDropdown);
+    	 driver.click(TerminateMedical.UpdateMemberID);
+    }
+    
+    @Step("Select Action Dropdown")
+    public void UpdateSuccessResponse(){    
+    	 driver.click(TerminateMedical.clickActionDropdown);
+    	 driver.click(TerminateMedical.UpdateSuccessResponse);
+    }
+    
+    @Step("Enter MemberID")
+    public void enterMemberID(String ssn){    
+    	 driver.click(TerminateMedical.searchDropdown);
+    	 driver.click(TerminateMedical.searchSSN);
+    	 driver.sendKeys(TerminateMedical.searchSSN, ssn);
+    	 driver.click(TerminateMedical.searchButton);
+    	 driver.pageLoadWait();	 
+    	 driver.click(TerminateMedical.typeMemberID);
+    	 driver.sendKeys(TerminateMedical.typeMemberID, ssn);
+    	 driver.click(TerminateMedical.clicksubmit);
+    }
+
+
+
+Locators:
+
+	public static By clickManageCoverage= By.xpath("//*[@id='listView']/li[3]/a");
+	
+	public static By clickCarrierResponseUpdate= By.xpath("//span[normalize-space()='Carrier Response Update']");
+	
+	public static By clickActionDropdown= By.xpath("//*[@id='TransType_chzn']/a");
+	
+	public static By UpdateMemberID= By.xpath("//*[@id='TransType_chzn_o_1']");
+	
+	public static By UpdateSuccessResponse= By.xpath("//*[@id='TransType_chzn_o_2']");
+	
+	public static By searchDropdown= By.xpath("//*[@id=\"btnAdvancedToggle\"]/i");
+	
+	public static By searchSSN=By.xpath("/html[1]/body[1]/div[4]/div[2]/div[1]/div[1]/div[1]/form[1]/div[2]/div[1]/div[3]/div[1]/table[1]/tbody[1]/tr[1]/td[1]/input[2]");
+	
+	public static By searchButton= By.xpath("//input[@id='btnSearchFor_MemberInfo_Advanced']");
+	
+	public static By typeMemberID= By.xpath("//input[@id='individualmemberid']");
+	
+	public static By clicksubmit= By.xpath("//input[@value='Submit']");
+	
+	public static By clcikUpdateStatus= By.xpath("//a[@class='btn btn-sm btn-default btn_statusUpdate']");
+
+	public static By clickViewCoverage= By.xpath("//span[normalize-space()='View Coverage']");
+	
+	public static By txtKeywordSearch=By.xpath("//input[@id='btnKeyWordSearch2']");
+	
+	public static By btnKeywordSearch=By.xpath("//button[@id='btnKeyWordSearch']");
+	
+	public static By clickName= By.xpath("//div[@id='div_ListView']/table/tbody/tr/td[2]/a");
+
+
+
+
+facing issues:
+
+Dependent details:
+	employeePage.addDependent(data);
+Additional Insurance:
+	enrollmentPage.addAdditionalInsurance(true,data);
+
+
+
+
+
+
+QE Medicare:
+
+Locators:
+public static By clickNO= By.xpath("//label[@class='btn btn-default']");
+
+Pages:
+@Step("click Payment profile NO")
+	public void clickPaymentNO() {
+		driver.click(QE_On_Medicare.clickNO);
+	}
+
+Test file:
+QE_Medicare.clickPaymentNO();
+
+
+Cammand Payments in Test file. after add above line in two places in payment methods. 
+
+
+common util:
+
+ @Step("Random Number")
+    public int getRandomMemberID(){
+        long timeSeed = System.nanoTime();
+        double randSeed = Math.random() * 1000;
+        long midSeed = (long) (timeSeed * randSeed);
+        String s = midSeed + "";
+        String subStr = s.substring(0, 11);
+        if(subStr.charAt(0)=='9'){
+            subStr='7'+subStr.substring(1);
+
+        }
+        subStr=subStr.replaceAll("0","1");
+        return Integer.parseInt(subStr);
+    }
+    
+
+
+
+
+
+
+Test file: terminateMedical.verifyButton();
+
+Pages:
+
+@Step("verify Buttons are Enabled")
+    public void verifyButton(){
+    	driver.scrollDown();
+        driver.isEnabled(TerminateMedical.terminateMedical);
+    }
+
+		//System.out.println(terminateMedical.checkstatus(data));
+		//System.out.println(terminateMedical.Verifystatus(terminateMedical.status));
+		//Assert.assertEquals(terminateMedical.checkstatus(data), terminateMedical.Verifystatus(terminateMedical.status),"Assertion Passed");
+		
+
+
+
+
+
+
+casecade - download file exist
+change plan medical-download file exist
+QE Medical - download file exist
+ReEnroll Medical - download file exist
+Summary Verification - Blank page
+
+
+Rehire- page load
+Reinstiate-page load
+Retro termination- after method
+Terminate Employee - page load
+Account dashboard - testdata
+Activate and Enroll- testdata
+Add employee- testdata
+Submit- testdata
+Tenant dashboard- testdata
+
+
+
+
+
+
+``
+
+
+
+
+
+
+
+
+
+

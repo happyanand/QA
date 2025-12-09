@@ -1,0 +1,6058 @@
+TN: Smoke testing
+Descriotion:
+Navigate to login page
+
+Enter login: go to login
+user navigate to login page
+passs/fail
+
+Sheet Name		Smoke Testing Testcase
+Test data: Url,username,pass
+pre cond: skip
+
+
+User Navigate to 
+
+User Click on
+
+User Can able to See 
+
+User Should able to See
+
+
+
+Activate Employee : Generate Payable, Account Summary, Vendor Account, Edit, Terminate, Manage Coverage, Audit Details
+
+Submit Employee : Generate Payable, Account Summary, Vendor Account, Edit, Audit Details
+
+
+
+User should add employee details
+
+
+TC001 - > Verify User is able to Login to Application
+
+
+
+
+
+
+
+Group Name : MAMI -DADE COUNTRY - Change coverage amount TestCases
+
+
+Terminate Medicare : Florida State at Jacksonville, College of Central Florida, Indian River State College,  Lake Sumter State College  
+
+Medicare Advantage & Part D, Medicare Advantage & Part D Spouse
+
+MDCPS Board Members --> Timothy Hone --> Terminate Medicare
+
+MDCPS Board Members --> Enroll and maintenance with Rate edit plan
+
+St. Lucie Public Schools  --> Enroll and maintenance with Rate edit plan
+
+North Florida College  --> View Benefits and SBC
+
+Gulf Coast State College --> Change coverage amount
+
+Indian River State College ---> View benefits and SBC
+
+Swetha Doing these flows:
+
+Login
+Tenant Dashboard
+Group Dashboard
+Add Employee
+Activate employee
+Submit employee
+Activate and Enroll Employee
+Decline all coverage
+Terminate Employee
+Employe Rehire &Enroll
+Reinstate employee
+
+I am Doing these flows :
+
+Terminate Medical
+Terminate Ancillary
+Summary Verification
+View Benefits
+CC Letter Verification
+ReEnroll Medical - Add Profile is want to add or Not
+ReEnroll Ancillary
+Change Plan Medical
+Change Plan Ancillary
+QE Medical
+QE Ancillary
+
+
+Remaining these flows are pending:
+
+Terminate Medicare
+ReEnroll Medicare
+Change Plan Medicare
+Change coverage amount
+Enroll and maintenance with Rate edit plan
+QE Medicare
+Update covered Members -  Medical 
+Update covered Members -  Ancillary
+Cascade Scenario (Class, Sub group, Address change, DOB,Medicare flag, Dependent add or remove)"
+Retro enrollment with retro period
+Retro termination with retro period
+
+
+
+
+
+
+
+
+
+
+1.User Enter the URL in any Browser
+2.User Enter User Name and Password
+3.User Click on Login Button
+4.User Click on any Group Name
+5.User Click on Employee Administration
+6.User Click on Add Employee
+7.User Click on Activate and Enroll Employee
+8.User should Enroll Medical Plans. Refer (TC007)
+9.User Click on Manage Coverage and Select View Coverage
+10.User Select Employee and Select the Enrollment Period
+11.User  Click on Covered Plans
+12.User Clcik on Term Life Plan
+13.User Click on Change Coverage Amount
+14.User Select Qualifying Event
+15.User Select Effective Date
+16.User Select Employee Coverage Amount
+17.User Select a Plan
+18. User Edit Plan Cost
+19.User Click on Next
+20.User Click on Submit
+21.User Click on Download Summary Document
+
+
+Adjustment/Correction
+Adoption or Change in Legal Custody
+Change in Employment Status
+Change in Plan Anniversary
+Deceased Dependent
+Dependent entering the country
+Divorce/Legal Separation
+Involuntary Loss of Medical Coverage
+Marriage
+Max - Age Termination
+Medicare Entitlement
+New Born Child
+New Hire
+Spouse Employment Termination
+Voluntary Cancellation
+
+
+
+Doubts:
+
+
+Users Like Admin, BA, Employee Where it is there.
+
+What are the differences in FBMC, IHA, Speridian needed that document
+
+IHA - Group Name we need which Group We need to enroll
+
+We want to add all the details. like Prefix, suffix
+
+
+Speridian - CC Letter Verification Not available
+
+Speridian - Accounts Dashboard
+
+FBMC - Group Dashboard
+
+
+
+
+
+//*[@id="lnkTerminate"]
+//div[@id='PresentCont_16']//a[@id='lnkTerminate']
+
+//*[@id="lnkTerminate"]
+
+
+//h4[text()='Reports']
+
+//*[@id="lnkTerminate"]
+
+<a class="btn btn-primary" data-category="1" data-cobraind="False" data-effdate="01/01/2023 00:00:00" data-pendingyearind="0" data-personid="803713" href="javascript:void(0)" id="lnkTerminate"><i class="DC"></i>Terminate Medical</a>
+
+
+
+//div[@id='PresentCont_16']//a[@id='lnkTerminate']
+
+
+
+//*[@id="divViewCoverageMain"]/div/div[2]/div[1]/div/ul[2]/li[3]/a
+
+
+//a[@class='btn btn-sm outline-bt ']
+
+//a[@id='lnkTerminate']
+
+//div[@id='PresentCont_1']//a[@id='lnkTerminate']
+
+
+//*[@id="PresentCont_1"]/div/div/div/div[2]/div[3]/div[1]/ul/li/a
+
+
+
+
+//div[@id='PresentCont_1']//a[contains(@class,'lnkViewBenefits')][normalize-space()='View Benefits']
+
+
+
+
+
+//div[@id='PresentCont_1']//div[contains(@class,'plan_card_footer')]//div[contains(@class,'col-md-3')]
+
+
+
+
+//div[@id='PresentCont_16']//div[contains(@class,'plan_card_footer')]//div[contains(@class,'col-md-3')]
+
+
+//*[@id="PresentCont_17"]/div/div/div/div[2]/div[3]/div[1]/ul/li/a
+
+
+
+//*[@id="DownloadDoc"]/u
+
+
+//tbody/tr[1]/td[4]/a[1]/u[1]
+
+
+//a[@data-redirecturl='/employerengage/fbmc/Correspondence/CorrespondenceCenter']
+
+
+//*[@id="listView"]/li[4]/ul/li[1]/a/span
+
+//a[@id='enrollMedical']
+
+
+//*[@id="enrollMedical"]
+
+//div[@id='PresentCont_1']//a[@id='enrollMedical']
+
+//div[@id='PresentCont_16']//a[@id='enrollMedical']
+
+//div[@id='PresentCont_16']//a[@id='enrollMedical']
+
+//*[@id="enrollMedical"]
+
+
+//div[@id='PresentCont_16']//a[@id='enrollMedical']
+
+
+//*[@id="lnkChangePlan"]
+
+
+//a[@id='lnkChangePlan']
+
+//div[@id='PresentCont_1']//a[@id='lnkChangePlan']
+
+//div[@id='PresentCont_16']//a[@id='lnkChangePlan']
+
+//div[@id='PresentCont_16']//a[@id='lnkChangePlan']
+
+
+//a[@id='lnkChangeFamily']
+
+//div[@id='PresentCont_1']//a[@id='lnkChangeFamily']
+
+
+//*[@id="lnkChangeFamily"]
+
+//div[@id='PresentCont_1']//a[@id='lnkChangeFamily']
+
+
+
+//a[contains(@class,'btn btn-sm outline-bt')]
+
+
+//*[@id="PresentCont_1"]/div/div/div[1]/div[2]/div[3]/div[1]/ul/li/a
+
+//a[@id='enrollMedical']
+
+//*[@id="enrollMedical"]
+
+//div[@id='PresentCont_1']//a[@id='enrollMedical']
+
+//div[@id='PresentCont_16']//a[@id='enrollMedical']
+
+//span[normalize-space()='Adjustment/Correction']
+
+
+//*[@id="Item1_QualifyingEvent_QualifyingEventName_chzn"]/a
+/*[@id=\"QualifyingEvent_QualifyingEventName_chzn\"]/a
+//*[@id="Item1_QualifyingEvent_QualifyingEventName_chzn"]/a
+
+//input[@id='Item1_EffectiveDate']
+//*[@id="Item1_EffectiveDate"]
+
+//div[@id='div_ShowPlans_1']//div[1]//div[3]//div[2]//div[1]//label[1]//span[1]
+
+//*[@id="div_ShowPlans_1"]/div[1]/div[3]/div[2]/div/label/span
+//a[@id='BtnQEGotoProfile']
+
+//*[@id="BtnQEGotoProfile"]
+
+//label[@class='btn btn-default active']
+//label[@class='btn btn-default']
+//*[@id="divCobSelect"]/div/label[2]
+//span[@id='BtnSubmitEnrollment']
+//*[@id="BtnSubmitEnrollment"]
+
+
+
+Doubts:
+
+I will give manage coverage Page or Terminate Medical page
+How to give Date and Drop down values Testdata in CSV file
+
+I think Termination Date should be given manually, because we cant choose termination date prior to enrollment date
+
+
+https://speridiantec-my.sharepoint.com/:v:/g/personal/deepika_sivasheela_speridian_com/EX5po9bBBElLljJvyteS98kBKTBPzvjIgVWb6ERjwEiMZw?email=anandhakumar.r%40speridian.com
+
+
+//body/div[@class='header navbar-fixed-top']/div[@class='container']/nav[@class='navbar Mainmenu']/div[@class='container-fluid']/div[@id='navbar']/ul[@id='listView']/li[3]/a[1]
+
+
+//*[@id="listView"]/li[3]/a
+
+//a[@class='dropdown-toggle selected']  //*[@id="listView"]/li[3]/a
+
+
+View Coverage -->  //span[normalize-space()='View Coverage']    (or)  //*[@id="listView"]/li[3]/ul/li[1]/a/span
+
+@Step("Manage Coverage page displayed")
+    public void clickViewCoverage(){
+        driver.pageLoadWait();
+        driver.selectByValue(By.xpath("//span[normalize-space()='View Coverage']"), "View Coverage");
+     }
+    
+    @Step("View Coverage page displayed")
+    public Boolean isViewCoveragePageDisplayed(){
+        driver.pageLoadWait();
+        return driver.isDisplayed(ManageCoverage.viewCoverage);
+    }
+
+
+
+
+//driver.click(ManageCoverage.viewCoverage);
+
+//input[@id='btnKeyWordSearch2']
+
+
+
+
+//a[@id='enrollMedical']
+
+//*[@id="enrollMedical"]
+
+
+//div[@id='PresentCont_16']//a[@id='enrollMedical']
+
+
+//*[@id="enrollMedical"]
+
+
+//span[normalize-space()='Select Plan']
+
+//*[@id="div_ShowPlans_16"]/div/div[3]/div[2]/div/label/span
+
+
+//span[@id='BtnSubmitEnrollment']
+
+//div[@id='PresentCont_16']//a[@id='enrollMedical']
+
+
+//a[@class='chzn-single chzn-default']
+
+
+//*[@id="Item1_QualifyingEvent_QualifyingEventName_chzn"]/a
+
+
+//input[@id='Item1_EffectiveDate']
+
+//*[@id="Item1_EffectiveDate"]
+
+//span[normalize-space()='Select Plan']
+
+//*[@id="div_ShowPlans_16"]/div/div[3]/div[2]/div/label/span
+
+//a[@id='BtnQEGotoProfile']
+
+//label[@class='btn btn-default']
+
+//*[@id="divCobSelect"]/div/label[2]
+
+//div[@id='PresentCont_1']//a[@id='lnkChangePlan']
+
+//*[@id="lnkChangePlan"]
+
+//a[@class='planAccordian collapsed']//i[@class='fa fa-angle-down']
+
+//*[@id="div_AccodianHead_1"]/a/i
+
+//h4[@class='panel-title']
+
+//a[@class='planAccordian collapsed']//i[@class='fa fa-angle-down']
+
+//*[@id="div_ShowPlans_1"]/div[2]/div[3]/div[2]/div/label
+
+//div[@id='PresentCont_17']//a[@id='lnkChangePlan']
+
+//h4[normalize-space()='Vision']
+
+//span[normalize-space()='Select Plan']
+
+//*[@id="div_ShowPlans_17"]/div[2]/div[3]/div[2]/div/label/span
+
+
+//span[@id='BtnChangePlanGotoProfile']
+
+//label[@class='btn btn-default']
+
+//*[@id="divCobSelect"]/div/label[2]
+
+//span[@id='BtnSubmitChangePlan']
+
+
+
+//div[@id='collapsepresentdecline_1']//div[1]//a[1]
+
+//*[@id="enrollDental"]
+
+//b[normalize-space()='Declined Plans']
+
+//*[@id="divViewCoverageMain"]/div/div[2]/div[3]/div[1]/div[2]/div[1]/ul/li[1]/a/h5/b
+
+//*[@id="accordionpresentdecline_1"]/div/div[1]/a/h4
+
+//a[contains(@class,'accordion-toggle collapsed')]//h4[contains(@class,'panel-title')][normalize-space()='Medical']
+
+//a[contains(@class,'accordion-toggle collapsed')]//i[contains(@class,'fa fa-angle-down')]
+
+//*[@id="accordionpresentdecline_1"]/div/div[1]/a/i
+
+//div[contains(@class,'panel-body 1-wrap')]//a[@id='enrollDental']
+
+//*[@id="enrollDental"]
+
+//div[@id='collapsepresentdecline_1']//div[1]//a[1]
+
+//a[@class='chzn-single chzn-default']
+
+
+//span[normalize-space()='Adjustment/Correction']
+
+//*[@id="Item1_QualifyingEvent_QualifyingEventName_chzn"]/a
+
+//*[@id="div_ShowPlans_1"]/div[1]/div[3]/div[2]/div/label
+
+//a[@id='BtnQEGotoProfile']
+
+//label[@class='btn btn-default']
+
+//*[@id="divCobSelect"]/div/label[2]
+
+//span[@id='BtnSubmitEnrollment']
+
+//*[@id="BtnSubmitEnrollment"]
+
+//a[@class='accordion-toggle collapsed']//h4[@class='panel-title'][normalize-space()='Vision']
+
+//a[@class='accordion-toggle collapsed']//h4[@class='panel-title'][normalize-space()='Dental']
+
+//*[@id="accordionpresentdecline_16"]/div/div[1]/a/h4
+
+
+//*[@id="accordionpresentdecline_16"]/div/div[1]/a/h4
+
+//div[contains(@class,'panel-body 16-wrap')]//a[@id='enrollDental']
+
+//*[@id="enrollDental"]
+
+//span[normalize-space()='Select Plan']
+
+
+//*[@id="div_ShowPlans_16"]/div/div[3]/div[2]/div/label/span
+
+
+//a[@id='BtnQEGotoProfile']
+
+//span[@id='BtnSubmitEnrollment']
+
+//span[@id='BtnSubmitEnrollment']
+
+//span[@id='BtnSubmitEnrollment']
+
+//div[@id='Presentaccordion_1']//a[@class='accordion-toggle categoryHead']
+
+//*[@id="Presentaccordion_1"]/div/div[1]/a
+
+ public static By clickMedical= By.xpath("//div[@id='Presentaccordion_1']//div[@class='ac-head']//i[@class='fa fa-angle-down']");
+	
+
+	SoftAssert sa=new SoftAssert();
+        commonUtil.launchUrl(System.getProperty("fbmcUrl"));
+        sa.assertTrue(loginPage.isLoginPageDisplayed(),"Login page should be displayed");
+        loginPage.login(System.getProperty("fbmcAdmin"),System.getProperty("fbmcAdminPwd"));
+        String userName=homePage.getLoggedInUserName();
+        sa.assertEquals(userName, Home.fbmcAdmin,"User should be navigated to the HomePage");
+        homePage.searchGroup("Duval County Public Schools");
+        groupPage.clickManageCoverage();
+        sa.assertTrue(manageCoverage.isManageCoveragePageDisplayed(),"Manage Coverage page should be displayed");
+        viewBenefits.clickName();
+        sa.assertTrue(viewBenefits.ManageCoveragepageNameisdisplayed(),"Manage Coverage page Name should be displayed");
+        viewBenefits.clickMedicalDropdown();
+        sa.assertTrue(viewBenefits.ManageCoveragepageMedicalPlanisdisplayed(),"Manage Coverage page Medical Plan should be displayed");
+        viewBenefits.clickViewBenefits();
+        sa.assertTrue(viewBenefits.ManageCoveragepageViewBenefitsisdisplayed(),"Manage Coverage page View Benefits should be displayed");
+        
+        homePage.logOut();
+        sa.assertTrue(loginPage.isLoginPageDisplayed(),"Login page should be displayed");
+        sa.assertAll();
+	}
+	
+	@DataProvider(name="readData")
+    public Object[][] readData(){
+        return CSVFileReader.readCSV("smokeTest.csv");
+    }
+
+
+ctrl+alt+t
+allure serve
+
+//div[@id='divPresentCategory_1']//div[contains(@class,'Formcontainer')]//div[1]//div[2]//div[3]//div[1]//ul[1]//li[1]//a[1]
+
+//*[@id="PresentCont_1"]/div/div/div[1]/div[2]/div[3]/div[1]/ul/li/a
+
+
+//*[@id="btnCloseModal"]
+
+//*[@id="EEPopup"]/div/div/div[1]/button/span/i
+
+
+driver.selectByValue((TerminateMedical.QualifyingEvent),"New Hire");
+
+
+Terminate Medical
+
+@Test(dataProvider = "readData")
+    public void terminateMedicalTest(HashMap<String,String> data){
+        HomePage homePage=new HomePage(DriverFactory.getDriver());
+        LoginPage loginPage=new LoginPage(DriverFactory.getDriver());
+        CommonUtil commonUtil=new CommonUtil(DriverFactory.getDriver());
+        GroupPage groupPage=new GroupPage(DriverFactory.getDriver());
+        ManageCoveragePage manageCoverage=new ManageCoveragePage(DriverFactory.getDriver());
+        TerminateMedicalPage terminateMedical=new TerminateMedicalPage(DriverFactory.getDriver());
+         
+        
+        SoftAssert sa=new SoftAssert();
+        commonUtil.launchUrl(System.getProperty("fbmcUrl"));
+        sa.assertTrue(loginPage.isLoginPageDisplayed(),"Login page should be displayed");
+        loginPage.login(System.getProperty("fbmcAdmin"),System.getProperty("fbmcAdminPwd"));
+        String userName=homePage.getLoggedInUserName();
+        sa.assertEquals(userName, Home.fbmcAdmin,"User should be navigated to the HomePage");
+        homePage.searchGroup("Duval County Public Schools");
+        groupPage.clickManageCoverage();
+        sa.assertTrue(manageCoverage.isManageCoveragePageDisplayed(),"Manage Coverage page should be displayed");
+        terminateMedical.clickName();
+        sa.assertTrue(terminateMedical.ManageCoveragepageNameisdisplayed(),"Manage Coverage page Name should be displayed");
+        terminateMedical.clickMedicalDropdown();
+        sa.assertTrue(terminateMedical.ManageCoveragepageMedicalPlanisdisplayed(),"Manage Coverage page Medical Plan should be displayed");
+        terminateMedical.clickterminateMedical();
+        sa.assertTrue(terminateMedical.ManageCoveragepageTerminateMedicalisdisplayed(),"Manage Coverage page Terminate Medical should be displayed");
+        terminateMedical.typeTerminationDate();
+        sa.assertTrue(terminateMedical.ManageCoveragepageTerminateDateisdisplayed(),"Manage Coverage page Termination Date should be displayed");
+        terminateMedical.selectQualifyingEvent();
+        sa.assertTrue(terminateMedical.ManageCoveragepageQualifyingEventisdisplayed(),"Manage Coverage page Qualifying Event should be displayed");
+        terminateMedical.clickSubmit();
+        sa.assertTrue(terminateMedical.ManageCoveragepageSubmitisdisplayed(),"Manage Coverage page Submit Button should be displayed");
+                       
+		
+        homePage.logOut();
+        sa.assertTrue(loginPage.isLoginPageDisplayed(),"Login page should be displayed");
+        sa.assertAll();
+	}
+	
+	@DataProvider(name="readData")
+    public Object[][] readData(){
+        return CSVFileReader.readCSV("terminateMedical.csv");
+    }
+
+
+
+
+//    @AfterMethod
+//    public void afterMethod(){
+//        logger.info("After method called");
+//        DriverUtil driver=DriverFactory.getDriver();
+//        driver.close();
+//    }
+
+
+
+Adjustment/Correction
+Adoption or Change in Legal Custody
+Change in Employment Status
+Change in Plan Anniversary
+Deceased Dependent
+Dependent entering the country
+Divorce/Legal Separation
+Involuntary Loss of Medical Coverage
+Marriage
+Max - Age Termination
+Medicare Entitlement
+New Born Child
+New Hire
+Spouse Employment Termination
+Voluntary Cancellation
+  
+
+
+ @Step("Manage Coverage page Select Qualifying Event")
+    public void selectQualifyingEvent() throws InterruptedException{
+        driver.waitForElementSelectable(TerminateMedical.QualifyingEvent);
+        //driver.selectByIndex(TerminateMedical.QualifyingEvent, 3);
+        driver.sendKeys(TerminateMedical.QualifyingEvent, "Adjustment/Correction" + Keys.ENTER);
+        driver.click(TerminateMedical.QualifyingEvent);
+        Thread.sleep(3000);
+    }   
+
+
+@Step("Manage Coverage page Select Qualifying Event")
+    public void selectQualifyingEvent() throws InterruptedException{
+        driver.waitForElementSelectable(TerminateMedical.QualifyingEvent);
+        //driver.selectByIndex(TerminateMedical.QualifyingEvent, 3);
+        //driver.sendKeys(TerminateMedical.QualifyingEvent, "Adjustment/Correction" + Keys.ENTER);
+        //driver.click(TerminateMedical.QualifyingEvent);
+        driver.selectByRandom(TerminateMedical.QualifyingEvent);
+        Thread.sleep(3000);
+    }   
+
+
+
+Summary Verification:
+
+public class SummaryVerificationTest extends BaseClass {
+
+	@Test
+    public void summaryVerificationTest(){
+        HomePage homePage=new HomePage(DriverFactory.getDriver());
+        LoginPage loginPage=new LoginPage(DriverFactory.getDriver());
+        CommonUtil commonUtil=new CommonUtil(DriverFactory.getDriver());
+        GroupPage groupPage=new GroupPage(DriverFactory.getDriver());
+        ManageCoveragePage manageCoverage=new ManageCoveragePage(DriverFactory.getDriver());
+        SummaryVerificationPage viewSummary=new SummaryVerificationPage(DriverFactory.getDriver());
+	
+        SoftAssert sa=new SoftAssert();
+        commonUtil.launchUrl(System.getProperty("fbmcUrl"));
+        sa.assertTrue(loginPage.isLoginPageDisplayed(),"Login page should be displayed");
+        loginPage.login(System.getProperty("fbmcAdmin"),System.getProperty("fbmcAdminPwd"));
+        String userName=homePage.getLoggedInUserName();
+        sa.assertEquals(userName, Home.fbmcAdmin,"User should be navigated to the HomePage");
+        homePage.searchGroup("Duval County Public Schools");
+        groupPage.clickManageCoverage();
+        sa.assertTrue(manageCoverage.isManageCoveragePageDisplayed(),"Manage Coverage page should be displayed");
+        viewSummary.clickName();
+        sa.assertTrue(viewSummary.EmployeeNameisdisplayed(),"Manage Coverage page Name should be displayed");
+        viewSummary.clickViewSummary();
+        sa.assertTrue(viewSummary.ViewSummaryisdisplayed(),"Manage Coverage page View Summary should be displayed");
+        
+        homePage.logOut();
+        sa.assertTrue(loginPage.isLoginPageDisplayed(),"Login page should be displayed");
+        
+	}
+             	
+}
+
+
+View Benefits Before corrections:
+
+
+public class ViewBenefitsTest extends BaseClass {
+
+	@Test(dataProvider = "readData")
+    public void viewBenefitsTest(HashMap<String,String> data){
+        HomePage homePage=new HomePage(DriverFactory.getDriver());
+        LoginPage loginPage=new LoginPage(DriverFactory.getDriver());
+        CommonUtil commonUtil=new CommonUtil(DriverFactory.getDriver());
+        GroupPage groupPage=new GroupPage(DriverFactory.getDriver());
+        ManageCoveragePage manageCoverage=new ManageCoveragePage(DriverFactory.getDriver());
+        ViewBenefitsPage viewBenefits=new ViewBenefitsPage(DriverFactory.getDriver());
+        
+        SoftAssert sa=new SoftAssert();
+        commonUtil.launchUrl(System.getProperty("fbmcUrl"));
+        sa.assertTrue(loginPage.isLoginPageDisplayed(),"Login page should be displayed");
+        loginPage.login(System.getProperty("fbmcAdmin"),System.getProperty("fbmcAdminPwd"));
+        String userName=homePage.getLoggedInUserName();
+        sa.assertEquals(userName, Home.fbmcAdmin,"User should be navigated to the HomePage");
+        homePage.searchGroup("Duval County Public Schools");
+        groupPage.clickManageCoverage();
+        sa.assertTrue(manageCoverage.isManageCoveragePageDisplayed(),"Manage Coverage page should be displayed");
+        viewBenefits.clickName();
+        sa.assertTrue(viewBenefits.ManageCoveragepageNameisdisplayed(),"Manage Coverage page Name should be displayed");
+        viewBenefits.clickMedicalDropdown();
+        sa.assertTrue(viewBenefits.ManageCoveragepageMedicalPlanisdisplayed(),"Manage Coverage page Medical Plan should be displayed");
+        viewBenefits.clickViewBenefits();
+        sa.assertTrue(viewBenefits.ManageCoveragepageViewBenefitsisdisplayed(),"Manage Coverage page View Benefits should be displayed");
+        viewBenefits.clickClose();
+        sa.assertTrue(viewBenefits.ManageCoveragepageCloseisdisplayed(),"Manage Coverage page Close should be displayed");
+      
+        homePage.logOut();
+        sa.assertTrue(loginPage.isLoginPageDisplayed(),"Login page should be displayed");
+        sa.assertAll();
+	}
+	
+	@DataProvider(name="readData")
+    public Object[][] readData(){
+        return CSVFileReader.readCSV("viewBenefits.csv");
+    }
+}
+
+
+
+
+//driver.selectByIndex(TerminateMedical.QualifyingEvent, 3);
+
+
+
+sa.assertTrue(terminateAncillary.clickDental(),"Manage Coverage page Name should be displayed");
+
+//h4[normalize-space()='Dental']
+//a[@class='accordion-toggle categoryHead collapsed']//i[@class='fa fa-angle-down']
+//h4[normalize-space()='Dental']
+//div[@id='Presentaccordion_16']//i[@class='fa fa-angle-down']
+
+//tbody/tr[1]/td[4]/a[1]/u[1]
+//*[@id="DownloadDoc"]/u
+
+
+//div[@id='PresentCont_16']//a[@id='lnkTerminate']
+
+//*[@id="lnkTerminate"]
+
+
+//*[@id="PresentCont_16"]/div/div/div[3]/div[2]/div[3]/div[1]/ul/li/a
+
+//a[@id='enrollMedical']
+
+//*[@id="enrollMedical"]
+
+//div[@id='PresentCont_1']//a[@id='enrollMedical']
+
+//div[@id='PresentCont_16']//a[@id='enrollMedical']
+
+//div[@id='div_ShowPlans_1']//div[1]//div[3]//div[2]//div[1]//label[1]
+
+//*[@id="div_ShowPlans_1"]/div[1]/div[3]/div[2]/div/label/span
+
+/html[1]/body[1]/div[4]/div[1]/form[1]/div[1]/div[2]/div[1]/div[5]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[8]/div[1]/div[7]/div[3]/div[2]/div[1]/label[1]/span[1]
+//*[@id="div_ShowPlans_1"]/div[7]/div[3]/div[2]/div/label/span
+
+//a[@id='btn_AddProfile_EnrollmentFlow']
+
+
+
+
+//*[@id="btn_AddProfile_EnrollmentFlow"]
+
+//*[@id="btn_AddProfile_EnrollmentFlow"]
+
+//*[@id="NameoftheBank"]
+
+//*[@id="NameoftheBank"]
+
+//*[@id="NameoftheBank"]
+
+//*[@id="BankAccount"]
+
+//*[@id="RoutingNumber"]
+
+//*[@id="btn_SaveProfile_EnrollmentFlow"]
+
+
+Name of the bank - BOI
+Bank Account Number - 435657567
+Routing Number - 021300077
+
+
+
+
+
+public class ReEnrollMedicalTest extends BaseClass {
+
+	@Test
+    public void terminateMedicalTest() throws InterruptedException{
+        HomePage homePage=new HomePage(DriverFactory.getDriver());
+        LoginPage loginPage=new LoginPage(DriverFactory.getDriver());
+        CommonUtil commonUtil=new CommonUtil(DriverFactory.getDriver());
+        GroupPage groupPage=new GroupPage(DriverFactory.getDriver());
+        ManageCoveragePage manageCoverage=new ManageCoveragePage(DriverFactory.getDriver());
+        ReEnrollMedicalPage reEnrollMedical=new ReEnrollMedicalPage(DriverFactory.getDriver());
+        
+
+
+"//div[@id='Presentaccordion_1']//div[@class='ac-head']//i[@class='fa fa-angle-down']");
+//*[@id="PresentCont_1"]/div/div/div[2]/div[2]/div[3]/div[1]/ul/li/a
+
+
+Summary Verification without Testdata:
+
+package com.sperdian.tests;
+
+import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
+
+import com.sperdian.base.BaseClass;
+import com.sperdian.base.DriverFactory;
+import com.sperdian.locators.Home;
+import com.sperdian.pages.GroupPage;
+import com.sperdian.pages.HomePage;
+import com.sperdian.pages.LoginPage;
+import com.sperdian.pages.ManageCoveragePage;
+import com.sperdian.pages.SummaryVerificationPage;
+import com.sperdian.util.CommonUtil;
+
+public class SummaryVerificationTest extends BaseClass {
+
+	@Test
+    public void summaryVerificationTest(){
+        HomePage homePage=new HomePage(DriverFactory.getDriver());
+        LoginPage loginPage=new LoginPage(DriverFactory.getDriver());
+        CommonUtil commonUtil=new CommonUtil(DriverFactory.getDriver());
+        GroupPage groupPage=new GroupPage(DriverFactory.getDriver());
+        ManageCoveragePage manageCoverage=new ManageCoveragePage(DriverFactory.getDriver());
+        SummaryVerificationPage viewSummary=new SummaryVerificationPage(DriverFactory.getDriver());
+	
+        SoftAssert sa=new SoftAssert();
+        commonUtil.launchUrl(System.getProperty("fbmcUrl"));
+        sa.assertTrue(loginPage.isLoginPageDisplayed(),"Login page should be displayed");
+        loginPage.login(System.getProperty("fbmcAdmin"),System.getProperty("fbmcAdminPwd"));
+        String userName=homePage.getLoggedInUserName();
+        sa.assertEquals(userName, Home.fbmcAdmin,"User should be navigated to the HomePage");
+        homePage.searchGroup("Duval County Public Schools");
+        groupPage.clickManageCoverage();
+        sa.assertTrue(manageCoverage.isManageCoveragePageDisplayed(),"Manage Coverage page should be displayed");
+        viewSummary.clickName();
+        sa.assertTrue(viewSummary.EmployeeNameisdisplayed(),"Manage Coverage page Name should be displayed");
+        viewSummary.clickViewSummary();
+        sa.assertTrue(viewSummary.ViewSummaryisdisplayed(),"Manage Coverage page View Summary should be displayed");
+        
+        homePage.logOut();
+        sa.assertTrue(loginPage.isLoginPageDisplayed(),"Login page should be displayed");
+        
+	}
+             	
+}
+	
+
+View Benefits without Testdata file:
+
+package com.sperdian.tests;
+
+import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
+
+import com.sperdian.base.BaseClass;
+import com.sperdian.base.DriverFactory;
+import com.sperdian.locators.Home;
+import com.sperdian.pages.GroupPage;
+import com.sperdian.pages.HomePage;
+import com.sperdian.pages.LoginPage;
+import com.sperdian.pages.ManageCoveragePage;
+import com.sperdian.pages.ViewBenefitsPage;
+import com.sperdian.util.CommonUtil;
+
+public class ViewBenefitsTest extends BaseClass {
+
+	@Test()
+    public void viewBenefitsTest(){
+        HomePage homePage=new HomePage(DriverFactory.getDriver());
+        LoginPage loginPage=new LoginPage(DriverFactory.getDriver());
+        CommonUtil commonUtil=new CommonUtil(DriverFactory.getDriver());
+        GroupPage groupPage=new GroupPage(DriverFactory.getDriver());
+        ManageCoveragePage manageCoverage=new ManageCoveragePage(DriverFactory.getDriver());
+        ViewBenefitsPage viewBenefits=new ViewBenefitsPage(DriverFactory.getDriver());
+        
+        SoftAssert sa=new SoftAssert();
+        commonUtil.launchUrl(System.getProperty("fbmcUrl"));
+        sa.assertTrue(loginPage.isLoginPageDisplayed(),"Login page should be displayed");
+        loginPage.login(System.getProperty("fbmcAdmin"),System.getProperty("fbmcAdminPwd"));
+        String userName=homePage.getLoggedInUserName();
+        sa.assertEquals(userName, Home.fbmcAdmin,"User should be navigated to the HomePage");
+        homePage.searchGroup("Duval County Public Schools");
+        groupPage.clickManageCoverage();
+        sa.assertTrue(manageCoverage.isManageCoveragePageDisplayed(),"Manage Coverage page should be displayed");
+        viewBenefits.clickName();
+        sa.assertTrue(viewBenefits.EmployeeNameisdisplayed(),"Manage Coverage page Name should be displayed");
+        viewBenefits.clickMedicalDropdown();
+        sa.assertTrue(viewBenefits.MedicalPlanisdisplayed(),"Manage Coverage page Medical Plan should be displayed");
+        viewBenefits.clickViewBenefits();
+        sa.assertTrue(viewBenefits.ViewBenefitsisdisplayed(),"Manage Coverage page View Benefits should be displayed");
+        viewBenefits.clickClose();
+        sa.assertTrue(viewBenefits.Closeisdisplayed(),"Manage Coverage page Close should be displayed");
+      
+        homePage.logOut();
+        sa.assertTrue(loginPage.isLoginPageDisplayed(),"Login page should be displayed");
+        
+	}
+	
+}
+
+
+
+
+CCLetter Verification Test without Testdata file:
+
+package com.sperdian.tests;
+
+import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
+
+import com.sperdian.base.BaseClass;
+import com.sperdian.base.DriverFactory;
+import com.sperdian.locators.Home;
+import com.sperdian.pages.CCLetterVerificationPage;
+import com.sperdian.pages.HomePage;
+import com.sperdian.pages.LoginPage;
+import com.sperdian.util.CommonUtil;
+
+public class CCLetterVerificationTest extends BaseClass{
+
+	@Test
+    public void ccLetterVerificationTest() throws InterruptedException{
+        HomePage homePage=new HomePage(DriverFactory.getDriver());
+        LoginPage loginPage=new LoginPage(DriverFactory.getDriver());
+        CommonUtil commonUtil=new CommonUtil(DriverFactory.getDriver());
+        CCLetterVerificationPage CCLetterVerification=new CCLetterVerificationPage(DriverFactory.getDriver());
+        
+        SoftAssert sa=new SoftAssert();
+        commonUtil.launchUrl(System.getProperty("fbmcUrl"));
+        sa.assertTrue(loginPage.isLoginPageDisplayed(),"Login page should be displayed");
+        loginPage.login(System.getProperty("fbmcAdmin"),System.getProperty("fbmcAdminPwd"));
+        String userName=homePage.getLoggedInUserName();
+        sa.assertEquals(userName, Home.fbmcAdmin,"User should be navigated to the HomePage");
+        CCLetterVerification.clickCommunication();
+        sa.assertEquals(CCLetterVerification.Communicationisdisplayed(),"Home page Communication should be displayed");
+        CCLetterVerification.clickCorrespondenceLetters();
+        sa.assertEquals(CCLetterVerification.CorrespondenceLettersisdisplayed(),"Home page CorrespondenceLetters should be displayed");
+        CCLetterVerification.clickDocument();
+        sa.assertEquals(CCLetterVerification.Documentsisdisplayed(),"Documents should be displayed");
+        
+        
+        homePage.logOut();
+        sa.assertTrue(loginPage.isLoginPageDisplayed(),"Login page should be displayed");
+        
+	} 
+        
+}
+
+
+
+//div[@id='PresentCont_1']//a[@id='enrollMedical']
+
+//*[@id="enrollMedical"]
+
+
+//div[@id='PresentCont_16']//a[@id='enrollMedical']
+
+//*[@id="enrollMedical"]
+
+
+
+public static By clickMedical= By.xpath("
+
+
+//*[@id="PresentCont_1"]/div/div/div/div[2]/div[3]/div[1]/ul/li/a
+
+
+//div[@id='PresentCont_1']//a[contains(@class,'lnkViewBenefits')][normalize-space()='View Benefits']
+
+
+
+//*[@id=\"QualifyingEvent_QualifyingEventName_chzn\"]/a
+
+//*[@id=\"Item1_QualifyingEvent_QualifyingEventName_chzn\"]/a"
+
+//a[@class='chzn-single chzn-default']
+
+//*[@id="Item1_QualifyingEvent_QualifyingEventName_chzn"]/a
+
+//input[@autocomplete='off']
+
+//*[@id="Item1_QualifyingEvent_QualifyingEventName_chzn"]/div/div/input
+
+//*[@id=\"Item1_QualifyingEvent_QualifyingEventName_chzn\"]/a
+
+//a[@class='chzn-single chzn-default chzn-error selected']
+
+//*[@id="Item1_QualifyingEvent_QualifyingEventName_chzn"]/a
+
+//div[@id='div_ShowPlans_1']//div[1]//div[3]//div[2]//div[1]//label[1]
+
+
+package com.sperdian.tests;
+
+import java.util.HashMap;
+
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
+
+import com.sperdian.base.BaseClass;
+import com.sperdian.base.DriverFactory;
+import com.sperdian.locators.Home;
+import com.sperdian.pages.GroupPage;
+import com.sperdian.pages.HomePage;
+import com.sperdian.pages.LoginPage;
+import com.sperdian.pages.ManageCoveragePage;
+import com.sperdian.pages.TerminateMedicalPage;
+import com.sperdian.util.CSVFileReader;
+import com.sperdian.util.CommonUtil;
+
+public class TerminateMedicalTest2 extends BaseClass{
+
+	 @Test(dataProvider = "readData")
+	    public void terminateMedicalTest(HashMap<String,String> data) throws InterruptedException {
+		 	HomePage homePage=new HomePage(DriverFactory.getDriver());
+	        LoginPage loginPage=new LoginPage(DriverFactory.getDriver());
+	        CommonUtil commonUtil=new CommonUtil(DriverFactory.getDriver());
+	        GroupPage groupPage=new GroupPage(DriverFactory.getDriver());
+	        ManageCoveragePage manageCoverage=new ManageCoveragePage(DriverFactory.getDriver());
+	        TerminateMedicalPage terminateMedical=new TerminateMedicalPage(DriverFactory.getDriver());       
+	        
+	        SoftAssert sa=new SoftAssert();
+	        commonUtil.launchUrl(System.getProperty(data.get("Url")+"Url"));
+	        loginPage.login(System.getProperty(data.get("UserName")),System.getProperty(data.get("Password")));
+	        String userName=homePage.getLoggedInUserName();
+	        homePage.verifyLoggedInUser(userName, Home.fbmcAdmin);
+	        homePage.searchGroup(data.get("GroupName"));
+	        groupPage.clickManageCoverage();
+	        sa.assertTrue(manageCoverage.isManageCoveragePageDisplayed(),"Manage Coverage page should be displayed");
+	        terminateMedical.clickName();
+	        sa.assertTrue(terminateMedical.EmployeeNameisdisplayed(),"Manage Coverage page Name should be displayed");
+	        terminateMedical.clickMedicalDropdown();
+	        sa.assertTrue(terminateMedical.MedicalPlanisdisplayed(),"Manage Coverage page Medical Plan should be displayed");
+	        terminateMedical.clickterminateMedical();
+	        sa.assertTrue(terminateMedical.TerminateMedicalisdisplayed(),"Manage Coverage page Terminate Medical should be displayed");
+	        //terminateMedical.typeTerminationDate(data.get("TerminationDate"));
+	        sa.assertTrue(terminateMedical.TerminateDateisdisplayed(),"Manage Coverage page Termination Date should be displayed");
+	        terminateMedical.selectQualifyingEvent();
+	        sa.assertTrue(terminateMedical.QualifyingEventisdisplayed(),"Manage Coverage page Qualifying Event should be displayed");
+	        terminateMedical.clickSubmit();
+	        sa.assertTrue(terminateMedical.Submitisdisplayed(),"Manage Coverage page Submit Button should be displayed");
+	                       
+			
+	        homePage.logOut();
+	        sa.assertTrue(loginPage.isLoginPageDisplayed(),"Login page should be displayed");
+		}
+	        
+	 	@DataProvider(name="readData")
+	    public Object[][] readData(){
+	        return CSVFileReader.readCSV("terminateMedicalPlan.csv");
+	    }    
+	        
+	        
+	        
+	
+}
+
+
+//div[@id='div_ShowPlans_1']//div[1]//div[3]//div[2]//div[1]//label[1]
+
+/html[1]/body[1]/div[4]/div[2]/div[2]/form[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[8]/div[1]/div[4]/div[3]/div[2]/div[1]/label[1]/span[1]
+
+
+//div[@id='div_ShowPlans_1']//div[1]//div[3]//div[2]//div[1]//label[1]
+
+//*[@id="div_ShowPlans_1"]/div[4]/div[3]/div[2]/div/label/span
+
+//div[@id='div_ShowPlans_1']//div[4]//div[3]//div[2]//div[1]//label[1]
+
+//div[@class='container view_port']//div[4]//div[3]//div[2]//div[1]//label[1]//span[1]
+
+//*[@id="div_ShowPlans_1"]/div[4]/div[3]/div[2]/div/label/span
+
+//div[@class='container view_port']//div[4]//div[3]//div[2]//div[1]//label[1]//span[1]
+
+//div[@id='Presentaccordion_17']//i[@class='fa fa-angle-down']
+
+
+//div[3]//div[3]//div[1]//ul[2]//li[1]//a[1]
+
+
+//*[@id="div_ShowPlans_1"]/div[3]/div[3]/div[1]/ul[2]/li/a
+
+
+//a[@class='planAccordian collapsed']//i[@class='fa fa-angle-down']
+
+//*[@id="div_AccodianHead_1"]/a/i
+
+
+//a[@class='planAccordian collapsed']//i[@class='fa fa-angle-down']
+
+
+//*[@id="div_AccodianHead_1"]/a/i
+
+//a[@class='planAccordian collapsed']
+
+
+//*[@id="div_AccodianHead_1"]/a
+
+//a[@class='planAccordian collapsed']//i[@class='fa fa-angle-down']
+
+//div[@id='PresentCont_17']//div[2]//div[2]//div[3]//div[1]//ul[1]//li[1]//a[1]
+
+//*[@id="PresentCont_17"]/div/div/div[2]/div[2]/div[3]/div[1]/ul/li/a
+
+
+//div[@id='PresentCont_17']//a[@id='lnkChangePlan']
+
+//h4[@class='panel-title']
+
+//*[@id="div_AccodianHead_17"]/a/h4
+
+
+
+//div[@id='Presentaccordion_17']//i[@class='fa fa-angle-down']
+
+//*[@id="PresentCont_17"]/div/div/div[2]/div[2]/div[3]/div[1]/ul/li/a
+
+//h4[@class='panel-title']
+
+//h4[@class='panel-title']
+
+//*[@id="div_AccodianHead_1"]/a/h4
+
+
+//a[@class='planAccordian']
+
+//i[@class='fa fa-angle-left font-lg']
+
+//*[@id="divTotalBtn"]/div[1]/a/i
+
+//span[normalize-space()='Select Plan']
+
+//*[@id="div_ShowPlans_17"]/div[1]/div[3]/div[2]/div/label/span
+
+//*[@id=\"div_ShowPlans_17\"]/div[2]/div[3]/div[2]/div/label/span
+
+//*[@id="div_ShowPlans_17"]/div[2]/div[3]/div[1]/ul[2]/li/a
+
+//span[@id='BtnSubmitChangePlan']
+
+//*[@id="BtnSubmitChangePlan"]
+
+//changePlanAncillary.VerticalScroll();
+
+
+//*[@id="div_ShowPlans_17"]/div[1]/div[3]/div[2]/div/label/span
+
+
+//*[@id="div_ShowPlans_17"]/div[1]/div[3]/div[2]/div/label/span
+
+//a[@class='accordion-toggle collapsed']//i[@class='fa fa-angle-down']
+
+//*[@id="accordionpresentdecline_1"]/div/div[1]/a/i
+
+//a[@class='accordion-toggle collapsed']//i[@class='fa fa-angle-down']
+//*[@id="accordionpresentdecline_1"]/div/div[1]/a/i
+//*[@id="enrollDental"]
+
+//div[@id='collapsepresentdecline_1']//div[1]//a[1]
+
+//div[@id='collapsepresentdecline_1']//div[1]//a[1]
+//h4[normalize-space()='Medical']
+//*[@id="accordionpresentdecline_1"]/div/div[1]/a/h4
+
+//*[@id="btn_Cancel_Payment_Profile_CancelEnrollmentFlow"]
+//*[@id="btn_Add_Payment_Profile_EnrollmentFlow"]
+
+//div[contains(@class,'panel-body 16-wrap')]//a[@id='enrollDental']
+
+//a[@class='accordion-toggle collapsed']//i[@class='fa fa-angle-down']
+
+//*[@id="accordionpresentdecline_16"]/div/div[1]/a/i
+
+//a[@class='accordion-toggle collapsed']//i[@class='fa fa-angle-down']
+
+
+//div[contains(@class,'panel-body 16-wrap')]//a[@id='enrollDental']
+
+//span[normalize-space()='Select Plan']
+
+//*[@id="div_ShowPlans_16"]/div/div[3]/div[2]/div/label/span
+
+//*[@id='div_ShowPlans_16']/div/div[3]/div[2]/div/label/span
+
+
+//a[@class='view_more lnkMedicalViewBenefits']
+
+//*[@id="div_ShowPlans_16"]/div/div[3]/div[1]/ul[2]/li/a
+
+
+//div[@id='Div_CaptureAmountInUI_745459']//input[@id='ProductLst[0]_UIRate']
+
+//*[@id="ProductLst[0]_UIRate"]
+
+//div[@id='Div_CaptureAmountInUI_745457']//input[@id='ProductLst[0]_UIRate']
+
+//*[@id="ProductLst[0]_UIRate"]
+
+//a[normalize-space()='Terminate']
+
+//*[@id="containerEmployeeDetails"]/div[1]/div/div/div/div[2]/div/a[5]
+
+//input[@id='TerminationDate']
+
+//*[@id="TerminationDate"]
+
+//input[@id='TerminationDate']
+
+//a[@class='chzn-single chzn-default']
+
+//input[@autocomplete='off']
+
+//*[@id="TerminationReason_chzn"]/div/div/input
+
+//input[@id='BtnSubmitTermination']
+
+//*[@id="BtnSubmitTermination"]
+
+
+//input[@id='BtnSubmitTermination']
+
+//*[@id="no"]
+
+//input[@autocomplete='off']
+
+//*[@id="TerminationReason_chzn"]/div/div/input
+
+//div[@class='col-md-9 bg_white']
+
+//div[@id='accordionpresentdecline_16']//i[@class='fa fa-angle-down']
+
+//div[contains(@class,'panel-body 16-wrap')]//a[@id='enrollDental']
+
+//*[@id="enrollDental"]
+
+//*[@id="div_ShowPlans_1"]/div[4]/div[3]/div[2]/div/label/span
+
+/html[1]/body[1]/div[4]/div[1]/form[1]/div[1]/div[2]/div[1]/div[5]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[8]/div[1]/div[1]/div[3]/div[2]/div[1]/label[1]
+//*[@id="div_ShowPlans_1"]/div[1]/div[3]/div[2]/div/label
+//*[@id="div_ShowPlans_1"]/div[11]/div[3]/div[1]/ul[2]/li/a
+
+//*[@id="actionTab"]/div[2]/table/tr/td/img
+
+
+//*[@id="TerminationReason_chzn"]/a
+
+//*[@id="containerEmployeeDetails"]/div[1]/div/div/div/div[2]/div/a[6]
+
+//a[normalize-space()='Re-Hire']
+
+
+//input[@id='BtnRehireandEnroll']
+
+//input[@id='BtnRehireandEnroll']
+
+
+//input[@id='BtnSubmit']
+
+//h4[normalize-space()='Medical']
+
+//h4[normalize-space()='Medical']
+
+//*[@id="div_ShowPlans_1"]/div[1]/div[3]/div[2]/div/label/span
+
+//input[@id='btnDeclineAll']
+
+
+//a[@class='close']
+
+//input[@id='Item1_ProductLst[0]IsDeclinedInd']
+
+//div[@id='divCobSelect']//label[@class='btn btn-default Yesnoclass'][normalize-space()='No']
+
+//*[@id="divCobSelect"]/div/label[2]
+
+//*[@id="Item1_ProductLst[0]IsDeclinedInd"]
+
+//a[@id='BtnGotoProfile']
+
+//a[@id='BtnSubmitEnrollment']
+
+
+commonUtil.launchUrl(System.getProperty("fbmcUrl"));
+        sa.assertTrue(loginPage.isLoginPageDisplayed(),"Login page should be displayed");
+        loginPage.login(System.getProperty("fbmcAdmin"),System.getProperty("fbmcAdminPwd"));
+        String userName=homePage.getLoggedInUserName();
+        sa.assertEquals(userName, Home.fbmcAdmin,"User should be navigated to the HomePage");
+
+
+CC Letter Verification with Test Data:
+
+public class CCLetterVerificationTest extends BaseClass {
+
+	@Test(dataProvider = "readData")
+    public void ccLetterVerificationTest(HashMap<String,String> data) {
+	 	HomePage homePage=new HomePage(DriverFactory.getDriver());
+        LoginPage loginPage=new LoginPage(DriverFactory.getDriver());
+        CommonUtil commonUtil=new CommonUtil(DriverFactory.getDriver());
+        CCLetterVerificationPage CCLetterVerification=new CCLetterVerificationPage(DriverFactory.getDriver());
+        
+        SoftAssert sa=new SoftAssert();
+        commonUtil.launchUrl(System.getProperty(data.get("Url")+"Url"));
+        loginPage.login(System.getProperty(data.get("UserName")),System.getProperty(data.get("Password")));
+        String userName=homePage.getLoggedInUserName();
+        homePage.verifyLoggedInUser(userName, Home.fbmcAdmin);
+        CCLetterVerification.clickCommunication();
+        sa.assertEquals(CCLetterVerification.Communicationisdisplayed(),"Home page Communication should be displayed");
+        CCLetterVerification.clickCorrespondenceLetters();
+        sa.assertEquals(CCLetterVerification.CorrespondenceLettersisdisplayed(),"Home page CorrespondenceLetters should be displayed");
+        CCLetterVerification.clickDocument();
+        sa.assertEquals(CCLetterVerification.Documentsisdisplayed(),"Documents should be displayed");
+        
+        
+        homePage.logOut();
+        sa.assertTrue(loginPage.isLoginPageDisplayed(),"Login page should be displayed");   
+	}
+	
+	@DataProvider(name="readData")
+    public Object[][] readData(){
+        return CSVFileReader.readCSV("ccLetterVerification.csv");
+    }
+	
+	
+}
+
+SummaryVerificationTest With Test Data:
+
+package com.sperdian.tests;
+
+import java.util.HashMap;
+
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
+
+import com.sperdian.base.BaseClass;
+import com.sperdian.base.DriverFactory;
+import com.sperdian.locators.Home;
+import com.sperdian.pages.GroupPage;
+import com.sperdian.pages.HomePage;
+import com.sperdian.pages.LoginPage;
+import com.sperdian.pages.ManageCoveragePage;
+import com.sperdian.pages.SummaryVerificationPage;
+import com.sperdian.util.CSVFileReader;
+import com.sperdian.util.CommonUtil;
+
+public class SummaryVerificationTest extends BaseClass{
+
+	 @Test(dataProvider = "readData")
+	    public void summaryVerificationTest(HashMap<String,String> data) {
+		 	HomePage homePage=new HomePage(DriverFactory.getDriver());
+	        LoginPage loginPage=new LoginPage(DriverFactory.getDriver());
+	        CommonUtil commonUtil=new CommonUtil(DriverFactory.getDriver());
+	        GroupPage groupPage=new GroupPage(DriverFactory.getDriver());
+	        ManageCoveragePage manageCoverage=new ManageCoveragePage(DriverFactory.getDriver());
+	        SummaryVerificationPage viewSummary=new SummaryVerificationPage(DriverFactory.getDriver());
+	        
+	        SoftAssert sa=new SoftAssert();
+	        commonUtil.launchUrl(System.getProperty(data.get("Url")+"Url"));
+	        loginPage.login(System.getProperty(data.get("UserName")),System.getProperty(data.get("Password")));
+	        String userName=homePage.getLoggedInUserName();
+	        homePage.verifyLoggedInUser(userName, Home.fbmcAdmin);
+	        homePage.searchGroup(data.get("GroupName"));
+	        groupPage.clickManageCoverage();
+	        sa.assertTrue(manageCoverage.isManageCoveragePageDisplayed(),"Manage Coverage page should be displayed");
+	        viewSummary.clickName();
+	        sa.assertTrue(viewSummary.EmployeeNameisdisplayed(),"Manage Coverage page Name should be displayed");
+	        viewSummary.clickViewSummary();
+	        sa.assertTrue(viewSummary.ViewSummaryisdisplayed(),"Manage Coverage page View Summary should be displayed");
+	        
+	        homePage.logOut();
+	        sa.assertTrue(loginPage.isLoginPageDisplayed(),"Login page should be displayed");
+	            
+	 }
+	 
+	 	@DataProvider(name="readData")
+	    public Object[][] readData(){
+	        return CSVFileReader.readCSV("summaryVerification.csv");
+	    }
+	
+}
+
+
+View Benefits With Test Data:
+
+package com.sperdian.tests;
+
+import java.util.HashMap;
+
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
+
+import com.sperdian.base.BaseClass;
+import com.sperdian.base.DriverFactory;
+import com.sperdian.locators.Home;
+import com.sperdian.pages.GroupPage;
+import com.sperdian.pages.HomePage;
+import com.sperdian.pages.LoginPage;
+import com.sperdian.pages.ManageCoveragePage;
+import com.sperdian.pages.ViewBenefitsPage;
+import com.sperdian.util.CSVFileReader;
+import com.sperdian.util.CommonUtil;
+
+public class ViewBenefitsTest extends BaseClass {
+
+	@Test(dataProvider = "readData")
+    public void viewBenefitsTest(HashMap<String,String> data) {
+	 	HomePage homePage=new HomePage(DriverFactory.getDriver());
+        LoginPage loginPage=new LoginPage(DriverFactory.getDriver());
+        CommonUtil commonUtil=new CommonUtil(DriverFactory.getDriver());
+        GroupPage groupPage=new GroupPage(DriverFactory.getDriver());
+        ManageCoveragePage manageCoverage=new ManageCoveragePage(DriverFactory.getDriver());
+        ViewBenefitsPage viewBenefits=new ViewBenefitsPage(DriverFactory.getDriver());
+        
+        SoftAssert sa=new SoftAssert();
+        commonUtil.launchUrl(System.getProperty(data.get("Url")+"Url"));
+        loginPage.login(System.getProperty(data.get("UserName")),System.getProperty(data.get("Password")));
+        String userName=homePage.getLoggedInUserName();
+        homePage.verifyLoggedInUser(userName, Home.fbmcAdmin);
+        homePage.searchGroup(data.get("GroupName"));
+        groupPage.clickManageCoverage();
+        sa.assertTrue(manageCoverage.isManageCoveragePageDisplayed(),"Manage Coverage page should be displayed");
+        viewBenefits.clickName();
+        sa.assertTrue(viewBenefits.EmployeeNameisdisplayed(),"Manage Coverage page Name should be displayed");
+        viewBenefits.clickMedicalDropdown();
+        sa.assertTrue(viewBenefits.MedicalPlanisdisplayed(),"Manage Coverage page Medical Plan should be displayed");
+        viewBenefits.clickViewBenefits();
+        sa.assertTrue(viewBenefits.ViewBenefitsisdisplayed(),"Manage Coverage page View Benefits should be displayed");
+        viewBenefits.clickClose();
+        sa.assertTrue(viewBenefits.Closeisdisplayed(),"Manage Coverage page Close should be displayed");
+      
+        homePage.logOut();
+        sa.assertTrue(loginPage.isLoginPageDisplayed(),"Login page should be displayed");
+        
+	}
+        
+	@DataProvider(name="readData")
+    public Object[][] readData(){
+        return CSVFileReader.readCSV("viewBenefits.csv");
+    }      
+	
+}
+
+
+TerminateMedicalTest without Testdata:
+
+
+public class TerminateMedicalTest extends BaseClass {
+
+	@Test
+    public void terminateMedicalTest() throws InterruptedException{
+        HomePage homePage=new HomePage(DriverFactory.getDriver());
+        LoginPage loginPage=new LoginPage(DriverFactory.getDriver());
+        CommonUtil commonUtil=new CommonUtil(DriverFactory.getDriver());
+        GroupPage groupPage=new GroupPage(DriverFactory.getDriver());
+        ManageCoveragePage manageCoverage=new ManageCoveragePage(DriverFactory.getDriver());
+        TerminateMedicalPage terminateMedical=new TerminateMedicalPage(DriverFactory.getDriver());       
+        
+        SoftAssert sa=new SoftAssert();
+        commonUtil.launchUrl(System.getProperty("fbmcUrl"));
+        sa.assertTrue(loginPage.isLoginPageDisplayed(),"Login page should be displayed");
+        loginPage.login(System.getProperty("fbmcAdmin"),System.getProperty("fbmcAdminPwd"));
+        String userName=homePage.getLoggedInUserName();
+        sa.assertEquals(userName, Home.fbmcAdmin,"User should be navigated to the HomePage");
+        homePage.searchGroup(data.get("GroupName"));
+        groupPage.clickManageCoverage();
+        sa.assertTrue(manageCoverage.isManageCoveragePageDisplayed(),"Manage Coverage page should be displayed");
+        terminateMedical.clickName();
+        sa.assertTrue(terminateMedical.EmployeeNameisdisplayed(),"Manage Coverage page Name should be displayed");
+        terminateMedical.clickMedicalDropdown();
+        sa.assertTrue(terminateMedical.MedicalPlanisdisplayed(),"Manage Coverage page Medical Plan should be displayed");
+        terminateMedical.clickterminateMedical();
+        sa.assertTrue(terminateMedical.TerminateMedicalisdisplayed(),"Manage Coverage page Terminate Medical should be displayed");
+        terminateMedical.typeTerminationDate();
+        sa.assertTrue(terminateMedical.TerminateDateisdisplayed(),"Manage Coverage page Termination Date should be displayed");
+        terminateMedical.selectQualifyingEvent();
+        sa.assertTrue(terminateMedical.QualifyingEventisdisplayed(),"Manage Coverage page Qualifying Event should be displayed");
+        terminateMedical.clickSubmit();
+        sa.assertTrue(terminateMedical.Submitisdisplayed(),"Manage Coverage page Submit Button should be displayed");
+                       
+		
+        homePage.logOut();
+        sa.assertTrue(loginPage.isLoginPageDisplayed(),"Login page should be displayed");
+	}
+
+}
+
+
+
+
+  driver.pageLoadWait();        
+        driver.type(TerminateMedical.terminationDate, "TerminationDate");
+
+
+
+//span[@id='divCancel']
+
+//*[@id="divCancel"]
+
+
+
+
+
+
+        groupPage.clickManageCoverage();
+        sa.assertTrue(manageCoverage.isManageCoveragePageDisplayed(),"Manage Coverage page should be displayed");
+        terminateMedical.clickName();
+        //sa.assertTrue(terminateMedical.EmployeeNameisdisplayed(),"Manage Coverage page Name should be displayed");
+        terminateMedical.clickMedicalDropdown();
+        //sa.assertTrue(terminateMedical.MedicalPlanisdisplayed(),"Manage Coverage page Medical Plan should be displayed");
+        terminateMedical.clickterminateMedical();
+        //sa.assertTrue(terminateMedical.TerminateMedicalisdisplayed(),"Manage Coverage page Terminate Medical should be displayed");
+        terminateMedical.typeTerminationDate(data);
+        //sa.assertTrue(terminateMedical.TerminateDateisdisplayed(),"Manage Coverage page Termination Date should be displayed");
+        terminateMedical.selectQualifyingEvent();
+        //sa.assertTrue(terminateMedical.QualifyingEventisdisplayed(),"Manage Coverage page Qualifying Event should be displayed");
+        terminateMedical.clickSubmit();
+        //sa.assertTrue(terminateMedical.Submitisdisplayed(),"Manage Coverage page Submit Button should be displayed");
+                       
+
+
+
+//*[@id="listView"]/li[3]/a
+
+
+//span[normalize-space()='View Coverage']
+
+//*[@id="divContactDet"]/table/tbody/tr[1]/td/h5
+
+
+
+//input[@id='btnKeyWordSearch2']
+//button[@id='btnKeyWordSearch']//i[@class='material-icons'][normalize-space()='search']
+
+//*[@id="btnKeyWordSearch"]/i
+
+
+//div[@class='mat-div is-active is-completed']//input[@id='KeyWordSearch']
+
+//*[@id="KeyWordSearch"]
+
+
+//tbody/tr[1]/td[2]/a[1]/u[1]
+
+//*[@id="div_ListView"]/table/tbody/tr[1]/td[2]/a/u
+
+//tbody/tr[1]/td[2]/a[1]/u[1]
+
+//*[@id="div_ListView"]/table/tbody/tr[1]/td[2]/a/u
+
+
+//body/div[contains(@class,'header navbar-fixed-top')]/div[1]
+
+
+
+
+//u[contains(@class,'file_name')]
+
+
+//*[@id="div_ListView"]/table/tbody/tr/td[2]/a/u
+
+
+//u[@class='file_name']
+//*[@id="div_ListView"]/table/tbody/tr/td[2]/a/u
+
+
+//u[@class='file_name']
+
+//*[@id="div_ListView"]/table/tbody/tr/td[2]/a/u
+
+
+
+
+
+@Step("Search for the Employee")
+    public void searchEmployee(String username) throws InterruptedException{
+        driver.pageLoadWait();
+        driver.click(TerminateMedical.txtKeywordSearch);
+        driver.type(TerminateMedical.txtKeywordSearch, username);
+        driver.click(TerminateMedical.btnKeywordSearch);
+        driver.pageLoadWait();
+        driver.click(TerminateMedical.clickName);
+        driver.pageLoadWait();
+        
+    }
+
+terminateMedical.clickPaymentProfileNo();
+
+@Step("Click Payment Profile as No")
+    public void clickPaymentProfileNo(){
+        driver.pageLoadWait();
+        driver.click(TerminateMedical.clickNoPaymentProfile);
+    }
+
+
+
+Url	UserName	Password	GroupName	DOB	HomeAddr1	HomeAddr2	HomeZip	SameAsMailing	MailingAddr1	MailingAddr2	MailingZip	DateOfHire	RetirementDate	JobTitle	EnrollWinStartDt	EnrollWinDateDt	DependentDOB	SameAsSubscriber	DependentAddr1	DependentAddr2	DependentZip	AttachmentPrivate	NotesPrivate	BeneficiaryType	PersonDOB	PersonZip	DependentRelation	EffectiveDate	CoveredMember	InsuranceCarrierName	COBBeginDate	EndStageRenalDisease	PaymentMethod	TerminationDate
+fbmc	fbmcAdmin	fbmcAdminPwd	Duval County Public Schools	02091987	4 walnut grv	123	66223	TRUE	6 Alt gro	45	12234	04092022	11032023	privateEmployee	10092001	05032010	11041989	TRUE	212 fishde	1235	12245	FALSE	FALSE	Person	04041989	12245	Spouse	03152023	Primary	Health Insurance	01012023	FALSE	ACH	03152023
+fbmc	fbmcAdmin	fbmcAdminPwd	Duval County Public Schools	02091987	4 walnut grv	123	66223	TRUE	6 Alt gro	45	12234	04092022	11032023	privateEmployee	10092001	05032010	11041989	TRUE	212 fishde	1235	12245	FALSE	FALSE	Person	04041989	12245	Spouse	03152023	Primary	Health Insurance	01012023	FALSE	PensionAuthority	03152023
+
+
+Before Changed:
+
+public void pageLoadWait(){
+        new WebDriverWait(driver,  Duration.ofSeconds(2000)).until(
+                webDriver -> ((JavascriptExecutor) webDriver).executeScript("return document.readyState").equals("complete"));
+    }
+
+After changed:
+
+public void pageLoadWait(){
+        new WebDriverWait(driver,  Duration.ofSeconds(3000)).until(
+                webDriver -> ((JavascriptExecutor) webDriver).executeScript("return document.readyState").equals("complete"));
+    }
+
+//div[6]//div[2]//div[3]//div[1]//ul[1]//li[1]//a[1]
+
+/html[1]/body[1]/div[4]/div[3]/div[3]/div[2]/div[1]/div[2]/div[3]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[6]/div[4]/div[1]/div[1]/div[2]/h5[1]
+
+//*[@id="Div_CoverageMem"]/h5
+//body/div[contains(@class,'header navbar-fixed-top')]/div[1]
+
+//body/div[contains(@class,'header navbar-fixed-top')]/div[1]
+
+
+
+//*[@id="Div_CoverageMem"]/h5
+
+
+//div[@id='accordionpresentdecline_1']//i[@class='fa fa-angle-down']
+
+//*[@id="accordionpresentdecline_1"]/div/div[1]/a/i
+
+//div[contains(@class,'panel-body 1-wrap')]//a[@id='enrollDental']
+
+//*[@id="enrollDental"]
+
+//div[@id='div_ShowPlans_1']//div[1]//div[3]//div[2]//div[1]//label[1]
+
+//*[@id="div_ShowPlans_1"]/div[1]/div[3]/div[2]/div/label
+
+yCQT
+
+//input[@id='Item1_EffectiveDate']
+
+//a[@class='chzn-single chzn-default']
+
+
+//input[@autocomplete='off']
+
+//*[@id="Item1_QualifyingEvent_QualifyingEventName_chzn"]/div/div/input
+
+
+//*[@id="Item1_QualifyingEvent_QualifyingEventName_chzn"]
+
+
+By.id("Item1_QualifyingEvent_QualifyingEventName_chzn");
+
+//div[@class='ac-head']//a[@class='accordion-toggle collapsed']
+
+
+//*[@id="accordionpresentdecline_16"]/div/div[1]/a/i
+
+BUyM
+
+//label[@class='btn btn-default addtoselect Yesnoclass']
+
+//*[@id="div_ShowPlans_16"]/div/div[3]/div[2]/div/label
+
+
+//a[@class='chzn-single chzn-default']
+
+
+
+//*[@id="div_ShowPlans_1"]/div[11]/div[3]/div[2]
+
+
+//div[@class='header navbar-fixed-top']//div[@class='container']
+
+//div[@id='Presentaccordion_16']//a[@class='accordion-toggle categoryHead']
+
+//*[@id="Presentaccordion_16"]/div/div[1]/a/i
+//div[@class='header navbar-fixed-top']//div[@class='container']
+
+
+
+public static By clickAddProfile= By.xpath("//a[@id='btn_AddProfile_EnrollmentFlow']");
+    
+    public static By NameoftheBank= By.xpath("//input[@id='NameoftheBank']");
+    
+    public static By BankAccountNumber= By.xpath("//input[@id='BankAccount']");
+    
+    public static By RoutingNumber= By.xpath("//input[@id='RoutingNumber']");
+    
+    public static By clickSave= By.xpath("//input[@id='btn_SaveProfile_EnrollmentFlow']");
+    
+    public static By confirmationYes= By.xpath("//*[@id='btn_Add_Payment_Profile_EnrollmentFlow']");
+
+    public static By confirmationNo= By.xpath("//*[@id='btn_Cancel_Payment_Profile_CancelEnrollmentFlow']");
+	
+
+@Step("Click Payment Add Profile")
+    public void clickAddProfile(){
+        driver.pageLoadWait();
+        driver.click(QE_on_Medical.clickAddProfile);
+    }
+	
+	@Step("Add Profile is displayed")
+    public Boolean AddProfileisdisplayed(){
+        driver.pageLoadWait();
+        return driver.isDisplayed(QE_on_Medical.clickAddProfile);
+    }
+	
+	@Step("Type Name of the Bank")
+    public void TypeNameoftheBank(){
+        driver.pageLoadWait();
+        driver.sendKeys(QE_on_Medical.NameoftheBank, "BOI");
+    }
+	
+	@Step("Type Bank Account Number")
+    public void TypeBankAccountNumber(){
+        driver.pageLoadWait();
+        driver.sendKeys(QE_on_Medical.BankAccountNumber, "435657577");
+    }
+	
+	@Step("Type Routing Number")
+    public void TypeRoutingNumber(){
+        driver.pageLoadWait();
+        driver.sendKeys(QE_on_Medical.RoutingNumber, "021300077");
+    }
+	
+	@Step("click Save")
+    public void clickSave(){
+        driver.pageLoadWait();
+        driver.click(QE_on_Medical.clickSave);
+    }
+	
+	@Step("click Confirmation Yes")
+    public void clickConfirmationYes(){
+        driver.pageLoadWait();
+        driver.click(QE_on_Medical.confirmationYes);
+    }
+	
+	@Step("click Confirmation No")
+    public void clickConfirmationNo(){
+        driver.pageLoadWait();
+        driver.click(QE_on_Medical.confirmationNo);
+    }
+
+
+
+//        QE_Medical.clickAddProfile();
+//        sa.assertTrue(QE_Medical.AddProfileisdisplayed(),"Manage Coverage page AddProfile should be displayed");
+//        QE_Medical.TypeNameoftheBank();
+//        QE_Medical.TypeBankAccountNumber();
+//        QE_Medical.TypeRoutingNumber();
+//        QE_Medical.clickSave();
+//        QE_Medical.clickConfirmationYes();
+        //QE_Medical.clickConfirmationNo();
+        
+
+//div[@id='collapsepresentdecline_16']//div[1]//a[1]
+
+//*[@id="enrollDental"]
+
+
+//span[normalize-space()='Select Plan']
+
+//*[@id="div_ShowPlans_16"]/div/div[3]/div[2]/div/label
+
+//driver.sendKeys(TerminateMedical.QualifyingEvent, "Adjustment/Correction" + Keys.ENTER);
+        //driver.click(TerminateMedical.QualifyingEvent);
+
+
+//driver.type(TerminateMedical.terminationDate,TerminationDate);
+        //driver.sendKeys(TerminateMedical.terminationDate,"TerminationDate");
+
+public static By viewBenefits= By.xpath("//*[@id=\"PresentCont_16\"]/div/div/div[3]/div[2]/div[3]/div[1]/ul/li/a");
+
+ //public static By QualifyingEvent= By.xpath("//*[@id=\"QualifyingEvent_QualifyingEventName_chzn\"]/a");
+    
+@Step("Scroll to Element")
+    public void scrolltoElement(){
+        driver.pageLoadWait();
+        driver.scrollToElement(TerminateAncillary.viewBenefits);
+    }
+
+ //driver.type(TerminateAncillary.terminationDate, "15052023");
+
+@Step("Search for the Employee")
+	    public void searchemployee(String username) throws InterruptedException{
+	        driver.pageLoadWait();
+	        try{
+	            Thread.sleep(3000);
+	        }
+	        catch (Exception e){
+
+	        }
+	        driver.click(TerminateAncillary.txtKeywordSearch);
+	        driver.type(TerminateAncillary.txtKeywordSearch, username);
+	        driver.click(TerminateAncillary.btnKeywordSearch);
+	        Thread.sleep(9000);
+	        driver.click(TerminateAncillary.clickName);
+	        Thread.sleep(9000);	        
+	    }
+
+
+
+
+
+
+St. Lucie Public Schools
+
+
+
+
+
+//h4[normalize-space()='Dental']
+//*[@id="Presentaccordion_16"]/div/div[1]/a/i
+
+//div[@id='Presentaccordion_16']//a[@class='accordion-toggle categoryHead']
+
+//div[@id='PresentCont_16']//a[contains(@class,'lnkViewBenefits')][normalize-space()='View Benefits']
+
+//*[@id="PresentCont_16"]/div/div/div/div[2]/div[3]/div[1]/ul/li/a
+
+
+
+
+Change coverage amount
+Enroll and maintenance with Rate edit plan
+Cascade Scenario (Class, Sub group, Address change, DOB,Medicare flag, Dependent add or remove)
+Retro enrollment with retro period
+Retro termination with retro period
+
+//driver.sendKeys(ReEnrollMedical.QualifyingEvent, "Adjustment/Correction" + Keys.ENTER);
+        //driver.click(ReEnrollMedical.QualifyingEvent);
+        //driver.pageLoadWait();
+
+
+//div[@id='div_AccodianHead_29']//i[@class='fa fa-angle-down']
+
+ Krishna K
+
+//h4[normalize-space()='Term Life']
+
+//h4[normalize-space()='Term Life']
+
+Verical scorll
+
+Change Coverage Amount == //div[@id='PresentCont_29']//a[@id='lnkChangePlan']
+
+Qualifying Event
+
+effective date
+
+Termlife dropdown = //h4[@class='panel-title']
+
+//select[@id='Item1_ProductLst_0__EmployeeCoverageAmount']
+
+Scroll Down
+
+//div[@class='header navbar-fixed-top']//div[@class='container']
+
+//*[@id="BtnChangePlanGotoProfile"]
+
+//*[@id="div_AccodianHead_29"]/a
+
+//*[@id="Item1_ProductLst_0__EmployeeCoverageAmount"]
+
+//*[@id="lnkChangePlan"]
+
+//*[@id="div_AccodianHead_29"]/a/i
+
+//*[@id="Item1_ProductLst_3__EmployeeCoverageAmount"]
+
+//select[@id='Item1_ProductLst_3__EmployeeCoverageAmount']
+
+//h4[normalize-space()='Term Life']
+
+
+
+
+Enroll and maintenance with Rate edit plan
+
+//h4[@class='panel-title']
+
+//span[@id='BtnSubmitChangePlan']
+
+
+Cascade Scenario (Class, Sub group, Address change, DOB,Medicare flag, Dependent add or remove)
+
+//driver.click(ChangeCoverageAmount.selectEmployeeCoverageAmount);
+
+//*[@id="Div_CoverageMem"]/div/ul/li/div/span[3]/text()
+
+
+
+//*[@id="printArea"]/div[2]/div/div[1]/table/tbody/tr[4]/td[4]
+
+
+//td[normalize-space()='04/01/2023']
+
+//*[@id="printArea"]/div[2]/div/div[1]/table/tbody/tr[2]/td[4]
+
+<td>04/01/2023</td>
+
+
+
+//*[@id="printArea"]/div[2]/div/div[1]/table/tbody/tr[4]/td[4]
+
+//a[@id='BtnQEGotoProfile']
+
+
+//*[@id="printArea"]/div[2]/div/div[1]/table/tbody/tr[2]/td[3]
+
+//*[@id="printArea"]/div[2]/div/div[1]/table/tbody/tr[6]/td[3]
+
+//*[@id="printArea"]/div[2]/div/div[1]/table/tbody/tr[4]/td[3]
+
+
+
+
+//*[@id="printArea"]/div[2]/div/div[1]/table/tbody/tr[2]/td[1]/text()
+
+/html/body/div[4]/div/div/div[1]/div[1]/div[2]/div/div[1]/table/tbody/tr[3]/td[1]/text()
+
+//*[@id="printArea"]/div[2]/div/div[1]/table/tbody/tr[3]/td[1]/text()
+
+
+System.out.println(changePlanMedical.VerifyoldPlanName(changePlanMedical.oldname));
+      	System.out.println(changePlanMedical.VerifynewPlanName(changePlanMedical.newname));
+      	
+Assert.assertNotEquals(changePlanMedical.VerifyoldPlanName(changePlanMedical.oldname), changePlanMedical.VerifynewPlanName(changePlanMedical.newname),"Assertion Passed");
+      	
+//*[@id="printArea"]/div[2]/div/div[1]/table/tbody/tr[3]/td[1]
+
+
+//*[@id="printArea"]/div[2]/div/div[1]/table/tbody/tr[7]/td[1]
+
+//*[@id="printArea"]/div[2]/div/div[1]/table/tbody/tr[2]/td[1]
+
+//*[@id="printArea"]/div[2]/div/div[1]/table/tbody/tr[2]/td[3]
+
+//*[@id="printArea"]/div[2]/div/div[1]/table/tbody/tr[2]/td[3]
+
+
+//h4[normalize-space()='Medical']
+
+//h4[normalize-space()='Dental']//*[@id="div_ShowPlans_1"]/div[1]/div[3]/div[2]/div/label
+
+//div[@id='div_ShowPlans_1']//span[contains(text(),'Select Plan')]
+
+//input[@id='Item1_ProductLst[1]IsDeclinedInd']
+//input[@id='Item1_ProductLst[1]IsDeclinedInd']
+//input[@id='Item1_ProductLst[1]IsDeclinedInd']
+//*[@id="Item1_ProductLst[1]IsDeclinedInd"]
+//*[@id="BtnGotoProfile"]
+
+//*[@id="div_ShowPlans_1"]/div[1]/div[3]/div[2]/div/label
+//a[@id='BtnGotoProfile']
+//*[@id="printArea"]/div[2]/div/div[1]/table/tbody/tr[5]/td[3]
+
+//*[@id="Item1_ProductLst[0]IsDeclinedInd"]
+
+//input[@id='Item1_ProductLst[0]IsDeclinedInd']
+
+        //sa.assertTrue(QE_Medical.PaymentProfileisdisplayed(),"Manage Coverage page Payment Profile should be displayed");
+        //QE_Medical.clickPaymentProfileNo();
+
+	public static By clickNoPaymentProfile= By.xpath("//*[@id='divCobSelect']/div/label[2]");
+
+@Step("Click Payment Profile No")
+    public void clickPaymentProfileNo(){
+        driver.pageLoadWait();
+        driver.click(QE_on_Ancillary.clickNoPaymentProfile);
+    }
+	
+	@Step("Payment Profile No is displayed")
+    public Boolean PaymentProfileisdisplayed(){
+        driver.pageLoadWait();
+        return driver.isDisplayed(QE_on_Ancillary.clickNoPaymentProfile);
+    }
+
+//System.out.println(reEnrollMedical.checkEnrollmentDate(data));
+		//System.out.println(reEnrollMedical.VerifyEnrollmentDate(reEnrollMedical.date));	
+
+
+@Step("Click Payment Profile as No")
+    public void clickPaymentProfileNo(){
+        driver.pageLoadWait();
+        driver.click(ReEnrollMedical.clickNoPaymentProfile);
+    }
+	
+	@Step("Payment Profile No is displayed")
+    public Boolean PaymentProfileisdisplayed(){
+        driver.pageLoadWait();
+        return driver.isDisplayed(ReEnrollMedical.clickNoPaymentProfile);
+    }
+
+
+    
+    public static By clickNoPaymentProfile= By.xpath("//*[@id=\"divCobSelect\"]/div/label[2]");
+
+@Step("Recent Download File")
+	 public String recentdownloadisdisplayed(){		
+		File file = new File("D:\\Benefitalign\\New\\EEBenefitAlign");
+		File[] allfile = file.listFiles();
+		File lastModifiedFile = allfile[0];
+		for (int i = 1; i < allfile.length; i++) {
+			if (lastModifiedFile.lastModified() < allfile[i].lastModified()) {
+				lastModifiedFile = allfile[i];
+		}
+	}		
+		String k = lastModifiedFile.toString();
+		Path p = Paths.get(k);
+		String filename = p.getFileName().toString();		
+		System.out.println("The downloaded file name is: "+filename);
+		File drivedfile = new File(p.toFile(), "");
+		System.out.println("The path of the downloadedfile name is: "+drivedfile);	
+		return filename;		
+	}
+
+
+
+@Step("Recent Download File")
+	 public String recentdownloadisdisplayed(){		
+		File file = new File("D:\\Benefitalign\\New\\EEBenefitAlign");
+		File[] allfile = file.listFiles();
+		File lastModifiedFile = allfile[0];
+		for (int i = 1; i < allfile.length; i++) {
+			if (lastModifiedFile.lastModified() < allfile[i].lastModified()) {
+				lastModifiedFile = allfile[i];
+		}
+	}		
+		String k = lastModifiedFile.toString();
+		Path p = Paths.get(k);
+		String filename = p.getFileName().toString();		
+		System.out.println("The downloaded file name is: "+filename);
+		File drivedfile = new File(p.toFile(), "");
+		System.out.println("The path of the downloadedfile name is: "+drivedfile);	
+		return filename;		
+	}
+
+
+
+@Step("Click Payment Profile No")
+    public void clickPaymentProfileNo(){
+        driver.pageLoadWait();
+        driver.click(ChangePlanMedical.clickNoPaymentProfile);
+    }
+	
+	@Step("Payment Profile No is displayed")
+    public Boolean PaymentProfileisdisplayed(){
+        driver.pageLoadWait();
+        return driver.isDisplayed(ChangePlanMedical.clickNoPaymentProfile);
+    }
+
+
+ //changePlanMedical.clickSideMenu();
+                      
+        //sa.assertTrue(changePlanAncillary.PaymentProfileisdisplayed(),"Payment Profile No should be displayed");
+        //changePlanAncillary.clickPaymentProfileNo();
+
+
+
+    
+    public static By clickNoPaymentProfile= By.xpath("//*[@id='divCobSelect']/div/label[2]");
+
+/sa.assertTrue(changePlanMedical.PaymentProfileisdisplayed(),"Payment Profile No should be displayed");
+        //changePlanMedical.clickPaymentProfileNo();
+
+
+        //System.out.println(changePlanMedical.VerifyoldPlanName(changePlanMedical.oldname));
+      	//System.out.println(changePlanMedical.VerifynewPlanName(changePlanMedical.newname));
+      	
+@Step("click Side Menu")
+    public void clickSideMenu(){
+        driver.pageLoadWait();
+        driver.mouseHover(ChangePlanAncillary.clickSideMenu);
+        driver.click(ChangePlanAncillary.clickSideMenu);
+    }
+
+@Step("click Side Menu")
+    public void clickSideMenu(){
+        driver.pageLoadWait();
+        driver.mouseHover(ChangePlanMedical.clickSideMenu);
+        driver.click(ChangePlanMedical.clickSideMenu);
+    }
+	
+    
+    public static By clickSideMenu= By.xpath("//i[@class='fa fa-angle-left font-lg']");
+
+
+    
+    public static By clickSideMenu= By.xpath("//i[@class='fa fa-angle-left font-lg']");
+
+
+		//changeCoverageAmount.clickPaymentProfileNo();
+
+
+
+@Step("Click Payment Profile as No")
+	    public void clickPaymentProfileNo(){
+	        driver.pageLoadWait();
+	        driver.click(ChangeCoverageAmount.clickNoPaymentProfile);
+	    }
+		
+		@Step("Payment Profile No is displayed")
+	    public Boolean PaymentProfileisdisplayed(){
+	        driver.pageLoadWait();
+	        return driver.isDisplayed(ChangeCoverageAmount.clickNoPaymentProfile);
+	    }
+		 	
+    
+    public static By clickNoPaymentProfile= By.xpath("//*[@id=\"divCobSelect\"]/div/label[2]");
+
+
+
+
+
+//*[@id="printArea"]/div[2]/div/div[1]/table/tbody/tr[8]/td[1]/span
+
+//*[@id="printArea"]/div[2]/div/div[1]/table/tbody/tr[9]/td[1]/span
+
+
+<span style="font-size: 11;font-family: Bookman Old Style;">Subscriber : $50,000.00</span>
+
+
+
+//*[@id="printArea"]/div[2]/div/div[1]/table/tbody/tr[8]/td[1]/span
+
+
+
+@Step("Enter Effective Date")
+	    public void NewEffectiveDate(String date) throws InterruptedException {
+	        driver.pageLoadWait();        
+	        driver.type(Enrollment.effectiveDate,date);
+	        driver.findElement(ChangeCoverageAmount.EffectiveDate).sendKeys(Keys.TAB);
+	        Thread.sleep(4000);
+	        //driver.pageLoadWait(); 
+	    }
+
+
+
+//*[@id="printArea"]/div[2]/div/div[1]/table/tbody/tr[10]/td[1]/span
+
+
+
+//*[@id="printArea"]/div[2]/div/div[1]/table/tbody/tr[11]/td[1]/span
+
+
+//*[@id="printArea"]/div[2]/div/div[1]/table/tbody/tr[10]/td[1]/span
+
+
+
+//a[@id='BtnSubmitEnrollment']
+
+
+//*[@id="BtnSubmitEnrollment"]
+
+
+//a[@id='btnDownload']
+
+enrollmentPage.clickNext();       
+		if(data.get("PaymentMethod").equalsIgnoreCase("ACH")) {
+			enrollmentPage.addProfileWithACH(true, "Chase", "021300077", false);
+		}
+		else {
+			enrollmentPage.addProfileWithPensionAuthority(true);
+		}
+
+
+//a[@class='view_more DownloadFileOrUrl']
+
+//*[@id="PresentCont_1"]/div/div/div/div[2]/div[3]/div[1]/ul/li[2]/a
+
+
+sa.assertTrue(viewBenefits.viewSBCisdisplayed(),"Manage Coverage page View SBC should be displayed");
+        viewBenefits.clickViewSBC();
+String username = employeePage.searchName;
+		viewBenefits.searchemployee(username); 
+
+
+
+sa.assertTrue(viewBenefits.DentalPlanisdisplayed(),"Manage Coverage page Dental Plan should be displayed");
+        viewBenefits.clickDentalDropdown();
+        sa.assertTrue(viewBenefits.ViewBenefitsisdisplayed(),"Manage Coverage page View Benefits should be displayed");
+        viewBenefits.clickViewBenefits();
+        s
+
+enrollmentPage.clickNext();       
+		if(data.get("PaymentMethod").equalsIgnoreCase("ACH")) {
+			enrollmentPage.addProfileWithACH(true, "Chase", "021300077", false);
+		}
+		else {
+			enrollmentPage.addProfileWithPensionAuthority(true);
+		}
+//div[@id='PresentCont_1']//a[contains(@class,'lnkViewBenefits')][normalize-space()='View Benefits']
+
+//*[@id="EEPopup"]/div/div/div[1]/button/span/i
+
+//div[@id='PresentCont_1']//a[contains(@class,'lnkViewBenefits')][normalize-space()='View Benefits']
+
+//*[@id="PresentCont_1"]/div/div/div/div[2]/div[3]/div[1]/ul/li[1]/a
+
+
+
+public static By clickMedical= By.xpath("//div[@id='Presentaccordion_1']//div[@class='ac-head']//i[@class='fa fa-angle-down']");
+		
+
+public static By clickViewBenefits = By.xpath("//div[@id='PresentCont_1']//a[contains(@class,'lnkViewBenefits')][normalize-space()='View Benefits']");
+
+	public static By clickClose = By.xpath("//*[@id=\"EEPopup\"]/div/div/div[1]/button/span/i");
+	
+public static By clickviewSBC = By.xpath("//a[@class='view_more DownloadFileOrUrl']");
+
+
+
+
+@Step("Medical Plan is displayed")
+    public Boolean MedicalPlanisdisplayed(){
+        driver.pageLoadWait();
+        return driver.isDisplayed(ViewBenefits.clickMedical);
+    }
+	
+    @Step("click Medical Plan Dropdown")
+    public void clickMedicalDropdown(){
+        driver.pageLoadWait();
+        driver.click(ViewBenefits.clickMedical);
+    }
+
+
+	@Step("View Benefits page click View SBC")
+    public void clickViewSBC(){
+        driver.pageLoadWait();
+        driver.click(ViewBenefits.clickviewSBC);
+    }
+	
+	@Step("View Benefits page View SBC is displayed")
+    public Boolean viewSBCisdisplayed(){
+        driver.pageLoadWait();
+        return driver.isDisplayed(ViewBenefits.clickviewSBC);
+    }
+
+sa.assertTrue(viewBenefits.MedicalPlanisdisplayed(),"Manage Coverage page Medical Plan should be displayed");
+		viewBenefits.clickMedicalDropdown();
+
+
+
+
+//a[@id='btn_CancelRecPayment']
+
+//input[@id='btn_CancelProfile_EnrollmentFlow']
+//span[@id='divCancel']
+
+Data Propeties : Admin - d missing
+
+
+//span[@id='BtnSubmitChangePlan']
+
+
+//i[@class='fa fa-angle-left font-lg']
+
+//*[@id="divTotalBtn"]/div[1]/a/i
+
+
+
+//*[@id="PensionAuthorityName_chzn"]/a/span
+//span[normalize-space()='Florida Retirement System (FRS)']
+
+//*[@id="PensionAuthorityName_chzn"]/a
+
+//div[@id='PensionAuthorityName_chzn']//a[@class='chzn-single chzn-default']
+
+
+//*[@id="PensionAuthorityName_chzn_o_1"]
+
+
+
+
+
+
+Login
+Tenant Dashboard
+Account Dashboard
+Add Employee
+Activate Employee
+Submit Employee
+Activate and Enroll Employee
+Decline All Coverage
+
+
+Employee Rehire & Enroll
+Reinstate employee
+
+Terminate Medical
+Terminate Ancillary
+Summary Verification
+View benefits and SBC
+ReEnroll Medical
+ReEnroll Ancillary
+
+Change Plan Medical
+Change Plan Ancillary
+Enroll and maintenance with Rate edit plan
+QE on Medical
+QE Ancillary
+
+
+Update covered Members -  Medical
+Update covered Members -  Ancillary
+Cascade Scenario (Class, Sub group, Address change, DOB,Medicare flag, Dependent add or remove)"
+Retro enrollment with retro period
+Retro termination with retro period
+
+
+
+homePage.searchGroup(data.get("GroupName"));
+ChangeCoverageAmountPage.coverageAmount(data.get("ChangeCoverageAmount");
+
+
+		//Assert.assertEquals(changeCoverageAmount.VerifyNewCoverageAmount(changeCoverageAmount.newCoverageAmount),changeCoverageAmount.coverageAmount(data.get("ChangeCoverageAmount")),"Assertion Passed");
+
+
+//changeCoverageAmount.coverageAmount(data.get("ChangeCoverageAmount"));
+
+//System.out.println(changeCoverageAmount.VerifyNewCoverageAmount(changeCoverageAmount.newCoverageAmount));
+      	//System.out.println(changeCoverageAmount.coverageAmount(data));
+		
+
+//		@Step("Verify OldCoverageAmount")
+//	    public String VerifyOldCoverageAmount(String oldCoverageAmount){
+//	        driver.pageLoadWait();       
+//	        String ele=driver.findElement(ChangeCoverageAmount.oldCoverageAmount).getText(); 
+//	        this.oldCoverageAmount = ele;
+//	        return ele;        
+//	    }   
+	
+
+//public static By oldCoverageAmount= By.xpath("//*[@id=\"printArea\"]/div[2]/div/div[1]/table/tbody/tr[11]/td[1]/span");
+    
+
+ System.out.println(changePlanMedical.VerifyoldPlanName(changePlanMedical.oldname));
+      	System.out.println(changePlanMedical.VerifynewPlanName(changePlanMedical.newname));
+
+
+//a[@id='BtnSubmitEnrollment']
+
+//*[@id="BtnSubmitEnrollment"]
+
+String ele1=driver.findElement(ChangeCoverageAmount.newCoverageAmount).getText().trim();
+		        System.out.println(ele1);
+xSlu
+@Step("Check Coverage Amount")
+		    public String coverageAmount(HashMap<String,String> data){
+		        driver.pageLoadWait(); 
+		        this.Amount= data.get("ChangeCoverageAmount");
+		        return Amount;
+		    }
+System.out.println(changeCoverageAmount.VerifyNewCoverageAmount(changeCoverageAmount.newCoverageAmount));     	
+     System.out.println(changeCoverageAmount.VerifyOldCoverageAmount(changeCoverageAmount.oldCoverageAmount));
+		 	
+
+//*[@id="printArea"]/div[2]/div/div[1]/table/tbody/tr[10]/td[1]/span
+
+
+1.Repository to Eclipse --> Open GitHub Repository in Browser. Clone Existing Project - Https Copied
+2.Create Branch --> Right click Project under Team click Switch to New Branch - create New Branch Name
+3.Project Right click Team --> Share Project - Repository dropdown Select Project Clone path
+4.Gith staging add to Index ++ select all added button Commit message and Commit push 
+
+
+Share Project
+
+//a[@id='BtnSubmitEnrollment']
+
+//*[@id="printArea"]/div[2]/div/div[1]/table/tbody/tr[4]/td[1]/span
+
+//h4[normalize-space()='Basic Life']
+
+//div[@id='PresentCont_38']//a[@id='lnkChangePlan']
+
+//h4[normalize-space()='Basic Life']
+
+//h4[@class='panel-title']
+
+//div[@id='PresentCont_38']//a[@id='lnkChangePlan']
+
+//select[@id='Item1_ProductLst_0__EmployeeCoverageAmount']
+
+//span[@id='BtnSubmitChangePlan']
+
+//*[@id="printArea"]/div[2]/div/div[1]/table/tbody/tr[4]/td[1]/span
+
+@Step("Click Next Button")
+	    public void clickNext() throws InterruptedException{
+	        driver.pageLoadWait();
+	        driver.click(ChangeCoverageAmount.clickNext);
+	        driver.pageLoadWait();
+	    }
+
+		
+if(data.get("BeneficiaryType").equals("Person")){
+			employeePage.addPersonBeneficiary(data);
+		}
+		else{
+			 employeePage.addTrustOrInstitutionBeneficiary(data);
+		}
+
+
+
+enrollmentPage.clickNext();       
+		if(data.get("PaymentMethod").equalsIgnoreCase("ACH")) {
+			enrollmentPage.addProfileWithACH(true, "Chase", "021300077", false);
+		}
+		else {
+			enrollmentPage.addProfileWithPensionAuthority(true);
+		}
+
+
+
+changeCoverageAmount.clickNext();
+
+Activate and Enroll name: REcU
+Add Employee: bPOT
+
+Hari K
+
+aYsW
+
+ Pensacola State College
+
+
+
+Dependent and Beneficiary Details Spouse added means affect enrollment spouse plan
+First Name and Last name we will give name instead of string
+
+
+We need to check Activate and Enroll. remove all thread.sleep and pageload wait also. Record the execution.we need to use UAT url
+Gmail Authentication issues
+outlook email Id password
+host details
+Server details
+first name or Last name we added numbers or name Random thing ex: Anand kumar 12 
+
+
+
+
+
+
+
+
+
+
+//HomePage 
+
+package com.sperdian.pages;
+
+import com.sperdian.base.DriverFactory;
+import com.sperdian.locators.Home;
+import com.sperdian.util.DriverUtil;
+import io.qameta.allure.Allure;
+import io.qameta.allure.Attachment;
+import io.qameta.allure.Step;
+import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebElement;
+import org.testng.Assert;
+
+import java.io.ByteArrayInputStream;
+import java.util.ArrayList;
+import java.util.List;
+
+public class HomePage {
+    DriverUtil driver;
+
+    public HomePage(DriverUtil driver){
+        this.driver=driver;
+    }
+
+    @Step("Get Logged in UserName")
+    public String getLoggedInUserName(){
+        //driver.pageLoadWait();
+        return driver.getText(Home.userNameXpath);
+    }
+
+    @Step("Verify Logged In user")
+    public void verifyLoggedInUser(String userName, String prodUserNameText) {
+        Assert.assertEquals(userName,prodUserNameText);
+
+    }
+
+    @Step("Search for the group")
+    public void searchGroup(String groupName){
+//        driver.pageLoadWait();
+//        try{
+//            Thread.sleep(3000);
+//        }
+//        catch (Exception e){
+//
+//        }
+        driver.type(Home.txtSearchId,groupName);
+        driver.click(Home.searchButtonId);
+        By groupGridXpath= By.xpath("//span[text()='"+groupName+"']/ancestor::a");
+        driver.click(groupGridXpath);
+    }
+
+    public void logOut() {
+        driver.mouseHover(Home.userNameXpath);
+        driver.click(Home.logout);
+    }
+    @Step("Get the Group Info")
+    public List<String> getGroupInfo(String grpName) {
+        By groupData= By.xpath("//span[contains(text(),'"+grpName+"')]/ancestor::tr//span");
+        List<WebElement> tableContentsEle=driver.findElements(groupData);
+        List<String> tableContents=new ArrayList<>();
+        for(WebElement element:tableContentsEle){
+            tableContents.add(element.getText());
+//        tableContents.containsAll(Arrays.asList(grpName,status,parentGrpName,grpNumber))//
+        }
+        return tableContents;
+    }
+
+    @Step("is Group Name displayed")
+    public boolean isGroupNameDisplayed(){
+        //driver.pageLoadWait();
+        return driver.isDisplayed(Home.groupNameTH);
+    }
+
+    @Step("is Status displayed")
+    public boolean isStatusDisplayed(){
+        return driver.isDisplayed(Home.statusTH);
+    }
+
+    @Step("is Parent Group Name displayed")
+    public boolean isParentGroupNameDisplayed(){
+        return driver.isDisplayed(Home.parentGroupNameTH);
+    }
+
+    @Step("is Group Number displayed")
+    public boolean isGroupNumberDisplayed(){
+        return driver.isDisplayed(Home.groupNumberTH);
+    }
+
+    @Step("is Phone displayed")
+    public boolean isPhoneDisplayed(){
+        return driver.isDisplayed(Home.phoneTH);
+    }
+
+    @Step("is TIN displayed")
+    public boolean isTINDisplayed(){
+        return driver.isDisplayed(Home.TINTH);
+    }
+
+
+
+}
+
+
+
+//LoginPage:
+
+
+package com.sperdian.pages;
+
+import com.sperdian.base.DriverFactory;
+import com.sperdian.locators.Login;
+import com.sperdian.util.DriverUtil;
+import io.qameta.allure.Attachment;
+import io.qameta.allure.Step;
+import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+
+public class LoginPage {
+    DriverUtil driver;
+
+   public LoginPage(DriverUtil driver){
+        this.driver=driver;
+    }
+
+    @Step("Login into application as {userName}")
+    public void login(String userName,String password){
+       //driver.pageLoadWait();
+       driver.type(Login.userNameId,userName);
+       driver.type(Login.passwordId,password);
+       driver.click(Login.loginXpath);
+     //  driver.takeScreenshot();//
+
+    }
+
+    @Step("is Login page displayed")
+    public boolean isLoginPageDisplayed(){
+        //driver.pageLoadWait();
+       return  driver.isDisplayed(Login.userNameId);
+    }
+
+
+}
+
+
+
+
+
+//CommonUtil 
+
+
+
+package com.sperdian.util;
+
+import io.qameta.allure.Attachment;
+import io.qameta.allure.Step;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.testng.asserts.SoftAssert;
+
+import java.io.File;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.time.Duration;
+import java.util.List;
+
+
+public class CommonUtil {
+
+    DriverUtil driver;
+    Logger log=LogManager.getLogger(CommonUtil.class);
+
+    public CommonUtil(DriverUtil driver){
+        this.driver=driver;
+    }
+
+    Logger logger= LogManager.getLogger(CommonUtil.class);
+
+
+    @Step("Verify the link {urlLink}")
+    public boolean verifyLink(String urlLink) {
+        try {
+            URL link = new URL(urlLink);
+            HttpURLConnection httpConn = (HttpURLConnection) link.openConnection();
+            httpConn.setConnectTimeout(3000);
+            httpConn.connect();
+
+            if (httpConn.getResponseCode() == 200) {
+                return true;
+            }
+
+            if (httpConn.getResponseCode() == 400) {
+                return false;
+            }
+
+        } catch (Exception e) {
+        }
+        return false;
+
+    }
+
+    @Step("Get random String {count}")
+    public String randomString(int count){
+            String ALPHA_NUMERIC="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+            StringBuilder sb=new StringBuilder(count);
+            while(count--!=0){
+                int index=(int)(Math.random()*ALPHA_NUMERIC.length());
+                sb.append(ALPHA_NUMERIC.charAt(index));
+            }
+            return sb.toString();
+
+        }
+
+    @Step("launch the url {url}")
+    public void launchUrl(String url) {
+        try {
+            driver.get(url);
+            //driver.pageLoadWait();
+            driver.getDriver().manage().window().maximize();
+
+        } catch (Exception e) {
+            log.error("URL is not launched");
+        }
+    }
+
+    @Step("Random Number")
+    public int randomNumber(int noOfDigits){
+        long timeSeed = System.nanoTime();
+        double randSeed = Math.random() * 1000;
+        long midSeed = (long) (timeSeed * randSeed);
+        String s = midSeed + "";
+        String subStr = s.substring(0, noOfDigits);
+        return Integer.parseInt(subStr);
+    }
+
+    @Step("Random Number")
+    public int getRandomSSN(){
+        long timeSeed = System.nanoTime();
+        double randSeed = Math.random() * 1000;
+        long midSeed = (long) (timeSeed * randSeed);
+        String s = midSeed + "";
+        String subStr = s.substring(0, 9);
+        if(subStr.charAt(0)=='9'){
+            subStr='7'+subStr.substring(1);
+        }
+        return Integer.parseInt(subStr);
+    }
+    @Step("Random Number in a Range")
+    public int randomNumber(int min,int max){
+        return (int)Math.floor(Math.random() *(max - min + 1) + min);
+    }
+
+
+    public String getRandomPhoneNumber() {
+    /*    String no=randomNumber(9)+"";
+        String phone="(9"+no.substring(0,2)+")"+no.substring(2,5)+"-"+no.substring(5);*/
+        String phone="(938) 443-6543";
+        return phone;
+    }
+
+    @Step("Check the file is exist after download")
+    @Attachment
+    public boolean isDownloadedFileExist(){
+//        driver.pageLoadWait();
+//        try{
+//            Thread.sleep(3000);
+//        }
+//        catch (Exception e){
+//
+//        }
+
+        File folder = new File(System.getProperty("user.dir"));
+//List the files on that folder
+        File[] listOfFiles = folder.listFiles();
+        boolean found = false;
+        File f = null;
+        //Look for the file in the files
+        // You should write smart REGEX according to the filename
+        for (File listOfFile : listOfFiles) {
+            if (listOfFile.isFile()) {
+                String fileName = listOfFile.getName();
+                System.out.println("File " + listOfFile.getName());
+                if (fileName.contains(".pdf")) {
+                    f = new File(fileName);
+                    found = true;
+                    f.deleteOnExit();
+                }
+            }
+        }
+
+        return found;
+    }
+}
+
+
+
+
+
+
+
+
+//Group
+
+
+
+package com.sperdian.pages;
+
+import com.sperdian.locators.Group;
+import com.sperdian.locators.Home;
+import com.sperdian.locators.ManageCoverage;
+import com.sperdian.util.DriverUtil;
+import io.qameta.allure.Step;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+
+public class GroupPage {
+    DriverUtil driver;
+
+    public GroupPage(DriverUtil driver){
+        this.driver=driver;
+    }
+
+    @Step("All the links related Group are displayed")
+    public Boolean isAllGroupLinksDisplayed(){
+        //driver.pageLoadWait();
+        return driver.isDisplayed(Group.employeeAdministrationXpath) &&
+                driver.isDisplayed(Group.manageCoverageXpath) &&
+                driver.isDisplayed(Group.groupInformationXpath) &&
+                driver.isDisplayed(Group.renewalCenterXpath) &&
+                driver.isDisplayed(Group.reportsXpath);
+    }
+
+    @Step("Click on the Employee Administration")
+    public void clickEmployeeAdministration(){
+        //driver.pageLoadWait();
+        driver.click(Group.employeeAdministrationXpath,100);
+    }
+    @Step("Click on the Manage Coverage")
+    public void clickManageCoverage(){
+        //driver.pageLoadWait();
+        driver.click(Group.manageCoverageXpath);
+    }
+
+    @Step("Click on the Group Information")
+    public void clickGroupInformation(){
+        //driver.pageLoadWait();
+        driver.click(Group.groupInformationXpath);
+    }
+
+    @Step("Click on the Renewal Center")
+    public void clickRenewalCenter(){
+        //driver.pageLoadWait();
+        driver.click(Group.renewalCenterXpath);
+    }
+    @Step("Click on the Reports")
+    public void clickReports(){
+        //driver.pageLoadWait();
+        driver.click(Group.reportsXpath);
+    }
+    @Step("Click on the Employee Administration from menu")
+    public void clickEmployeeAdministrationOnHeader(){
+        //driver.pageLoadWait();
+        driver.mouseHover(Group.administrationXpath);
+        driver.click(Group.employeeAdministrationDDXpath);
+    }
+
+    @Step("Click on the Group Information from menu")
+    public void clickGroupInformationOnHeader(){
+        //driver.pageLoadWait();
+        driver.mouseHover(Group.administrationXpath);
+        driver.click(Group.groupInformationDDXpath);
+    }
+
+    @Step("Click on the Benefits Information from menu")
+    public void clickBenefitsInformationOnHeader(){
+        //driver.pageLoadWait();
+        driver.mouseHover(Group.administrationXpath);
+        driver.click(Group.benefitsInformationDDXpath);
+    }
+    @Step("Click on the View Coverage from menu")
+    public void clickViewCoverageOnHeader(){
+        //driver.pageLoadWait();
+        driver.mouseHover(Group.manageCoverageHeader);
+        driver.click(Group.viewCoverageDDXpath);
+    }
+
+    @Step("Click on the Renewal from menu")
+    public void clickRenewalOnHeader(){
+        //driver.pageLoadWait();
+        driver.mouseHover(Group.manageCoverageXpath);
+        driver.click(Group.renewalDDXpath);
+    }
+
+    @Step("Click on the Reports from Header")
+    public void clickReportsOnHeader(){
+        //driver.pageLoadWait();
+
+        driver.click(Group.reportsHeaderXpath);
+    }
+
+    @Step("Click on the Comment Roaster from Header")
+    public void clickCommentRoaster(){
+        //driver.pageLoadWait();
+        driver.click(Group.commentsRoasterHeaderXpath);
+    }
+
+    @Step("Navigate to the Group Dashboard")
+    public void navigateToGroupDashboard(){
+
+        //driver.pageLoadWait();
+        driver.click(Group.groupLink,400);
+    }
+
+    @Step("Navigate to the Review Employee Transactions")
+    public void navigateToReviewEmployeeTransactions(){
+        //driver.pageLoadWait();
+        driver.click(Group.reviewEmployeeTransactions);
+    }
+    @Step("Navigate to the Review Employee Transactions")
+    public void navigateToReviewOnHeader(){
+        //driver.pageLoadWait();
+        driver.mouseHover(Group.manageCoverageHeader);
+        driver.click(Group.review);
+    }
+
+    @Step("Navigate to the Carrier Response Update")
+    public void navigateToCarrierResponseUpdate(){
+        //driver.pageLoadWait();
+        driver.click(Group.carrierResponseUpdate);
+    }
+
+    @Step("Navigate to the Carrier Response Update on Header")
+    public void navigateToCarrierResponseUpdateOnHeader(){
+        //driver.pageLoadWait();
+        driver.mouseHover(Group.manageCoverageHeader);
+        driver.click(Group.carrierResponseUpdateDD);
+    }
+
+}
+
+
+
+
+
+//EmployeeAdministrationPage 
+
+
+
+package com.sperdian.pages;
+
+import com.sperdian.locators.CommentsRoaster;
+import com.sperdian.locators.EmployeeAdministration;
+import com.sperdian.locators.Home;
+import com.sperdian.util.DriverUtil;
+import io.qameta.allure.Step;
+
+public class EmployeeAdministrationPage {
+    DriverUtil driver;
+
+    public EmployeeAdministrationPage(DriverUtil driver){
+        this.driver=driver;
+    }
+
+    @Step("Employee Administration page displayed")
+    public Boolean isEmployeeAdministrationPageDisplayed(){
+        //driver.pageLoadWait();
+        return driver.isDisplayed(EmployeeAdministration.EmployeeAdministrationHeader);
+    }
+
+    @Step("Search for the Employee")
+    public void searchEmployee(String name){
+        //driver.pageLoadWait();
+        driver.type(EmployeeAdministration.txtKeywordSearch,name);
+        driver.click(EmployeeAdministration.btnKeywordSearch);
+        //driver.pageLoadWait();
+    }
+
+    @Step("Search and navigate to the Employee Info")
+    public void searchAndNavigateToEmployeeInfo(String  name){
+        //driver.pageLoadWait();
+        driver.type(EmployeeAdministration.txtKeywordSearch,name);
+        driver.click(EmployeeAdministration.btnKeywordSearch);
+        //driver.pageLoadWait();
+        driver.jSClick(EmployeeAdministration.nameInGrid);
+    }
+    @Step("Get name from the first row in Grid")
+    public String getNameInGrid(){
+//        driver.pageLoadWait();
+//        try{
+//            Thread.sleep(3000);
+//        }
+//        catch (Exception e){
+//
+//        }
+        return driver.getText(EmployeeAdministration.nameInGrid);
+    }
+    @Step("Click on Add Employee")
+    public void clickAddEmployee(){
+        //driver.pageLoadWait();
+        driver.click(EmployeeAdministration.addEmployee);
+    }
+}
+
+
+
+
+
+
+//EmployeePage 
+
+
+
+package com.sperdian.pages;
+
+import com.sperdian.base.DriverFactory;
+import com.sperdian.locators.Employee;
+import com.sperdian.util.CommonUtil;
+import com.sperdian.util.DriverUtil;
+import io.qameta.allure.Step;
+import org.openqa.selenium.support.PageFactory;
+
+import java.util.HashMap;
+
+public class EmployeePage {
+    DriverUtil driver;
+    CommonUtil commonUtil;
+	public String searchName;
+    
+    
+
+    public EmployeePage(DriverUtil driver){
+        this.driver=driver;
+        commonUtil= new CommonUtil(DriverFactory.getDriver());
+    }
+
+    @Step("Add Personal Information {data}")
+    public String addPersonalInformation(HashMap<String,String> data){
+        //driver.pageLoadWait();
+        String firstName=commonUtil.randomString(4);
+        String middleName=commonUtil.randomString(2);
+        String lastName=commonUtil.randomString(3);
+        driver.type(Employee.firstName,firstName);
+        driver.type(Employee.middleInitial,middleName);
+        driver.type(Employee.lastName,lastName);
+        driver.selectByRandom(Employee.prefix);
+        driver.selectByRandom(Employee.suffix);
+        driver.type(Employee.DOB,data.get("DOB"));
+        driver.click(Employee.tobaccoUse_No);
+        driver.sendKeys(Employee.SSN, commonUtil.getRandomSSN() + "");
+        driver.sendKeys(Employee.sponsorSSN, commonUtil.getRandomSSN()+"");
+        driver.selectByRandom(Employee.maritalStatus);
+        driver.selectByRandom(Employee.gender);
+        if(driver.isDisplayed(Employee.sponsorRelation)){
+            driver.selectByRandom(Employee.sponsorRelation);
+        }
+        //Contact Information
+        driver.type(Employee.phone,commonUtil.getRandomPhoneNumber());
+        driver.type(Employee.cellPhone,commonUtil.getRandomPhoneNumber());
+        driver.type(Employee.email,commonUtil.randomString(5)+"@gmail.com");
+        driver.type(Employee.home_Address1,data.get("HomeAddr1"));
+        driver.type(Employee.home_Address2,data.get("HomeAddr2"));
+        driver.type(Employee.home_Zip,data.get("HomeZip"));
+        driver.type(Employee.home_ZipCodeExtension, commonUtil.randomNumber(4)+"");
+        driver.selectByRandom(Employee.home_County);
+        driver.selectByRandom(Employee.home_City);
+        driver.selectByRandom(Employee.home_State);
+        if(Boolean.parseBoolean(data.get("SameAsMailing"))){
+            driver.click(Employee.sameAsMailingAddr);
+        }
+        else{
+            driver.type(Employee.mailing_Address1,data.get("MailingAddr1"));
+            driver.type(Employee.mailing_Address2,data.get("MailingAddr2"));
+            driver.type(Employee.mailing_Zip,data.get("MailingZip"));
+            driver.type(Employee.mailing_zipCodeExtension,commonUtil.randomNumber(3)+"");
+            driver.selectByRandom(Employee.mailing_County);
+            driver.selectByRandom(Employee.mailing_City);
+            driver.selectByRandom(Employee.mailing_State);
+        }
+        //Work Details
+        driver.selectByRandom(Employee.billingLocation);
+        driver.selectByRandom(Employee.employeeClass);
+        driver.type(Employee.dateOfHire,data.get("DateOfHire"));
+        driver.type(Employee.workPhone, commonUtil.getRandomPhoneNumber());
+        driver.type(Employee.coEmployeeNumber,commonUtil.randomNumber(3)+"");
+        driver.type(Employee.retirementDate,data.get("RetirementDate"));
+        driver.type(Employee.jobTitle,data.get("JobTitle"));
+        driver.type(Employee.bargainingUnit,"BargainingUnit"+commonUtil.randomNumber(2));
+        driver.type(Employee.workExt,commonUtil.randomNumber(3)+"");
+        driver.type(Employee.enrollWinStartDt,data.get("EnrollWinStartDt"));
+        driver.type(Employee.enrollWinEndDt,data.get("EnrollWinDateDt"));
+        System.out.println("Creating the Employee with firstName:"+firstName);
+        this.searchName = firstName;
+        return firstName;
+    } 
+    @Step("Add Dependent {data}")
+    public void addDependent(HashMap<String,String> data){
+        driver.scrollToElement(Employee.dependents);
+        driver.click(Employee.dependents);
+        driver.click(Employee.addDependent);
+        driver.type(Employee.dependent_firstName, commonUtil.randomString(4));
+        driver.type(Employee.dependent_MiddleName, commonUtil.randomString(2));
+        driver.type(Employee.dependent_LastName, commonUtil.randomString(3));
+        driver.selectByRandom(Employee.dependent_Prefix);
+        driver.selectByRandom(Employee.dependent_Suffix);
+        driver.sendKeys(Employee.dependent_SSN, commonUtil.getRandomSSN()+"");
+        driver.type(Employee.dependent_DOB,data.get("DependentDOB"));
+        if(data.get("DependentRelation")==null||data.get("DependentRelation").equals("")){
+            driver.selectByRandom(Employee.dependent_Relation);
+        }else {
+            driver.selectComboBoxValue(Employee.dependent_Relation,data.get("DependentRelation"));
+        }
+        driver.selectByRandom(Employee.dependent_Gender);
+        driver.jSClick(Employee.dependent_tobaccoUse_No);
+    
+        //ContactInformation
+
+        driver.scrollToElement(Employee.dependent_Phone);
+        driver.type(Employee.dependent_Phone,commonUtil.getRandomPhoneNumber());
+        driver.type(Employee.dependent_cellPhone,commonUtil.getRandomPhoneNumber());
+        driver.type(Employee.dependent_WorkPhone,commonUtil.getRandomPhoneNumber());
+        driver.type(Employee.dependent_WorkExt,commonUtil.randomNumber(4)+"");
+        if(Boolean.parseBoolean(data.get("SameAsSubscriber"))){
+            driver.click(Employee.sameAsSubscribersResidence);
+        }
+        else{
+            driver.type(Employee.dependent_address1,data.get("DependentAddr1"));
+            driver.type(Employee.dependent_address2,data.get("DependentAddr2"));
+            driver.selectByRandom(Employee.dependent_addressType);
+            driver.type(Employee.dependent_Zip,data.get("DependentZip"));
+            driver.type(Employee.dependent_ZipExtension,commonUtil.randomNumber(3)+"");
+            driver.selectByRandom(Employee.dependent_County);
+            driver.selectByRandom(Employee.dependent_City);
+            driver.selectByRandom(Employee.dependent_State);
+        }
+        driver.click(Employee.dependentAdd);
+        driver.click(Employee.btnOk);
+
+    }
+
+      
+
+
+    @Step("Add attachment{privateChk} {comments} ")
+    public void addAttachment(String privateChk){
+        driver.click(Employee.attachment);
+        driver.selectByRandom(Employee.attachmentType);
+        if(Boolean.parseBoolean(privateChk)){
+            driver.click(Employee.privateAttachment);
+        }
+        driver.type(Employee.comments,"Comments:"+commonUtil.randomString(10));
+        driver.click(Employee.browse);
+        //Add code for win handling
+        driver.click(Employee.saveAttachment);
+    }
+
+    @Step("Add Notes : {privateChk}")
+    public void addNotes(String privateChk){
+        driver.scrollDown();
+        driver.click(Employee.notes);
+        driver.type(Employee.notesHere,"notes"+commonUtil.randomString(10));
+        if(Boolean.parseBoolean(privateChk)){
+            driver.click(Employee.privateNotes);
+        }
+        driver.click(Employee.saveNotes);
+    }
+
+    
+    @Step("Submit employee")
+    public void submit(){
+        //driver.pageLoadWait();
+        driver.scrollDown();
+        driver.click(Employee.submit);
+    }
+    
+    @Step("Add Beneficiary")
+    public void addPersonBeneficiary(HashMap<String,String> data){
+        driver.scrollToElement(Employee.beneficiaries);
+        driver.click(Employee.beneficiaries);
+        driver.click(Employee.addBeneficiary);
+        driver.type(Employee.person_FirstName, commonUtil.randomString(3));
+        driver.type(Employee.person_LastName, commonUtil.randomString(2));
+        driver.type(Employee.person_Address1, commonUtil.randomString(6));
+        driver.type(Employee.person_DOB,data.get("PersonDOB"));
+        driver.sendKeys(Employee.person_SSN,commonUtil.getRandomSSN() + "");
+        driver.type(Employee.person_Zip,data.get("PersonZip"));
+        driver.selectByRandom(Employee.person_Country);
+        driver.selectByRandom(Employee.person_Relation);
+        driver.type(Employee.person_Phone, commonUtil.getRandomPhoneNumber());
+        driver.selectByRandom(Employee.person_City);
+        driver.selectByRandom(Employee.person_State);
+        driver.click(Employee.saveBeneficiary);
+        driver.click(Employee.btnOk);
+
+    }
+ 
+
+    public void addTrustOrInstitutionBeneficiary(HashMap<String, String> data) {
+
+        driver.scrollToElement(Employee.beneficiaries);
+        driver.click(Employee.beneficiaries);
+        driver.click(Employee.addBeneficiary);
+        driver.click(Employee.beneficiary_TrustOrInstitution);
+        driver.type(Employee.trustName, commonUtil.randomString(5));
+        driver.sendKeys(Employee.TINOrEIN,commonUtil.randomNumber(9)+"");
+        driver.selectByRandom(Employee.trustType);
+        driver.type(Employee.org_Phone, commonUtil.getRandomPhoneNumber());
+        driver.type(Employee.org_Address1, commonUtil.randomString(7));
+        driver.type(Employee.org_Zip,data.get("OrgZip"));
+        driver.selectByRandom(Employee.org_Country);
+        driver.selectByRandom(Employee.org_City);
+        driver.selectByRandom(Employee.org_State);
+        driver.click(Employee.saveBeneficiary);
+        driver.click(Employee.btnOk);
+
+    }
+
+    @Step("Add Employee")
+    public void addEmployee(HashMap<String,String> data){
+        addPersonalInformation(data);
+        addDependent(data);
+        if(data.get("BeneficiaryType").equals("Person")){
+            addPersonBeneficiary(data);
+        }
+        else{
+           addTrustOrInstitutionBeneficiary(data);
+        }
+        //  employeePage.addAttachment(data.get("AttachmentPrivate"));//
+        addNotes(data.get("NotesPrivate"));
+    }
+
+    @Step("Activate and Enroll Employee")
+    public void activateAndEnroll(){
+        //driver.pageLoadWait();
+        driver.scrollDown();
+        driver.click(Employee.activateAndEnroll);
+
+    }
+    
+}
+
+
+
+
+//EnrollmentPage
+
+
+
+package com.sperdian.pages;
+
+import com.sperdian.base.DriverFactory;
+import com.sperdian.locators.Enrollment;
+import com.sperdian.util.CommonUtil;
+import com.sperdian.util.DriverUtil;
+import io.qameta.allure.Attachment;
+import io.qameta.allure.Step;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public class EnrollmentPage {
+    DriverUtil driver;
+    CommonUtil commonUtil;
+    List<String> plans;
+    List<String> categories;
+
+    public EnrollmentPage(DriverUtil driver){
+        this.driver=driver;
+        commonUtil= new CommonUtil(DriverFactory.getDriver());
+    }
+
+    @Step("Enter Effective Date")
+    public void enterEffectiveDate(String date){
+        driver.pageLoadWait();
+        driver.type(Enrollment.effectiveDate,date);
+        driver.findElement(Enrollment.effectiveDate).sendKeys(Keys.TAB);
+    }
+
+    @Step("Select the Plans")
+    public List<Map<String,String>> selectPlans(Boolean spouseSelected){
+//        driver.pageLoadWait();
+//        try{
+//            Thread.sleep(12000);
+//        }
+//        catch (Exception e){
+//
+//        }
+        plans=new ArrayList<>();
+        List<Map<String,String>> planValues=new ArrayList<>();
+        List<WebElement> allPlanCategories=driver.findElements(Enrollment.allPlanCategories);
+        for(WebElement categoryEle:allPlanCategories){
+            String category=categoryEle.getText().trim();
+            if(!category.equalsIgnoreCase("Additional Insurance")) {
+                //if (!categoryEle.isDisplayed()) {
+            //        driver.scrollDown();
+           //     }
+                try {
+                    categoryEle.click();
+                }
+                catch (Throwable e){
+                    driver.scrollUpVertically();
+                    categoryEle.click();
+                }
+                WebElement selectPlanButton=driver.getDriver().findElement(By.xpath("//input[@data-categoryvalue='" + category + "'][contains(@class,'radio')]"));
+                Map<String, String> values = new HashMap<>();
+                values.put("category", selectPlanButton.getAttribute("data-categoryvalue"));
+                values.put("totalRate", selectPlanButton.getAttribute("data-totalrate"));
+                values.put("coverageLevel", selectPlanButton.getAttribute("data-coverageleveldisplayvalue"));
+                values.put("planName", selectPlanButton.getAttribute("data-planname"));
+                plans.add(selectPlanButton.getAttribute("data-planname"));
+                driver.jSClick(selectPlanButton);
+                By by=By.xpath("//input[contains(@data-planname,'"+selectPlanButton.getAttribute("data-planname").trim()+"')][@placeholder='Enter Monthly Cost']");
+                try{
+                   WebElement element=driver.findElement(by);
+                    if(element.isDisplayed()){
+                        driver.type(by,"100");
+                        driver.getDriver().findElement(by).sendKeys(Keys.ENTER);
+                        values.put("totalRate", "100");
+                    }
+                }
+                catch (Throwable e){
+                    System.out.println("Input element is not displayed");
+                }
+
+                planValues.add(values);
+                try {
+                    categoryEle.click();
+                }
+                catch (Throwable e){
+                  /*  if(categoryEle.findElement(By.xpath("./following-sibling::i")).getAttribute("class").contains("up")){
+                        driver.scrollUpVertically();
+                        categoryEle.click();*/
+                  //  }
+                }
+            }
+        }
+        return planValues;
+    }
+
+    @Step("Select the Plans")
+    public List<Map<String,String>> selectSperidianPlans(Boolean spouseSelected){
+//        driver.pageLoadWait();
+//        try{
+//            Thread.sleep(12000);
+//        }
+//        catch (Exception e){
+//
+//        }
+        plans=new ArrayList<>();
+        List<Map<String,String>> planValues=new ArrayList<>();
+        List<WebElement> allPlanCategories=driver.findElements(Enrollment.allPlanCategories);
+        int i=0;
+        for(WebElement categoryEle:allPlanCategories){
+            String category=categoryEle.getText().trim();
+            if(!category.equalsIgnoreCase("Additional Insurance")) {
+                //if (!categoryEle.isDisplayed()) {
+                //        driver.scrollDown();
+                //     }
+                try {
+                    categoryEle.click();
+                }
+                catch (Throwable e){
+                    driver.scrollUpVertically();
+                    categoryEle.click();
+                }
+                WebElement selectPlanButton=driver.getDriver().findElement(By.xpath("//input[@data-categoryvalue='" + category + "'][contains(@class,'radio')]"));
+                Map<String, String> values = new HashMap<>();
+                values.put("category", selectPlanButton.getAttribute("data-categoryvalue"));
+                values.put("totalRate", selectPlanButton.getAttribute("data-totalrate"));
+                values.put("coverageLevel", selectPlanButton.getAttribute("data-coverageleveldisplayvalue"));
+                values.put("planName", selectPlanButton.getAttribute("data-planname"));
+                plans.add(selectPlanButton.getAttribute("data-planname"));
+                driver.jSClick(selectPlanButton);
+                By by=By.xpath("//input[contains(@id,'_YearlyDeposit')][contains(@name,'Item1.ProductLst["+i+"]')]");
+                i++;
+                try{
+                    WebElement element=driver.findElement(by);
+                    if(element.isDisplayed()){
+                        driver.type(by,"100");
+                        driver.getDriver().findElement(by).sendKeys(Keys.ENTER);
+                        values.put("totalRate", "100");
+                    }
+                }
+                catch (Throwable e){
+                    System.out.println("Input element is not displayed");
+                }
+
+                planValues.add(values);
+                try {
+                    categoryEle.click();
+                }
+                catch (Throwable e){
+                  /*  if(categoryEle.findElement(By.xpath("./following-sibling::i")).getAttribute("class").contains("up")){
+                        driver.scrollUpVertically();
+                        categoryEle.click();*/
+                    //  }
+                }
+            }
+        }
+        return planValues;
+    }
+
+
+    @Step("Get all the selected plans")
+    public List<String> getAllSelectedPlans(){
+        return plans;
+    }
+
+    @Step("Select the Plans")
+    public List<Map<String,String>> selectPlans(Boolean spouseSelected,int no){
+//        driver.pageLoadWait();
+//        try{
+//            Thread.sleep(12000);
+//        }
+//        catch (Exception e){
+//
+//        }
+
+        int count=0;
+        categories=new ArrayList<>();
+        plans=new ArrayList<>();
+        List<Map<String,String>> planValues=new ArrayList<>();
+        List<WebElement> allPlanCategories=driver.findElements(Enrollment.allPlanCategories);
+        for(WebElement categoryEle:allPlanCategories){
+            String category=categoryEle.getText().trim();
+            categories.add(category);
+            if(!category.equalsIgnoreCase("Additional Insurance")) {
+                if (count < no) {
+                    try {
+                        categoryEle.click();
+                    } catch (Throwable e) {
+                        driver.scrollUpVertically();
+                        categoryEle.click();
+                    }
+                    WebElement selectPlanButton = driver.getDriver().findElement(By.xpath("//input[@data-categoryvalue='" + category + "'][contains(@class,'radio')]"));
+                    Map<String, String> values = new HashMap<>();
+                    values.put("category", selectPlanButton.getAttribute("data-categoryvalue"));
+                    values.put("totalRate", selectPlanButton.getAttribute("data-totalrate"));
+                    values.put("coverageLevel", selectPlanButton.getAttribute("data-coverageleveldisplayvalue"));
+                    values.put("planName", selectPlanButton.getAttribute("data-planname"));
+                    plans.add(selectPlanButton.getAttribute("data-planname"));
+                    driver.jSClick(selectPlanButton);
+                    By by = By.xpath("//input[contains(@data-planname,'" + selectPlanButton.getAttribute("data-planname").trim() + "')][@placeholder='Enter Monthly Cost']");
+                    try {
+                        WebElement element = driver.findElement(by);
+                        if (element.isDisplayed()) {
+                            driver.type(by, "100");
+                            driver.getDriver().findElement(by).sendKeys(Keys.ENTER);
+                            values.put("totalRate", "100");
+                        }
+                    } catch (Throwable e) {
+                        System.out.println("Input element is not displayed");
+                    }
+
+                    planValues.add(values);
+                    try {
+                        categoryEle.click();
+                    } catch (Throwable e) {
+                  /*  if(categoryEle.findElement(By.xpath("./following-sibling::i")).getAttribute("class").contains("up")){
+                        driver.scrollUpVertically();
+                        categoryEle.click();*/
+                        //  }
+                    }
+                } else {
+                    driver.scrollUpVertically();
+                    driver.jSClick(By.xpath("//input[@data-categoryvalue='" + category + "'][contains(@id,'IsDeclinedInd')]"));
+                    driver.jSClick(Enrollment.declineReasonSave);
+
+
+                }
+                count++;
+            }
+
+        }
+        return planValues;
+    }
+    @Step("Add Additional Insurance")
+    public void addAdditionalInsurance(Boolean value,HashMap<String,String> data){
+        //driver.pageLoadWait();
+        driver.scrollDown();
+        if(!value){
+            driver.jSClick(Enrollment.additionalInsurance_No);
+            return;
+        }
+        driver.jSClick(Enrollment.additionalInsurance_Yes);
+        if(data.get("CoveredMember").equalsIgnoreCase("Primary")) {
+            driver.selectComboBoxValue(Enrollment.coveredMember, getPrimaryMemberName());
+        }
+       else if(data.get("CoveredMember").equalsIgnoreCase("Dependent")){
+            driver.selectComboBoxValue(Enrollment.coveredMember, getDependentMemberName());
+        }
+       driver.type(Enrollment.insuranceCarrierName,data.get("InsuranceCarrierName"));
+       try {
+           driver.jSClick(Enrollment.totalPremiumHandle);
+       }
+       catch (Exception e){
+
+       }
+       driver.selectByRandom(Enrollment.insuranceType);
+       driver.type(Enrollment.insurancePolicyNumber, commonUtil.randomNumber(9)+"");
+       driver.scrollDown();
+       driver.type(Enrollment.COBBeginDate,data.get("COBBeginDate"));
+       if(Boolean.parseBoolean(data.get("EndStageRenalDisease"))){
+            driver.click(Enrollment.endStageRenalDisease_Yes);
+            driver.selectByRandom(Enrollment.ESRDStartMonth);
+            driver.selectComboBoxValue(Enrollment.ESRDStartYear,data.get("ESRDStartYear"));
+        }
+       else{
+           driver.jSClick(Enrollment.endStageRenalDisease_No);
+       }
+       driver.click(Enrollment.addInsurance);
+    }
+
+
+
+    @Step("Get Primary Member Name")
+    @Attachment
+    public String getPrimaryMemberName(){
+       return driver.getText(Enrollment.primaryMemberName);
+    }
+
+    @Step("Get dependent Member Name")
+    @Attachment
+    public String getDependentMemberName(){
+        return driver.getText(Enrollment.dependentMemberName);
+    }
+
+    @Step("Get total rate")
+    @Attachment
+    public String getTotalRate(){
+        return driver.getText(Enrollment.totalRate);
+    }
+
+    @Step("Click Next")
+    public void clickNext(){
+        driver.click(Enrollment.btnNext);
+        if(driver.isDisplayed(Enrollment.errorMessage)){
+            List<WebElement> enterCostElements=driver.getDriver().findElements(Enrollment.enterCost);
+            for(WebElement element:enterCostElements){
+                try{
+                    element.sendKeys("100");
+                    element.sendKeys(Keys.ENTER);
+                }
+                catch (Exception e){
+
+                }
+            }
+            driver.scrollDown();
+            driver.click(Enrollment.btnNext);
+
+        }
+    }
+
+    @Step("Add Profile")
+    public void addProfileWithACH(Boolean isProfileAdd,String nameOfBank,String routingNo,boolean ACHCurrentMonth){
+        if(!isProfileAdd){
+            driver.click(Enrollment.paymentProfile_no);
+            return;
+        }
+        driver.click(Enrollment.addProfile,100);
+        //driver.pageLoadWait();
+        driver.type(Enrollment.nameOfTheBank,nameOfBank);
+        driver.type(Enrollment.bankAccountNumber, commonUtil.randomNumber(9)+"");
+        driver.type(Enrollment.routingNumber,routingNo);
+        driver.click(Enrollment.saveProfile);
+//        driver.pageLoadWait();
+//        try{
+//            Thread.sleep(3000);
+//        }
+//        catch (Exception e){
+//
+//        }
+        if(ACHCurrentMonth) {
+            driver.click(Enrollment.ACHCurrentMonth_Yes);
+        }
+        else{
+            driver.click(Enrollment.ACHCurrentMonth_No);
+        }
+
+    }
+    @Step("Submit Enrollment")
+    public void submitEnrollment(){
+        //driver.pageLoadWait();
+        driver.click(Enrollment.submit);
+//        try{
+//            Thread.sleep(7000);
+//        }
+//        catch (Exception e){
+//
+//        }
+    }
+
+
+    public void addProfileWithPensionAuthority(boolean isProfileAdd) {
+        if(!isProfileAdd){
+            driver.jSClick(Enrollment.paymentProfile_no);
+            return;
+        }
+//        driver.pageLoadWait();
+//        try{
+//            Thread.sleep(3000);
+//        }
+//        catch (Exception e){
+//
+//        }
+        if(!driver.isDisplayed(Enrollment.addProfile)){
+            driver.click(Enrollment.btnNext);
+        }
+        driver.click(Enrollment.addProfile);
+        //driver.pageLoadWait();
+        driver.jSClick(Enrollment.pensionAuthority);
+       driver.jSClick(Enrollment.saveProfile);
+    }
+
+    public void declineAllCoverage() {
+        //driver.pageLoadWait();
+        driver.click(Enrollment.declineAllCoverage);
+        //driver.pageLoadWait();
+      // driver.type(Enrollment.declineReason,"Testing purpose");
+        driver.jSClick(Enrollment.declineReasonSave);
+        driver.scrollDown();
+        driver.jSClick(Enrollment.additionalInsurance_No);
+    }
+
+    public List<String> getAllThePlans(){
+//        driver.pageLoadWait();
+//        try{
+//            Thread.sleep(12000);
+//        }
+//        catch (Exception e){
+//
+//        }
+        List<String> allPlans=new ArrayList<>();
+        List<WebElement> allPlanCategories=driver.findElements(Enrollment.allPlanCategories);
+        for(WebElement element:allPlanCategories){
+            allPlans.add(element.getText());
+
+        }
+        return allPlans;
+    }
+
+    public List<String> getSelectedCategories() {
+        return categories;
+    }
+}
+
+
+
+
+
+
+
+
+//EnrollmentSummaryPage 
+
+
+package com.sperdian.pages;
+
+import com.sperdian.base.DriverFactory;
+import com.sperdian.locators.Enrollment;
+import com.sperdian.locators.EnrollmentSummary;
+import com.sperdian.util.CommonUtil;
+import com.sperdian.util.DriverUtil;
+import io.qameta.allure.Step;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.testng.asserts.SoftAssert;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public class EnrollmentSummaryPage {
+    DriverUtil driver;
+    CommonUtil commonUtil;
+
+    public EnrollmentSummaryPage(DriverUtil driver){
+        this.driver=driver;
+        commonUtil= new CommonUtil(DriverFactory.getDriver());
+    }
+
+    @Step("Verify Enrolled plan info displayed")
+    public void verifyEnrolledPlanInfoDisplayed(List<Map<String,String>> planInfo){
+//        driver.pageLoadWait();
+//        try{
+//            Thread.sleep(12000);
+//        }
+//        catch (Exception e){
+//
+//        }
+        driver.waitForElementPresent(EnrollmentSummary.download);
+        SoftAssert sa=new SoftAssert();
+        String pageSource=driver.getPageSource();
+        for(int i=0;i<planInfo.size();i++){
+            Map<String,String> actPlanValues= planInfo.get(i);
+            sa.assertTrue(pageSource.contains(actPlanValues.get("category")));
+            sa.assertTrue(pageSource.contains(actPlanValues.get("totalRate")));
+            sa.assertTrue(pageSource.contains(actPlanValues.get("coverageLevel")));
+            sa.assertTrue(pageSource.contains(actPlanValues.get("planName")));
+
+        }
+        sa.assertAll();
+    }
+
+    public void download(){
+        //driver.pageLoadWait();
+        driver.scrollDown();
+        driver.click(EnrollmentSummary.download,200);
+    }
+
+@Step("Verify coverage end date for all the plans {date} {plans}")
+    public void verifyCoverageEndDate(String date,List<String> plans){
+        SoftAssert softAssert=new SoftAssert();
+        for(String plan:plans){
+            WebElement element=driver.waitForElementPresent(By.xpath("//td[contains(text(),'"+plan.trim()+"')]/parent::tr/td[4]"),300);
+            softAssert.assertEquals(element.getText().replaceAll("/",""),date);
+        }
+        softAssert.assertAll();
+    }
+
+    @Step("Close the Enrollment Summary")
+    public void closeEnrollmentSummary(){
+        driver.click(EnrollmentSummary.close);
+    }
+    
+    @Step("Download Summary document")
+    public void downloadSummaryDocument() {
+//        driver.pageLoadWait();
+//        try{
+//            Thread.sleep(4000);
+//        }
+//        catch (Exception e){
+//
+//        }
+        driver.click(EnrollmentSummary.downloadSummaryDocument);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+package com.sperdian.pages;
+
+import com.sperdian.locators.CommentsRoaster;
+import com.sperdian.locators.EmployeeAdministration;
+import com.sperdian.locators.Home;
+import com.sperdian.util.DriverUtil;
+import io.qameta.allure.Step;
+
+public class EmployeeAdministrationPage {
+    DriverUtil driver;
+
+    public EmployeeAdministrationPage(DriverUtil driver){
+        this.driver=driver;
+    }
+
+    @Step("Employee Administration page displayed")
+    public Boolean isEmployeeAdministrationPageDisplayed(){
+        driver.pageLoadWait();
+        return driver.isDisplayed(EmployeeAdministration.EmployeeAdministrationHeader);
+    }
+
+    @Step("Search for the Employee")
+    public void searchEmployee(String name){
+        driver.pageLoadWait();
+        driver.type(EmployeeAdministration.txtKeywordSearch,name);
+        driver.click(EmployeeAdministration.btnKeywordSearch);
+        driver.pageLoadWait();
+    }
+
+    @Step("Search and navigate to the Employee Info")
+    public void searchAndNavigateToEmployeeInfo(String  name){
+        driver.pageLoadWait();
+        driver.type(EmployeeAdministration.txtKeywordSearch,name);
+        driver.click(EmployeeAdministration.btnKeywordSearch);
+        driver.pageLoadWait();
+        driver.jSClick(EmployeeAdministration.nameInGrid);
+    }
+    @Step("Get name from the first row in Grid")
+    public String getNameInGrid(){
+        driver.pageLoadWait();
+        try{
+            Thread.sleep(3000);
+        }
+        catch (Exception e){
+
+        }
+        return driver.getText(EmployeeAdministration.nameInGrid);
+    }
+    @Step("Click on Add Employee")
+    public void clickAddEmployee(){
+        driver.pageLoadWait();
+        driver.click(EmployeeAdministration.addEmployee);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+package com.sperdian.pages;
+
+import com.sperdian.base.DriverFactory;
+import com.sperdian.locators.Employee;
+import com.sperdian.util.CommonUtil;
+import com.sperdian.util.DriverUtil;
+import io.qameta.allure.Step;
+import org.openqa.selenium.support.PageFactory;
+
+import java.util.HashMap;
+
+public class EmployeePage {
+    DriverUtil driver;
+    CommonUtil commonUtil;
+	public String searchName;
+    
+    
+
+    public EmployeePage(DriverUtil driver){
+        this.driver=driver;
+        commonUtil= new CommonUtil(DriverFactory.getDriver());
+    }
+
+    @Step("Add Personal Information {data}")
+    public String addPersonalInformation(HashMap<String,String> data){
+        driver.pageLoadWait();
+        String firstName=commonUtil.randomString(4);
+        String middleName=commonUtil.randomString(2);
+        String lastName=commonUtil.randomString(3);
+        driver.type(Employee.firstName,firstName);
+        driver.type(Employee.middleInitial,middleName);
+        driver.type(Employee.lastName,lastName);
+        driver.selectByRandom(Employee.prefix);
+        driver.selectByRandom(Employee.suffix);
+        driver.type(Employee.DOB,data.get("DOB"));
+        driver.click(Employee.tobaccoUse_No);
+        driver.sendKeys(Employee.SSN, commonUtil.getRandomSSN() + "");
+        driver.sendKeys(Employee.sponsorSSN, commonUtil.getRandomSSN()+"");
+        driver.selectByRandom(Employee.maritalStatus);
+        driver.selectByRandom(Employee.gender);
+        if(driver.isDisplayed(Employee.sponsorRelation)){
+            driver.selectByRandom(Employee.sponsorRelation);
+        }
+        //Contact Information
+        driver.type(Employee.phone,commonUtil.getRandomPhoneNumber());
+        driver.type(Employee.cellPhone,commonUtil.getRandomPhoneNumber());
+        driver.type(Employee.email,commonUtil.randomString(5)+"@gmail.com");
+        driver.type(Employee.home_Address1,data.get("HomeAddr1"));
+        driver.type(Employee.home_Address2,data.get("HomeAddr2"));
+        driver.type(Employee.home_Zip,data.get("HomeZip"));
+        driver.type(Employee.home_ZipCodeExtension, commonUtil.randomNumber(4)+"");
+        driver.selectByRandom(Employee.home_County);
+        driver.selectByRandom(Employee.home_City);
+        driver.selectByRandom(Employee.home_State);
+        if(Boolean.parseBoolean(data.get("SameAsMailing"))){
+            driver.click(Employee.sameAsMailingAddr);
+        }
+        else{
+            driver.type(Employee.mailing_Address1,data.get("MailingAddr1"));
+            driver.type(Employee.mailing_Address2,data.get("MailingAddr2"));
+            driver.type(Employee.mailing_Zip,data.get("MailingZip"));
+            driver.type(Employee.mailing_zipCodeExtension,commonUtil.randomNumber(3)+"");
+            driver.selectByRandom(Employee.mailing_County);
+            driver.selectByRandom(Employee.mailing_City);
+            driver.selectByRandom(Employee.mailing_State);
+        }
+        //Work Details
+        driver.selectByRandom(Employee.billingLocation);
+        driver.selectByRandom(Employee.employeeClass);
+        driver.type(Employee.dateOfHire,data.get("DateOfHire"));
+        driver.type(Employee.workPhone, commonUtil.getRandomPhoneNumber());
+        driver.type(Employee.coEmployeeNumber,commonUtil.randomNumber(3)+"");
+        driver.type(Employee.retirementDate,data.get("RetirementDate"));
+        driver.type(Employee.jobTitle,data.get("JobTitle"));
+        driver.type(Employee.bargainingUnit,"BargainingUnit"+commonUtil.randomNumber(2));
+        driver.type(Employee.workExt,commonUtil.randomNumber(3)+"");
+        driver.type(Employee.enrollWinStartDt,data.get("EnrollWinStartDt"));
+        driver.type(Employee.enrollWinEndDt,data.get("EnrollWinDateDt"));
+        System.out.println("Creating the Employee with firstName:"+firstName);
+        this.searchName = firstName;
+        return firstName;
+    } 
+    @Step("Add Dependent {data}")
+    public void addDependent(HashMap<String,String> data){
+        driver.scrollToElement(Employee.dependents);
+        driver.click(Employee.dependents);
+        driver.click(Employee.addDependent);
+        driver.type(Employee.dependent_firstName, commonUtil.randomString(4));
+        driver.type(Employee.dependent_MiddleName, commonUtil.randomString(2));
+        driver.type(Employee.dependent_LastName, commonUtil.randomString(3));
+        driver.selectByRandom(Employee.dependent_Prefix);
+        driver.selectByRandom(Employee.dependent_Suffix);
+        driver.sendKeys(Employee.dependent_SSN, commonUtil.getRandomSSN()+"");
+        driver.type(Employee.dependent_DOB,data.get("DependentDOB"));
+        if(data.get("DependentRelation")==null||data.get("DependentRelation").equals("")){
+            driver.selectByRandom(Employee.dependent_Relation);
+        }else {
+            driver.selectComboBoxValue(Employee.dependent_Relation,data.get("DependentRelation"));
+        }
+        driver.selectByRandom(Employee.dependent_Gender);
+        driver.jSClick(Employee.dependent_tobaccoUse_No);
+    
+        //ContactInformation
+
+        driver.scrollToElement(Employee.dependent_Phone);
+        driver.type(Employee.dependent_Phone,commonUtil.getRandomPhoneNumber());
+        driver.type(Employee.dependent_cellPhone,commonUtil.getRandomPhoneNumber());
+        driver.type(Employee.dependent_WorkPhone,commonUtil.getRandomPhoneNumber());
+        driver.type(Employee.dependent_WorkExt,commonUtil.randomNumber(4)+"");
+        if(Boolean.parseBoolean(data.get("SameAsSubscriber"))){
+            driver.click(Employee.sameAsSubscribersResidence);
+        }
+        else{
+            driver.type(Employee.dependent_address1,data.get("DependentAddr1"));
+            driver.type(Employee.dependent_address2,data.get("DependentAddr2"));
+            driver.selectByRandom(Employee.dependent_addressType);
+            driver.type(Employee.dependent_Zip,data.get("DependentZip"));
+            driver.type(Employee.dependent_ZipExtension,commonUtil.randomNumber(3)+"");
+            driver.selectByRandom(Employee.dependent_County);
+            driver.selectByRandom(Employee.dependent_City);
+            driver.selectByRandom(Employee.dependent_State);
+        }
+        driver.click(Employee.dependentAdd);
+        driver.click(Employee.btnOk);
+
+    }
+
+      
+
+
+    @Step("Add attachment{privateChk} {comments} ")
+    public void addAttachment(String privateChk){
+        driver.click(Employee.attachment);
+        driver.selectByRandom(Employee.attachmentType);
+        if(Boolean.parseBoolean(privateChk)){
+            driver.click(Employee.privateAttachment);
+        }
+        driver.type(Employee.comments,"Comments:"+commonUtil.randomString(10));
+        driver.click(Employee.browse);
+        //Add code for win handling
+        driver.click(Employee.saveAttachment);
+    }
+
+    @Step("Add Notes : {privateChk}")
+    public void addNotes(String privateChk){
+        driver.scrollDown();
+        driver.click(Employee.notes);
+        driver.type(Employee.notesHere,"notes"+commonUtil.randomString(10));
+        if(Boolean.parseBoolean(privateChk)){
+            driver.click(Employee.privateNotes);
+        }
+        driver.click(Employee.saveNotes);
+    }
+
+    
+    @Step("Submit employee")
+    public void submit(){
+        driver.pageLoadWait();
+        driver.scrollDown();
+        driver.click(Employee.submit);
+    }
+    
+    @Step("Add Beneficiary")
+    public void addPersonBeneficiary(HashMap<String,String> data){
+        driver.scrollToElement(Employee.beneficiaries);
+        driver.click(Employee.beneficiaries);
+        driver.click(Employee.addBeneficiary);
+        driver.type(Employee.person_FirstName, commonUtil.randomString(3));
+        driver.type(Employee.person_LastName, commonUtil.randomString(2));
+        driver.type(Employee.person_Address1, commonUtil.randomString(6));
+        driver.type(Employee.person_DOB,data.get("PersonDOB"));
+        driver.sendKeys(Employee.person_SSN,commonUtil.getRandomSSN() + "");
+        driver.type(Employee.person_Zip,data.get("PersonZip"));
+        driver.selectByRandom(Employee.person_Country);
+        driver.selectByRandom(Employee.person_Relation);
+        driver.type(Employee.person_Phone, commonUtil.getRandomPhoneNumber());
+        driver.selectByRandom(Employee.person_City);
+        driver.selectByRandom(Employee.person_State);
+        driver.click(Employee.saveBeneficiary);
+        driver.click(Employee.btnOk);
+
+    }
+ 
+
+    public void addTrustOrInstitutionBeneficiary(HashMap<String, String> data) {
+
+        driver.scrollToElement(Employee.beneficiaries);
+        driver.click(Employee.beneficiaries);
+        driver.click(Employee.addBeneficiary);
+        driver.click(Employee.beneficiary_TrustOrInstitution);
+        driver.type(Employee.trustName, commonUtil.randomString(5));
+        driver.sendKeys(Employee.TINOrEIN,commonUtil.randomNumber(9)+"");
+        driver.selectByRandom(Employee.trustType);
+        driver.type(Employee.org_Phone, commonUtil.getRandomPhoneNumber());
+        driver.type(Employee.org_Address1, commonUtil.randomString(7));
+        driver.type(Employee.org_Zip,data.get("OrgZip"));
+        driver.selectByRandom(Employee.org_Country);
+        driver.selectByRandom(Employee.org_City);
+        driver.selectByRandom(Employee.org_State);
+        driver.click(Employee.saveBeneficiary);
+        driver.click(Employee.btnOk);
+
+    }
+
+    @Step("Add Employee")
+    public void addEmployee(HashMap<String,String> data){
+        addPersonalInformation(data);
+        addDependent(data);
+        if(data.get("BeneficiaryType").equals("Person")){
+            addPersonBeneficiary(data);
+        }
+        else{
+           addTrustOrInstitutionBeneficiary(data);
+        }
+        //  employeePage.addAttachment(data.get("AttachmentPrivate"));
+        addNotes(data.get("NotesPrivate"));
+    }
+
+    @Step("Activate and Enroll Employee")
+    public void activateAndEnroll(){
+        driver.pageLoadWait();
+        driver.scrollDown();
+        driver.click(Employee.activateAndEnroll);
+
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+package com.sperdian.pages;
+
+import com.sperdian.base.DriverFactory;
+import com.sperdian.locators.Enrollment;
+import com.sperdian.util.CommonUtil;
+import com.sperdian.util.DriverUtil;
+import io.qameta.allure.Attachment;
+import io.qameta.allure.Step;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public class EnrollmentPage {
+    DriverUtil driver;
+    CommonUtil commonUtil;
+    List<String> plans;
+    List<String> categories;
+
+    public EnrollmentPage(DriverUtil driver){
+        this.driver=driver;
+        commonUtil= new CommonUtil(DriverFactory.getDriver());
+    }
+
+    @Step("Enter Effective Date")
+    public void enterEffectiveDate(String date){
+        driver.pageLoadWait();
+        driver.type(Enrollment.effectiveDate,date);
+        driver.findElement(Enrollment.effectiveDate).sendKeys(Keys.TAB);
+    }
+
+    @Step("Select the Plans")
+    public List<Map<String,String>> selectPlans(Boolean spouseSelected){
+        driver.pageLoadWait();
+        try{
+            Thread.sleep(12000);
+        }
+        catch (Exception e){
+
+        }
+        plans=new ArrayList<>();
+        List<Map<String,String>> planValues=new ArrayList<>();
+        List<WebElement> allPlanCategories=driver.findElements(Enrollment.allPlanCategories);
+        for(WebElement categoryEle:allPlanCategories){
+            String category=categoryEle.getText().trim();
+            if(!category.equalsIgnoreCase("Additional Insurance")) {
+                //if (!categoryEle.isDisplayed()) {
+            //        driver.scrollDown();
+           //     }
+                try {
+                    categoryEle.click();
+                }
+                catch (Throwable e){
+                    driver.scrollUpVertically();
+                    categoryEle.click();
+                }
+                WebElement selectPlanButton=driver.getDriver().findElement(By.xpath("//input[@data-categoryvalue='" + category + "'][contains(@class,'radio')]"));
+                Map<String, String> values = new HashMap<>();
+                values.put("category", selectPlanButton.getAttribute("data-categoryvalue"));
+                values.put("totalRate", selectPlanButton.getAttribute("data-totalrate"));
+                values.put("coverageLevel", selectPlanButton.getAttribute("data-coverageleveldisplayvalue"));
+                values.put("planName", selectPlanButton.getAttribute("data-planname"));
+                plans.add(selectPlanButton.getAttribute("data-planname"));
+                driver.jSClick(selectPlanButton);
+                By by=By.xpath("//input[contains(@data-planname,'"+selectPlanButton.getAttribute("data-planname").trim()+"')][@placeholder='Enter Monthly Cost']");
+                try{
+                   WebElement element=driver.findElement(by);
+                    if(element.isDisplayed()){
+                        driver.type(by,"100");
+                        driver.getDriver().findElement(by).sendKeys(Keys.ENTER);
+                        values.put("totalRate", "100");
+                    }
+                }
+                catch (Throwable e){
+                    System.out.println("Input element is not displayed");
+                }
+
+                planValues.add(values);
+                try {
+                    categoryEle.click();
+                }
+                catch (Throwable e){
+                  /*  if(categoryEle.findElement(By.xpath("./following-sibling::i")).getAttribute("class").contains("up")){
+                        driver.scrollUpVertically();
+                        categoryEle.click();*/
+                  //  }
+                }
+            }
+        }
+        return planValues;
+    }
+
+    @Step("Select the Plans")
+    public List<Map<String,String>> selectSperidianPlans(Boolean spouseSelected){
+        driver.pageLoadWait();
+        try{
+            Thread.sleep(12000);
+        }
+        catch (Exception e){
+
+        }
+        plans=new ArrayList<>();
+        List<Map<String,String>> planValues=new ArrayList<>();
+        List<WebElement> allPlanCategories=driver.findElements(Enrollment.allPlanCategories);
+        int i=0;
+        for(WebElement categoryEle:allPlanCategories){
+            String category=categoryEle.getText().trim();
+            if(!category.equalsIgnoreCase("Additional Insurance")) {
+                //if (!categoryEle.isDisplayed()) {
+                //        driver.scrollDown();
+                //     }
+                try {
+                    categoryEle.click();
+                }
+                catch (Throwable e){
+                    driver.scrollUpVertically();
+                    categoryEle.click();
+                }
+                WebElement selectPlanButton=driver.getDriver().findElement(By.xpath("//input[@data-categoryvalue='" + category + "'][contains(@class,'radio')]"));
+                Map<String, String> values = new HashMap<>();
+                values.put("category", selectPlanButton.getAttribute("data-categoryvalue"));
+                values.put("totalRate", selectPlanButton.getAttribute("data-totalrate"));
+                values.put("coverageLevel", selectPlanButton.getAttribute("data-coverageleveldisplayvalue"));
+                values.put("planName", selectPlanButton.getAttribute("data-planname"));
+                plans.add(selectPlanButton.getAttribute("data-planname"));
+                driver.jSClick(selectPlanButton);
+                By by=By.xpath("//input[contains(@id,'_YearlyDeposit')][contains(@name,'Item1.ProductLst["+i+"]')]");
+                i++;
+                try{
+                    WebElement element=driver.findElement(by);
+                    if(element.isDisplayed()){
+                        driver.type(by,"100");
+                        driver.getDriver().findElement(by).sendKeys(Keys.ENTER);
+                        values.put("totalRate", "100");
+                    }
+                }
+                catch (Throwable e){
+                    System.out.println("Input element is not displayed");
+                }
+
+                planValues.add(values);
+                try {
+                    categoryEle.click();
+                }
+                catch (Throwable e){
+                  /*  if(categoryEle.findElement(By.xpath("./following-sibling::i")).getAttribute("class").contains("up")){
+                        driver.scrollUpVertically();
+                        categoryEle.click();*/
+                    //  }
+                }
+            }
+        }
+        return planValues;
+    }
+
+
+    @Step("Get all the selected plans")
+    public List<String> getAllSelectedPlans(){
+        return plans;
+    }
+
+    @Step("Select the Plans")
+    public List<Map<String,String>> selectPlans(Boolean spouseSelected,int no){
+        driver.pageLoadWait();
+        try{
+            Thread.sleep(12000);
+        }
+        catch (Exception e){
+
+        }
+
+        int count=0;
+        categories=new ArrayList<>();
+        plans=new ArrayList<>();
+        List<Map<String,String>> planValues=new ArrayList<>();
+        List<WebElement> allPlanCategories=driver.findElements(Enrollment.allPlanCategories);
+        for(WebElement categoryEle:allPlanCategories){
+            String category=categoryEle.getText().trim();
+            categories.add(category);
+            if(!category.equalsIgnoreCase("Additional Insurance")) {
+                if (count < no) {
+                    try {
+                        categoryEle.click();
+                    } catch (Throwable e) {
+                        driver.scrollUpVertically();
+                        categoryEle.click();
+                    }
+                    WebElement selectPlanButton = driver.getDriver().findElement(By.xpath("//input[@data-categoryvalue='" + category + "'][contains(@class,'radio')]"));
+                    Map<String, String> values = new HashMap<>();
+                    values.put("category", selectPlanButton.getAttribute("data-categoryvalue"));
+                    values.put("totalRate", selectPlanButton.getAttribute("data-totalrate"));
+                    values.put("coverageLevel", selectPlanButton.getAttribute("data-coverageleveldisplayvalue"));
+                    values.put("planName", selectPlanButton.getAttribute("data-planname"));
+                    plans.add(selectPlanButton.getAttribute("data-planname"));
+                    driver.jSClick(selectPlanButton);
+                    By by = By.xpath("//input[contains(@data-planname,'" + selectPlanButton.getAttribute("data-planname").trim() + "')][@placeholder='Enter Monthly Cost']");
+                    try {
+                        WebElement element = driver.findElement(by);
+                        if (element.isDisplayed()) {
+                            driver.type(by, "100");
+                            driver.getDriver().findElement(by).sendKeys(Keys.ENTER);
+                            values.put("totalRate", "100");
+                        }
+                    } catch (Throwable e) {
+                        System.out.println("Input element is not displayed");
+                    }
+
+                    planValues.add(values);
+                    try {
+                        categoryEle.click();
+                    } catch (Throwable e) {
+                  /*  if(categoryEle.findElement(By.xpath("./following-sibling::i")).getAttribute("class").contains("up")){
+                        driver.scrollUpVertically();
+                        categoryEle.click();*/
+                        //  }
+                    }
+                } else {
+                    driver.scrollUpVertically();
+                    driver.jSClick(By.xpath("//input[@data-categoryvalue='" + category + "'][contains(@id,'IsDeclinedInd')]"));
+                    driver.jSClick(Enrollment.declineReasonSave);
+
+
+                }
+                count++;
+            }
+
+        }
+        return planValues;
+    }
+    @Step("Add Additional Insurance")
+    public void addAdditionalInsurance(Boolean value,HashMap<String,String> data){
+        driver.pageLoadWait();
+        driver.scrollDown();
+        if(!value){
+            driver.jSClick(Enrollment.additionalInsurance_No);
+            return;
+        }
+        driver.jSClick(Enrollment.additionalInsurance_Yes);
+        if(data.get("CoveredMember").equalsIgnoreCase("Primary")) {
+            driver.selectComboBoxValue(Enrollment.coveredMember, getPrimaryMemberName());
+        }
+       else if(data.get("CoveredMember").equalsIgnoreCase("Dependent")){
+            driver.selectComboBoxValue(Enrollment.coveredMember, getDependentMemberName());
+        }
+       driver.type(Enrollment.insuranceCarrierName,data.get("InsuranceCarrierName"));
+       try {
+           driver.jSClick(Enrollment.totalPremiumHandle);
+       }
+       catch (Exception e){
+
+       }
+       driver.selectByRandom(Enrollment.insuranceType);
+       driver.type(Enrollment.insurancePolicyNumber, commonUtil.randomNumber(9)+"");
+       driver.scrollDown();
+       driver.type(Enrollment.COBBeginDate,data.get("COBBeginDate"));
+       if(Boolean.parseBoolean(data.get("EndStageRenalDisease"))){
+            driver.click(Enrollment.endStageRenalDisease_Yes);
+            driver.selectByRandom(Enrollment.ESRDStartMonth);
+            driver.selectComboBoxValue(Enrollment.ESRDStartYear,data.get("ESRDStartYear"));
+        }
+       else{
+           driver.jSClick(Enrollment.endStageRenalDisease_No);
+       }
+       driver.click(Enrollment.addInsurance);
+    }
+
+
+
+    @Step("Get Primary Member Name")
+    @Attachment
+    public String getPrimaryMemberName(){
+       return driver.getText(Enrollment.primaryMemberName);
+    }
+
+    @Step("Get dependent Member Name")
+    @Attachment
+    public String getDependentMemberName(){
+        return driver.getText(Enrollment.dependentMemberName);
+    }
+
+    @Step("Get total rate")
+    @Attachment
+    public String getTotalRate(){
+        return driver.getText(Enrollment.totalRate);
+    }
+
+    @Step("Click Next")
+    public void clickNext(){
+        driver.click(Enrollment.btnNext);
+        if(driver.isDisplayed(Enrollment.errorMessage)){
+            List<WebElement> enterCostElements=driver.getDriver().findElements(Enrollment.enterCost);
+            for(WebElement element:enterCostElements){
+                try{
+                    element.sendKeys("100");
+                    element.sendKeys(Keys.ENTER);
+                }
+                catch (Exception e){
+
+                }
+            }
+            driver.scrollDown();
+            driver.click(Enrollment.btnNext);
+
+        }
+    }
+
+    @Step("Add Profile")
+    public void addProfileWithACH(Boolean isProfileAdd,String nameOfBank,String routingNo,boolean ACHCurrentMonth){
+        if(!isProfileAdd){
+            driver.click(Enrollment.paymentProfile_no);
+            return;
+        }
+        driver.click(Enrollment.addProfile,100);
+        driver.pageLoadWait();
+        driver.type(Enrollment.nameOfTheBank,nameOfBank);
+        driver.type(Enrollment.bankAccountNumber, commonUtil.randomNumber(9)+"");
+        driver.type(Enrollment.routingNumber,routingNo);
+        driver.click(Enrollment.saveProfile);
+        driver.pageLoadWait();
+        try{
+            Thread.sleep(3000);
+        }
+        catch (Exception e){
+
+        }
+        if(ACHCurrentMonth) {
+            driver.click(Enrollment.ACHCurrentMonth_Yes);
+        }
+        else{
+            driver.click(Enrollment.ACHCurrentMonth_No);
+        }
+
+    }
+    @Step("Submit Enrollment")
+    public void submitEnrollment(){
+        driver.pageLoadWait();
+        driver.click(Enrollment.submit);
+        try{
+            Thread.sleep(7000);
+        }
+        catch (Exception e){
+
+        }
+    }
+
+
+    public void addProfileWithPensionAuthority(boolean isProfileAdd) {
+        if(!isProfileAdd){
+            driver.jSClick(Enrollment.paymentProfile_no);
+            return;
+        }
+        driver.pageLoadWait();
+        try{
+            Thread.sleep(3000);
+        }
+        catch (Exception e){
+
+        }
+        if(!driver.isDisplayed(Enrollment.addProfile)){
+            driver.click(Enrollment.btnNext);
+        }
+        driver.click(Enrollment.addProfile);
+        driver.pageLoadWait();
+        driver.jSClick(Enrollment.pensionAuthority);
+       driver.jSClick(Enrollment.saveProfile);
+    }
+
+    public void declineAllCoverage() {
+        driver.pageLoadWait();
+        driver.click(Enrollment.declineAllCoverage);
+        driver.pageLoadWait();
+      // driver.type(Enrollment.declineReason,"Testing purpose");
+        driver.jSClick(Enrollment.declineReasonSave);
+        driver.scrollDown();
+        driver.jSClick(Enrollment.additionalInsurance_No);
+    }
+
+    public List<String> getAllThePlans(){
+        driver.pageLoadWait();
+        try{
+            Thread.sleep(12000);
+        }
+        catch (Exception e){
+
+        }
+        List<String> allPlans=new ArrayList<>();
+        List<WebElement> allPlanCategories=driver.findElements(Enrollment.allPlanCategories);
+        for(WebElement element:allPlanCategories){
+            allPlans.add(element.getText());
+
+        }
+        return allPlans;
+    }
+
+    public List<String> getSelectedCategories() {
+        return categories;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+package com.sperdian.pages;
+
+import com.sperdian.base.DriverFactory;
+import com.sperdian.locators.Enrollment;
+import com.sperdian.locators.EnrollmentSummary;
+import com.sperdian.util.CommonUtil;
+import com.sperdian.util.DriverUtil;
+import io.qameta.allure.Step;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.testng.asserts.SoftAssert;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public class EnrollmentSummaryPage {
+    DriverUtil driver;
+    CommonUtil commonUtil;
+
+    public EnrollmentSummaryPage(DriverUtil driver){
+        this.driver=driver;
+        commonUtil= new CommonUtil(DriverFactory.getDriver());
+    }
+
+    @Step("Verify Enrolled plan info displayed")
+    public void verifyEnrolledPlanInfoDisplayed(List<Map<String,String>> planInfo){
+        driver.pageLoadWait();
+        try{
+            Thread.sleep(12000);
+        }
+        catch (Exception e){
+
+        }
+        driver.waitForElementPresent(EnrollmentSummary.download);
+        SoftAssert sa=new SoftAssert();
+        String pageSource=driver.getPageSource();
+        for(int i=0;i<planInfo.size();i++){
+            Map<String,String> actPlanValues= planInfo.get(i);
+            sa.assertTrue(pageSource.contains(actPlanValues.get("category")));
+            sa.assertTrue(pageSource.contains(actPlanValues.get("totalRate")));
+            sa.assertTrue(pageSource.contains(actPlanValues.get("coverageLevel")));
+            sa.assertTrue(pageSource.contains(actPlanValues.get("planName")));
+
+        }
+        sa.assertAll();
+    }
+
+    public void download(){
+        driver.pageLoadWait();
+        driver.scrollDown();
+        driver.click(EnrollmentSummary.download,200);
+    }
+
+@Step("Verify coverage end date for all the plans {date} {plans}")
+    public void verifyCoverageEndDate(String date,List<String> plans){
+        SoftAssert softAssert=new SoftAssert();
+        for(String plan:plans){
+            WebElement element=driver.waitForElementPresent(By.xpath("//td[contains(text(),'"+plan.trim()+"')]/parent::tr/td[4]"),300);
+            softAssert.assertEquals(element.getText().replaceAll("/",""),date);
+        }
+        softAssert.assertAll();
+    }
+
+    @Step("Close the Enrollment Summary")
+    public void closeEnrollmentSummary(){
+        driver.click(EnrollmentSummary.close);
+    }
+    
+    @Step("Download Summary document")
+    public void downloadSummaryDocument() {
+        driver.pageLoadWait();
+        try{
+            Thread.sleep(4000);
+        }
+        catch (Exception e){
+
+        }
+        driver.click(EnrollmentSummary.downloadSummaryDocument);
+    }
+}
+
+
+
+
+ HomePage homePage=new HomePage(DriverFactory.getDriver());
+	        LoginPage loginPage=new LoginPage(DriverFactory.getDriver());
+	        CommonUtil commonUtil=new CommonUtil(DriverFactory.getDriver());
+
+
+
+(dataProvider = "readData")
+
+(HashMap<String,String> data)
+
+
+
+
+
+SSN instead of First Name
+Thread.sleep
+
+
+Aravind S
+//sa.assertTrue(reEnrollMedical.ClickNextisdisplayed(),"Next Button should be displayed");  
+	        //reEnrollMedical.clickNext();
+sa.assertTrue(reEnrollDental.ClickNextisdisplayed(),"Next Button should be displayed");  
+        reEnrollDental.clickNext();
+        //reEnrollMedical.clickPaymentProfileNo();
+
+System.out.println(reEnrollDental.checkEnrollmentDate(data));
+		System.out.println(reEnrollDental.VerifyEnrollmentDate(reEnrollDental.date));
+		
+
+
+
+
+
+Change Plan Medicare
+Change Plan Ancillary
+Enroll and maintenance with Rate edit plan
+
+
+
+//			employeePage.addDependent(data);
+//			if(data.get("BeneficiaryType").equals("Person")){
+//				employeePage.addPersonBeneficiary(data);
+//			}
+//			else{
+//				 employeePage.addTrustOrInstitutionBeneficiary(data);
+//			}
+//			employeePage.addAttachment(data.get("AttachmentPrivate"));
+//			employeePage.addNotes(data.get("NotesPrivate"));
+
+
+//		employeePage.addDependent(data);
+//		if(data.get("BeneficiaryType").equals("Person")){
+//			employeePage.addPersonBeneficiary(data);
+//		}
+//		else{
+//			 employeePage.addTrustOrInstitutionBeneficiary(data);
+//		}
+//		employeePage.addAttachment(data.get("AttachmentPrivate"));
+//		employeePage.addNotes(data.get("NotesPrivate"));
+
+
+
+//		employeePage.addDependent(data);
+//		if(data.get("BeneficiaryType").equals("Person")){
+//			employeePage.addPersonBeneficiary(data);
+//		}
+//		else{
+//			 employeePage.addTrustOrInstitutionBeneficiary(data);
+//		}
+//		employeePage.addAttachment(data.get("AttachmentPrivate"));
+//		employeePage.addNotes(data.get("NotesPrivate"));
+
+
+//		employeePage.addDependent(data);
+//		if(data.get("BeneficiaryType").equals("Person")){
+//			employeePage.addPersonBeneficiary(data);
+//		}
+//		else{
+//			 employeePage.addTrustOrInstitutionBeneficiary(data);
+//		}
+//		employeePage.addAttachment(data.get("AttachmentPrivate"));
+//		employeePage.addNotes(data.get("NotesPrivate"));
+
+//		employeePage.addDependent(data);
+//		if(data.get("BeneficiaryType").equals("Person")){
+//			employeePage.addPersonBeneficiary(data);
+//		}
+//		else{
+//			 employeePage.addTrustOrInstitutionBeneficiary(data);
+//		}
+//		employeePage.addAttachment(data.get("AttachmentPrivate"));
+//		employeePage.addNotes(data.get("NotesPrivate"));
+
+
+//		employeePage.addDependent(data);
+//		if(data.get("BeneficiaryType").equals("Person")){
+//			employeePage.addPersonBeneficiary(data);
+//		}
+//		else{
+//			 employeePage.addTrustOrInstitutionBeneficiary(data);
+//		}
+//		employeePage.addAttachment(data.get("AttachmentPrivate"));
+//		employeePage.addNotes(data.get("NotesPrivate"));
+
+
+wyYU
+
+
+List<Map<String,String>> selectedPlanDetails=enrollmentPage.selectSperidianPlans(false);
+
+//enrollmentSummaryPage.verifyEnrolledPlanInfoDisplayed(selectedPlanDetails);
+
+
+EnrollmentSummaryPage enrollmentSummaryPage=new EnrollmentSummaryPage(DriverFactory.getDriver());
+		
+
+enrollmentPage.clickNext();
+        enrollmentPage.addProfileWithPensionAuthority(false);
+
+
+ViewCoveragePage viewCoveragePage=new ViewCoveragePage(DriverFactory.getDriver());
+        
+ enrollmentPage.clickNext();
+        enrollmentPage.addProfileWithPensionAuthority(false);
+        
+ sa.assertTrue(QE_Ancillary.Nextisdisplayed(),"Manage Coverage page Next should be displayed");
+        QE_Ancillary.clickNext();
+        if(data.get("PaymentMethod").equalsIgnoreCase("ACH")) {
+			enrollmentPage.addProfileWithACH(true, "Chase", "021300077", false);
+		}
+		else {
+			enrollmentPage.addProfileWithPensionAuthority(true);
+		}
+
+
+enrollmentPage.clickNext();
+        enrollmentPage.addProfileWithPensionAuthority(false);
+        
+
+employeePage.addDependent(data);
+		if(data.get("BeneficiaryType").equals("Person")){
+			employeePage.addPersonBeneficiary(data);
+		}
+		else{
+			 employeePage.addTrustOrInstitutionBeneficiary(data);
+		}
+		//employeePage.addAttachment(data.get("AttachmentPrivate"));
+		employeePage.addNotes(data.get("NotesPrivate"));
+		
+
+//reEnrollMedical.clickPaymentProfileNo();
+
+//System.out.println(reEnrollDental.checkEnrollmentDate(data));
+		//System.out.println(reEnrollDental.VerifyEnrollmentDate(reEnrollDental.date));
+
+
+
+
+String ssn=employeePage.addPersonalInformation(data);
+
+
+//h4[normalize-space()='Voluntary Term Life']
+
+//div[@id='PresentCont_70']//a[@id='lnkChangePlan']
+
+
+//h4[@class='panel-title']
+
+
+//select[@id='Item1_ProductLst_0__EmployeeCoverageAmount']
+
+
+//*[@id="Item1_ProductLst_0__EmployeeCoverageAmount"]
+
+
+
+
+ @Step("Check Termination Date")
+		    public String checkTerminationDate(HashMap<String,String> data){
+		    	driver.pageLoadWait();
+		    	return data.get("terminationDate");
+		    }  
+
+
+
+
+String ele1=driver.findElement(ChangeCoverageAmount.newCoverageAmount).getText().trim();
+		        System.out.println(ele1);
+
+
+
+
+//span[normalize-space()='CON-Contractor']
+
+
+//span[normalize-space()='FT-Full Time']
+
+//*[@id="EmployeeVM_ClassId_chzn"]/a/span
+
+
+
+
+//*[@id="printArea"]/div[2]/div/div[1]/table/tbody/tr[12]/td[1]/span
+
+//*[@id="printArea"]/div[2]/div/div[1]/table/tbody/tr[12]/td[1]/span
+
+
+
+
+
+//*[@id="Item1_ProductLst_0__EmployeeCoverageAmount"]
+
+
+
+driver.selectByRandom(ChangeCoverageAmount.selectEmployeeCoverageAmount);
+
+
+System.out.println(changeCoverageAmount.oldCoverageAmount);
+		System.out.println(changeCoverageAmount.VerifyNewCoverageAmount(changeCoverageAmount.newCoverageAmount));
+
+
+
+speridianUrlUAT= https://uat-ee.benefitalign.com/EmployerEngage/Speridian/
+
+//a[@id='lnkChangePlan']
+
+
+//*[@id="Item1_ProductLst_0__YearlyDeposit"]
+
+
+//a[@class='chzn-single selected']//div//b
+
+//*[@id="CorrespondenceType_chzn"]/div/div/input
+
+
+//div[@class='text-right']
+
+
+
+//*[@id="CorrespondenceType_chzn_o_1"]
+
+
+//*[@id="FormCorrespondance"]/ul/li[2]/button/i
+
+//button[@class='btn btn-primary collapsed']
+
+//*[@id="CorrespondenceType_chzn"]/a/div/b
+
+
+//a[@class='chzn-single selected']//div//b
+
+//*[@id="DispatchStatus_chzn_o_1"]
+
+//input[@id='btnCorrespondenceSearchAdvanced']
+
+
+//button[@class='btn btn-primary collapsed']//i[@class='fa fa-angle-down']
+
+//*[@id="FormCorrespondance"]/ul/li[2]/button
+
+//*[@id="FormCorrespondance"]/ul/li[2]/button
+
+
+//*[@id="FormCorrespondance"]/ul/li[2]/button/i
+
+
+
+//*[@id="FormCorrespondance"]/ul/li[2]/button
+
+//*[@id="CorrespondenceType_chzn"]/a/div/b
+
+
+//*[@id="DispatchStatus_chzn"]/a/div/b
+
+
+//*[@id="btnCorrespondenceSearchAdvanced"]
+
+
+Terminate Medical:
+ 
+//sa.assertTrue(terminateMedical.MedicalPlanisdisplayed(),"Manage Coverage page Medical Plan should be displayed");
+
+//sa.assertTrue(terminateMedical.TerminateMedicalisdisplayed(),"Manage Coverage page Terminate Medical should be displayed");
+		
+//sa.assertTrue(terminateMedical.TerminateDateisdisplayed(),"Manage Coverage page Termination Date should be displayed");
+		
+//sa.assertTrue(terminateMedical.QualifyingEventisdisplayed(),"Manage Coverage page Qualifying Event should be displayed");
+		
+//sa.assertTrue(terminateMedical.Submitisdisplayed(),"Manage Coverage page Submit Button should be displayed");                
+		
+@Step("Manage Coverage page Employee Name is displayed")
+    public Boolean EmployeeNameisdisplayed(){
+        driver.pageLoadWait();
+        return driver.isDisplayed(TerminateMedical.clickName);
+    }
+
+@Step("Medical Plan is displayed")
+    public Boolean MedicalPlanisdisplayed(){
+        driver.pageLoadWait();
+        return driver.isDisplayed(TerminateMedical.terminateMedical);
+    }
+	
+@Step("Terminate Medical is displayed")
+    public Boolean TerminateMedicalisdisplayed(){
+        driver.pageLoadWait();
+        return driver.isDisplayed(TerminateMedical.terminateMedical);
+    }
+    
+@Step("Termination Date is displayed")
+    public Boolean TerminateDateisdisplayed(){
+        driver.pageLoadWait();
+        return driver.isDisplayed(TerminateMedical.terminationDate);
+    }
+    
+@Step("Qualifying Event is displayed")
+    public Boolean QualifyingEventisdisplayed() {
+        driver.pageLoadWait();        
+    	return driver.isDisplayed(TerminateMedical.QualifyingEvent);
+    }
+    
+@Step("Submit Button is displayed")
+    public Boolean Submitisdisplayed(){
+        driver.pageLoadWait();
+        return driver.isDisplayed(TerminateMedical.submit);
+    }
+    
+@Step("click Employee Name")
+    public void clickName(){   
+		 driver.waitForElementClickable(TerminateMedical.clickName);
+         driver.click(TerminateMedical.clickName);
+    }
+
+
+Terminate Ancillary:
+
+sa.assertTrue(terminateAncillary.TerminateDenatalisdisplayed(),"Manage Coverage page Terminate Dental should be displayed");
+ 
+sa.assertTrue(terminateAncillary.TerminateDateisdisplayed(),"Manage Coverage page Terminate Date should be displayed");
+        
+sa.assertTrue(terminateAncillary.QualifyingEventisdisplayed(),"Manage Coverage page Qualifying Event should be displayed");
+        
+sa.assertTrue(terminateAncillary.Submitisdisplayed(),"Manage Coverage page Submit should be displayed");
+        
+@Step("Employee Name is displayed")
+    public Boolean EmployeeNameisdisplayed(){
+       
+        return driver.isDisplayed(TerminateAncillary.clickName);
+    }
+
+ @Step("Terminate Denatal is displayed")
+    public Boolean TerminateDenatalisdisplayed(){
+        driver.pageLoadWait();
+        return driver.isDisplayed(TerminateAncillary.terminateDental);
+    }
+
+ @Step("Termination Date is displayed")
+    public Boolean TerminateDateisdisplayed(){
+        driver.pageLoadWait();
+        return driver.isDisplayed(TerminateAncillary.terminationDate);
+    }
+    
+
+ @Step("Qualifying Event is displayed")
+    public Boolean QualifyingEventisdisplayed(){
+        driver.pageLoadWait();
+        return driver.isDisplayed(TerminateAncillary.QualifyingEvent);
+    }
+ @Step("Qualifying Event is displayed")
+    public Boolean QualifyingEventisdisplayed(){
+        driver.pageLoadWait();
+        return driver.isDisplayed(TerminateAncillary.QualifyingEvent);
+    }
+
+ @Step("Submit Button is displayed")
+    public Boolean Submitisdisplayed(){
+        driver.pageLoadWait();
+        return driver.isDisplayed(TerminateAncillary.submit);
+    }
+    
+       
+
+public static By ClickCloseButton = By.xpath("//*[@id=\"EnrollSummaryWrap\"]/div[2]/div/ul/li[5]/a");
+
+
+@Step("Click Close Button")
+
+    public void clickCloseButton(){
+
+    //driver.pageLoadWait();
+
+    driver.click(UpdateCoveredMembersMedical.ClickCloseButton);
+
+    }
+
+terminateMedical.clickManageCoverage();
+		terminateMedical.clickViewCoverage();    
+		//terminateMedical.searchemployee(employeePage.searchName);             
+		terminateMedical.searchemployee(ssn);
+
+
+
+
+public static By clickManageCoverage= By.xpath("//*[@id='listView']/li[3]/a");
+	
+	public static By clickViewCoverage= By.xpath("//span[normalize-space()='View Coverage']");
+	
+	public static By txtKeywordSearch=By.xpath("//input[@id='btnKeyWordSearch2']");
+	
+	public static By btnKeywordSearch=By.xpath("//button[@id='btnKeyWordSearch']");
+	
+	public static By clickName= By.xpath("//div[@id='div_ListView']/table/tbody/tr/td[2]/a");
+
+
+ @Step("Click ManageCoverage")
+	    public void clickManageCoverage() throws InterruptedException{
+		 	driver.waitForElementClickable(TerminateMedical.clickManageCoverage);
+	        driver.click(TerminateMedical.clickManageCoverage);	        
+	 }
+	    
+	    @Step("Click ViewCoverage")
+	    public void clickViewCoverage(){	
+	    	driver.waitForElementClickable(TerminateMedical.clickViewCoverage);
+	        driver.click(TerminateMedical.clickViewCoverage);	        
+	    }
+	    
+	    
+	    @Step("Search for the Employee")
+	    public void searchemployee(String ssn) throws InterruptedException{
+	    	driver.waitForElementClickable(TerminateMedical.txtKeywordSearch);
+	        driver.click(TerminateMedical.txtKeywordSearch);
+	        driver.waitForElementVisible(TerminateMedical.txtKeywordSearch);
+	        driver.type(TerminateMedical.txtKeywordSearch, ssn);
+	        driver.waitForElementClickable(TerminateMedical.btnKeywordSearch);
+	        driver.click(TerminateMedical.btnKeywordSearch);   
+	        driver.waitForElementClickable(TerminateMedical.clickName);
+	        driver.click(TerminateMedical.clickName);	           
+	    }
+	    @Step("Click ManageCoverage")
+	    public void clickManageCoverage() throws InterruptedException{
+	        driver.pageLoadWait();
+	        Thread.sleep(8000);
+	        driver.click(TerminateAncillary.clickManageCoverage);
+	        driver.pageLoadWait();
+	    }
+	    
+	    @Step("Click ViewCoverage")
+	    public void clickViewCoverage(){
+	        driver.pageLoadWait();
+	        driver.click(TerminateAncillary.clickViewCoverage);
+	    }
+	    
+	    @Step("Enter Effective Date")
+	    public void enterEffectiveDate(String date) throws InterruptedException {
+	        driver.pageLoadWait();
+	        driver.type(Enrollment.effectiveDate,date);
+	        driver.findElement(Enrollment.effectiveDate).sendKeys(Keys.TAB);
+	        Thread.sleep(9000);
+	    }
+	    
+	    @Step("Search for the Employee")
+	    public void searchemployee(String username) throws InterruptedException{
+	        driver.pageLoadWait();
+	        driver.click(TerminateAncillary.txtKeywordSearch);
+	        driver.type(TerminateAncillary.txtKeywordSearch, username);
+	        driver.click(TerminateAncillary.btnKeywordSearch);
+	        Thread.sleep(9000);
+	        driver.click(TerminateAncillary.clickName);
+	        Thread.sleep(9000);	        
+	    }
+
+
+
+//*[@id="EnrollSummaryWrap"]/div[2]/div/ul/li[3]/a
+
+//*[@id=\"EnrollSummaryWrap\"]/div[2]/div/ul/li[5]/a
+
+
+//a[@class='btn btn-primary closeBtn']
+
+//*[@id="EnrollSummaryWrap"]/div[2]/div/ul/li[3]/a
+
+//a[@class='btn btn-primary closeBtn']
+
+//*[@id="EnrollSummaryWrap"]/div[2]/div/ul/li[5]/a
+
+//a[@id='BtnGotoProfile']
+
+//span[@id='BtnChangePlanGotoProfile']
+
+//span[@id='BtnSubmitChangePlan']
+
+//div[@id='PresentCont_20']//a[@id='lnkChangePlan']
+
+
+
+@Step("click ChangeContributionAmount")
+	public void ChangeContributionAmount() throws InterruptedException{
+		driver.pageLoadWait();
+		//driver.scrollDown(100);
+		//driver.scrollUpVertically();
+		Thread.sleep(8000);
+		driver.click(ChangePlanMedicare.ChangeContributionAmount);
+		driver.pageLoadWait();
+		Thread.sleep(8000);
+	}
+
+//*[@id="printArea"]/div[2]/div/div[1]/table/tbody/tr[2]/td[7]
+
+
+//input[@id='Item1_ProductLst_0__Employee_Dependents_0__MemberSelectedInd']
+//*[@id="Item1_ProductLst_0__Employee_Dependents_0__MemberSelectedInd"]
+
+//*[@id="printArea"]/div[2]/div/div[1]/table/tbody/tr[2]/td[7]
+
+//*[@id="printArea"]/div[2]/div/div[1]/table/tbody/tr[3]/td[7]
+
+		
+//	 @Step("Check Enrollment Date")
+//	    public String checkEnrollmentDate(HashMap<String,String> data) {
+//	    	return data.get("NeweffectiveDate");
+//	    }    
+//	    
+//	    @Step("Verify Enrollment Date")
+//	    public String VerifyEnrollmentDate(String date){
+//	        String ele=driver.findElement(ReEnrollMedical.coveredStartDate).getText(); 
+//	        this.date = ele;
+//	        return ele;        
+//	    }
+
+
+//public static By coveredStartDate= By.xpath("//*[@id=\"printArea\"]/div[2]/div/div[1]/table/tbody/tr[2]/td[3]");
+
+
+//*[@id="printArea"]/div[2]/div/div[1]/table/tbody/tr[4]/td[7]
+//*[@id="printArea"]/div[2]/div/div[1]/table/tbody/tr[4]/td[7]
+
+//*[@id="printArea"]/div[2]/div/div[1]/table/tbody/tr[4]/td[7]
+
+//*[@id="Item1_ProductLst_0__Employee_Dependents_0__MemberSelectedInd"]
+
+
+//*[@id="div_ShowPlans_1"]/div[5]/div[3]/div[2]/div/label
+
+//*[@id="div_ShowPlans_1"]/div[5]/div[3]/div[2]/div/label
+
+
+
+ //public static By coveredStartDate= By.xpath("//*[@id=\"printArea\"]/div[2]/div/div[1]/table/tbody/tr[4]/td[3]");
+
+	
+//	 @Step("Check Enrollment Date")
+//	    public String checkEnrollmentDate(HashMap<String,String> data){
+//	    	return data.get("NeweffectiveDate");
+//	    }    
+//	    
+//	    @Step("Verify Enrollment Date")
+//	    public String VerifyEnrollmentDate(String date){
+//	        String ele=driver.findElement(ReEnrollAncillary.coveredStartDate).getText(); 
+//	        this.date = ele;
+//	        return ele;        
+//	    }	
+
+
+//*[@id="printArea"]/div[2]/div/div[1]/table/tbody/tr[2]/td[7]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+FBMC:
+
+Terminate Medical - done
+Terminate Ancillary - done
+Summary Verification - done
+View benefits and SBC -  St. Lucie Public Schools
+CC Letter verification - done
+Reenroll Medical - done
+Reenroll Ancillary - done
+Change Plan Medical - done
+Change Plan Ancillary - done
+Change coverage amount -  Pensacola State College
+QE on Medical -done
+QE Ancillary - done
+
+
+Speridian:
+
+Terminate Medical - done
+Terminate Ancillary - done
+Summary Verification - done
+View benefits and SBC - done
+Renroll Medical - done
+Reenroll Ancillary - done
+Change coverage amount - done
+QE on Medical - done
+QE Ancillary - done
+
+
+Jijo:
+
+Change Plan Medicare - done
+EnrollAndMaintainanceWithRateEditplan - 
+
+
+PensionAuthority
+
+
+
+
+
+
+
+
+
+
+
+
+View benefits and SBC - Confirmation Popup issues in different group name - St. Lucie Public Schools
+Change coverage amount - Confirmation Popup issues in different group name - Pensacola State College
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Login
+Tenant Dashboard
+Group Dashboard
+Add Employee
+Activate employee
+Submit employee
+Activate and Enroll Employee
+Decline all coverage
+
+
+Terminate Medical
+Terminate Medicare
+Terminate Ancillary
+Summary Verification
+View benefits and SBC
+CC Letter verification
+Renroll Medical
+Renroll Medicare
+Reenroll Ancillary
+Change Plan Medical
+Change Plan Medicare
+Change Plan Ancillary
+Change coverage amount
+Enroll and maintenance with Rate edit plan
+QE on Medical
+QE Medicare
+QE Ancillary
+Update covered Members -  Medical
+Update covered Members -  Ancillary
+Terminate Employee
+Employe Rehire &Enroll
+Reinstate employee
+Cascade Scenario (Class, Sub group, Address change, DOB,Medicare flag, Dependent add or remove)
+Retro enrollment with retro period
+Retro termination with retro period
+
+
+
+
+
+
+Terminate Medicare
+Renroll Medicare
+Change Plan Medicare
+QE Medicare
+Enroll and maintenance with Rate edit plan
+
+
+Change Plan Medical
+Change Plan Ancillary
+Enroll and maintenance with Rate edit plan
+
+
+
+
+
+
+
+
+
+
+
+package com.sperdian.locators;
+
+import org.openqa.selenium.By;
+
+public class ReEnrollMedical {
+	
+	public static By ClickCloseButton = By.xpath("//a[@class='btn btn-primary closeBtn']");
+	
+	public static By clickMedical= By.xpath("//div[@id='accordionpresentdecline_1']//i[@class='fa fa-angle-down']");
+		
+	public static By clickEnroll= By.xpath("//div[contains(@class,'panel-body 1-wrap')]//a[@id='enrollDental']");
+    
+	public static By QualifyingEvent= By.id("Item1_QualifyingEvent_QualifyingEventName_chzn");
+	
+    public static By EffectiveDate= By.xpath("//input[@id='Item1_EffectiveDate']");
+    
+    public static By selectPlan= By.xpath("//*[@id=\"div_ShowPlans_1\"]/div[5]/div[3]/div[2]/div/label");
+
+    public static By clickNext= By.xpath("//a[@id='BtnQEGotoProfile']");
+
+    public static By clickSubmit= By.xpath("//span[@id='BtnSubmitEnrollment']");
+    
+    public static By adddependant= By.xpath("//input[@id='Item1_ProductLst_0__Employee_Dependents_0__MemberSelectedInd']");
+    
+    public static By oldcost= By.xpath("//*[@id=\"printArea\"]/div[2]/div/div[1]/table/tbody/tr[3]/td[7]");
+    
+    public static By newcost= By.xpath("//*[@id=\"printArea\"]/div[2]/div/div[1]/table/tbody/tr[2]/td[7]");
+    
+    
+}
+
+
+
+
+package com.sperdian.locators;
+
+import org.openqa.selenium.By;
+
+public class ReEnrollAncillary {
+
+	public static By ClickCloseButton = By.xpath("//a[@class='btn btn-primary closeBtn']");
+	
+	public static By clickDental= By.xpath("//div[@id='accordionpresentdecline_16']//i[@class='fa fa-angle-down']");
+		
+	public static By clickEnroll= By.xpath("//div[contains(@class,'panel-body 16-wrap')]//a[@id='enrollDental']");
+    
+	public static By QualifyingEvent= By.id("Item1_QualifyingEvent_QualifyingEventName_chzn");
+	
+    public static By EffectiveDate= By.xpath("//input[@id='Item1_EffectiveDate']");
+    
+    public static By selectPlan= By.xpath("//div[@id='div_ShowPlans_16']//div[1]//div[3]//div[2]//div[1]//label[1]//span[1]");
+
+    public static By clickNext= By.xpath("//a[@id='BtnQEGotoProfile']");
+    
+    public static By clickNoPaymentProfile= By.xpath("//*[@id=\"divCobSelect\"]/div/label[2]");
+
+    public static By clickSubmit= By.xpath("//span[@id='BtnSubmitEnrollment']");
+    
+    public static By adddependant= By.xpath("//input[@id='Item1_ProductLst_0__Employee_Dependents_0__MemberSelectedInd']");
+    
+    public static By oldcost= By.xpath("//*[@id=\"printArea\"]/div[2]/div/div[1]/table/tbody/tr[4]/td[7]");
+    
+    public static By newcost= By.xpath("//*[@id=\"printArea\"]/div[2]/div/div[1]/table/tbody/tr[4]/td[7]"); 
+    
+   	
+}
+
+
+
+
+
+package com.sperdian.pages;
+
+import org.openqa.selenium.Keys;
+
+import com.sperdian.locators.Enrollment;
+import com.sperdian.locators.ReEnrollMedical;
+import com.sperdian.locators.TerminateMedical;
+import com.sperdian.util.DriverUtil;
+
+import io.qameta.allure.Step;
+
+public class ReEnrollMedicalPage {
+
+	DriverUtil driver;
+	public String oldcost;
+	public String newcost;
+	
+	public ReEnrollMedicalPage(DriverUtil driver){
+        this.driver=driver;
+    }
+	
+	@Step("Click Close Button")
+	public void clickCloseButton(){
+		driver.click(TerminateMedical.ClickCloseButton);
+	}
+	
+	@Step("click Medical Dropdown")
+    public void clickMedical(){
+        driver.click(ReEnrollMedical.clickMedical);
+    }
+	
+	@Step("Vertical Scroll")
+    public void VerticalScroll(){
+        driver.scrollUpVertically();    
+    }
+	
+	@Step("Scroll Down")
+    public void ScrollDown(){
+        driver.scrollDown();    
+    }
+	
+	@Step("Manage Coverage page click Enroll")
+    public void clickEnroll(){
+        driver.click(ReEnrollMedical.clickEnroll);
+    }
+	
+	
+	@Step("Select Qualifying Event")
+    public void selectQualifyingEvent(){
+		driver.waitForElementSelectable(ReEnrollMedical.QualifyingEvent);
+        driver.selectByRandom(ReEnrollMedical.QualifyingEvent);		
+     }
+	
+	@Step("Enter Effective Date")
+    public void enterEffectiveDate(String date) throws InterruptedException {
+        driver.type(Enrollment.effectiveDate,date);
+        driver.findElement(ReEnrollMedical.EffectiveDate).sendKeys(Keys.TAB);
+        Thread.sleep(14000); 
+    }
+	
+	@Step("Select a Plan")
+    public void selectPlan() throws InterruptedException{
+		Thread.sleep(15000);
+		driver.click(ReEnrollMedical.selectPlan);
+    }
+	
+	@Step("Click Next Button")
+    public void clickNext(){
+        driver.click(ReEnrollMedical.clickNext);
+    }
+	 	
+	@Step("Click Submit")
+    public void clickSubmit(){
+        driver.click(ReEnrollMedical.clickSubmit);
+    }
+		
+	@Step("Enter Effective Date")
+    public void EnterEffectiveDate(String date) throws InterruptedException {   
+        driver.type(Enrollment.effectiveDate,date);
+        driver.findElement(ReEnrollMedical.EffectiveDate).sendKeys(Keys.TAB);
+        Thread.sleep(4000); 
+    }
+	
+	@Step("add dependant")
+    public void adddependant(){
+        driver.click(ReEnrollMedical.adddependant);
+    }
+	
+	@Step("old monthly cost")
+    public String oldmonthlycost(String oldcost){
+        String cost=driver.findElement(ReEnrollMedical.oldcost).getText();
+        this.oldcost = cost;
+        return cost;
+	}
+	
+	@Step("New monthly cost")
+    public String newmonthlycost(String newcost){
+        String cost=driver.findElement(ReEnrollMedical.newcost).getText();
+        this.newcost = cost;
+        return cost;
+	}
+
+}
+
+
+
+package com.sperdian.pages;
+
+import org.openqa.selenium.Keys;
+
+import com.sperdian.locators.Enrollment;
+import com.sperdian.locators.ReEnrollAncillary;
+import com.sperdian.locators.TerminateMedical;
+import com.sperdian.util.DriverUtil;
+
+import io.qameta.allure.Step;
+
+public class ReEnrollAncillaryPage {
+
+	DriverUtil driver;
+	public String oldcost;
+	public String newcost;
+	
+	public ReEnrollAncillaryPage(DriverUtil driver){
+        this.driver=driver;
+    }
+	
+	@Step("Click Close Button")
+	public void clickCloseButton(){
+		driver.click(TerminateMedical.ClickCloseButton);
+	}
+	
+	@Step("click Dental Dropdown")
+    public void clickDental(){
+        driver.click(ReEnrollAncillary.clickDental);
+    }
+	
+	@Step("Vertical Scroll")
+    public void VerticalScroll(){
+        driver.scrollUpVertically();    
+    }
+	
+	@Step("Scroll Down")
+    public void ScrollDown(){
+        driver.scrollDown();    
+    }
+	
+	@Step("Manage Coverage page click Enroll")
+    public void clickEnroll(){
+        driver.click(ReEnrollAncillary.clickEnroll);
+    }
+	
+	@Step("Select Qualifying Event")
+    public void selectQualifyingEvent(){
+		driver.waitForElementSelectable(ReEnrollAncillary.QualifyingEvent);
+        driver.selectByRandom(ReEnrollAncillary.QualifyingEvent);		
+     }
+	
+	@Step("Enter Effective Date")
+    public void enterEffectiveDate(String date) throws InterruptedException {
+        driver.type(Enrollment.effectiveDate,date);
+        driver.findElement(ReEnrollAncillary.EffectiveDate).sendKeys(Keys.TAB);
+        Thread.sleep(14000);
+    }
+	
+	@Step("Click Next Button")
+    public void clickNext1(){
+        driver.click(ReEnrollAncillary.clickNext);
+    }
+	
+	@Step("Select a Plan")
+    public void selectPlan(){
+        driver.click(ReEnrollAncillary.selectPlan);
+    }
+	
+	@Step("Click Next Button")
+    public void clickNext(){
+        driver.click(ReEnrollAncillary.clickNext);
+    }
+	
+	@Step("Click Payment Profile as No")
+    public void clickPaymentProfileNo(){
+        driver.click(ReEnrollAncillary.clickNoPaymentProfile);
+    }
+	 	
+	@Step("Click Submit")
+    public void clickSubmit(){
+        driver.click(ReEnrollAncillary.clickSubmit);
+    }
+	
+	@Step("Enter Effective Date")
+    public void EnterEffectiveDate(String date) throws InterruptedException {     
+        driver.type(Enrollment.effectiveDate,date);
+        driver.findElement(ReEnrollAncillary.EffectiveDate).sendKeys(Keys.TAB);
+        Thread.sleep(4000); 
+    }
+	
+	@Step("add dependant")
+    public void adddependant(){
+        driver.click(ReEnrollAncillary.adddependant);
+    }
+	
+	@Step("old monthly cost")
+    public String oldmonthlycost(String oldcost){
+        String cost=driver.findElement(ReEnrollAncillary.oldcost).getText();
+        this.oldcost = cost;
+        return cost;
+	}
+	
+	@Step("New monthly cost")
+    public String newmonthlycost(String newcost){
+        String cost=driver.findElement(ReEnrollAncillary.newcost).getText();
+        this.newcost = cost;
+        return cost;
+	}
+	
+}
+
+
+package com.sperdian.tests;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import org.testng.Assert;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
+
+import com.sperdian.base.BaseClass;
+import com.sperdian.base.DriverFactory;
+import com.sperdian.locators.Home;
+import com.sperdian.pages.EmployeeAdministrationPage;
+import com.sperdian.pages.EmployeePage;
+import com.sperdian.pages.EnrollmentPage;
+import com.sperdian.pages.EnrollmentSummaryPage;
+import com.sperdian.pages.GroupPage;
+import com.sperdian.pages.HomePage;
+import com.sperdian.pages.LoginPage;
+import com.sperdian.pages.ReEnrollMedicalPage;
+import com.sperdian.pages.TerminateMedicalPage;
+import com.sperdian.util.CSVFileReader;
+import com.sperdian.util.CommonUtil;
+
+public class ReEnrollMedicalTest extends BaseClass {
+
+	@Test(dataProvider = "readData")
+    public void reEnrollMedicalTest(HashMap<String,String> data) throws InterruptedException {
+        HomePage homePage=new HomePage(DriverFactory.getDriver());
+        LoginPage loginPage=new LoginPage(DriverFactory.getDriver());
+        CommonUtil commonUtil=new CommonUtil(DriverFactory.getDriver());
+        GroupPage groupPage=new GroupPage(DriverFactory.getDriver());
+        EmployeeAdministrationPage employeeAdministration=new EmployeeAdministrationPage(DriverFactory.getDriver());
+		EmployeePage employeePage=new EmployeePage(DriverFactory.getDriver());
+		EnrollmentPage enrollmentPage=new EnrollmentPage(DriverFactory.getDriver());
+		EnrollmentSummaryPage enrollmentSummaryPage=new EnrollmentSummaryPage(DriverFactory.getDriver());
+		TerminateMedicalPage terminateMedical=new TerminateMedicalPage(DriverFactory.getDriver());
+        ReEnrollMedicalPage reEnrollMedical=new ReEnrollMedicalPage(DriverFactory.getDriver());
+        
+        SoftAssert sa=new SoftAssert();
+        commonUtil.launchUrl(System.getProperty("fbmcUrl"));
+        Assert.assertTrue(loginPage.isLoginPageDisplayed(),"Login page should be displayed");
+        loginPage.login(System.getProperty("fbmcAdmin"),System.getProperty("fbmcAdminPwd"));
+        String userName=homePage.getLoggedInUserName();
+        Assert.assertEquals(userName, Home.fbmcAdmin,"User should be navigated to the HomePage");
+        homePage.searchGroup(data.get("GroupName"));
+        groupPage.clickEmployeeAdministration();
+		employeeAdministration.clickAddEmployee();
+		employeePage.addPersonalInformation(data);
+		employeePage.addDependent(data);
+		if(data.get("BeneficiaryType").equals("Person")){
+			employeePage.addPersonBeneficiary(data);
+		}
+		else{
+			 employeePage.addTrustOrInstitutionBeneficiary(data);
+		}
+		//employeePage.addAttachment(data.get("AttachmentPrivate"));
+		employeePage.addNotes(data.get("NotesPrivate"));
+		employeePage.activateAndEnroll();
+		reEnrollMedical.enterEffectiveDate(data.get("EffectiveDate"));
+		List<Map<String,String>> selectedPlanDetails=enrollmentPage.selectPlans(false);
+		enrollmentPage.addAdditionalInsurance(true,data);
+		enrollmentPage.clickNext();       
+		if(data.get("PaymentMethod").equalsIgnoreCase("ACH")) {
+			enrollmentPage.addProfileWithACH(true, "Chase", "021300077", false);
+		}
+		else {
+			enrollmentPage.addProfileWithPensionAuthority(true);
+		}
+		enrollmentPage.submitEnrollment();
+		enrollmentSummaryPage.verifyEnrolledPlanInfoDisplayed(selectedPlanDetails);
+		terminateMedical.clickCloseButton();
+		terminateMedical.clickMedicalDropdown();
+		terminateMedical.scrollDown();
+		terminateMedical.clickterminateMedical();
+		terminateMedical.typeTerminationDate(data);
+		terminateMedical.selectQualifyingEvent();		
+		terminateMedical.clickSubmit();
+		reEnrollMedical.clickCloseButton();
+		reEnrollMedical.VerticalScroll();
+        reEnrollMedical.clickMedical();
+        reEnrollMedical.clickEnroll();
+        reEnrollMedical.selectQualifyingEvent();
+        reEnrollMedical.EnterEffectiveDate(data.get("NewEffectiveDate"));
+        reEnrollMedical.adddependant();
+        reEnrollMedical.ScrollDown();
+        reEnrollMedical.selectPlan();
+        reEnrollMedical.clickNext();
+		enrollmentPage.submitEnrollment();
+		enrollmentSummaryPage.download();
+		System.out.println(reEnrollMedical.oldmonthlycost(reEnrollMedical.oldcost));
+		System.out.println(reEnrollMedical.newmonthlycost(reEnrollMedical.newcost));
+		Assert.assertNotEquals(reEnrollMedical.oldmonthlycost(reEnrollMedical.oldcost),reEnrollMedical.newmonthlycost(reEnrollMedical.newcost));
+		
+        homePage.logOut();
+        Assert.assertTrue(loginPage.isLoginPageDisplayed(),"Login page should be displayed");        
+	}
+	
+	@DataProvider(name="readData")
+	public Object[][] readData(){
+		return CSVFileReader.readCSV("reEnrollMedical.csv");
+	}
+}
+
+
+
+package com.sperdian.tests;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import org.testng.Assert;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
+
+import com.sperdian.base.BaseClass;
+import com.sperdian.base.DriverFactory;
+import com.sperdian.locators.Home;
+import com.sperdian.pages.EmployeeAdministrationPage;
+import com.sperdian.pages.EmployeePage;
+import com.sperdian.pages.EnrollmentPage;
+import com.sperdian.pages.EnrollmentSummaryPage;
+import com.sperdian.pages.GroupPage;
+import com.sperdian.pages.HomePage;
+import com.sperdian.pages.LoginPage;
+import com.sperdian.pages.ReEnrollAncillaryPage;
+import com.sperdian.pages.TerminateAncillaryPage;
+import com.sperdian.util.CSVFileReader;
+import com.sperdian.util.CommonUtil;
+
+public class ReEnrollAncillaryTest extends BaseClass {
+
+	@Test(dataProvider = "readData")
+    public void reEnrollAncillaryTest(HashMap<String,String> data) throws InterruptedException {
+        HomePage homePage=new HomePage(DriverFactory.getDriver());
+        LoginPage loginPage=new LoginPage(DriverFactory.getDriver());
+        CommonUtil commonUtil=new CommonUtil(DriverFactory.getDriver());
+        GroupPage groupPage=new GroupPage(DriverFactory.getDriver());
+        EmployeeAdministrationPage employeeAdministration=new EmployeeAdministrationPage(DriverFactory.getDriver());
+		EmployeePage employeePage=new EmployeePage(DriverFactory.getDriver());
+		EnrollmentPage enrollmentPage=new EnrollmentPage(DriverFactory.getDriver());
+		EnrollmentSummaryPage enrollmentSummaryPage=new EnrollmentSummaryPage(DriverFactory.getDriver());
+		TerminateAncillaryPage terminateDental=new TerminateAncillaryPage(DriverFactory.getDriver());
+		ReEnrollAncillaryPage reEnrollDental=new ReEnrollAncillaryPage(DriverFactory.getDriver());
+		
+		SoftAssert sa=new SoftAssert();
+        commonUtil.launchUrl(System.getProperty("fbmcUrl"));
+        sa.assertTrue(loginPage.isLoginPageDisplayed(),"Login page should be displayed");
+        loginPage.login(System.getProperty("fbmcAdmin"),System.getProperty("fbmcAdminPwd"));
+        String userName=homePage.getLoggedInUserName();
+        sa.assertEquals(userName, Home.fbmcAdmin,"User should be navigated to the HomePage");
+        homePage.searchGroup(data.get("GroupName"));
+        groupPage.clickEmployeeAdministration();
+		employeeAdministration.clickAddEmployee();
+		employeePage.addPersonalInformation(data);
+		employeePage.addDependent(data);
+		if(data.get("BeneficiaryType").equals("Person")){
+			employeePage.addPersonBeneficiary(data);
+		}
+		else{
+			 employeePage.addTrustOrInstitutionBeneficiary(data);
+		}
+		//employeePage.addAttachment(data.get("AttachmentPrivate"));
+		employeePage.addNotes(data.get("NotesPrivate"));
+		employeePage.activateAndEnroll();
+		reEnrollDental.enterEffectiveDate(data.get("EffectiveDate"));
+		List<Map<String,String>> selectedPlanDetails=enrollmentPage.selectPlans(false);
+		enrollmentPage.addAdditionalInsurance(true,data);
+		enrollmentPage.clickNext();       
+		if(data.get("PaymentMethod").equalsIgnoreCase("ACH")) {
+			enrollmentPage.addProfileWithACH(true, "Chase", "021300077", false);
+		}
+		else {
+			enrollmentPage.addProfileWithPensionAuthority(true);
+		}
+		enrollmentPage.submitEnrollment();
+		enrollmentSummaryPage.verifyEnrolledPlanInfoDisplayed(selectedPlanDetails);	
+		terminateDental.clickCloseButton();
+		terminateDental.clickDental();
+		terminateDental.scrollDown();
+		terminateDental.terminateDental();
+		terminateDental.typeterminationDate(data);
+		terminateDental.selectQualifyingEvent();		
+		terminateDental.clickSubmit();
+		reEnrollDental.clickCloseButton();
+		reEnrollDental.VerticalScroll();
+        reEnrollDental.clickDental();
+        reEnrollDental.clickEnroll();
+        reEnrollDental.selectQualifyingEvent();
+        reEnrollDental.EnterEffectiveDate(data.get("NewEffectiveDate"));
+        reEnrollDental.adddependant();
+        reEnrollDental.selectPlan();
+        reEnrollDental.ScrollDown();
+        reEnrollDental.clickNext();
+		enrollmentPage.submitEnrollment();
+		Assert.assertNotEquals(reEnrollDental.oldmonthlycost(reEnrollDental.oldcost),reEnrollDental.newmonthlycost(reEnrollDental.newcost));
+		enrollmentSummaryPage.download();
+        
+        homePage.logOut();
+        sa.assertTrue(loginPage.isLoginPageDisplayed(),"Login page should be displayed");        
+	}
+	
+	@DataProvider(name="readData")
+	public Object[][] readData(){
+		return CSVFileReader.readCSV("reEnrollAncillary.csv");
+	}
+
+}
+
+
+package com.sperdian.tests;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import org.testng.Assert;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
+
+import com.sperdian.base.BaseClass;
+import com.sperdian.base.DriverFactory;
+import com.sperdian.pages.EmployeeAdministrationPage;
+import com.sperdian.pages.EmployeePage;
+import com.sperdian.pages.EnrollmentPage;
+import com.sperdian.pages.EnrollmentSummaryPage;
+import com.sperdian.pages.GroupPage;
+import com.sperdian.pages.HomePage;
+import com.sperdian.pages.LoginPage;
+import com.sperdian.pages.ReEnrollMedicalPage;
+import com.sperdian.pages.TerminateMedicalPage;
+import com.sperdian.util.CSVFileReader;
+import com.sperdian.util.CommonUtil;
+
+public class Speridian_ReEnoll_Medical_Test extends BaseClass {
+		@Test(dataProvider = "readData")
+		public void Speridian_ReEnoll_Medical(HashMap<String,String> data) throws InterruptedException {
+			HomePage homePage=new HomePage(DriverFactory.getDriver());
+			LoginPage loginPage=new LoginPage(DriverFactory.getDriver());
+			CommonUtil commonUtil=new CommonUtil(DriverFactory.getDriver());
+			GroupPage groupPage=new GroupPage(DriverFactory.getDriver());
+			EmployeeAdministrationPage employeeAdministration=new EmployeeAdministrationPage(DriverFactory.getDriver());
+			EmployeePage employeePage=new EmployeePage(DriverFactory.getDriver());
+			EnrollmentPage enrollmentPage=new EnrollmentPage(DriverFactory.getDriver());
+			EnrollmentSummaryPage enrollmentSummaryPage=new EnrollmentSummaryPage(DriverFactory.getDriver());
+			TerminateMedicalPage terminateMedical=new TerminateMedicalPage(DriverFactory.getDriver());
+			ReEnrollMedicalPage reEnrollMedical=new ReEnrollMedicalPage(DriverFactory.getDriver());	        
+			
+			SoftAssert sa=new SoftAssert();
+			commonUtil.launchUrl(System.getProperty("speridianUrl"));
+			sa.assertTrue(loginPage.isLoginPageDisplayed(),"Login page should be displayed");
+			loginPage.login(System.getProperty("speridianAdmin"),System.getProperty("speridianAdminPwd"));
+			homePage.searchGroup(data.get("GroupName"));
+			groupPage.clickEmployeeAdministration();
+			employeeAdministration.clickAddEmployee();
+			employeePage.addPersonalInformation(data);
+			employeePage.activateAndEnroll();
+			reEnrollMedical.enterEffectiveDate(data.get("EffectiveDate"));
+			List<Map<String,String>> selectedPlanDetails=enrollmentPage.selectSperidianPlans(false);
+	        enrollmentPage.addAdditionalInsurance(true,data);
+	        enrollmentPage.submitEnrollment();
+	        enrollmentSummaryPage.verifyEnrolledPlanInfoDisplayed(selectedPlanDetails);
+			terminateMedical.clickCloseButton();
+			terminateMedical.clickMedicalDropdown();
+			terminateMedical.scrollDown();
+			terminateMedical.clickterminateMedical();
+			terminateMedical.typeTerminationDate(data);
+			terminateMedical.selectQualifyingEvent();
+			terminateMedical.clickSubmit();	
+			terminateMedical.clickCloseButton();
+			reEnrollMedical.VerticalScroll();
+	        reEnrollMedical.clickMedical();
+	        reEnrollMedical.clickEnroll();
+	        reEnrollMedical.selectQualifyingEvent();
+	        reEnrollMedical.EnterEffectiveDate(data.get("NewEffectiveDate"));
+	        reEnrollMedical.adddependant();
+	        reEnrollMedical.selectPlan();
+	        reEnrollMedical.ScrollDown();
+	        enrollmentPage.submitEnrollment();
+			Assert.assertNotEquals(reEnrollMedical.oldmonthlycost(reEnrollMedical.oldcost),reEnrollMedical.newmonthlycost(reEnrollMedical.newcost));
+			enrollmentSummaryPage.download();
+					
+			homePage.logOut();
+	        sa.assertTrue(loginPage.isLoginPageDisplayed(),"Login page should be displayed");        
+		}
+		
+		@DataProvider(name="readData")
+		public Object[][] readData(){
+			return CSVFileReader.readCSV("speridianReEnrollMedical.csv");
+		}
+}
+
+
+
+package com.sperdian.tests;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import org.testng.Assert;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
+
+import com.sperdian.base.BaseClass;
+import com.sperdian.base.DriverFactory;
+import com.sperdian.pages.EmployeeAdministrationPage;
+import com.sperdian.pages.EmployeePage;
+import com.sperdian.pages.EnrollmentPage;
+import com.sperdian.pages.EnrollmentSummaryPage;
+import com.sperdian.pages.GroupPage;
+import com.sperdian.pages.HomePage;
+import com.sperdian.pages.LoginPage;
+import com.sperdian.pages.ReEnrollAncillaryPage;
+import com.sperdian.pages.TerminateAncillaryPage;
+import com.sperdian.util.CSVFileReader;
+import com.sperdian.util.CommonUtil;
+
+public class Speridian_ReEnroll_Ancillary_Test extends BaseClass {
+
+	@Test(dataProvider = "readData")
+	public void Speridian_ReEnroll_Ancillary(HashMap<String,String> data) throws InterruptedException {
+		HomePage homePage=new HomePage(DriverFactory.getDriver());
+		LoginPage loginPage=new LoginPage(DriverFactory.getDriver());
+		CommonUtil commonUtil=new CommonUtil(DriverFactory.getDriver());
+		GroupPage groupPage=new GroupPage(DriverFactory.getDriver());
+		EmployeeAdministrationPage employeeAdministration=new EmployeeAdministrationPage(DriverFactory.getDriver());
+		EmployeePage employeePage=new EmployeePage(DriverFactory.getDriver());
+		EnrollmentPage enrollmentPage=new EnrollmentPage(DriverFactory.getDriver());
+		EnrollmentSummaryPage enrollmentSummaryPage=new EnrollmentSummaryPage(DriverFactory.getDriver());
+		TerminateAncillaryPage terminateDental=new TerminateAncillaryPage(DriverFactory.getDriver());
+		ReEnrollAncillaryPage reEnrollDental=new ReEnrollAncillaryPage(DriverFactory.getDriver());
+		
+		SoftAssert sa=new SoftAssert();
+		commonUtil.launchUrl(System.getProperty("speridianUrl"));
+		sa.assertTrue(loginPage.isLoginPageDisplayed(),"Login page should be displayed");
+		loginPage.login(System.getProperty("speridianAdmin"),System.getProperty("speridianAdminPwd"));
+		homePage.searchGroup(data.get("GroupName"));
+		groupPage.clickEmployeeAdministration();
+		employeeAdministration.clickAddEmployee();
+		employeePage.addPersonalInformation(data);
+		employeePage.activateAndEnroll();
+		reEnrollDental.enterEffectiveDate(data.get("EffectiveDate"));
+		List<Map<String,String>> selectedPlanDetails=enrollmentPage.selectSperidianPlans(false);
+        enrollmentPage.addAdditionalInsurance(true,data);
+        enrollmentPage.submitEnrollment();
+        enrollmentSummaryPage.verifyEnrolledPlanInfoDisplayed(selectedPlanDetails);	
+        terminateDental.clickCloseButton();
+        terminateDental.clickDental();
+		terminateDental.scrollDown();
+		terminateDental.terminateDental();
+		terminateDental.typeterminationDate(data);
+		terminateDental.selectQualifyingEvent();		
+		terminateDental.clickSubmit();
+		reEnrollDental.clickCloseButton();
+		reEnrollDental.VerticalScroll();
+        reEnrollDental.clickDental();
+        reEnrollDental.clickEnroll();
+        reEnrollDental.selectQualifyingEvent();
+        reEnrollDental.EnterEffectiveDate(data.get("NewEffectiveDate"));
+        reEnrollDental.adddependant();
+        reEnrollDental.selectPlan();
+        reEnrollDental.ScrollDown();
+        enrollmentPage.submitEnrollment();
+		
+		Assert.assertNotEquals(reEnrollDental.oldmonthlycost(reEnrollDental.oldcost),reEnrollDental.newmonthlycost(reEnrollDental.newcost));
+		enrollmentSummaryPage.download();
+        
+        homePage.logOut();
+        sa.assertTrue(loginPage.isLoginPageDisplayed(),"Login page should be displayed");        
+	}
+	
+	@DataProvider(name="readData")
+	public Object[][] readData(){
+		return CSVFileReader.readCSV("speridianReEnrollAncillary.csv");
+	}
+	
+}
+
+
+
+
+
+
+
+
+//*[@id="printArea"]/div[2]/div/div[1]/table/tbody/tr[8]/td[1]/span
+
+
+
+
+//a[@class='planAccordian collapsed']
+
+//h4[@class='panel-title']
+
+
+
+
+//*[@id="EmployeeVM_ClassId"]/option[3]
+
+//*[@id="EmployeeVM_ClassId_chzn"]/div/div/input
+//div[@id='EmployeeVM_ClassId_chzn']//input[@type='text']
+//input[@class='valid']
+
+//input[@class='valid']
+
+//*[@id="EmployeeVM_ClassId_chzn"]/div/div/input
+
+
+FT-Full Time
+
+FT-Full Time
+
+[11:25 am] Anilkumar Suram
+
+
+
+
+public static By EmployeeClass= By.xpath("//*[@id='EmployeeVM_ClassId_chzn']/a");
+
+EmployeeVM_ClassId_chzn_o_2 
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,264 @@
+
+
+Add Employee -
+	Working Groups : Chipola College, College of the Florida Keys, 
+	Not Working Groups : College of Central Florida, Daytona State College
+
+
+Activate Employee : 
+	Working Groups : Chipola College, College of the Florida Keys,
+	Not Working Groups : College of Central Florida, Daytona State College
+
+Submit Employee :
+	Working Groups : Chipola College, College of the Florida Keys,
+	Not Working Groups : College of Central Florida, Daytona State College
+
+Activate and Enroll Employee : 
+	Working Groups : College of the Florida Keys,
+	Not Working Groups : Chipola College, College of Central Florida, Daytona State College
+
+Decline All Coverage :
+	Working Groups : College of the Florida Keys,
+	Not Working Groups : Chipola College, College of Central Florida, Daytona State College
+
+Terminate Medical :
+	Working Groups : College of the Florida Keys,
+	Not Working Groups : Chipola College, College of Central Florida, Daytona State College
+
+Terminate Medicare :
+	Working Groups : 
+	Not Working Groups :Chipola College, College of Central Florida, College of the Florida Keys, Daytona State College
+
+Terminate Ancillary :
+	Working Groups : College of the Florida Keys,
+	Not Working Groups :Chipola College, College of Central Florida, Daytona State College
+
+Summary Verification :
+	Working Groups : College of the Florida Keys,
+	Not Working Groups : Chipola College, College of Central Florida, Daytona State College
+
+View benefits and SBC : 
+	Working Groups : 
+	Not Working Groups : Chipola College, College of Central Florida, College of the Florida Keys, Daytona State College
+
+CC Letter verification : 
+	Working Groups : Chipola College, College of Central Florida, College of the Florida Keys, Daytona State College
+	Not Working Groups :
+
+ReEnroll Medical :
+	Working Groups : College of the Florida Keys,
+	Not Working Groups : Chipola College, College of Central Florida, Daytona State College
+
+ReEnroll Medicare :
+	Working Groups : 
+	Not Working Groups : Chipola College, College of Central Florida, College of the Florida Keys, Daytona State College
+
+ReEnroll Ancillary :
+	Working Groups : College of the Florida Keys,
+	Not Working Groups : Chipola College, College of Central Florida, Daytona State College
+
+Change Plan Medical :
+	Working Groups : College of the Florida Keys,
+	Not Working Groups : Chipola College, College of Central Florida, Daytona State College
+
+Change Plan Medicare :
+	Working Groups : 
+	Not Working Groups : Chipola College, College of Central Florida, College of the Florida Keys, Daytona State College
+
+Change Plan Ancillary :
+	Working Groups : College of the Florida Keys,
+	Not Working Groups : Chipola College, College of Central Florida, Daytona State College
+
+Change coverage amount :
+	Working Groups : 
+	Not Working Groups : Chipola College, College of Central Florida, College of the Florida Keys, Daytona State College
+
+Enroll and maintenance with Rate edit plan :
+	Working Groups : 
+	Not Working Groups : Chipola College, College of Central Florida, College of the Florida Keys, Daytona State College
+
+QE on Medical :
+	Working Groups : College of the Florida Keys,
+	Not Working Groups : Chipola College, College of Central Florida, Daytona State College
+
+QE Medicare :
+	Working Groups : 
+	Not Working Groups : Chipola College, College of Central Florida, College of the Florida Keys, Daytona State College
+
+QE Ancillary :
+	Working Groups : College of the Florida Keys,
+	Not Working Groups : Chipola College, College of Central Florida, Daytona State College
+
+Update covered Members -  Medical :
+	Working Groups : College of the Florida Keys,
+	Not Working Groups : Chipola College, College of Central Florida, Daytona State College
+
+Update covered Members -  Ancillary :
+	Working Groups : College of the Florida Keys,
+	Not Working Groups : Chipola College, College of Central Florida, Daytona State College
+
+Terminate Employee :
+	Working Groups : Chipola College, College of Central Florida, College of the Florida Keys, Daytona State College
+	Not Working Groups :
+
+Employee Rehire & Enroll :
+	Working Groups : College of the Florida Keys,
+	Not Working Groups : Chipola College, College of Central Florida, Daytona State College
+
+Reinstate employee :
+	Working Groups : Chipola College, College of Central Florida, College of the Florida Keys, Daytona State College
+	Not Working Groups :
+
+Cascade Scenario (Class, Sub group, Address change, DOB,Medicare flag, Dependent add or remove) :
+	Working Groups : Chipola College, College of the Florida Keys,
+	Not Working Groups :  College of Central Florida, Daytona State College
+
+Retro enrollment with retro period :
+	Working Groups : College of the Florida Keys,
+	Not Working Groups : Chipola College, College of Central Florida, Daytona State College
+
+Retro termination with retro period :
+	Working Groups : College of the Florida Keys,
+	Not Working Groups : Chipola College, College of Central Florida, Daytona State College
+
+
+
+
+Group Name :
+
+Chipola College					-	Add Employee, Activate Employee, Submit Employee, CC Letter verification, Terminate Employee, Reinstate employee, Cascade Scenario (Class, Sub group, Address change, DOB,Medicare flag, Dependent add or remove)
+
+College of Central Florida			-	CC Letter verification, Terminate Employee, Reinstate employee
+
+College of the Florida Keys			-	Add Employee, Activate Employee, Submit Employee, Activate and Enroll Employee, Decline All Coverage, Terminate Medical, Terminate Ancillary, Change Plan Medical, 
+
+Daytona State College				-	
+
+Direct Bill Research				-	
+
+Duval County Public Schools			-	
+
+Eastern Florida State College			-	
+
+FCSRMC - State College of Manatee-Sarasota	-	
+
+Flagler County Public Schools			-	
+
+Florida Gateway College				-	
+
+Florida State at Jacksonville			-	
+
+Gulf Coast State College			-	
+
+Indian River State College			-	
+
+Jackson Health System				-	
+
+Jackson Health System - LOA			-	
+
+Lake Sumter State College			-	
+
+MDCPS Board Members				-	
+
+MDCPS Broward Regional Health Planning Council	-	
+
+Miami Dade County Public Schools		-	
+
+Miami Dade County Public Schools		-	
+
+Miami-Dade County Public Schools Part-Timers	-		
+
+Monroe County School District			-	
+
+North Adeline Town				-	
+
+North Florida College				-	
+
+Northwest Florida State College			-	
+	
+Orange County Public Schools			-	
+
+Orange County Public Schools			-	
+
+Pasco Hernando State College			-	
+
+Pensacola State College				-	
+
+Polk State College				-	
+
+Putnam County School District			-	
+
+Santa Fe College				-	
+
+South Adeline College				-	
+
+South Florida College				-	
+
+St. Johns River College				-	
+
+St. Lucie Public Schools			-	
+
+State College of Manatee-Sarasota		-	
+
+State of West Virginia				-	
+
+Test State College of Manatee-Sarasota		-	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

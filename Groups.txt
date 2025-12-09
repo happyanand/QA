@@ -1,0 +1,182 @@
+Group Name :
+
+Chipola College					-	Add Employee, Activate Employee, Submit Employee, CC Letter verification, Terminate Employee, Reinstate employee, 
+							Cascade Scenario (Class, Sub group, Address change, DOB,Medicare flag, Dependent add or remove)
+
+College of Central Florida			-	CC Letter verification, Terminate Employee, Reinstate employee
+
+College of the Florida Keys			-	Add Employee, Activate Employee, Submit Employee, Activate and Enroll Employee, Decline All Coverage, 
+							Terminate Medical, Terminate Ancillary, Summary Verification, CC Letter verification, 
+							ReEnroll Medical, ReEnroll Ancillary, Change Plan Medical, Change Plan Ancillary, QE on Medical, QE Ancillary, 
+							Update covered Members - Medical, Update covered Members - Ancillary, Terminate Employee, 
+							Employee Rehire & Enroll, Reinstate employee, Cascade Scenario (Class, Sub group, Address change, DOB,Medicare flag, Dependent add or remove), 
+							Retro enrollment with retro period, Retro termination with retro period. 
+
+Daytona State College				-	CC Letter verification, Terminate Employee, Reinstate employee
+
+Direct Bill Research				-	CC Letter verification, Terminate Employee, Reinstate employee
+
+Duval County Public Schools			-	Add Employee, Activate Employee, Submit Employee, Activate and Enroll Employee, Decline All Coverage, 
+							Terminate Medical, Terminate Ancillary, Summary Verification, CC Letter verification,
+							ReEnroll Medical, ReEnroll Ancillary, Change Plan Medical, Change Plan Ancillary, QE on Medical, QE Ancillary, 
+							Update covered Members - Medical, Update covered Members - Ancillary, Terminate Employee, 
+							Employee Rehire & Enroll, Reinstate employee, Cascade Scenario (Class, Sub group, Address change, DOB,Medicare flag, Dependent add or remove), 
+							Retro enrollment with retro period, Retro termination with retro period. 	 
+
+Eastern Florida State College			-	Add Employee, Activate Employee, Submit Employee, Activate and Enroll Employee, Decline All Coverage, 
+							Terminate Medical, Terminate Ancillary, Summary Verification, CC Letter verification,
+							ReEnroll Medical, ReEnroll Ancillary, Change Plan Medical, Change Plan Ancillary, QE on Medical, QE Ancillary, 
+							Update covered Members - Medical, Update covered Members - Ancillary, Terminate Employee, 
+							Employee Rehire & Enroll, Reinstate employee, Cascade Scenario (Class, Sub group, Address change, DOB,Medicare flag, Dependent add or remove), 
+							Retro enrollment with retro period, Retro termination with retro period.
+
+FCSRMC - State College of Manatee-Sarasota	-	CC Letter verification
+
+Flagler County Public Schools			-	Add Employee, Activate Employee, Submit Employee, CC Letter verification, Terminate Employee, Reinstate employee, 
+							Cascade Scenario (Class, Sub group, Address change, DOB,Medicare flag, Dependent add or remove)
+
+Florida Gateway College				-	CC Letter verification, Terminate Employee, Reinstate employee
+
+Florida State at Jacksonville			-	Add Employee, Activate Employee, Submit Employee, Activate and Enroll Employee, Decline All Coverage, 
+							Terminate Medical, Terminate Ancillary, Summary Verification, CC Letter verification,
+							ReEnroll Medical, ReEnroll Ancillary, Change Plan Medical, Change Plan Ancillary, QE on Medical, QE Ancillary, 
+							Update covered Members - Medical, Update covered Members - Ancillary, Terminate Employee, 
+							Employee Rehire & Enroll, Reinstate employee, Cascade Scenario (Class, Sub group, Address change, DOB,Medicare flag, Dependent add or remove), 
+							Retro enrollment with retro period, Retro termination with retro period.
+
+Gulf Coast State College			-	Add Employee, Activate Employee, Submit Employee, Activate and Enroll Employee, Decline All Coverage, 
+							Terminate Medical, Terminate Ancillary, Summary Verification, CC Letter verification,
+							ReEnroll Medical, ReEnroll Ancillary, Change Plan Medical, Change Plan Ancillary, Change coverage amount,
+							QE on Medical, QE Ancillary, Update covered Members - Medical, Update covered Members - Ancillary, 
+							Terminate Employee, Employee Rehire & Enroll, Reinstate employee, Cascade Scenario 
+							(Class, Sub group, Address change, DOB,Medicare flag, Dependent add or remove), Retro enrollment with retro period, 
+							Retro termination with retro period.
+
+Indian River State College			-	Add Employee, Activate Employee, Submit Employee, Activate and Enroll Employee, Decline All Coverage, 
+							Terminate Medical, Terminate Ancillary, Summary Verification, View benefits and SBC, 
+							CC Letter verification,	ReEnroll Medical, ReEnroll Ancillary, Change Plan Medical, Change Plan Ancillary, 
+							QE on Medical, QE Ancillary, Update covered Members - Medical, Update covered Members - Ancillary, 
+							Terminate Employee, Employee Rehire & Enroll, Reinstate employee, Cascade Scenario 
+							(Class, Sub group, Address change, DOB,Medicare flag, Dependent add or remove), Retro enrollment with retro period, 
+							Retro termination with retro period.
+
+Jackson Health System				-	Add Employee, Activate Employee, Submit Employee, Activate and Enroll Employee, Decline All Coverage, 
+							Terminate Medical, Terminate Ancillary, Summary Verification, CC Letter verification,
+							ReEnroll Medical, ReEnroll Ancillary, Change Plan Medical, Change Plan Ancillary, QE on Medical, QE Ancillary, 
+							Update covered Members - Medical, Update covered Members - Ancillary, Terminate Employee, 
+							Employee Rehire & Enroll, Reinstate employee, Cascade Scenario (Class, Sub group, Address change, DOB,Medicare flag, Dependent add or remove), 
+							Retro enrollment with retro period, Retro termination with retro period.
+
+Jackson Health System - LOA			-	CC Letter verification, Terminate Employee, Reinstate employee
+
+Lake Sumter State College			-	Add Employee, Activate Employee, Submit Employee, Activate and Enroll Employee, Decline All Coverage, 
+							Terminate Medical, Terminate Ancillary, Summary Verification, CC Letter verification,
+							ReEnroll Medical, ReEnroll Ancillary, Change Plan Medical, Change Plan Ancillary, Change coverage amount,
+							QE on Medical, QE Ancillary, Update covered Members - Medical, Update covered Members - Ancillary, 
+							Terminate Employee, Employee Rehire & Enroll, Reinstate employee, Cascade Scenario 
+							(Class, Sub group, Address change, DOB,Medicare flag, Dependent add or remove), Retro enrollment with retro period, 
+							Retro termination with retro period.
+
+MDCPS Board Members				-	Terminate Medicare, CC Letter verification, ReEnroll Medicare, Change Plan Medicare, 
+							Enroll and maintenance with Rate edit plan, QE Medicare, Terminate Employee, Reinstate employee, 
+							Retro enrollment with retro period, Retro termination with retro period
+
+MDCPS Broward Regional Health Planning Council	-	CC Letter verification
+
+Miami Dade County Public Schools		-	CC Letter verification, Terminate Employee, Reinstate employee
+
+Miami Dade County Public Schools		-	CC Letter verification
+
+Miami-Dade County Public Schools Part-Timers	-	CC Letter verification, Terminate Employee, Reinstate employee	
+
+Monroe County School District			-	Add Employee, Activate Employee, Submit Employee, Activate and Enroll Employee, Decline All Coverage, 
+							Terminate Medical, Terminate Ancillary, Summary Verification, CC Letter verification,
+							ReEnroll Medical, ReEnroll Ancillary, Change Plan Medical, Change Plan Ancillary, Change coverage amount,
+							QE on Medical, QE Ancillary, Update covered Members - Medical, Update covered Members - Ancillary, 
+							Terminate Employee, Employee Rehire & Enroll, Reinstate employee, Cascade Scenario 
+							(Class, Sub group, Address change, DOB,Medicare flag, Dependent add or remove), Retro enrollment with retro period, 
+							Retro termination with retro period.
+
+North Adeline Town				-	CC Letter verification
+
+North Florida College				-	CC Letter verification, Terminate Employee, Reinstate employee
+
+Northwest Florida State College			-	CC Letter verification, Terminate Employee, Reinstate employee
+	
+Orange County Public Schools			-	CC Letter verification
+
+Orange County Public Schools			-	CC Letter verification
+
+Pasco Hernando State College			-	Add Employee, Activate Employee, Submit Employee, Activate and Enroll Employee, Decline All Coverage, 
+							Terminate Medical, Terminate Ancillary, Summary Verification, CC Letter verification,ReEnroll Medical, 
+							ReEnroll Ancillary, Change Plan Medical, Change Plan Ancillary, Change coverage amount,
+							QE on Medical, QE Ancillary, Update covered Members - Medical, Update covered Members - Ancillary, 
+							Terminate Employee, Employee Rehire & Enroll, Reinstate employee, Cascade Scenario 
+							(Class, Sub group, Address change, DOB,Medicare flag, Dependent add or remove), 
+							Retro enrollment with retro period, Retro termination with retro period.
+
+Pensacola State College				-	Add Employee, Activate Employee, Submit Employee, Activate and Enroll Employee, Decline All Coverage, 
+							Terminate Medical, Terminate Ancillary, Summary Verification, CC Letter verification,ReEnroll Medical, 
+							ReEnroll Ancillary, Change Plan Medical, Change Plan Ancillary, Change coverage amount,
+							QE on Medical, QE Ancillary, Update covered Members - Medical, Update covered Members - Ancillary, 
+							Terminate Employee, Employee Rehire & Enroll, Reinstate employee, Cascade Scenario 
+							(Class, Sub group, Address change, DOB,Medicare flag, Dependent add or remove), Retro enrollment with retro period, 
+							Retro termination with retro period.
+
+Polk State College				-	Add Employee, Activate Employee, Submit Employee, Activate and Enroll Employee, Decline All Coverage, 
+							Terminate Medical, Terminate Ancillary, Summary Verification, CC Letter verification,
+							ReEnroll Medical, ReEnroll Ancillary, Change Plan Medical, Change Plan Ancillary, QE on Medical, QE Ancillary, 
+							Update covered Members - Medical, Update covered Members - Ancillary, Terminate Employee, 
+							Employee Rehire & Enroll, Reinstate employee, Cascade Scenario (Class, Sub group, Address change, DOB,Medicare flag, Dependent add or remove), 
+							Retro enrollment with retro period, Retro termination with retro period.
+
+Putnam County School District			-	Add Employee, Activate Employee, Submit Employee, Activate and Enroll Employee, Decline All Coverage, 
+							Terminate Medical, Terminate Ancillary, Summary Verification, CC Letter verification,
+							ReEnroll Medical, ReEnroll Ancillary, Change Plan Medical, Change Plan Ancillary, Change coverage amount,
+							QE on Medical, QE Ancillary, Update covered Members - Medical, Update covered Members - Ancillary, 
+							Terminate Employee, Employee Rehire & Enroll, Reinstate employee, Cascade Scenario 
+							(Class, Sub group, Address change, DOB,Medicare flag, Dependent add or remove), Retro enrollment with retro period, 
+							Retro termination with retro period.
+
+Santa Fe College				-	Add Employee, Activate Employee, Submit Employee, Activate and Enroll Employee, Decline All Coverage, 
+							Terminate Medical, Terminate Ancillary, Summary Verification, CC Letter verification,
+							ReEnroll Medical, ReEnroll Ancillary, Change Plan Medical, Change Plan Ancillary, Change coverage amount,
+							QE on Medical, QE Ancillary, Update covered Members - Medical, Update covered Members - Ancillary, 
+							Terminate Employee, Employee Rehire & Enroll, Reinstate employee, Cascade Scenario 
+							(Class, Sub group, Address change, DOB,Medicare flag, Dependent add or remove), Retro enrollment with retro period, 
+							Retro termination with retro period.
+
+South Adeline College				-	CC Letter verification
+
+South Florida College				-	Add Employee, Activate Employee, Submit Employee, Activate and Enroll Employee, Decline All Coverage, 
+							Terminate Medical, Terminate Ancillary, Summary Verification, CC Letter verification,
+							ReEnroll Medical, ReEnroll Ancillary, Change Plan Medical, Change Plan Ancillary, Change coverage amount,
+							QE on Medical, QE Ancillary, Update covered Members - Medical, Update covered Members - Ancillary, 
+							Terminate Employee, Employee Rehire & Enroll, Reinstate employee, Cascade Scenario 
+							(Class, Sub group, Address change, DOB,Medicare flag, Dependent add or remove), Retro enrollment with retro period, 
+							Retro termination with retro period.
+
+St. Johns River College				-	Add Employee, Activate Employee, Submit Employee, Activate and Enroll Employee, Decline All Coverage, 
+							Terminate Medical, Terminate Ancillary, Summary Verification, CC Letter verification,
+							ReEnroll Medical, ReEnroll Ancillary, Change Plan Medical, Change Plan Ancillary, Change coverage amount,
+							QE on Medical, QE Ancillary, Update covered Members - Medical, Update covered Members - Ancillary, 
+							Terminate Employee, Employee Rehire & Enroll, Reinstate employee, Cascade Scenario 
+							(Class, Sub group, Address change, DOB,Medicare flag, Dependent add or remove), Retro enrollment with retro period, 
+							Retro termination with retro period.
+
+
+St. Lucie Public Schools			-	Add Employee, Activate Employee, Submit Employee, Activate and Enroll Employee, Decline All Coverage, 
+							Terminate Medical, Terminate Ancillary, Summary Verification, CC Letter verification,
+							ReEnroll Medical, ReEnroll Ancillary, Change Plan Medical, Change Plan Ancillary, Change coverage amount,
+							Enroll and maintenance with Rate edit plan, QE on Medical, QE Ancillary, Update covered Members - Medical, 
+							Update covered Members - Ancillary, Terminate Employee, Employee Rehire & Enroll, Reinstate employee, 
+							Cascade Scenario (Class, Sub group, Address change, DOB,Medicare flag, Dependent add or remove), 
+							Retro enrollment with retro period, Retro termination with retro period.
+
+
+State College of Manatee-Sarasota		-	CC Letter verification, Terminate Employee, Reinstate employee
+
+State of West Virginia				-	CC Letter verification, Terminate Employee, Reinstate employee
+
+Test State College of Manatee-Sarasota		-	CC Letter verification, Terminate Employee, Reinstate employee
+

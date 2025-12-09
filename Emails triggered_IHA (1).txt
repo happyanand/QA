@@ -1,0 +1,58 @@
+Content Management
+
+GroupAdmin
+While publishing documents, email will be triggered for contacts and broker.(Template ID: 382)
+
+Broker/TPA
+While publishing documents, email will be triggered for contacts and broker.(Template ID: 383)
+
+--------------------------------------------------------------------------------------------------------------
+
+Request Online Access
+
+Broker---->(Template ID: 124)
+
+
+AccountAdmin/Contact---->(Template ID: 112)
+
+
+Employee---->(Template ID: 175)
+
+----------------------------------------------------------------------------------------------------------------
+
+Broker Management
+
+Add agency contact-->Give online access-->Associate/Link account with agency contact
+
+Broker/TPA
+Email will be triggered (Template ID: 42)
+
+
+
+TenantAdmin(IHA Admin/IHA Admin_VIP)
+Email will be triggered (Template ID: 41)
+
+------------------------------------------------------------------------------------------------------
+
+Remove the account link with agency contact
+
+
+Broker/TPA
+Email will be triggered (Template ID: 52)
+
+
+TenantAdmin(IHA Admin/IHA Admin_VIP)
+Email will be triggered (Template ID: 51)
+
+-----------------------------------------------------------------------------------------------------
+
+When agency contact is terminated from broker management module
+
+Email will be triggered (Template ID: 163)
+
+------------------------------------------------------------------------------------------------------
+
+
+
+
+

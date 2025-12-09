@@ -1,0 +1,1066 @@
+Modifications:
+
+Erollment Page:
+
+	Added WaitForPageLoad() at line number 807,809,165
+	Added Thread.sleep() at line number 166
+
+Employee AdminstrationPage:
+
+	Added new line click(txtKeywordSearch) at line number 28
+
+Cascading Membership Page:
+	Added Thread.sleep() at line number 73,76
+	Added waitForElementsVisible() at line number 74
+
+View Coverage Page:
+
+	Added new Xpath click_Profile
+	Added new Method click_profile
+
+Edit Employee Page:
+
+	Changed args randomNumber(4) at line no 175 
+	Changed name testdata.get("Child_DependentRelation") at line no 134
+
+Update Covered Members Page:
+
+	Added new Method memberName
+	Changed Xpath ClickSpouse  at line no 20
+	Removed args (Map<Object, Object>) testdata at line no 34
+	Changed Name testdata.get("EffectiveDate")
+	Changed Name testdata.get("TerminationDate")
+
+Test Script Modofications:
+
+FBMC_UpdateCoveredMembersAncillary:
+	
+	Added Validation Method for at line no 67
+	Removed args (Map<Object, Object>) testdata at line no 79
+	Added Validation Method for at line no 92
+
+FBMC_UpdateCoveredMembersMedical:
+	
+	Removed args (Map<Object, Object>) testdata at line no 78
+	
+Speridian_UpdateCoveredMembersAncillaryFlow:
+
+	Added Validation Method for at line no 68
+	Added New Methods for based on new Pages at line no 80
+
+Speridian_UpdateCoveredMembersMedicalFlow:
+
+	Added Validation Method for at line no 68
+	Added New Methods for based on new Pages at line no 80
+
+
+Test Data:
+	(Speridian Admin) Sheet - Removed columns CascadeEffectiveDate and Renamed DependentRelation2 to Child_DependentRelation
+  	(FBMC_Employee) Sheet -  Removed columns TerminationDate2,TerminationDate_Med_Anc,FirstName,MiddleName,LastName,Url,
+	CascadeEffectiveDate,TerminationDateAncillary,EffectiveDATE1,ChangePlan Date 
+	Renamed NewEffectiveDate1 to NewEffectiveDate
+	Two PaymentMethod columns are there so one is Removed
+
+
+
+
+
+FBMC_UpdateCoveredMembersMedical
+FBMC_UpdateCoveredMembersAncillary
+FBMC_TerminateEmployee
+FBMC_EmployeeReHireEnroll
+FBMC_EmployeeReinstate
+FBMC_CascadeScenario
+
+
+Speridian_UpdateCoveredMembersMedicalFlow
+Speridian_UpdateCoveredMembersAncillaryFlow
+Speridian_TerminateEmployeeFlow
+Speridian_EmployeeReHireEnrollFlow
+Speridian_EmployeeReinstateFlow
+Speridian_CascadeScenarioFlow
+
+
+
+
+Hi Ramya,
+
+Below mentioned are the latest changes which I have made as on 29-09-23.
+
+
+EnrollMent Page:
+
+	Added ScrollDown Method at line no 673
+
+GroupDashboard Page: 
+
+	Added MouseHoveronElement Method at line no 373
+
+UpdateCoveredMembersPage:
+
+	Added New Xpath ClickSpouse
+
+Test Scripts:
+
+FBMC Employee:
+	
+	Modified Test Scripts FBMC_Emp_001 based on new pages
+	
+Speridian Employee:
+	
+	Modified Test Scripts Speridian_Emp_001 based on new pages
+	
+
+Test Data:
+
+  	(Speridian_Employee) Sheet -  Removed columns TerminationDate2,FirstName,MiddleName,LastName,Url,
+	CascadeEffectiveDate,EffectiveDATE1 
+	Renamed NewEffectiveDate1 to NewEffectiveDate and DependentRelation2 to Child_DependentRelation
+	Two PaymentMethod columns are there so one is Removed
+
+
+
+
+
+View Coverage Page:
+
+	Added Edit Enrollment Method at line no 803
+	Added New Enrollment Method at line no 809
+	Added clickRenewalCenter Method at line no 816
+	Added ClickOnVisionDropdown Method at line no 384
+	Added Xpath at line no 38, 71, 72, 73
+
+Test Data:
+
+  	(FBMC_RC_Admin) Sheet -  Removed columns TerminationDate2,FirstName,MiddleName,LastName,Url,
+	CascadeEffectiveDate,EffectiveDATE1 
+	Renamed NewEffectiveDate1 to NewEffectiveDate and DependentRelation2 to Child_DependentRelation
+	Two PaymentMethod columns are there so one is Removed
+
+
+
+
+
+Pages:
+	Added try, catch block for below pages	
+	UpdateCoveredMembers_Page
+	TerminateEmployee_Page
+	RenewalCenter_Page
+	ReHire_Page
+	EnrollReHire_Page
+	EmployeeReinstate_Page
+	EditEmployee_Page	
+	CascadingMembership_Page
+
+
+Test Data:
+
+	(FBMC_RC_Admin):
+		Removed colums EnrollmentDate, ChangePlan Date
+	(SperidianEmployee):
+		Removed colums EnrollmentDate, ChangePlan Date
+
+
+
+Test Script:
+
+	Created package for FBMC_RC_Emp (FBMC Renewal Center Employee Flow)
+	Created class for FBMC_RC_EmpFlow 
+	Created class for FBMC_RC_Emp_AllScenarios
+	Created package for Speridian_RC_Emp (Speridian Renewal Center Employee Flow)
+	Created class for Speridian_RC_EmpFlow 
+	Created class for Speridian_RC_Emp_AllScenarios
+
+Test Data:
+
+	Created New Sheet for FBMC_RC_Employee and Added Required columns in Excel
+	Created New Sheet for Speridian_RC_Employee and Added Required columns in Excel
+
+GroupDashboard Page:
+
+	Added New Enrollment Method and Xpath at line no 478
+
+
+
+18/10/23
+
+Test Script:
+
+	Renamed Test Script FBMC_Emp_001 to FBMC_EmployeeFlow and needed changes in FBMC_Employee_AllScenarios
+	Renamed Test Script Speridian_Emp_001 to Speridian_Employee_Flow and needed changes in Speridian_Employee_AllScenarios
+	Created package for IHA_Employee (IHA Employee Flow)	
+	Created class for IHA_EmpFlow 	
+
+Test Data:
+	
+	(Speridian_Employee):	
+		Renamed Test Scenario Speridian_Emp_001 to Speridian_Employee_Flow 
+	(FBMC_Employee):
+		Renamed Test Scenario FBMC_Emp_001 to FBMC_EmployeeFlow
+	Created new Sheet IHA_Employee added required columns
+	
+
+Update Covered Members Pages:
+
+	Removed click spouse at line no  108
+	Added clickok at line no 126
+
+
+
+23/10/23
+
+Latest Changes as on 25_10_23
+
+Hi Ramya,
+
+Below mentioned are the latest changes which I have made as on 25_10_23.
+
+Test Script:
+
+	Added Validations IHA_EmpFlow 
+
+Test Data:
+
+	"IHA_Employee" sheet Changed "VerifyEffectiveDate" 03/20/2023 to 04/20/2023.
+	Created new sheet "IHA_RC_Admin" added required column's for IHA RC Admin flow. 
+
+Pages:
+
+	EditEmployee_Page:- 
+		Modified the addDependent method Changed "DependentRelation" to "Child_DependentRelation".
+		Modified the addDependent method Changed "DependentDOB" to "CascadeDependentDOB"
+		
+
+
+Latest Changes as on 
+
+Hi Ramya,
+
+Below mentioned are the latest changes which I have made as on 
+
+Test Script:
+
+	Speridian_EmployeeFlow Changed Login and Logout Methods.
+	Renamed IHA_RC_Admin to IHA_RC_Admin_BA_TCs
+	Renamed Speridian_RC_Admin to Speridian_RC_Admin_BA_TCs
+	Renamed FBMC_RC_Admin to FBMC_RC_Admin_BA_TCs
+	Renamed Speridian_RC_Emp to Speridian_RC_Employee_TCs
+	Renamed FBMC_RC_Emp to FBMC_RC_Employee_TCs
+	Removed unwanted and command lines in AllScenarios(logout)
+	Created package for IHA_RC_Employee_TCs (IHA RC Employee Flow)	
+	Created class for IHA_RC_EmpFlow
+	
+
+Test Data: 
+	
+(IHA_RC_Admin Sheet):
+
+	Modified Columns and Rows
+		AccountName ADCDivision to Testgroup_834-15
+		EffectiveDate 08/01/2022 to 08/01/2023	
+		Child_DependentRelation Child/Dependent to Child		
+ 	Removed Columns and Rows:
+		PaymentMethod, TerminationDate, NewEffectiveDate, EditedMonthlyAmount, planName
+	Renamed TestScenario "IHA_RC_AdminFlow" to "IHA_RC_Admin_BA_Flow"
+
+(Speridian_RC_Admin Sheet):
+	Renamed TestScenario "Speridian_RC_AdminFlow" to "Speridian_RC_Admin_BA_Flow"
+
+(FBMC_RC_Admin Sheet):
+	Renamed TestScenario "FBMC_RC_AdminFlow" to "FBMC_RC_Admin_BA_Flow"
+
+	Added New Sheet "IHA_RC_Employee" added required column's for IHA RC Employee Flow.
+	
+(Speridian_RC_Employee):
+	Modified ModuleName TenantDashboard to Renewal Center
+
+
+
+
+
+
+Latest Changes as on 10_31_23
+
+Hi Ramya,
+
+Below mentioned are the latest changes which I have made as on 10_31_23
+
+Test Script:
+
+	Created class for FBMC_Employee_Enrollment_NotificationFlow and FBMC_Employee_Edit_registrationFlow
+
+Pages:
+
+	Employee Page:
+
+		Added return ssnnumber + "," + strFirstname + "," + strlastName;
+		
+	Employee Adminstration Page:
+
+		Added Method checkbox, requestOnlineAccess
+	
+	EditEmployee_Page:
+
+		Added Method editMail
+
+	Create Your Account Page
+
+		Added Method ValidateSuccessMessage
+
+	Email Logs Page:
+
+		Added Methods and Xpath ClickOnResendIcon, ClickOnSendButton, validatename, validatemail, validatedate, ValidateViewEmail, ValidateResendEmail.
+
+Test Data: 
+
+	FBMC_User_Admin_Registration(Sheet):
+
+		Added Required Columns and Rows	like FBMC_Employee_Edit_registrationFlow and FBMC_Employee_Enrollment_NotificationFlow and
+		Employee Registration related fields.(Personal infomation)
+
+
+
+Latest Changes as on 
+
+Hi Ramya,
+
+Below mentioned are the latest changes which I have made as on 
+
+Test Script:
+
+	FBMC_Employee_Enrollment_NotificationFlow Renamed EmailID2 to NewEmailID
+	Created class for Speridian_Employee_Edit_registrationFlow and Speridian_Employee_Enrollment_NotificationFlow 
+	Created class for IHA_Employee_Edit_registrationFlow and IHA_Employee_Enrollment_NotificationFlow
+	
+Pages:
+
+	Email Logs Page:
+
+		Added Method validatesubject
+
+	Employee Adminstration Page:
+
+		Added Xpath checkbox
+
+	ManageCoverage Page:
+
+		Added Methods and Xpaths searchemployee, enrollmentnotification, sendNotification
+
+	Create Your Account Page:
+
+		Added Xpaths for Username, Password, Confirm Password
+
+	Employee Page:
+
+		Added return ssnnumber + "," + strFirstname + "," + strlastName;
+
+Test Data: 
+
+	FBMC_User_Admin_Registration(Sheet):
+
+		Renamed Column EmailID2 to NewEmailID
+
+	Speridian_User_Admin_Registration(Sheet):
+
+		Added Required Columns and Rows	like Speridian_Employee_Edit_registrationFlow and Speridian_Employee_Enrollment_NotificationFlow and
+		Employee Registration related fields.(Personal infomation)
+
+	IHA_User_Admin_Registration(Sheet):
+
+		Added Required Columns and Rows	like IHA_Employee_Edit_registrationFlow and IHA_Employee_Enrollment_NotificationFlow and
+		Employee Registration related fields.(Personal information)
+
+
+
+
+Latest Changes as on 11/16/23
+
+Hi Ramya,
+
+Below mentioned are the latest changes which I have made as on 11/16/23
+
+Test Script:
+
+	Created class for FBMC_Content_Management_Flow
+	Created class for FBMC_ContentManagement_Review_Flow
+	Created class for FBMC_ContentManagement_AccountAdminLanding_Pages_Flow
+	Created class for Content_Management_AllScenarios
+
+
+Test Data: 
+
+	Created New Sheet FBMC_Content_Management
+	Added required columns and rows
+
+Pages:
+
+	Created New Pages ContentManagement_Page, Review_Page, SectionTitles_Page
+	Added Methods and Xpath
+
+
+
+
+
+
+Latest Changes as on 11/20/23
+
+Hi Ramya,
+
+Below mentioned are the latest changes which I have made as on 11/20/23
+
+Test Script:
+
+	Created New class for FBMC_ContentManagement_AccountAdminLanding_Pages_Flow
+
+
+Test Data: 
+
+	Created New Sheet FBMC_Content_Management
+	Added required columns and rows
+
+Pages:
+
+	Created New Page - Pages_ContentManagement
+	Added Methods and Xpath
+
+
+
+
+
+Latest Changes as on 11/22/23
+
+Hi Ramya,
+
+Below mentioned are the latest changes which I have made as on 11/22/23
+
+Test Script:
+	
+	
+	Created New class for FBMC_ContentManagement_EmployeeAdminLanding_Pages_Flow
+	Added Validations FBMC_ContentManagement_AccountAdminLanding_Pages_Flow
+
+
+Test Data: 
+
+	Added FBMC_ContentManagement_EmployeeAdminLanding_Pages_Flow required columns and rows
+
+Pages:
+
+	ContentManagement Page:
+	
+		Added required Validation Methods and Xpaths like ClickOnUnpublish, ClickOncopy, validateReview, validatePages, validateDocuments, validateBanner,
+		validateImages, validateNotifications, validateSectionTitles, validatePublished, validateUnPublished, validateDraft, validatePageName, ClickOnPreview
+
+	GroupDashboard_Page:
+	
+		Added required Validation Methods and Xpaths like supportUserLogin, advancesearch, verifypages, validateHeader, validateRichtext, validateLinkTitle
+
+	Pages_ContentManagement:
+	
+		Added required Validation Methods and Xpaths like validatePreview
+
+
+
+
+
+Latest Changes as on 12/02/23
+
+Hi Ramya,
+
+Below mentioned are the latest changes which I have made as on 12/02/23
+
+Test Script:
+
+	Created New class for FBMC_ContentManagement_Administratiors_CopyBanner_Flow
+	Created New class for ValidateFBMC_ContentManagement_Employee_Banner_Flow
+	Created New class for FBMC_ContentManagement_Images_Flow
+	Created New class for FBMC_ContentManagement_Documents_AddwordDoc_Flow
+
+Test Data: 
+
+	Added FBMC_ContentManagement_Administratiors_CopyBanner_Flow required columns and rows
+	Added FBMC_ContentManagement_Employee_Banner_Flow required columns and rows
+	Added FBMC_ContentManagement_Images_Flow required columns and rows
+	Added FBMC_ContentManagement_Documents_AddwordDoc_Flow required columns and rows
+
+Pages:
+
+	Banner_Page:
+	
+		Added required Validation Methods and Xpaths like ClickOnaddBanner(), Entername(), addDescription(), enterVisibilityFromDate(), selectrole(), selectpage(), 
+		addAlertmessage(), ClickOnPreview(), ClickOnSubmit(), ClickOnOk(), ClickOnClose(), switchTab(), ClickOnedit(), ClickOnyes(), ClickOnUnpublish(), validateStatus(),
+		FilterAudienceFBMC(), SearchDrpdownverification(), validaterecord().
+
+	Images_Page:
+	
+		Added required Validation Methods and Xpaths like Uploadimage(), validateImage(), clickondelete(), clickonOk()
+
+	Document_ContentManagement_Page:
+
+		Added required Validation Methods and Xpaths like enterVisibilityFromDate(), ClickOnAddDocument(), ClickOnsave(), search_Name(), clickonyes(),
+		Confirmation(), Publish(), PublishConfirmation(), ClickOnSubmitIcon(), selectDropdownValues()
+	
+	Document_ContentManagement_Page1:
+		
+		Deleted Document_ContentManagement_Page1 not needed.
+
+
+
+
+
+
+Latest Changes as on 12/06/23
+
+Hi Ramya,
+
+Below mentioned are the latest changes which I have made as on 12/06/23
+
+Test Script:
+
+	Created New class for FBMC_ContentManagement_Documents_AddPdf_Excel_Doc_Flow
+	Created New class for IHA_ContentManagement_Administratiors_CopyBanner_Flow
+	Modified FBMC_ContentManagement_SectionTitle_Edit_AddWorddoc_Flow ClickOnDocCheckbox("2") to ClickOnDocCheckboxAsPerStatus("Published")
+	Modified FBMC_ContentManagement_SectionTitle_Edit_AddExcel_Pdf_Flow ClickOnDocCheckbox("2") to ClickOnDocCheckboxAsPerStatus("Published")
+	Added New steps for FBMC_ContentManagement_AccountAdminLanding_Pages_Flow pages.ClickOnUpload(), sectionTitlesPage.UploadImage(), sectionTitlesPage.UploadImageConfirmation(), pages.Selectdocument()
+	Added New steps for FBMC_ContentManagement_EmployeeLanding_Pages_Flow
+	
+Pages:
+	
+	Banner_Page:
+		
+		Added New xpaths and validation Method FilterAudienceSperidian()
+			
+Test Data:
+
+	Added FBMC_ContentManagement_Documents_AddPdf_Excel_Doc_Flow required columns and rows
+	Modified Speridian Content Management Name column values
+ 	Added IHA_ContentManagement_Administratiors_CopyBanner_Flow required columns and rows
+
+
+
+
+Latest Changes as on 12/14/23
+
+Hi Ramya,
+
+Below mentioned are the latest changes which I have made as on 12/14/23
+
+Test Script:
+
+	Created New class for IHA_ContentManagement_Documents_AddwordDoc_Flow
+	Created New class for IHA_ContentManagement_Documents_AddPdf_Excel_Doc_Flow
+	Created New class for IHA_ContentManagement_TerminateAccountwithAgencyContact_Notifications_Flow
+			
+
+Test Data:
+
+	Added IHA_ContentManagement_Documents_AddwordDoc_Flow required columns and rows
+ 	Added IHA_ContentManagement_Documents_AddPdf_Excel_Doc_Flow required columns and rows
+	Added HA_ContentManagement_TerminateAccountwithAgencyContact_Notifications_Flow required columns and rows
+
+Pages:
+		
+	Added New xpaths and validation Methods. Modified pages Based on Master branch.
+
+
+
+
+
+Latest Changes as on 12/16/23
+
+Hi Ramya,
+
+Below mentioned are the latest changes which I have made as on 12/16/23
+
+Test Script:
+
+	Created New class for FBMC_TerminatePolicy_Manatee_Sarasota_BasicAD_D_turns70
+			
+Test Data:
+	
+	Business_Automation_Rules:
+	
+		Added FBMC_TerminatePolicy_Manatee_Sarasota_BasicAD_D_turns70 row and TerminationDate column
+
+Pages:
+	EnrollmentSummary_Page:
+	
+		Added New xpaths and validation Methods like ValidateTerminationDate().
+
+	ViewCoverage_Page:
+
+		Added New xpaths and validation Methods like ClickOnplansDropdown().
+
+
+
+
+Latest Changes as on 12/20/23
+
+Hi Ramya,
+
+Below mentioned are the latest changes which I have made as on 12/20/23
+
+Test Script:
+
+	Created New class for FBMC_Daytona_Coverageamt_ChangeLifeBenefitReduction_turns_70or75
+	Added WaitForLoadAnimationDisappear() IHA User Admin Registration flows
+	Reaned Test Script FBMC_TerminatePolicy_Manatee_Sarasota_BasicAD_D_turns70 to FBMC_TerminatePolicy_LakeSumter_BasicADandD_Turns70
+
+Test Data:
+
+	Added FBMC_Daytona_Coverageamt_ChangeLifeBenefitReduction_turns_70or75 required columns and rows
+
+Pages:	
+
+	ViewCoverage_Page:
+
+			commented //Base_Class.scrollDown();
+			Added	ScrolltillElementOnmiddlepage(terminationDate);
+
+
+
+
+
+
+
+
+Latest Changes as on 12/29/23
+
+Hi Ramya,
+
+Below mentioned are the latest changes which I have made as on 12/29/23
+
+Test Script:
+
+	Speridian_Employee_Flow Added Test Script's Employee Request online Access
+	FBMC_EmployeeFlow Added Test Script's Employee Request online Access
+
+Test Data:
+
+	Speridian Admin:
+		
+		Modified All the Effectivedate and Terminationdate year 2022 to 2023 and Added planname's required columns and rows
+	
+	Speridian Employee:
+	
+		Modified Effectivedate and Terminationdate year 2022 to 2023 and Added Password
+
+	FBMC Employee:
+
+		Added Password, SecurityQuestion1, SecurityAnswer1, SecurityQuestion2, SecurityAnswer2, SecurityQuestion3, SecurityAnswer3, EmailId
+
+
+Pages:	
+
+	GroupDashboard_Page:
+
+		Modified ReviewEmployeeTransactions() method. 
+
+	ViewCoverage_Page:
+	
+		Added Xpath and Method TerminateplanonQE()
+
+
+
+
+
+Latest Changes as on 01/03/23
+
+Hi Ramya,
+
+Below mentioned are the latest changes which I have made as on 01/03/23
+
+Test Script:
+
+	IHA_Employee_Flow Added Test Script's Employee Request online Access
+
+Test Data:
+
+	IHA Employee:
+	
+		Modified Effectivedate and Terminationdate year 2022 to 2023 and Added Password
+
+	Speridian Admin:
+
+		Modified Effectivedate and Terminationdate year 2023 to 2024
+
+	FBMC_ContentManagement:
+			
+		Modified Effectivedate year 2023 to 2024
+
+Pages:	
+
+	ViewCoverage_Page:
+
+		Added WaitForLoadAnimationDisappear()
+
+
+
+
+
+
+Latest Changes as on 01/11/2024
+
+Hi Ramya,
+
+Below mentioned are the latest changes which I have made as on 01/11/2024
+
+Test Script:
+
+	FBMC_ContentManagement_EmployeeLanding_Pages_Flow:
+
+		Commanded line number 104 clickonOk() method
+
+	Created Package and class for FBMC_Smoke_Test_Flow, Speridian_Smoke_Test_Flow, IHA_Smoke_Test_Flow and Smoke_Test_AllScenarios 	
+
+Test Data:
+
+	FBMC Employee:
+	
+		Modified Effectivedate and Terminationdate year 2023 to 2024 and Added column VerifyterminationDate, VerifyEffectiveDate
+
+	IHA Employee:
+	
+		Modified Effectivedate and Terminationdate and Added column VerifyterminationDate, VerifyEffectiveDate
+
+	Smoke Test:	
+
+		Created new sheet for Smoke_Test added required rows and columns
+
+Pages:	
+
+	ViewCoverage_Page:
+	
+		Modified Xpath //*[@class='panel-title'][contains(text(),'" + PlanName + "')] to //*[@class='panel-title'][normalize-space()='" + PlanName + "')]
+
+	Enrollment_Page:
+
+		Added Selectplans method click(by) and Added selectfourPlans method.
+
+	Base_Class:
+
+		Added Line loginuser_Type = configloader().getProperty(ReferenceLogin+"UAT_Type") for SetUp1 method.
+
+	CommentsRoaster_Page:
+
+		Uncommand CommentsRoaster_Page methods and Xpaths.
+
+	GroupInformation_Page:
+
+		Added Method and Xpath isGroupsInformationPageDisplayed()
+
+	Home_Page:
+
+		Added new method getLoggedInUserName()
+
+	Login_Page:
+
+		Added new method isLoginPageDisplayed()
+
+	AccountSummary_Page:
+
+		Added required Xpaths and Methods like clickOnAccountSummary, Delinquent History, Payment Profiles, 
+		Payment History, Remittance History, Paid Through Date, EmployeeBenefits, Refund Details
+		
+
+
+
+AccountSummary_Page:
+
+ 	 Added transactiontype, makepayment, 
+
+Payment_Profile:
+
+		addPaymentProfileWithACH
+
+
+
+
+
+
+Latest Changes as on 01/23/2024
+
+Hi Ramya,
+
+Below mentioned are the latest changes which I have made as on 01/23/2024
+
+Test Script:
+
+	Created new class for FBMC_Billpay_NewEmployee
+
+Test Data:
+
+	Created new sheet for FBMC_BillingAndPayments added required rows and columns
+
+Pages:	
+
+	AccountSummary_Page:
+
+ 	 	Added methods and xpaths transactiontype, makepayment, 
+
+	Payment_Profile_Page:
+
+		Added methods and xpaths addPaymentProfileWithACH
+
+	EmployeeInformation_Page:
+
+		Added methods and xpaths clickonvendoraccount
+
+	Enrollment_Page:
+
+		Added methods and xpaths ClickonWarningOkButton
+
+	Home_Page:
+
+		Added methods and xpaths clickAccountsReceivable
+
+	Make_Payment_Page:
+
+		Added methods and xpaths clickonsubmit, enterOtherAmount, paymentcomments
+
+	ViewCoverage_Page:
+
+		Added methods and xpaths clickonEnrollBtnUnderDeclinedplans, fetchPlanAmount, fetchPlanName
+
+	Base_Class:
+
+		Added methods and xpaths selectDropdownByPartialText, ChangeDateformate
+
+
+
+
+Latest Changes as on 01/24/2024
+
+Hi Ramya,
+
+Below mentioned are the latest changes which I have made as on 01/24/2024
+
+Test Script:
+
+	Modified flows like Terminate Dental, QE Enrollment, ReEnrollDental, Make Other Amount Payment
+
+Test Data:
+
+	Updated Master testdata changes
+
+Pages:
+
+	ViewCoverage_Page:
+
+		Modified fetchPlanAmount method.
+
+	QEEnrollment_ChangePlan_Page :
+
+		Modified Xpath for EmployeeStatus
+
+
+
+
+
+
+
+
+Latest Changes as on 01/30/2024
+
+Hi Ramya,
+
+Below mentioned are the latest changes which I have made as on 01/30/2024
+
+Test Script:
+
+	Created new class for IHA_CombinedFlow
+
+
+Test Data:
+
+	Added New column and rows for IHA_CombinedFlow
+
+Pages:
+
+	Enrollment_Page:
+
+		Added Validation for selectPlans method
+
+	ViewCoverage_Page:
+	
+		Removed unwanted xpaths and Modified verifyCoverageEndDateAfterReHire method
+
+	TerminateEmployee_Page:
+
+		Modified Xpath and validations for TerminateEmployee method
+
+
+
+
+
+
+Latest Changes as on 02/02/2024
+
+Hi Ramya,
+
+Below mentioned are the latest changes which I have made as on 02/02/2024
+
+Test Script:
+
+	Created new class for Speridian_CombinedFlow
+	Modified Test Script FBMC, IHA, Speridian Employee Flows
+	Removed Test Script Speridian_Combined_Flow because not required old one.
+
+Test Data:
+
+	Speridian_Employee sheet:
+		 added new columns Termination_Date, VerifyterminationDate, VerifyeffectiveDate, EmailId and Modified date of year 2023 to 2024
+	
+	FBMC_Employee sheet:
+		added new columns VerifyterminationDate, VerifyeffectiveDate and Modified date of year 2023 to 2024
+
+	IHA_Employee sheet:
+		added new columns Termination_Date and Modified date of year 2023 to 2024, Changed AccountName ADC Division to UAT_S2
+	
+	Speridian Admin sheet:
+		added new rows and columns for Speridian_CombinedFlow
+
+Pages:
+
+	Enrollment_Page:
+
+		Modified Xpath for selectPlans method and Added method selectfourSperidianPlans
+	
+
+
+
+Latest Changes as on 02/08/2024
+
+Hi Ramya,
+
+Below mentioned are the latest changes which I have made as on 02/08/2024
+
+Test Script:
+	
+	Modified Test Script FBMC_Billpay_NewEmployee
+
+Test Data:
+
+
+
+Pages:
+
+	AccountSummary_Page:
+
+		Modified Method terminatePlanVerification()
+		Added WaitForLoadAnimationDisappear under CheckValuePresentUnderTableRow method
+
+	ChangeCoverageAmount_PlanRate_Page:
+
+		Modified Method ChangeCoverageAmount()
+
+	Cash_Ledger_Page:
+
+		Modified xpath L_SearchButton
+
+
+
+Latest Changes as on 02/19/2024
+
+Hi Ramya,
+
+Below mentioned are the latest changes which I have made as on 02/19/2024
+
+Test Script:
+
+	Modified IHA_CombinedFlow Test Scripts
+	Modified IHA_CascadeScenarioFlow Test Scripts
+	Modified IHA_ContentManagement_SectionTitle_Edit_AddWorddoc_Flow
+	Modified IHA_Admin_BA_AllScenarios Added driver.quit() commanded KillChrome() 
+	Modified IHA_EmployeeFlow Added at line no 181 click_profile() and Modified EffectiveDate to NewEffectiveDate
+	Modified Speridian_Content_Management_AllScenarios Added  driver.quit() commanded KillChrome() 
+
+Test Data:
+
+	IHA Admin : 
+		Modified Account Name UAT_S1 to ADC Division
+
+	IHA_Employee :
+		Added required rows and columns like CascadeDependentDOB, NewDOB, NewHomeAddr1, 
+		NewHomeAddr2, NewHomeZip, Child_DependentRelation, FullAddress
+
+	Speridian_Content_Management :
+		Modified Effective Date of year 2023 to 2024
+
+Pages:
+
+	GroupDashboard_Page :
+		Added Xpath clickMyCoverage in 
+
+
+Note: Removed unwanted Screenshots, Junit files and Test Report files
+
+
+
+
+
+Latest Changes as on 02/29/2024
+
+Hi Ramya,
+
+Below mentioned are the latest changes which I have made as on 03/01/2024
+
+Test Script:
+
+	Modified FBMC_ContentManagement_Administratiors_CopyBanner_Flow  commanded ClickOnyes
+	Modified FBMC_ContentManagement_Employee_Banner_Flow commanded ClickOnyes
+	Modified FBMC_RC_Admin_BA_Flow changed Plan Name Legal to Medical
+	Modified IHA_CombinedFlow Added Validation and Removed unwanted
+	Modified IHA_ContentManagement_AccountAdminLanding_Pages_Flow Commanded the code Based on First Template
+	Modified Speridian_ContentManagement_AccountAdminLanding_Pages_Flow Commanded the code Based on First Template
+	Modified Speridian_ContentManagement_Employee_Registration_Notifications_Flow Added WaitForLoadAnimationDisappear
+	Modified Speridian_ContentManagement_EmployeeLanding_Pages_Flow Commanded the code Based on First Template
+
+Test Data:
+
+	IHA_RC_Admin_BA_Flow : 
+		
+		Modified EffectiveDate year 2023 to 2024
+
+	Business_Automation_Rules:
+		
+		Modified TerminationDate, DOB, DependentDOB
+
+Pages:
+
+	ContentManagement_Page:
+
+		Added Yes ClickOnUnpublish method
+
+	ViewCoverage_Page:
+
+		Modified verifyCoverageEndDateAfterReHire method		
+		Modified verifyTerminationDateToAllPlans
+
+	Enrollment_Page:
+
+		Added selectMedicalPlan, click(Close_Price_tag) methods, Xpath and commanded unwanted codes.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
