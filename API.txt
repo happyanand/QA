@@ -1,0 +1,247 @@
+
+//POSTMAN TOOL:
+
+https://reqres.in/ --> URL
+api/users? --> Path Parameter
+page=2     --> Query Parameter
+
+//Http Request:
+
+GET   -->Fetch the data (List Users,Single User,Single User Not found,List <resource>,Single <Resource>,Delay Response)
+POST  -->Create the data (Requst Boady /Request Payload) (Create,Register,Login,Not Login,Data Driven Testing(Excel Data CSV or JSON format,Header Check)
+PUT   -->Update the data (Requst Boady /Request Payload) (Update Resources)
+PATCH -->Update the data (Update Single Value)
+DELETE -->Delete the data (Requst Boady /Request Payload)
+
+Every Request get in the format JSON/HTML/XML/Text
+
+
+GET:
+
+//Status Code:
+
+tests["Validation status code"] = responseCode.code==200;
+
+pm.test("Status code is 200", function () {
+    pm.response.to.have.status(200);
+});
+
+tests["Validation Response Body"] = responseBody.has("Anand");
+
+var response = JSON.parse(responseBody);
+tests["page no"]= response.page == 2;
+
+var response = JSON.parse(responseBody);
+tests["verify first_name"]=response.data[0].first_name=="Michael";
+
+//POST:
+
+tests["Validation Response Body"] = responseBody.has("success");
+
+//Token Check:
+
+Body:
+
+{
+    "email": "eve.holt@reqres.in",
+    "password": "cityslicka"
+}
+//Tests:
+
+tests["token"]=responseBody.has("token");
+
+//Header Check:
+
+pm.test("Check Content-Type header",function()
+{
+
+    pm.response.to.be.header("Content-Type","application/json; charset=utf-8");
+});
+
+//Response Time:
+
+pm.test("Response time is less than 200ms", function () {
+    pm.expect(pm.response.responseTime).to.be.below(500);
+});
+
+Data Driven Testing: CSV,JSON
+
+Request Body:
+{
+    "Name" : "{{Name}}",
+    "Age" : "{{Age}}",
+    "Job" : "{{Job}}",
+    "Salary" : "{{Salary}}"
+}
+
+Convert CSV to JSON format:
+
+https://csvjson.com/csv2json
+
+
+
+Dummy Sample Rest API:
+http://www.dummy.restapiexample.com/
+
+//Training Tutorial:
+
+https://speridiantec.sharepoint.com/sites/POSTMANAPITraining/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FPOSTMANAPITraining%2FShared%20Documents%2FGeneral&p=true&ct=1663049706009&or=Teams%2DHL&ga=1
+
+
+//Command Prompt:
+
+json-server filename.json
+
+var response=JSON.parse[responseBody];
+tests["Status code check"]=responseCode.code==200;
+var response = JSON.parse(responseBody);
+tests["verify first_name"]=response.data[0].first_name=="Michael";
+
+
+//Variables:
+
+1.Collection Variable - with in the collection all the request
+2.Global/Environment Variable - Multiple Collections
+
+//Set variables in Pre-Request-Scripts:
+
+pm.globals.set("UserID", 2);
+
+postman.setGlobalvariable("url","https://reqres.in")
+
+Order of Execution: Mention in Tests
+
+postman.setNextRequest("Single <Resource>");
+
+//Clear Global Variable
+
+ postman.clearGlobalVariable("key");
+
+//In last Test:
+
+postman.setNextRequest("null");
+
+There are two types of Script:
+1.Pre Request Script - will execute before sending Request
+2.Test Script - After completion of Request
+
+Pre-Request Script  -- Request---Response-- Test Script
+
+Collection
+  Folder
+    Request
+
+
+//API Chaining:
+
+//Mention Tests Get List Users:
+
+jsondata=JSON.parse(responseBody)
+value=jsondata.data[0].first_name
+pm.globals.set("username", value);
+
+//Mention Put Body:
+
+{
+    "name": "{{username}}",
+    "job": "zion resident"
+}
+
+
+//Authentication:
+
+//Basic Authentication:
+
+https://postman-echo.com/basic-auth
+
+Username:postman
+Password:password
+
+
+//Multiple Assertion:
+
+pm.test("Multipe Assertion", function () {
+    response=pm.response.json();
+    pm.expect(response.data.id).to.eql(3);
+    pm.expect(response.data.first_name).to.eql("Emma");
+});
+
+
+//Handling Response that don't Parse
+
+    pm.test("Body contains String",function(){
+    pm.expect(pm.response.text()).to.include("Emma")
+});
+
+//Status code Being one of set
+
+pm.test("Success full status code",function(){
+pm.expect(pm.response.code).to.be.oneOf([200,201])
+});
+
+
+//Header and value Check:
+
+pm.test("Content-Type",function(){
+pm.expect(pm.response.to.have.header("Content-Type"))
+});
+
+pm.test("Content-Type Value",function(){
+pm.expect(pm.response.headers.get("Content-Type")).to.eql("application/json; charset=utf-8")
+});
+
+
+//References Links
+
+https://learning.postman.com/docs/sending-requests/variables/
+
+https://www.chaijs.com/api/bdd/
+
+
+//Command Prompt
+
+1) Install NodeJS
+ Donwload link: https://nodejs.org/en/download/
+ After installation give below command:
+  node --version
+2) npm (comes with node.js)
+ check version: 
+  npm --version
+3) install json-server
+ npm install -g json-server
+4) create info.json file with sample data(json format)
+ Loc: C:\Users\admin\info.json
+5) Run the below command to make your API's up and running.
+ json-server info.json
+
+
+two ways run collections in Command Prompt:
+
+//Exported file
+
+newman run C:\Users\anandhakumar.r\postman_test_run.json
+
+//Link:
+
+newman run https://www.getpostman.com/collections/946e11f75b311bc81771
+
+
+
+
+
+
+
+Tutorials Link:
+
+https://speridiantec.sharepoint.com/sites/POSTMANAPITraining/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FPOSTMANAPITraining%2FShared%20Documents%2FGeneral&p=true&ct=1663049706009&or=Teams%2DHL&ga=1
+
+https://speridiantec.sharepoint.com/sites/POSTMANAPITraining/Shared%20Documents/Forms/AllItems.aspx?ct=1663049706009&or=Teams%2DHL&ga=1&id=%2Fsites%2FPOSTMANAPITraining%2FShared%20Documents%2FGeneral%2FDay%201%5FAPI%20Testing%20on%20POSTMAN%2Emp4&parent=%2Fsites%2FPOSTMANAPITraining%2FShared%20Documents%2FGeneral
+
+https://speridiantec.sharepoint.com/sites/POSTMANAPITraining/Shared%20Documents/Forms/AllItems.aspx?ct=1663049706009&or=Teams%2DHL&ga=1&id=%2Fsites%2FPOSTMANAPITraining%2FShared%20Documents%2FGeneral%2FDAY%202%5FAPI%20Testing%20on%20POSTMAN%2Emp4&parent=%2Fsites%2FPOSTMANAPITraining%2FShared%20Documents%2FGeneral
+
+https://speridiantec.sharepoint.com/sites/POSTMANAPITraining/Shared%20Documents/Forms/AllItems.aspx?ct=1663049706009&or=Teams%2DHL&ga=1&id=%2Fsites%2FPOSTMANAPITraining%2FShared%20Documents%2FGeneral%2FDAY%203%5FAPI%20Testing%20on%20POSTMAN%2Emp4&parent=%2Fsites%2FPOSTMANAPITraining%2FShared%20Documents%2FGeneral
+
+https://speridiantec.sharepoint.com/sites/POSTMANAPITraining/Shared%20Documents/Forms/AllItems.aspx?ct=1663049706009&or=Teams%2DHL&ga=1&id=%2Fsites%2FPOSTMANAPITraining%2FShared%20Documents%2FGeneral%2FDay%204%5FAPI%20Testing%20on%20POSTMAN%2Emp4&parent=%2Fsites%2FPOSTMANAPITraining%2FShared%20Documents%2FGeneral
+
+
+

@@ -1,0 +1,23 @@
+Write an update about a meeting that got postponed.
+
+Error one:
+SUB : Update to Meeting Postponed 
+
+Hi Client Name,
+
+I am write to let you know of a some delay in our project timeline due to some issue we faced. In the Last testing, 
+we are identifies a bug that is need to check. 
+Based on our current task, we can expect the delay for tomorrow 11/18/2024 and time 12pm .
+Sorry to the delay. I would update you as we are resolved this issue. 
+If you have any question kindly let us know.
+
+
+Correct one:
+SUB: Update for Meeting Postponed 
+
+Hi Client Name,
+
+I am writing to let you know of a delay in our project timeline due to an issue we encountered. In the last test, we identified a bug that needs to be checked. 
+Based on our current task, we can expect the delay for tomorrow, 11/18/2024, at 12 pm.
+Sorry for the delay. I would update you as we have resolved this issue. 
+If you have any questions, kindly let us know.

@@ -1,0 +1,47 @@
+{
+	"id": "7db1cd18-7c4b-4d65-8828-daaed189cead",
+	"name": "API Testing",
+	"timestamp": "2022-09-16T07:26:32.240Z",
+	"collection_id": "23326364-ca3ddb37-676a-4cd7-befe-d398d3b2876a",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 0,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "00779263-fdff-4047-8b8a-bbc7d874b837",
+			"name": "Excel_Data",
+			"time": 515,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				455,
+				503,
+				529,
+				497,
+				515
+			],
+			"allTests": [
+				{},
+				{},
+				{},
+				{},
+				{}
+			]
+		}
+	],
+	"count": 5,
+	"totalTime": 2499,
+	"collection": {
+		"requests": [
+			{
+				"id": "00779263-fdff-4047-8b8a-bbc7d874b837",
+				"method": "POST"
+			}
+		]
+	}
+}

@@ -1,0 +1,28 @@
+
+Subject: Project Status Update - CRM implementation project.
+
+The CRM implementation project. we were scheduled to go live last week, but the deployment did not happened due to critical issues.
+
+Main Issues:
+1)The data migration was not completed.
+2)Several required configurations were not completed before deployment.
+3)The same issues continue to repeatedly.
+4)The testing team has raised a significant number of bugs. Many are still open.
+5)The client has been regularly following up. Keep asking the same questions.
+
+Training Documentation:
+1)I had requested the training document to be completed by last Friday. it is still not done.
+2)I Sent two reminders Monday and Tuesday. they need another 3–4 days to complete it.
+
+Dry Run Failed:
+A dry run was scheduled for last Friday.
+
+Hardware Issues:
+Laptops frequently hang and Internet speeds is very slow, Impacts testing activities.
+
+I kindly request your support in resolving these issues.
+
+Thank you
+
+
+
