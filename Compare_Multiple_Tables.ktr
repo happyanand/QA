@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <transformation>
   <info>
-    <name>Data_Validation_Multiple_Tables</name>
+    <name>Compare_Multiple_Tables</name>
     <description/>
     <extended_description/>
     <trans_version/>
@@ -427,16 +427,16 @@
     <clusterschemas>
     </clusterschemas>
     <created_user>-</created_user>
-    <created_date>2022/11/29 09:53:47.566</created_date>
+    <created_date>2022/11/28 11:14:22.957</created_date>
     <modified_user>-</modified_user>
-    <modified_date>2022/11/29 09:53:47.566</modified_date>
+    <modified_date>2022/11/28 11:14:22.957</modified_date>
     <key_for_session_key/>
     <is_key_private>N</is_key_private>
   </info>
   <notepads>
   </notepads>
   <connection>
-    <name>Data_Validation</name>
+    <name>Source_DB</name>
     <server>SMARTPOC01</server>
     <type>MSSQL</type>
     <access>Native</access>
@@ -492,52 +492,52 @@
   </connection>
   <order>
     <hop>
-      <from>SRC_1</from>
+      <from>Source1</from>
       <to>Sort rows</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>TGT_1</from>
-      <to>Sort rows 3</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>TGT_2</from>
-      <to>Sort rows 4</to>
-      <enabled>Y</enabled>
-    </hop>
-    <hop>
-      <from>SRC_2</from>
+      <from>Source2</from>
       <to>Sort rows 2</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Sort rows</from>
-      <to>Append streams</to>
+      <from>Target1</from>
+      <to>Sort rows 3</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Sort rows 2</from>
-      <to>Append streams</to>
+      <from>Target2</from>
+      <to>Sort rows 4</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
       <from>Sort rows 3</from>
-      <to>Append streams 2</to>
+      <to>Target Append streams</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
       <from>Sort rows 4</from>
-      <to>Append streams 2</to>
+      <to>Target Append streams</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Append streams</from>
+      <from>Sort rows</from>
+      <to>Source Append streams</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Sort rows 2</from>
+      <to>Source Append streams</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Source Append streams</from>
       <to>Sort rows 5</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Append streams 2</from>
+      <from>Target Append streams</from>
       <to>Sort rows 6</to>
       <enabled>Y</enabled>
     </hop>
@@ -558,27 +558,27 @@
     </hop>
     <hop>
       <from>Data validator</from>
-      <to>Valid Data</to>
+      <to>Valid_Data</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
       <from>Data validator</from>
-      <to>Invalid Data</to>
+      <to>Invalid_Data</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Valid Data</from>
+      <from>Valid_Data</from>
       <to>Microsoft Excel writer</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>Invalid Data</from>
+      <from>Invalid_Data</from>
       <to>Microsoft Excel writer 2</to>
       <enabled>Y</enabled>
     </hop>
   </order>
   <step>
-    <name>SRC_1</name>
+    <name>Source1</name>
     <type>TableInput</type>
     <description/>
     <distribute>Y</distribute>
@@ -588,14 +588,14 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <connection>Data_Validation</connection>
+    <connection>Source_DB</connection>
     <sql>SELECT
   Emp_ID
-, First_Name
-, Last_Name
-, Email_ID
+, Emp_Name
+, Salary
 , Mob_Num
-FROM dbo.Src_1
+, Date_of_Joining
+FROM dbo.Source_Emp1
 </sql>
     <limit>0</limit>
     <lookup/>
@@ -610,7 +610,7 @@ FROM dbo.Src_1
         <name>Emp_ID</name>
         <length>20</length>
         <precision>-1</precision>
-        <origin>Table input</origin>
+        <origin>Source1</origin>
         <comments>Emp_ID</comments>
         <conversion_Mask/>
         <decimal_symbol>.</decimal_symbol>
@@ -630,11 +630,11 @@ FROM dbo.Src_1
       <value-meta>
         <type>String</type>
         <storagetype>normal</storagetype>
-        <name>First_Name</name>
+        <name>Emp_Name</name>
         <length>25</length>
         <precision>-1</precision>
-        <origin>Table input</origin>
-        <comments>First_Name</comments>
+        <origin>Source1</origin>
+        <comments>Emp_Name</comments>
         <conversion_Mask/>
         <decimal_symbol>.</decimal_symbol>
         <grouping_symbol>,</grouping_symbol>
@@ -651,37 +651,14 @@ FROM dbo.Src_1
         <lenient_string_to_number>N</lenient_string_to_number>
       </value-meta>
       <value-meta>
-        <type>String</type>
+        <type>Integer</type>
         <storagetype>normal</storagetype>
-        <name>Last_Name</name>
-        <length>25</length>
-        <precision>-1</precision>
-        <origin>Table input</origin>
-        <comments>Last_Name</comments>
-        <conversion_Mask/>
-        <decimal_symbol>.</decimal_symbol>
-        <grouping_symbol>,</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>en_IN</date_format_locale>
-        <date_format_timezone>Asia/Calcutta</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>String</type>
-        <storagetype>normal</storagetype>
-        <name>Email_ID</name>
-        <length>20</length>
-        <precision>-1</precision>
-        <origin>Table input</origin>
-        <comments>Email_ID</comments>
-        <conversion_Mask/>
+        <name>Salary</name>
+        <length>18</length>
+        <precision>0</precision>
+        <origin>Source1</origin>
+        <comments>Salary</comments>
+        <conversion_Mask>####0;-####0</conversion_Mask>
         <decimal_symbol>.</decimal_symbol>
         <grouping_symbol>,</grouping_symbol>
         <currency_symbol/>
@@ -702,9 +679,32 @@ FROM dbo.Src_1
         <name>Mob_Num</name>
         <length>18</length>
         <precision>0</precision>
-        <origin>Table input</origin>
+        <origin>Source1</origin>
         <comments>Mob_Num</comments>
         <conversion_Mask>####0;-####0</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_IN</date_format_locale>
+        <date_format_timezone>Asia/Calcutta</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>Date_of_Joining</name>
+        <length>10</length>
+        <precision>-1</precision>
+        <origin>Source1</origin>
+        <comments>Date_of_Joining</comments>
+        <conversion_Mask/>
         <decimal_symbol>.</decimal_symbol>
         <grouping_symbol>,</grouping_symbol>
         <currency_symbol/>
@@ -729,13 +729,13 @@ FROM dbo.Src_1
       </output>
     </remotesteps>
     <GUI>
-      <xloc>80</xloc>
-      <yloc>64</yloc>
+      <xloc>48</xloc>
+      <yloc>48</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
-    <name>SRC_2</name>
+    <name>Source2</name>
     <type>TableInput</type>
     <description/>
     <distribute>Y</distribute>
@@ -745,14 +745,14 @@ FROM dbo.Src_1
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <connection>Data_Validation</connection>
+    <connection>Source_DB</connection>
     <sql>SELECT
   Emp_ID
-, First_Name
-, Last_Name
-, Email_ID
+, Emp_Name
+, Salary
 , Mob_Num
-FROM dbo.Src_2
+, Date_of_Joining
+FROM dbo.Source_Emp2
 </sql>
     <limit>0</limit>
     <lookup/>
@@ -767,7 +767,7 @@ FROM dbo.Src_2
         <name>Emp_ID</name>
         <length>20</length>
         <precision>-1</precision>
-        <origin>SRC_2</origin>
+        <origin>Table input 2</origin>
         <comments>Emp_ID</comments>
         <conversion_Mask/>
         <decimal_symbol>.</decimal_symbol>
@@ -787,11 +787,11 @@ FROM dbo.Src_2
       <value-meta>
         <type>String</type>
         <storagetype>normal</storagetype>
-        <name>First_Name</name>
+        <name>Emp_Name</name>
         <length>25</length>
         <precision>-1</precision>
-        <origin>SRC_2</origin>
-        <comments>First_Name</comments>
+        <origin>Table input 2</origin>
+        <comments>Emp_Name</comments>
         <conversion_Mask/>
         <decimal_symbol>.</decimal_symbol>
         <grouping_symbol>,</grouping_symbol>
@@ -808,37 +808,14 @@ FROM dbo.Src_2
         <lenient_string_to_number>N</lenient_string_to_number>
       </value-meta>
       <value-meta>
-        <type>String</type>
+        <type>Integer</type>
         <storagetype>normal</storagetype>
-        <name>Last_Name</name>
-        <length>25</length>
-        <precision>-1</precision>
-        <origin>SRC_2</origin>
-        <comments>Last_Name</comments>
-        <conversion_Mask/>
-        <decimal_symbol>.</decimal_symbol>
-        <grouping_symbol>,</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>en_IN</date_format_locale>
-        <date_format_timezone>Asia/Calcutta</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>String</type>
-        <storagetype>normal</storagetype>
-        <name>Email_ID</name>
-        <length>20</length>
-        <precision>-1</precision>
-        <origin>SRC_2</origin>
-        <comments>Email_ID</comments>
-        <conversion_Mask/>
+        <name>Salary</name>
+        <length>18</length>
+        <precision>0</precision>
+        <origin>Table input 2</origin>
+        <comments>Salary</comments>
+        <conversion_Mask>####0;-####0</conversion_Mask>
         <decimal_symbol>.</decimal_symbol>
         <grouping_symbol>,</grouping_symbol>
         <currency_symbol/>
@@ -859,9 +836,32 @@ FROM dbo.Src_2
         <name>Mob_Num</name>
         <length>18</length>
         <precision>0</precision>
-        <origin>SRC_2</origin>
+        <origin>Table input 2</origin>
         <comments>Mob_Num</comments>
         <conversion_Mask>####0;-####0</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_IN</date_format_locale>
+        <date_format_timezone>Asia/Calcutta</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>Date_of_Joining</name>
+        <length>10</length>
+        <precision>-1</precision>
+        <origin>Table input 2</origin>
+        <comments>Date_of_Joining</comments>
+        <conversion_Mask/>
         <decimal_symbol>.</decimal_symbol>
         <grouping_symbol>,</grouping_symbol>
         <currency_symbol/>
@@ -886,13 +886,13 @@ FROM dbo.Src_2
       </output>
     </remotesteps>
     <GUI>
-      <xloc>80</xloc>
-      <yloc>176</yloc>
+      <xloc>48</xloc>
+      <yloc>160</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
-    <name>TGT_1</name>
+    <name>Target1</name>
     <type>TableInput</type>
     <description/>
     <distribute>Y</distribute>
@@ -902,14 +902,14 @@ FROM dbo.Src_2
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <connection>Data_Validation</connection>
+    <connection>Source_DB</connection>
     <sql>SELECT
   Emp_ID
-, First_Name
-, Last_Name
-, Email_ID
+, Emp_Name
+, Salary
 , Mob_Num
-FROM dbo.Tar_1
+, Date_of_Joining
+FROM dbo.Target_Emp1
 </sql>
     <limit>0</limit>
     <lookup/>
@@ -944,11 +944,11 @@ FROM dbo.Tar_1
       <value-meta>
         <type>String</type>
         <storagetype>normal</storagetype>
-        <name>First_Name</name>
+        <name>Emp_Name</name>
         <length>25</length>
         <precision>-1</precision>
         <origin>Table input 3</origin>
-        <comments>First_Name</comments>
+        <comments>Emp_Name</comments>
         <conversion_Mask/>
         <decimal_symbol>.</decimal_symbol>
         <grouping_symbol>,</grouping_symbol>
@@ -965,37 +965,14 @@ FROM dbo.Tar_1
         <lenient_string_to_number>N</lenient_string_to_number>
       </value-meta>
       <value-meta>
-        <type>String</type>
+        <type>Integer</type>
         <storagetype>normal</storagetype>
-        <name>Last_Name</name>
-        <length>25</length>
-        <precision>-1</precision>
+        <name>Salary</name>
+        <length>18</length>
+        <precision>0</precision>
         <origin>Table input 3</origin>
-        <comments>Last_Name</comments>
-        <conversion_Mask/>
-        <decimal_symbol>.</decimal_symbol>
-        <grouping_symbol>,</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>en_IN</date_format_locale>
-        <date_format_timezone>Asia/Calcutta</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>String</type>
-        <storagetype>normal</storagetype>
-        <name>Email_ID</name>
-        <length>20</length>
-        <precision>-1</precision>
-        <origin>Table input 3</origin>
-        <comments>Email_ID</comments>
-        <conversion_Mask/>
+        <comments>Salary</comments>
+        <conversion_Mask>####0;-####0</conversion_Mask>
         <decimal_symbol>.</decimal_symbol>
         <grouping_symbol>,</grouping_symbol>
         <currency_symbol/>
@@ -1033,6 +1010,29 @@ FROM dbo.Tar_1
         <date_format_timezone>Asia/Calcutta</date_format_timezone>
         <lenient_string_to_number>N</lenient_string_to_number>
       </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>Date_of_Joining</name>
+        <length>10</length>
+        <precision>-1</precision>
+        <origin>Table input 3</origin>
+        <comments>Date_of_Joining</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_IN</date_format_locale>
+        <date_format_timezone>Asia/Calcutta</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
     </row-meta>
     <attributes/>
     <cluster_schema/>
@@ -1043,13 +1043,13 @@ FROM dbo.Tar_1
       </output>
     </remotesteps>
     <GUI>
-      <xloc>80</xloc>
-      <yloc>288</yloc>
+      <xloc>48</xloc>
+      <yloc>272</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
-    <name>TGT_2</name>
+    <name>Target2</name>
     <type>TableInput</type>
     <description/>
     <distribute>Y</distribute>
@@ -1059,14 +1059,14 @@ FROM dbo.Tar_1
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <connection>Data_Validation</connection>
+    <connection>Source_DB</connection>
     <sql>SELECT
   Emp_ID
-, First_Name
-, Last_Name
-, Email_ID
+, Emp_Name
+, Salary
 , Mob_Num
-FROM dbo.Tar_2
+, Date_of_Joining
+FROM dbo.Target_Emp2
 </sql>
     <limit>0</limit>
     <lookup/>
@@ -1101,11 +1101,11 @@ FROM dbo.Tar_2
       <value-meta>
         <type>String</type>
         <storagetype>normal</storagetype>
-        <name>First_Name</name>
+        <name>Emp_Name</name>
         <length>25</length>
         <precision>-1</precision>
         <origin>Table input 4</origin>
-        <comments>First_Name</comments>
+        <comments>Emp_Name</comments>
         <conversion_Mask/>
         <decimal_symbol>.</decimal_symbol>
         <grouping_symbol>,</grouping_symbol>
@@ -1122,37 +1122,14 @@ FROM dbo.Tar_2
         <lenient_string_to_number>N</lenient_string_to_number>
       </value-meta>
       <value-meta>
-        <type>String</type>
+        <type>Integer</type>
         <storagetype>normal</storagetype>
-        <name>Last_Name</name>
-        <length>25</length>
-        <precision>-1</precision>
+        <name>Salary</name>
+        <length>18</length>
+        <precision>0</precision>
         <origin>Table input 4</origin>
-        <comments>Last_Name</comments>
-        <conversion_Mask/>
-        <decimal_symbol>.</decimal_symbol>
-        <grouping_symbol>,</grouping_symbol>
-        <currency_symbol/>
-        <trim_type>none</trim_type>
-        <case_insensitive>N</case_insensitive>
-        <collator_disabled>Y</collator_disabled>
-        <collator_strength>0</collator_strength>
-        <sort_descending>N</sort_descending>
-        <output_padding>N</output_padding>
-        <date_format_lenient>N</date_format_lenient>
-        <date_format_locale>en_IN</date_format_locale>
-        <date_format_timezone>Asia/Calcutta</date_format_timezone>
-        <lenient_string_to_number>N</lenient_string_to_number>
-      </value-meta>
-      <value-meta>
-        <type>String</type>
-        <storagetype>normal</storagetype>
-        <name>Email_ID</name>
-        <length>20</length>
-        <precision>-1</precision>
-        <origin>Table input 4</origin>
-        <comments>Email_ID</comments>
-        <conversion_Mask/>
+        <comments>Salary</comments>
+        <conversion_Mask>####0;-####0</conversion_Mask>
         <decimal_symbol>.</decimal_symbol>
         <grouping_symbol>,</grouping_symbol>
         <currency_symbol/>
@@ -1190,6 +1167,29 @@ FROM dbo.Tar_2
         <date_format_timezone>Asia/Calcutta</date_format_timezone>
         <lenient_string_to_number>N</lenient_string_to_number>
       </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>Date_of_Joining</name>
+        <length>10</length>
+        <precision>-1</precision>
+        <origin>Table input 4</origin>
+        <comments>Date_of_Joining</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_IN</date_format_locale>
+        <date_format_timezone>Asia/Calcutta</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
     </row-meta>
     <attributes/>
     <cluster_schema/>
@@ -1200,8 +1200,8 @@ FROM dbo.Tar_2
       </output>
     </remotesteps>
     <GUI>
-      <xloc>80</xloc>
-      <yloc>400</yloc>
+      <xloc>48</xloc>
+      <yloc>384</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1242,119 +1242,8 @@ FROM dbo.Tar_2
       </output>
     </remotesteps>
     <GUI>
-      <xloc>192</xloc>
-      <yloc>64</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Sort rows 3</name>
-    <type>SortRows</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <directory>%%java.io.tmpdir%%</directory>
-    <prefix>out</prefix>
-    <sort_size>1000000</sort_size>
-    <free_memory/>
-    <compress>N</compress>
-    <compress_variable/>
-    <unique_rows>N</unique_rows>
-    <fields>
-      <field>
-        <name>Emp_ID</name>
-        <ascending>Y</ascending>
-        <case_sensitive>N</case_sensitive>
-        <collator_enabled>N</collator_enabled>
-        <collator_strength>0</collator_strength>
-        <presorted>N</presorted>
-      </field>
-    </fields>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>192</xloc>
-      <yloc>288</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Sort rows 4</name>
-    <type>SortRows</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <directory>%%java.io.tmpdir%%</directory>
-    <prefix>out</prefix>
-    <sort_size>1000000</sort_size>
-    <free_memory/>
-    <compress>N</compress>
-    <compress_variable/>
-    <unique_rows>N</unique_rows>
-    <fields>
-      <field>
-        <name>Emp_ID</name>
-        <ascending>Y</ascending>
-        <case_sensitive>N</case_sensitive>
-        <collator_enabled>N</collator_enabled>
-        <collator_strength>0</collator_strength>
-        <presorted>N</presorted>
-      </field>
-    </fields>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>192</xloc>
-      <yloc>400</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Append streams 2</name>
-    <type>Append</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <head_name>Sort rows 3</head_name>
-    <tail_name>Sort rows 4</tail_name>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>304</xloc>
-      <yloc>352</yloc>
+      <xloc>176</xloc>
+      <yloc>48</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1395,13 +1284,97 @@ FROM dbo.Tar_2
       </output>
     </remotesteps>
     <GUI>
-      <xloc>192</xloc>
-      <yloc>176</yloc>
+      <xloc>176</xloc>
+      <yloc>160</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
-    <name>Append streams</name>
+    <name>Sort rows 3</name>
+    <type>SortRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <directory>%%java.io.tmpdir%%</directory>
+    <prefix>out</prefix>
+    <sort_size>1000000</sort_size>
+    <free_memory/>
+    <compress>N</compress>
+    <compress_variable/>
+    <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>Emp_ID</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>176</xloc>
+      <yloc>272</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Sort rows 4</name>
+    <type>SortRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <directory>%%java.io.tmpdir%%</directory>
+    <prefix>out</prefix>
+    <sort_size>1000000</sort_size>
+    <free_memory/>
+    <compress>N</compress>
+    <compress_variable/>
+    <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>Emp_ID</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>176</xloc>
+      <yloc>384</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Source Append streams</name>
     <type>Append</type>
     <description/>
     <distribute>Y</distribute>
@@ -1422,8 +1395,75 @@ FROM dbo.Tar_2
       </output>
     </remotesteps>
     <GUI>
-      <xloc>304</xloc>
-      <yloc>128</yloc>
+      <xloc>336</xloc>
+      <yloc>112</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Target Append streams</name>
+    <type>Append</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <head_name>Sort rows 3</head_name>
+    <tail_name>Sort rows 4</tail_name>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>336</xloc>
+      <yloc>320</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Merge rows (diff)</name>
+    <type>MergeRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <keys>
+      <key>Emp_ID</key>
+    </keys>
+    <values>
+      <value>Emp_ID</value>
+      <value>Emp_Name</value>
+      <value>Salary</value>
+      <value>Mob_Num</value>
+      <value>Date_of_Joining</value>
+    </values>
+    <flag_field>flagfield</flag_field>
+    <reference>Sort rows 5</reference>
+    <compare>Sort rows 6</compare>
+    <compare>
+    </compare>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>560</xloc>
+      <yloc>224</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1464,7 +1504,7 @@ FROM dbo.Tar_2
       </output>
     </remotesteps>
     <GUI>
-      <xloc>416</xloc>
+      <xloc>448</xloc>
       <yloc>144</yloc>
       <draw>Y</draw>
     </GUI>
@@ -1506,48 +1546,8 @@ FROM dbo.Tar_2
       </output>
     </remotesteps>
     <GUI>
-      <xloc>416</xloc>
-      <yloc>336</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Merge rows (diff)</name>
-    <type>MergeRows</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <keys>
-      <key>Emp_ID</key>
-    </keys>
-    <values>
-      <value>Emp_ID</value>
-      <value>First_Name</value>
-      <value>Last_Name</value>
-      <value>Email_ID</value>
-      <value>Mob_Num</value>
-    </values>
-    <flag_field>flagfield</flag_field>
-    <reference>Sort rows 5</reference>
-    <compare>Sort rows 6</compare>
-    <compare>
-    </compare>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>528</xloc>
-      <yloc>240</yloc>
+      <xloc>432</xloc>
+      <yloc>288</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1566,84 +1566,28 @@ FROM dbo.Tar_2
     <concat_errors>N</concat_errors>
     <concat_separator>|</concat_separator>
     <validator_field>
-      <name>Emp_ID</name>
-      <validation_name>Emp ID</validation_name>
+      <name>flagfield</name>
+      <validation_name>Data_Validation</validation_name>
       <max_length/>
       <min_length/>
       <null_allowed>N</null_allowed>
       <only_null_allowed>N</only_null_allowed>
       <only_numeric_allowed>N</only_numeric_allowed>
-      <data_type>String</data_type>
+      <data_type>None</data_type>
       <data_type_verified>N</data_type_verified>
       <conversion_mask/>
       <decimal_symbol/>
       <grouping_symbol/>
       <max_value/>
       <min_value/>
-      <start_string>Emp</start_string>
+      <start_string>i</start_string>
       <end_string/>
       <start_string_not_allowed/>
       <end_string_not_allowed/>
       <regular_expression/>
       <regular_expression_not_allowed/>
-      <error_code>Invalid Emp ID</error_code>
-      <error_description>Enter Valid Emp ID</error_description>
-      <is_sourcing_values>N</is_sourcing_values>
-      <sourcing_step/>
-      <sourcing_field/>
-      <allowed_value/>
-    </validator_field>
-    <validator_field>
-      <name>First_Name</name>
-      <validation_name>First Name</validation_name>
-      <max_length>10</max_length>
-      <min_length>1</min_length>
-      <null_allowed>N</null_allowed>
-      <only_null_allowed>N</only_null_allowed>
-      <only_numeric_allowed>N</only_numeric_allowed>
-      <data_type>String</data_type>
-      <data_type_verified>Y</data_type_verified>
-      <conversion_mask/>
-      <decimal_symbol/>
-      <grouping_symbol/>
-      <max_value/>
-      <min_value/>
-      <start_string/>
-      <end_string/>
-      <start_string_not_allowed/>
-      <end_string_not_allowed/>
-      <regular_expression/>
-      <regular_expression_not_allowed/>
-      <error_code>Invalid Name</error_code>
-      <error_description>Enter valid Name</error_description>
-      <is_sourcing_values>N</is_sourcing_values>
-      <sourcing_step/>
-      <sourcing_field/>
-      <allowed_value/>
-    </validator_field>
-    <validator_field>
-      <name>Last_Name</name>
-      <validation_name>Last Name</validation_name>
-      <max_length/>
-      <min_length/>
-      <null_allowed>N</null_allowed>
-      <only_null_allowed>N</only_null_allowed>
-      <only_numeric_allowed>N</only_numeric_allowed>
-      <data_type>String</data_type>
-      <data_type_verified>Y</data_type_verified>
-      <conversion_mask/>
-      <decimal_symbol/>
-      <grouping_symbol/>
-      <max_value/>
-      <min_value/>
-      <start_string/>
-      <end_string/>
-      <start_string_not_allowed/>
-      <end_string_not_allowed/>
-      <regular_expression/>
-      <regular_expression_not_allowed/>
-      <error_code>Invalid Name</error_code>
-      <error_description>Enter valid Name</error_description>
+      <error_code>Invalid Data</error_code>
+      <error_description>Enter Correct Data</error_description>
       <is_sourcing_values>N</is_sourcing_values>
       <sourcing_step/>
       <sourcing_field/>
@@ -1658,58 +1602,58 @@ FROM dbo.Tar_2
       </output>
     </remotesteps>
     <GUI>
-      <xloc>608</xloc>
+      <xloc>672</xloc>
+      <yloc>224</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Valid_Data</name>
+    <type>Dummy</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>800</xloc>
+      <yloc>160</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Invalid_Data</name>
+    <type>Dummy</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>800</xloc>
       <yloc>240</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Valid Data</name>
-    <type>Dummy</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>720</xloc>
-      <yloc>128</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Invalid Data</name>
-    <type>Dummy</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>720</xloc>
-      <yloc>320</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1737,14 +1681,14 @@ FROM dbo.Tar_2
     <appendLines>N</appendLines>
     <add_to_result_filenames>Y</add_to_result_filenames>
     <file>
-      <name>D:\QA\PENTAHO\Valid</name>
+      <name>D:/QA/PENTAHO/Valid_Data</name>
       <extention>xls</extention>
       <do_not_open_newfile_init>N</do_not_open_newfile_init>
       <split>N</split>
       <add_date>Y</add_date>
       <add_time>Y</add_time>
       <SpecifyFormat>N</SpecifyFormat>
-      <date_time_format/>
+      <date_time_format>yyyy/MM/dd HH:mm:ss</date_time_format>
       <sheetname>Sheet1</sheetname>
       <autosizecolums>N</autosizecolums>
       <stream_data>N</stream_data>
@@ -1753,7 +1697,7 @@ FROM dbo.Tar_2
       <protected_by/>
       <splitevery>0</splitevery>
       <if_file_exists>new</if_file_exists>
-      <if_sheet_exists>new</if_sheet_exists>
+      <if_sheet_exists>reuse</if_sheet_exists>
     </file>
     <template>
       <enabled>N</enabled>
@@ -1773,8 +1717,8 @@ FROM dbo.Tar_2
       </output>
     </remotesteps>
     <GUI>
-      <xloc>848</xloc>
-      <yloc>128</yloc>
+      <xloc>896</xloc>
+      <yloc>160</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1802,7 +1746,7 @@ FROM dbo.Tar_2
     <appendLines>N</appendLines>
     <add_to_result_filenames>Y</add_to_result_filenames>
     <file>
-      <name>D:\QA\PENTAHO\Invalid Data</name>
+      <name>D:/QA/PENTAHO/Invalid_Data</name>
       <extention>xls</extention>
       <do_not_open_newfile_init>N</do_not_open_newfile_init>
       <split>N</split>
@@ -1838,15 +1782,15 @@ FROM dbo.Tar_2
       </output>
     </remotesteps>
     <GUI>
-      <xloc>848</xloc>
-      <yloc>320</yloc>
+      <xloc>896</xloc>
+      <yloc>240</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step_error_handling>
     <error>
       <source_step>Data validator</source_step>
-      <target_step>Invalid Data</target_step>
+      <target_step>Invalid_Data</target_step>
       <is_enabled>Y</is_enabled>
       <nr_valuename/>
       <descriptions_valuename/>

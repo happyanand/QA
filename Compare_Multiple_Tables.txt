@@ -1,0 +1,72 @@
+Create Table Source_Emp1
+(
+ Emp_ID varchar(20),
+ Emp_Name varchar(25),
+ Salary Numeric,
+ Mob_Num Numeric,
+ Date_of_Joining Date
+);
+
+
+insert into Source_Emp1 values('Emp_01','Anand',10000,9080578851,'2020-01-11');
+insert into Source_Emp1 values('Emp_02','Kumar',14000,9080548851,'2020-01-21');
+insert into Source_Emp1 values('Emp_03','Gokul',12000,9080378851,'2020-01-15');
+insert into Source_Emp1 values('Emp_04','Rahul',18000,9080572851,'2020-03-31');
+insert into Source_Emp1 values('Emp_05','Saran',13000,9380572851,'2020-02-05');
+insert into Source_Emp1 values('Emp_06','Ramu',15000,9085572851,'2021-06-07');
+
+Select * from Source_Emp1;
+
+
+Create Table Source_Emp2
+(
+ Emp_ID varchar(20),
+ Emp_Name varchar(25),
+ Salary Numeric,
+ Mob_Num Numeric,
+ Date_of_Joining Date
+);
+
+
+insert into Source_Emp2 values('Emp_07','Ravi',10800,9080878851,'2021-01-11');
+insert into Source_Emp2 values('Emp_08','Ramu',14900,9080548851,'2022-01-21');
+insert into Source_Emp2 values('Emp_09','Dhanapal',12700,8080378851,'2022-01-15');
+insert into Source_Emp2 values('Emp_10','Renu',18090,9080472851,'2019-03-31');
+
+
+Select * from Source_Emp2;
+
+Create Table Target_Emp1
+(
+ Emp_ID varchar(20),
+ Emp_Name varchar(25),
+ Salary Numeric,
+ Mob_Num Numeric,
+ Date_of_Joining Date
+);
+
+insert into Target_Emp1 values('Emp_01','Anand',10000,9080578851,'2020-01-11');
+insert into Target_Emp1 values('Emp_02','Kumar',14000,9080548851,'2020-01-21');
+insert into Target_Emp1 values('Emp_03','Gokul',12000,9080378851,'2020-01-15');
+insert into Target_Emp1 values('Emp_04','Rahul',18000,9080572851,'2020-03-31');
+insert into Target_Emp1 values('Emp_05','Saran',13000,9380572851,'2020-02-05');
+insert into Target_Emp1 values('Emp_06','Ramu',18000,9085572851,'2021-06-07');
+
+Select * from Target_Emp1;
+
+Create Table Target_Emp2
+(
+ Emp_ID varchar(20),
+ Emp_Name varchar(25),
+ Salary Numeric,
+ Mob_Num Numeric,
+ Date_of_Joining Date
+);
+
+insert into Target_Emp2 values('Emp_08','Ramu',14900,9080548851,'2022-01-21');
+insert into Target_Emp2 values('Emp_09','Dhanapal',12700,8080378851,'2022-01-15');
+insert into Target_Emp2 values('Emp_10','Renu',18090,9080472851,'2019-03-31');
+insert into Target_Emp2 values('Emp_11','Raki',18000,9020472851,'2018-04-03');
+
+
+Select * from Target_Emp2;

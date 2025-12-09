@@ -107,6 +107,61 @@ Renewal Manage Coverage - CA re-enrollment
 958 - 15
 
 
+Renewal Manage Coverage - CA Update Covered Members
+
+1521 - 17
+987  - 21
+983  - 18
+979  - 17
+976  - 18
+
+Renewal Manage Coverage - Employee Change Plan
+
+2109 - 36
+2105 - 49
+2098 - 24
+2092 - 29
+2068 - 50
+
+
+Renewal Manage Coverage - Employee QE Enrollment
+
+
+2644 - 65
+2621 - 25
+2614 - 51
+2601 - 29	
+2594 - 22
+
+
+Renewal Manage Coverage - Employee re-enrollment
+
+2317 - 21
+2311 - 18
+2308 - 19
+2302 - 20
+2296 - 19
+
+
+Renewal Manage Coverage - Employee terminate coverage
+
+628 - 20
+619 - 27
+612 - 22
+608 - 34
+574 - 20
+
+Renewal Manage Coverage - Employee Update Covered Members
+
+1573 - 22
+1564 - 17
+1549 - 24
+1541 - 15
+1534 - 16
+
+
+
+
 Renewal Manage Coverage - CA Employer Enrollment
 
 1450 - 38
@@ -117,7 +172,6 @@ Renewal Manage Coverage - CA Employer Enrollment
 
 
 
-	
 
 
 
@@ -132,6 +186,28 @@ Renewal Manage Coverage - CA Employer Enrollment
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Manage Coverage - CA QE Enrollment
+
+1293 - 64
+1288 - 16
+1277 - 28
+1274 - 32
+1270 - 24
 
 
 
