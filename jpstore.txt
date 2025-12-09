@@ -1,0 +1,517 @@
+<a href="actions/Catalog.action">Enter the Store</a>
+
+Enter the StoreEnter the Store
+Thread.sleep(1000);
+//*[@id="Content"]
+
+package Base_package;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+
+public class Base_Class 
+{
+	public WebDriver driver;
+	
+	@BeforeMethod
+	
+	public void OpenAppln() throws InterruptedException
+	{
+		System.setProperty("webdriver.chrome.driver", "./Software/chromedriver.exe");
+		WebDriver driver=new ChromeDriver();
+		Thread.sleep(1000);
+		driver.manage().window().maximize();
+		driver.get("https://petstore.octoperf.com/actions/Catalog.action");
+	}
+	
+	
+	@AfterMethod
+	public void CloseAppln() throws InterruptedException
+	{
+		Thread.sleep(1000);
+		driver.quit();
+	}
+}
+
+
+package Base_package;
+
+import org.testng.annotations.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+
+
+public class Test_Class extends Base_Class
+{
+	@Test
+	public void login() throws InterruptedException
+	{
+		//driver.findElement(By.xpath("//a[@text()='Enter the Store']")).click();
+		
+		//driver.findElement(By.id("Content")).click();
+		
+		//Thread.sleep(1000);
+		 WebElement ele=driver.findElement(By.xpath("//a[.='Sign In']"));
+		 ele.click();
+		Thread.sleep(1000);
+		driver.findElement(By.xpath("//input[name='username']")).sendKeys("j2ee");
+		Thread.sleep(1000);
+		driver.findElement(By.xpath("//input[name='password']")).sendKeys("j2ee");
+		Thread.sleep(1000);
+		System.out.println(driver.getTitle());
+	}
+}
+
+
+
+
+
+Hi sir. Good evening. Shikhar given task completed. I have not been assigned with any of the project.kindly allocate me a project.
+
+
+
+
+
+//Mainclass :
+package Sample;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+public class MainClass 
+{
+	@Test
+	public void verify() throws InterruptedException
+	{
+		
+		System.setProperty("webdriver.chrome.driver", "./Software/chromedriver.exe");
+		WebDriver driver=new ChromeDriver();
+		Thread.sleep(500);
+		//Methods m=new Methods(driver);
+		Methods1 m=new Methods1(driver);
+		driver.manage().window().maximize();
+		driver.get("https://petstore.octoperf.com/");
+		Thread.sleep(1000);
+		m.EnterStore();
+		Thread.sleep(1000);
+		m.Signin();
+		driver.manage().timeouts().implicitlyWait(1000, TimeUnit.SECONDS);
+		//m.Register();
+		m.Username("j2ee");
+		Thread.sleep(1000);
+		m.Password("j2ee");
+		Thread.sleep(1000);
+		m.Login();
+		if(driver.getTitle().equals("JPetStore Demo"))
+		{
+			System.out.println("Testcase pass");
+		}
+		else
+		{
+			System.out.println("Fail");
+		}
+		driver.close();
+	}
+}
+
+
+//Method1 :
+
+package Sample;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.PageFactory;
+
+public class Methods1 
+{
+	WebDriver driver;
+	
+	//This is one Syntax for Find by Elements
+	
+	@FindBy(how = How.XPATH , using = "//a[.='Enter the Store']" )
+	WebElement Enter_Store;
+
+	//This is Another Syntax for Find By Elements
+	
+	@FindBy(xpath = "//a[.='Sign In']")
+	WebElement Sign_In;
+	
+	@FindBy(xpath = "//input[@name='username']")
+	WebElement User_Name;
+	
+	@FindBy(xpath = "//input[@type='password']")
+	WebElement Password;
+	
+	@FindBy(xpath = "//input[@name='signon']")
+	WebElement Login;
+	
+	Methods1(WebDriver d)
+	{
+		//this.driver=driver;
+		driver=d;
+		PageFactory.initElements(d, this);
+	}
+	public void EnterStore()
+	{
+		Enter_Store.click();
+	}
+	public void Signin()
+	{
+		Sign_In.click();
+	}
+
+	/*
+	 * public void Register() { driver.findElement(Register).click(); }
+	 */
+	public void Username(String u_name)
+	{
+		User_Name.sendKeys(u_name);
+	}
+	public void Password(String pwd)
+	{
+		Password.clear();
+		Password.sendKeys(pwd);
+	}
+	public void Login()
+	{
+		Login.click();
+	}	
+}
+
+
+//Methods:
+
+package Sample;
+
+import org.openqa.selenium.*;
+
+public class Methods
+{
+	WebDriver driver;
+	
+	//This is one Method for Find by Elements
+	
+	By Enter_Store = By.xpath("//a[.='Enter the Store']");
+	By Sign_In = By.xpath("//a[.='Sign In']");
+	//By Register=By.xpath("register");
+	By User_Name = By.xpath("//input[@name='username']");
+	By Password = By.xpath("//input[@type='password']");
+	By Login = By.xpath("//input[@name='signon']");
+	
+	Methods(WebDriver d)
+	{
+		//this.driver=driver;
+		driver = d;
+	}
+	public void EnterStore()
+	{
+		driver.findElement(Enter_Store).click();
+	}
+	public void Signin()
+	{
+		driver.findElement(Sign_In).click();
+	}
+
+	/*
+	 * public void Register() { driver.findElement(Register).click(); }
+	 */
+	public void Username(String u_name)
+	{
+		driver.findElement(User_Name).sendKeys(u_name);
+	}
+	public void Password(String pwd)
+	{
+		driver.findElement(Password).clear();
+		driver.findElement(Password).sendKeys(pwd);
+	}
+	public void Login()
+	{
+		driver.findElement(Login).click();
+	}
+}
+
+
+Testclass:
+package Base_package;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Test_Class 
+{
+	public static void main(String[] args) throws InterruptedException 
+	{
+		System.setProperty("webdriver.chrome.driver", "./Software/chromedriver.exe");
+		WebDriver driver=new ChromeDriver();
+		Thread.sleep(1000);
+		driver.manage().window().maximize();
+		driver.get("https://petstore.octoperf.com/");
+		Thread.sleep(1000);
+		driver.findElement(By.xpath("//a[.='Enter the Store']")).click();
+		Thread.sleep(1000);
+		driver.findElement(By.xpath("//a[.='Sign In']")).click();
+		Thread.sleep(1000);
+		driver.findElement(By.xpath("//input[@name='username']")).sendKeys("j2ee");
+		Thread.sleep(1000);
+		driver.findElement(By.xpath("//input[@type='password']")).clear();
+		Thread.sleep(1000);
+		driver.findElement(By.xpath("//input[@type='password']")).sendKeys("j2ee");
+		Thread.sleep(1000);
+		driver.findElement(By.xpath("//input[@name='signon']")).click();
+		Thread.sleep(1000);
+		System.out.println(driver.getTitle());
+	}
+}
+
+
+
+
+
+
+
+
+
+package Sample;
+
+import org.openqa.selenium.*;
+
+public class LinkPage
+{
+	WebDriver driver;
+	
+	//This is one Method for Find by Elements
+	
+	By Enter_Store = By.xpath("//a[.='Enter the Store']");
+	By Sign_In = By.xpath("//a[.='Sign In']");
+	//By Register=By.xpath("register");
+	By User_Name = By.xpath("//input[@name='username']");
+	By Password = By.xpath("//input[@type='password']");
+	By Login = By.xpath("//input[@name='signon']");
+	
+	LinkPage(WebDriver d)
+	{
+		//this.driver=driver;
+		driver = d;
+	}
+	public void EnterStore()
+	{
+		driver.findElement(Enter_Store).click();
+	}
+	public void Signin()
+	{
+		driver.findElement(Sign_In).click();
+	}
+
+	/*
+	 * public void Register() { driver.findElement(Register).click(); }
+	 */
+	public void Username(String u_name)
+	{
+		driver.findElement(User_Name).sendKeys(u_name);
+	}
+	public void Password(String pwd)
+	{
+		driver.findElement(Password).clear();
+		driver.findElement(Password).sendKeys(pwd);
+	}
+	public void Login()
+	{
+		driver.findElement(Login).click();
+	}
+}
+
+
+
+
+
+package Sample;
+
+import static org.testng.Assert.assertEquals;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+import junit.framework.Assert;
+
+public class Testcase1 
+{
+	@Test
+	public void verify() throws InterruptedException
+	{
+		
+		//linkpage obj
+		//link click
+		//welcomepage homeobj
+		//if homeobj.getTitle().equals("JPeg Store demo"){
+	//  Assert.equals("", "")else{
+		//assert.assertEquals(false, false);}
+		
+		Assert.assertEquals("JPeg store demo", homeobj.getTitle());
+		
+		System.setProperty("webdriver.chrome.driver", "./Software/chromedriver.exe");
+		WebDriver driver=new ChromeDriver();
+		Thread.sleep(500);
+		LinkPage m = new LinkPage(driver);
+		//Methods1 m=new Methods1(driver);
+		driver.manage().window().maximize();
+		driver.get("https://petstore.octoperf.com/");
+		Thread.sleep(1000);
+		m.EnterStore();
+		Thread.sleep(1000);
+		m.Signin();
+		driver.manage().timeouts().implicitlyWait(1000, TimeUnit.SECONDS);
+		//m.Register();
+		m.Username("j2ee");
+		Thread.sleep(1000);
+		m.Password("j2ee");
+		Thread.sleep(1000);
+		m.Login();
+		Thread.sleep(1000);
+		if(driver.getTitle().equals("JPetStore Demo"))
+		{
+			System.out.println("Testcase pass");
+		}
+		else
+		{
+			System.out.println("Fail");
+		}
+		driver.close();
+	}
+}
+
+
+
+
+//linkpage obj
+		//link click
+		//welcomepage homeobj
+		//if homeobj.getTitle().equals("JPeg Store demo"){
+	//  Assert.equals("", "")else{
+		//assert.assertEquals(false, false);}
+
+
+
+//*[@id="Catalog"]/a
+<a href="/actions/Account.action?newAccountForm=">Register Now!</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

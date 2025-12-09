@@ -1,0 +1,6 @@
+Name	Age	Job	Salary	
+Anand	24	Software	20000	
+Kumar	23	Engineer	15000	
+Aravind	20	Student	1000	
+Radha	50	Lawer	30000	
+Danapal	70	Doctor	40000	

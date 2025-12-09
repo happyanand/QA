@@ -1,0 +1,1 @@
+Hi Sir, I tried to restore a database in the QA server that has Jyothis Shared. I am getting this error. But it was successfully connected to the local MSSQL server

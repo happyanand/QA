@@ -1,0 +1,161 @@
+BA & CA & Employee Dashboard 
+
+53
+48
+45
+42
+26
+7
+
+
+BA Audits
+
+1799
+1793
+1783
+1788
+1776
+
+
+BA Employee Administration
+
+855
+829
+778
+719
+716
+
+
+BA Load roster, Enrollment roster, Terminate roster
+
+2899
+2896
+2893
+2882
+2872
+
+
+BA&CA Employee Alerts and Notifications
+
+
+1620
+1613
+1610
+1608
+1604
+
+
+BA_Review
+
+1372
+1364
+1358
+1356
+1352
+
+
+CA Employee Administration
+
+
+1774
+1735
+1684
+1625
+1621
+
+
+Renewal Manage Coverage - BA QE Enrollment
+
+2536 - 45
+2520 - 25
+2508 - 54
+2493 - 25
+2486 - 20
+
+
+Renewal Manage Coverage - BA re-enrollment
+
+2409 - 16
+2406 - 17
+2402 - 19	
+2399 - 18
+2396 - 11
+
+
+Renewal Manage Coverage - BA Update Covered Members
+
+1514 - 16
+906 -  21
+902 -  19
+898 -  17 
+895 -  17
+
+Manage Coverage - CA QE Enrollment
+
+1293 - 64
+1288 - 16
+1277 - 28
+1274 - 32
+1270 - 24
+
+Renewal Manage Coverage - CA re-enrollment
+
+970 - 15
+968 - 19
+963 - 18
+960 - 18
+958 - 15
+
+
+Renewal Manage Coverage - CA Employer Enrollment
+
+1450 - 38
+1447 - 25
+1443 - 28
+1440 - 33
+1435 - 41
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

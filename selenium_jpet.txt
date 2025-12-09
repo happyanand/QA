@@ -1,0 +1,685 @@
+TC001(WebDriver d) {
+		
+		// TODO Auto-generated constructor stub
+	}
+
+	void test1() {
+		WebDriver driver = new ChromeDriver();
+	    LinkPage link = new LinkPage(driver);
+	    link.clikc();
+	    if(WelcomePage.getText())
+	    {
+	    	WelcomePage = New Welcpp(driver)
+	    	}
+	    }
+
+
+package Jpetstore;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+public class Base_Class 
+{
+	@Test
+	public void verify() throws InterruptedException
+	{
+		System.setProperty("webdriver.chrome.driver", "./Software/chromedriver.exe");
+		WebDriver driver=new ChromeDriver();	
+		WelcomePage welcome=new WelcomePage(driver);
+		//LinkPage link = new LinkPage(driver);
+		SignInPage signin=new SignInPage(driver);
+		driver.manage().window().maximize();
+		driver.get("https://petstore.octoperf.com/");
+		Thread.sleep(1000);
+		//link.EnterStore();
+		welcome.Signin();
+		//signin.Register();
+		signin.Username();
+		signin.Password();
+		signin.Login();
+		Thread.sleep(1000);
+		welcome.Search_Txt("fish");
+		Thread.sleep(1000);
+		welcome.Search_Btn();
+		welcome.Search_Txt("dog");
+		Thread.sleep(1000);
+		welcome.Search_Btn();
+		Thread.sleep(1000);
+		if(driver.getTitle().equals("JPetStore Demo"))
+		{
+			System.out.println("Testcase pass");
+		}
+		else
+		{
+			System.out.println("Fail");
+		}
+		driver.close();
+	}
+}
+
+package Jpetstore;
+
+import org.openqa.selenium.*;
+
+public class LinkPage
+{
+	WebDriver driver;
+	
+    //This is one Method for Find by Elements
+	
+	By Enter_Store = By.xpath("//a[.='Enter the Store']");
+	
+	public LinkPage(WebDriver d)
+	{
+		//this.driver=driver;
+		driver = d;
+	}
+	public void EnterStore()
+	{
+		driver.findElement(Enter_Store).click();
+	}	
+}
+
+package Jpetstore;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class WelcomePage 
+{	
+	WebDriver driver;
+	
+	By Sign_In = By.xpath("//a[.='Sign In']");
+	By Search_Txt = By.xpath("//input[@type='text']");
+	By Search_Btn = By.xpath("//input[@type='submit']");
+
+	public WelcomePage(WebDriver d) 
+	{
+		driver=d;
+	}
+	
+	public void Signin()
+	{
+		driver.findElement(Sign_In).click();
+	}
+	
+	public void Search_Txt(String products)
+	{
+		driver.findElement(Search_Txt).clear();
+		driver.findElement(Search_Txt).sendKeys(products);
+	}
+	
+	public void Search_Btn()
+	{
+		driver.findElement(Search_Btn).click();
+	}
+
+	
+	
+}
+
+package Jpetstore;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class SignInPage 
+{
+	WebDriver driver;
+	
+	By Register=By.xpath("//a[text()='Register Now!']");
+	By User_Name = By.xpath("//input[@name='username']");
+	By Password = By.xpath("//input[@type='password']");
+	By Login = By.xpath("//input[@name='signon']");
+
+	public SignInPage(WebDriver d) 
+	{
+		driver=d;
+	}
+	
+	public void Register() 
+	{ 
+		driver.findElement(Register).click(); 
+	}
+	
+	public void Username()
+	{
+		driver.findElement(User_Name).sendKeys("j2ee");
+	}
+	public void Password()
+	{
+		driver.findElement(Password).clear();
+		driver.findElement(Password).sendKeys("j2ee");
+	}
+	public void Login()
+	{
+		driver.findElement(Login).click();
+	}
+}
+
+
+public static void main(String[] args) throws InterruptedException {
+		
+		System.setProperty("webdriver.chrome.driver", "D:\\Selenium\\drivers\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://www.demoqa.com/books");
+		
+		//Creating object of home page
+		HomePage home = new HomePage(driver);
+		
+		//Creating object of Login page
+		LoginPage login = new LoginPage(driver);
+		
+		//Creating object of Dashboard
+		Dashboard dashboard = new Dashboard(driver);
+		
+		//Click on Login button
+		home.clickLogin();
+		
+		//Enter username & password
+		login.enterUsername("gunjankaushik");
+		login.enterPassword("Password@123");
+		
+		//Click on login button
+		login.clickLogin();
+		Thread.sleep(3000);
+		
+		
+		//Capture the page heading and print on console
+		System.out.println("The page heading is --- " +dashboard.getHeading());
+		
+		//Perform search and display search string on console
+		dashboard.enterSearchStr("java");
+		
+		//CLick on Logout button
+		dashboard.clickLogout();
+	}
+
+
+
+
+//*[@id="QuickLinks"]/a[1]/img
+/html/body/div[1]/div[4]/a[1]/img
+
+<img src="../images/sm_fish.gif">
+//*[@id="SidebarContent"]/a[1]/img
+/html/body/div[2]/div[2]/div[1]/div/a[1]/img
+
+
+//*[@id="MainImageContent"]/map/area[2]
+
+//*[@id="QuickLinks"]/a[2]/img
+
+//*[@id="SidebarContent"]/a[2]/img
+
+//*[@id="QuickLinks"]/a[3]/img
+//*[@id="SidebarContent"]/a[4]/img
+//*[@id="MainImageContent"]/map/area[4]
+
+//*[@id="QuickLinks"]/a[4]/img
+//*[@id="SidebarContent"]/a[3]/img
+//*[@id="MainImageContent"]/map/area[5]
+
+//*[@id="QuickLinks"]/a[5]/img
+//*[@id="SidebarContent"]/a[5]/img
+//*[@id="MainImageContent"]/map/area[6]
+
+//*[@id="MainImageContent"]/map/area[1]
+
+//*[@id="QuickLinks"]/a[3]/img
+
+//*[@id="Catalog"]/table/tbody/tr[2]/td[1]/a
+//*[@id="Catalog"]/table/tbody/tr[3]/td[1]/a
+//*[@id="Catalog"]/table/tbody/tr[4]/td[1]/a
+//*[@id="Catalog"]/table/tbody/tr[5]/td[1]/a
+//*[@id="Catalog"]/table/tbody/tr[6]/td[1]/a
+//*[@id="BackLink"]/a
+
+//*[@id="Catalog"]/table/tbody/tr[2]/td[1]/a
+//*[@id="Catalog"]/table/tbody/tr[2]/td[1]/a
+//*[@id="Catalog"]/table/tbody/tr[2]/td[1]/a
+
+//*[@id="Catalog"]/table/tbody/tr[3]/td[1]/a
+
+//*[@id="MainImageContent"]/map/area[3]
+
+//*[@id="Catalog"]/table/tbody/tr[2]/td[1]/a
+
+//*[@id="Catalog"]/table/tbody/tr[3]/td[1]/a
+
+//*[@id="Catalog"]/table/tbody/tr[4]/td[1]/a
+
+//*[@id="Catalog"]/table/tbody/tr[5]/td[1]/a
+
+//*[@id="BackLink"]/a
+
+<a href="/actions/Catalog.action">Return to Main Menu</a>
+
+<a href="/actions/Catalog.action?viewCategory=&amp;categoryId=FISH">Return to FISH</a>
+//*[@id="BackLink"]/a
+
+//*[@id="Catalog"]/table/tbody/tr[2]/td[5]/a
+//*[@id="Catalog"]/table/tbody/tr[3]/td[5]/a
+//*[@id="Catalog"]/table/tbody/tr[2]/td[1]/a
+//*[@id="Cart"]/a
+//*[@id="Cart"]/form/table/tbody/tr[2]/td[8]/a
+package Jpetstore;
+//*[@id="Catalog"]/table/tbody/tr[3]/td[5]/a
+<a href="/actions/Order.action?newOrderForm=" class="Button">Proceed to Checkout</a>
+//*[@id="Catalog"]/table/tbody/tr[2]/td[5]/a
+<a href="/actions/Catalog.action">Return to Main Menu</a>
+//*[@id="Catalog"]/table/tbody/tr[3]/td[1]/a
+//*[@id="BackLink"]/a
+//*[@id="Cart"]/form/table/tbody/tr[2]/td[8]/a
+//*[@id="Catalog"]/table/tbody/tr[2]/td[1]/a
+//*[@id="Catalog"]/table/tbody/tr[2]/td[1]/a
+//*[@id="BackLink"]/a
+//*[@id="PoweredBy"]/a
+<a href="http://www.mybatis.org">www.mybatis.org</a>
+
+//*[@id="MenuContent"]/a[1]/img
+<img align="middle" name="img_cart" src="../images/cart.gif">
+<a href="/actions/Catalog.action">Return to Main Menu</a>
+//*[@id="BackLink"]/a
+
+
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class HomePage 
+{	
+	WebDriver driver;
+	
+	By Sign_In = By.xpath("//a[.='Sign In']");
+	By Search_Txt = By.xpath("//input[@type='text']");
+	By Search_Btn = By.xpath("//input[@type='submit']");
+	
+	By Fish_QuickLink = By.xpath("//*[@id='QuickLinks']/a[1]/img");
+	By Fish_SidebarLink =By.xpath("//*[@id='SidebarContent']/a[1]/img");
+	By Fish_MainimgLink = By.xpath("//*[@id='MainImageContent']/map/area[2]");
+	
+	By Dogs_QuickLink = By.xpath("//*[@id='QuickLinks']/a[2]/img");
+	By Dogs_SidebarLink =By.xpath("//*[@id='SidebarContent']/a[2]/img");
+	By Dogs_MainimgLink = By.xpath("//*[@id='MainImageContent']/map/area[3]");
+	
+	public HomePage(WebDriver d) 
+	{
+		driver=d;
+	}
+	
+	public void Signin()
+	{
+		driver.findElement(Sign_In).click();
+	}
+	
+	public void Search_Txt(String products)
+	{
+		driver.findElement(Search_Txt).clear();
+		driver.findElement(Search_Txt).sendKeys(products);
+	}
+	
+	public void Search_Btn()
+	{
+		driver.findElement(Search_Btn).click();
+	}	
+	
+	public void fish_Quick()
+	{
+		driver.findElement(Fish_QuickLink).click();
+	}
+	public void fish_SidebarLink()
+	{
+		driver.findElement(Fish_SidebarLink).click();
+	}
+	public void fish_MainimgLink()
+	{
+		driver.findElement(Fish_MainimgLink).click();
+	}
+	
+	public void dogs_Quick()
+	{
+		driver.findElement(Dogs_QuickLink).click();
+	}
+	public void dogs_SidebarLink()
+	{
+		driver.findElement(Dogs_SidebarLink).click();
+	}
+	public void dogs_MainimgLink()
+	{
+		driver.findElement(Dogs_MainimgLink).click();
+	}
+	
+	}
+
+
+package Jpetstore;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class SignInPage 
+{
+	WebDriver driver;
+	
+	
+	
+	By Register=By.xpath("//a[text()='Register Now!']");
+	By User_Name = By.xpath("//input[@name='username']");
+	By Password = By.xpath("//input[@type='password']");
+	By Login = By.xpath("//input[@name='signon']");
+
+	public SignInPage(WebDriver d) 
+	{
+		driver=d;
+	}
+	
+	public void Register() 
+	{ 
+		driver.findElement(Register).click(); 
+	}
+
+	public void Username()
+	{
+		driver.findElement(User_Name).sendKeys("j2ee");
+	}
+	public void Password()
+	{
+		driver.findElement(Password).clear();
+		driver.findElement(Password).sendKeys("j2ee");
+	}
+	public void Login()
+	{
+		driver.findElement(Login).click();
+	}
+}
+
+
+
+FindBY:
+
+package Jpetstore;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class HomePage 
+{	
+	WebDriver driver;
+	
+	@FindBy(xpath = "//a[.='Sign In']")
+	WebElement Sign_In;
+	
+	@FindBy(xpath = "//input[@type='text']")
+	WebElement Search_Txt;
+	
+	@FindBy(xpath = "//input[@type='submit']")
+	WebElement Search_Btn;
+
+	@FindBy(xpath = "//*[@id='QuickLinks']/a[1]/img")
+	WebElement Fish_QuickLink;
+	
+	@FindBy(xpath = "//*[@id='SidebarContent']/a[1]/img")
+	WebElement Fish_SidebarLink;
+	
+	@FindBy(xpath = "//*[@id='MainImageContent']/map/area[2]")
+	WebElement Fish_MainimgLink;
+	
+	@FindBy(xpath = "//*[@id='QuickLinks']/a[2]/img")
+	WebElement Dogs_QuickLink;
+	
+	@FindBy(xpath = "//*[@id='SidebarContent']/a[2]/img")
+	WebElement Dogs_SidebarLink;
+	
+	@FindBy(xpath = "//*[@id='MainImageContent']/map/area[3]")
+	WebElement Dogs_MainimgLink;
+	
+	@FindBy(xpath = "//*[@id='QuickLinks']/a[3]/img")
+	WebElement Reptiles;
+	
+	public HomePage(WebDriver d) 
+	{
+		driver=d;
+	}
+	
+	public void Signin()
+	{
+		Sign_In.click();
+	}
+	
+	public void Search_Txt(String products)
+	{
+		Search_Txt.clear();
+		Search_Txt.sendKeys(products);
+	}
+	
+	public void Search_Btn()
+	{
+		Search_Btn.click();
+	}	
+	
+	public void fish_Quick()
+	{
+		Fish_QuickLink.click();
+	}
+	public void fish_SidebarLink()
+	{
+		Fish_SidebarLink.click();
+	}
+	public void fish_MainimgLink()
+	{
+		Fish_MainimgLink.click();
+	}
+	
+	public void dogs_Quick()
+	{
+		Dogs_QuickLink.click();
+	}
+	public void dogs_SidebarLink()
+	{
+		Dogs_SidebarLink.click();
+	}
+	public void dogs_MainimgLink()
+	{
+		Dogs_MainimgLink.click();
+	}
+	
+	public void Reptiles()
+	{
+		Reptiles.click();
+	}
+	
+}
+
+
+
+package Jpetstore;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class SignInPage 
+{
+	WebDriver driver;
+	
+	@FindBy(xpath = "//a[text()='Register Now!']")
+	WebElement Register;
+	
+	@FindBy(xpath = "//input[@name='username']")
+	WebElement User_Name;
+	
+	@FindBy(xpath = "//input[@type='password']")
+	WebElement Password;
+	
+	@FindBy(xpath = "//input[@name='signon']")
+	WebElement Login;
+
+	public SignInPage(WebDriver d) 
+	{
+		driver=d;
+	}
+	
+	public void Register() 
+	{ 
+		Register.click(); 
+	}
+
+	public void Username()
+	{
+		User_Name.sendKeys("j2ee");
+	}
+	public void Password()
+	{
+		Password.clear();
+		Password.sendKeys("j2ee");
+	}
+	public void Login()
+	{
+		Login.click();
+	}
+}
+
+
+
+package Jpetstore;
+
+import org.openqa.selenium.*;
+import org.openqa.selenium.support.FindBy;
+
+public class LinkPage
+{
+	WebDriver driver;
+	
+    //This is one Method for Find by Elements
+	@FindBy(xpath = "//a[.='Enter the Store']")
+	WebElement Enter_Store;
+
+	
+	public LinkPage(WebDriver d)
+	{
+		//this.driver=driver;
+		driver = d;
+	}
+	public void EnterStore()
+	{
+		Enter_Store.click();
+	}	
+}
+
+
+package testcases;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+import Jpetstore.HomePage;
+import Jpetstore.LinkPage;
+
+class TC001
+{	
+	public static WebDriver driver;
+	
+	@BeforeTest
+	void setup()
+	{
+		System.setProperty("webdriver.chrome.driver", "./Software/chromedriver.exe");
+		driver = new ChromeDriver();	
+	}
+	
+	@Test
+	void test1() 
+	{
+		driver.manage().window().maximize();
+		driver.get("https://petstore.octoperf.com/");
+		LinkPage l = new LinkPage(driver);
+		l.EnterStore();
+		if(driver.getTitle().equals("JPetStore Demo")) 
+		{
+			//System.out.println("Testcase1 Pass");	
+			Assert.assertEquals(driver.getTitle(), "JPetStore Demo");
+		}
+	}
+	@AfterTest
+	void close_window()
+	{
+		driver.close();
+	}
+}
+
+
+
+
+
+
+//Github Token:
+
+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
+
+
+
+
+//TestCases :
+
+Testcase1 : Launch Browser,Enter the URL,Enter into the Store
+Testcase2 : Click on Signin into the Home Page
+Testcase3 : Enter UserName,Password,Click on Login into the SignIn page
+Testcase4 : Click on Fish Quick into the Home Page
+Testcase5 : Click on AngleFish into the Fish Page
+Testcase6 : Click on Add to Cart into the AngleFish Page
+Testcase7 : Click on Remove into the Shopping Cart Page 
+Testcase8 : Click on Return to Main Menu into the Shopping Cart Page
+Testcase9 : Click on Cart into the Home Page 
+Testcase10 : Click on Return to Main Menu into the Shopping Cart Page 
+
+
+
+Testcase11 : Click on AngleFish into the Fish Page
+Testcase22 : Click on Tiger Shark into the Fish Page
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

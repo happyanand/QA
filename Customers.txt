@@ -1,0 +1,162 @@
+Create Table Customers
+(
+ CustomerID Numeric,
+ CustomerName varchar(25),
+ Mob_Num Numeric
+);  
+
+
+insert into Customers values(01,'Anand',9080578851);
+insert into Customers values(02,'Kumar',9080548851);
+insert into Customers values(03,'Gokul',9080378851);
+insert into Customers values(04,'Rahul',9080572851);
+
+Create Table Categories
+(
+ CategoryID Numeric,
+ CategoryName varchar(25)
+);  
+
+insert into Categories values(01,'Beverages');
+insert into Categories values(02,'Seafood');
+insert into Categories values(03,'Condiments');
+insert into Categories values(04,'Confections');
+
+
+Create Table Employees
+(
+ EmployeeID Numeric,
+ EmployeeName varchar(25),
+);
+
+insert into Employees values(01,'Guna');
+insert into Employees values(02,'Kathir');
+insert into Employees values(03,'Giri');
+insert into Employees values(04,'Rahul');
+
+Create Table Orders
+(
+ OrderID Numeric,
+ CustomerID Numeric,
+ EmployeeID Numeric
+);  
+
+
+insert into Orders values(01,02,03);
+insert into Orders values(02,03,01);
+insert into Orders values(03,01,02);
+insert into Orders values(04,04,02);
+
+
+Create Table Products
+(
+ ProductID Numeric,
+ ProductName varchar(25),
+ CategoryID Numeric
+); 
+
+insert into Products values(01,'Chais',01);
+insert into Products values(02,'Ikura',03);
+insert into Products values(03,'Chang',02);
+insert into Products values(04,'Konbu',04);
+
+ 
+Create Table Shippers
+(
+ OrderID Numeric,
+ EmployeeID Numeric,
+ ProductID Numeric,
+ CustomerID Numeric,
+ CategoryName varchar(25)
+);  
+
+insert into Shippers values(01,02,04,03,'Beverages');
+insert into Shippers values(03,01,04,02,'Confections');
+insert into Shippers values(02,04,03,01,'Seafood');
+insert into Shippers values(04,03,02,04,'Beverages');
+
+
+
+select o.OrderID,e.EmployeeID,p.ProductID,c.CustomerID,c.CustomerName,ctg.CategoryName 
+from Orders o,Employees e,Products p,Customers c,Categories ctg 
+where o.OrderID = e.EmployeeID and p.ProductID = ctg.CategoryID and o.OrderID = c.CustomerID;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
