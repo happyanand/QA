@@ -77,6 +77,104 @@ git push -u origin feature-xyz
 
 
 
+create a new repository on the command line
+echo "# Employer_Engage" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/happyanand/Employer_Engage.git
+git push -u origin main
+
+push an existing repository from the command line
+git remote add origin https://github.com/happyanand/Employer_Engage.git
+git branch -M main
+git push -u origin main
+
+
+
+cd /path/to/project
+git status
+git add .
+git commit -m "Updated user profile page design"
+git push origin main
+
+
+Clone New Project Steps:
+
+1)Create Project in GitHub
+2)Copy Path https://github.com/happyanand/Employer_Engage.git
+3)Open git bash
+4)Go to file path cd "E:\GitHub"
+5)Give comments in gitbash -> git clone "https://github.com/happyanand/Employer_Engage.git"
+6)Go to file path Copy and paste needed upload old maven project file in the new file path location
+7)Import in Eclipse
+8)Do some Changes and Add Un-stagged changes to Stagged Changes
+9)Give Commit message and Commit and Push
+10)Enter User credentials 
+
+Token Password:
+
+Usrname :happyanand
+Password :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
+
+
+How to generate Token Password:
+
+1)Clicked on Profile
+2)Settings
+3)Developer Settings
+4)Personal Access Tokens
+5)Tokens(Classic)
+6)Generate New Token Clasic
+
+
+Database Connection:
+
+public static void DatabaseConnector() throws ClassNotFoundException {
+Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+String UserName = "sqa";
+String Password = "SPQA@sql2019" ;
+String Url = "jdbc:sqlserver://192.168.32.32\\QA;DatabaseName=NBFC_adithyan;encrypt=true;trustServerCertificate=true";
+try(Connection connection = DriverManager.getConnection(Url,UserName,Password)){
+//con = DriverManager.getConnection(Url,UserName,Password);
+System.out.println("Class: Common Method: DatabaseConnector: Connected");
+//Execute Query for getting approval
+CallableStatement callableStatement = connection.prepareCall("{call cl}");
+//callableStatement.setLong(1, 9999999991L);
+//System.out.println("Stored procedure called with parameter: 9999999991");
+// Execute stored procedure
+callableStatement.executeQuery();
+// while (resultSet.next()) {
+// String column1 = resultSet.getString("O");
+// System.out.println("OTP : " + column1 );
+//
+// 
+// }
+}catch(Exception e)
+{
+System.out.println("Class: Common Method: DatabaseConnector: Not Connected");
+//e.printStackTrace();
+} 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
