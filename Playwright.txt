@@ -1,0 +1,1380 @@
+Playwright Comments:
+
+npx playwright test tests
+
+Install Playwright:
+npm init playwright@latest
+
+npm install -D @playwright/test
+
+  npx playwright test
+    Runs the end-to-end tests.
+
+  npx playwright test --ui
+    Starts the interactive UI mode.
+
+  npx playwright test --project=chromium
+    Runs the tests only on Desktop Chrome.
+
+  npx playwright test example
+    Runs the tests in a specific file.
+
+  npx playwright test --debug
+    Runs the tests in debug mode.
+
+  npx playwright codegen
+    Auto generate tests with Codegen.
+
+We suggest that you begin by typing:
+
+    npx playwright test
+
+And check out the following files:
+  - .\tests\example.spec.js - Example end-to-end test
+  - .\tests-examples\demo-todo-app.spec.js - Demo Todo App end-to-end tests
+  - .\playwright.config.js - Playwright Test configuration
+
+Visit https://playwright.dev/docs/intro for more information. 
+
+
+Code Generation
+npx playwright codegen url
+
+Run all the tests
+
+npx playwright test
+
+Run a single test file
+
+npx playwright test tests/todo-page.spec.ts
+
+Run a set of test files
+
+npx playwright test tests/todo-page/ tests/landing-page/
+
+Run files that have my-spec or my-spec-2 in the file name
+
+npx playwright test my-spec my-spec-2
+
+Run tests that are in line 42 in my-spec.ts
+
+npx playwright test my-spec.ts:42
+
+Run the test with the title
+
+npx playwright test -g "add a todo item"
+
+Run tests in headed browsers
+
+npx playwright test --headed
+
+Run all the tests against a specific project
+
+npx playwright test --project=chromium
+
+Disable parallelization
+
+npx playwright test --workers=1
+
+Choose a reporter
+
+npx playwright test --reporter=dot
+
+Run in debug mode with Playwright Inspector
+
+npx playwright test --debug
+
+Run tests in interactive UI mode, with a built-in watch mode (Preview)
+
+npx playwright test --ui
+
+Ask for help
+
+npx playwright test --help
+
+
+
+1)Create New folder
+2)Open folder in VS
+3)control+Shift+P- Install Playwright
+4)Install Playwright Using below Comments
+npm init playwright@latest
+5)We need to save test file extension
+Basicstest.spec.js
+
+
+Test File:
+
+const {test} = require('@playwright/test');
+
+test('First Playwright test', async function()
+{
+ //Playwright code
+ //Step 1 - Open Browser
+ //Step 2 - UN & PWD
+ //Step 3 - Click Login
+});
+
+(or)
+
+test('Browser Context Playwright test', async ({browser, page})=>
+{
+ Chrome Plugin/Cookies
+ const context = await browser.newContext(); //page we mentioned above
+ const page = await contextnewPage(); //page we mentioned above
+ await page.goto("URL");
+});
+
+test('Page test', async ({page})=>
+{
+ await page.goto("https://www.google.co.in/");
+});
+
+
+Config File:
+
+// @ts-check
+import { defineConfig, devices } from '@playwright/test';
+//Const { devices } = require('@playwright/test');
+/**
+
+/**
+ * @see https://playwright.dev/docs/test-configuration
+ */
+export default defineConfig({
+  testDir: './tests',
+  timeout: 20 * 10000,
+  expect : {
+	  timeout: 50000,	
+ },
+
+  reporter: 'html',
+  
+  use: {
+    channel: 'chrome',
+    headless : false,
+    screenshot : 'on', 
+    trace : 'on',
+
+    actionTimeout : 40e3,
+  },
+  
+});
+
+
+
+
+
+export default defineconfig({
+ testDir: '.\tests',
+ timeout: 40 * 1000;
+ expect : {
+	timeout: 40 * 1000;	
+ },
+ reporter : html,
+
+use: {
+	browserName : 'chromium'
+   },
+
+});
+
+(or)
+
+const config = ({
+ testDir: '.\tests',
+ timeout: 40 * 1000; (or) 40e3,
+ expect : {
+	timeout: 40 * 1000;	
+ },
+ reporter : html,
+
+use: {
+	browserName : 'chromium'
+   },
+
+});
+module.exports = config
+
+if we want to execute in Chrome 
+use: {
+	browserName : 'chromium'
+	use: { ...devices['Desktop Chrome'] },
+   },
+
+});
+
+Run all the tests using below comment
+npx playwright test
+
+Run only Particular tests using below comment
+npx playwright test tests/Basictest.spec.js
+
+It will execute only that one test case only remaining everything Skipped:
+
+test.only('Browser Context Playwright test', async ({page})=>
+{
+ await page.goto("https://www.google.co.in/");
+});
+
+slow execution:
+await test.slow()
+
+wait for some more time:
+await page.waitForTimeout(10e3);
+
+If id is present
+css --> tagname#id (or) #id
+
+If class attribute is present
+css --> tagname.class (or) .class
+
+write css based on any Attribute
+css --> [attribute = 'value']
+
+Write Css traversing from Parent to Child
+css --> parenttagname >> childtagname 
+
+if need to write the locator based on text 
+text = ''
+
+Get Text Content.
+await page.locator("").textContent();
+
+Contains Text:
+await page.locator("").toContainText('');
+
+Regular Expression Partial Value also Accept: * represents Regular expression:
+[style*='block']
+
+Declare Locators above:
+const username = page.locator('#username');
+const cardTitles = page.locator('#.card-body a'); // a represents Child tagname
+
+Based on Index Value Xpaths First Content
+await page.locator("").first().textContent();
+(or)
+await page.locator("").nth(0).textContent();
+
+Second Index Xpath Content
+await page.locator("").nth(1).textContent();
+
+Get all index Text content values
+const alltitles = await cardTitles.allTextContents();
+console.log(alltitles); //if it is not loaded all products it will give empty array
+
+Get all products without giving waits based in on Network Load:
+await page.waitForLoadState('networkidle');
+const alltitles = await cardTitles.allTextContents();
+console.log(alltitles);
+
+(Another Way)
+await page.locator("").first().waitFor();
+const alltitles = await cardTitles.allTextContents();
+console.log(alltitles);
+
+Drop Drown:
+const dropdown = await page.locator("select.classname");
+await dropdown.selectOption("value");
+
+Pase execution:
+await page.pause();
+
+Radio Button:
+await page.locator(".classname").last().click();
+
+Wait For Element to be visible:
+locator.waitFor({ state: 'visible' })
+(or)
+expect(locator).toBeVisible()
+(or)
+.waitForSelector() or .waitFor()
+
+
+const checkUserLoginLocator = page.locator('.btn.btn-primary.btn-default.green.ng-binding.ng-scope');
+await checkUserLoginLocator.waitFor({ state: 'visible' });
+
+This will click #submit-button even if it's hidden or disabled. //{ force: true }
+await page.locator('#submit-button').click({ force: true });
+
+Validate Radio Button Checked:
+await expect(page.locator(".classname").last()).toBeChecked();
+
+Boolean Value Check:
+console.log(await page.locator(".classname").last().isChecked());
+
+Uncheck Method:
+page.locator(".classname").uncheck();
+Assertion For Unchecked Method
+expect(await page.locator(".classname").last()).isChecked).toBeFalsy;
+
+Document Link:
+Const documentLink = page.locator("[href*='documents-request']");
+await expect(documentLink).toHaveAttribute("Class","blinkingText");
+
+const [newPage]=Promise.all(
+[
+ context.waitForEvent("Page"), //Listern for any new page pending, rejected, fullfilled
+ document.click(),
+]) //new page is Opened 
+
+
+const text = await newPage.locator(".classname").textContent();
+console.log(text);
+
+Split Based on Array:
+const arraText = text.split("@")
+const domain = arrayText[1].split(" ").[0]
+console.log(domain)
+
+Switch to Parent window
+await page.locator("#username").type(domain);
+await page.pause();
+console.log(await page.locator("#username").textContent());
+
+Press Enter:
+page.locator("#username").press('Enter')
+
+Screen Shots on Every steps Actions:
+Config.js file
+
+screenshot : 'on', //capture screenshot after each test  
+screenshot : 'off' //Do not Capture Screenshots, 
+screenshot : 'only-on-failure' //capture screenshot after each test) //Failed steps Screenshots
+ -- playwright report index.html
+
+Traces: (Logs) Generate log
+traces will come like zip file format in test results folder
+we need to upload .zip file in "trace.playwright.dev"
+
+trace : 'on', //detailed reports for all the steps Screenshots -- test-results folder zip format //Record trace for each test
+(or)
+trace : 'retain-on-failure', //only the test case failed store the screenshots //Record trace for each test, but remove all traces from successful test runs
+(or)
+trace : 'off', //Do-not record trace 
+(or)
+trace : 'on first-retry' //Record trace only when trying a test for the first time
+
+
+Record Video:
+
+video : 'on' //record video for each test
+video : 'off' //do not record video
+video : 'on first-retry' // Record video only when retrying the test for first time
+video : 'retain-on-failure' //Record video for each test, but remove all videos from successful test runs
+
+use: {
+  video: 'on first-retry';
+}
+
+
+
+
+Count of the Products:
+const count = await products.count();
+
+if we comparing (or) Matching with Strings we need to give ===
+
+const ProductName = 'Zara Coat 4'
+for loop:
+for(let i=0; i<count; i++)
+{
+ if( await products.nth(i).locator("b").textContent() === ProductName)
+ {
+   //add to cart
+   await products.nth(i).locator("text='Add To Cart").click();
+   break;
+ }
+}
+
+Different tags with same name locator:
+h3:has-text-sudeo class
+
+waitfor load the elements
+page.locator("div li").waitFor();
+
+const bool = await page.locator("h3:has-text('Zara Coat 4')").isVisible();
+expect(bool).toBeTruthy();
+
+Press Letter Sequentially: (Enter Letter in the Textbox one by one)
+await page.locator("[placeholder*='Country']").pressSequentially("ind");
+
+
+Remove Space from the Text:
+trim() method:
+
+await dropdown.waitFor();
+const optionsCount = await dropdown.locator("button").count();
+for(let i=0; i<optionsCount; i++)
+{
+ const text = await dropdown.nth(i).locator("button").nth(i).textContent()
+ if( text.trim() === "India")  (or) (text = " India")
+ {
+   await dropdown.nth(i).locator("button").click();
+   break;
+ }
+}
+
+(or) Includes methods
+
+if( text.includes === "India")
+ {
+   await dropdown.nth(i).locator("button").click();
+   break;
+ }
+
+
+To Have Text:
+expect(await page.locator(".username[type='text']").first().toHaveText("anand@yopmail.com");
+
+Multiple Xpaths mathching come to Parent to Child:
+.parent class .child class
+
+Table Validations and Click:
+
+const rows = await page.locator("tbody tr");
+for (let i=0; i< await rows.count(); i++)
+{
+ const rowOrderID = await rows.nth(i).locator("th").textContent();
+ if(orderId.includes(rowOrderID)
+ {
+   await rows.nth(i).locator("button").first().click();
+   break;
+ }
+}
+
+Radio Button:
+we can use check() (or) click();
+
+GetByLabel:
+await page.getByLable("Gender").selectOption("Male");
+Playwright UI Runner comments
+npx playwright test UI 
+
+GetByPlaceholder:
+await page.getByPlaceholder("Password").fill("P@ssword123!");
+
+GetByRole:
+await page.getByRole("button", {name:'Submit'}).click();
+await page.getByRole("link", {name:'Shop'}).click();
+
+GetByText:
+await page.getByText("Success").isVisible();
+await page.getByText("PLACE ORDER").click();
+
+Filter:
+We have Multiple Xpath we can Filter and Add to Cart
+hasText is like GetByText
+await page.locator("app-card").filter({hasText: 'Nokia Edge'}).getByRole("button").click();
+
+//Calendars:
+
+const monthNumber = "6";
+const year = "2027";
+const date = "15";
+
+await page.locator(".classname").click();
+await page.getByText(year).click();
+await page.locator(".classname").nth(Number(monthNumber-1)).click();
+await page.locator("//abbr[text()='"+date+"']");
+
+Validations:
+
+const expectedList = [monthNumber,date,year]; \\[6,15,2027]
+const inputs = await page.locator(".classname");
+for(let i=0; i<inputs.length; i++)
+{
+   const value = inputs[i].getAttribute("Value"); [6]
+   expect(value).toEqual(expectedList[i]); [6]
+
+}
+
+
+Naviagate URLs
+GoTo: We Can Launch URL
+page.goto("URL");
+
+GoBack: URL back
+await page.goBack();
+
+GoForward: URL forward
+await page.goForward();
+
+ToBeHidden:
+await expect(page.locator("")).toBeHidden();
+
+Handle javascript Popup:
+
+if we use anywhere in the Test it will Accept or Dismiss popup
+
+page.on("dialog",dialog=>dialog.accept()); //click on Ok
+page.on("dialog",dialog=>dialog.dismiss()); //click on Cancel
+
+await page.locator('#confirmbtn').click();
+
+Mouse Hover: hover();
+await page.locator('#mousehover').hover();
+
+Frames:
+const framesPage = page.frameLocator("#courses-iframe");
+//if we have two xpaths Hidden Xpaths remove we can use visible
+await framesPage.locator("li a[href*='lifetime-access']:visible").click(); 
+
+Split String Based on Spaces:
+
+Const name= "Anand Kumar";
+consoe.log(name.split(" ")[0]); //Anand
+consoe.log(name.split(" ")[1]); //Kumar
+
+
+ScreenShot:
+
+Entire Page take Screenshot:
+await page.screenshot({path: 'screenshot.png'});
+
+Partial Page take Screenshot(Based on Locator):
+await page.locator('#display-text').screenshot({path: 'partialscreenshot.png'});
+
+Compare Screen Shots(Old and New Screenshots): 
+
+expect(await page.screenshot()).toMatchSnapShot('landing.png');
+
+Install Excell JS:
+
+Make (or) Create directory
+1)mkdir ExcelJSUtil
+2)go inside ExcelJSUtil using commands "cd ExcelJSUtil"
+3)npm init
+4)import folder
+5)npm install exceljs
+6)npm install exceljs --savedev
+
+
+
+
+const ExcelJs = require('exceljs');
+const workbook = new ExcelJs.Workbook();
+workbook.xlsx.readFile("C:/Users/anandhakumar.r/Downloads/Exceltest.xlsx").then(function(){
+
+const worksheet = workbook.getWorksheet('Sheet1');
+worksheet.eachRow( (row,rowNumber) =>
+{
+    row.eachCell((cell,colNumber)=>
+    {
+        console.log(cell.value);
+    })
+
+})
+
+});
+
+
+(or)
+
+
+const ExcelJs = require('exceljs');
+async function excelTest()
+{
+    const workbook = new ExcelJs.Workbook();
+    await workbook.xlsx.readFile("C:/Users/anandhakumar.r/Downloads/Exceltest.xlsx")
+    const worksheet = workbook.getWorksheet('Sheet1');
+    worksheet.eachRow( (row,rowNumber) =>
+    {
+        row.eachCell((cell,colNumber)=>
+        {
+            console.log(cell.value);
+        })
+
+    })
+}
+excelTest();
+
+
+Read and Write Excel Values: 
+
+const ExcelJs = require('exceljs');
+async function writeExcelTest(searchText,replaceText,filePath)
+{
+   
+    const workbook = new ExcelJs.Workbook();
+    await workbook.xlsx.readFile(filePath)
+    const worksheet = workbook.getWorksheet('Sheet1');
+    const output = await readExcel(worksheet,searchText);
+
+    const cell = worksheet.getCell(output.row,output.column);
+    cell.value = replaceText;
+    await workbook.xlsx.writeFile(filePath);
+	
+}
+	
+async function readExcel(worksheet,searchText)
+{
+  let output = {row:-1,column:-1};
+  worksheet.eachRow((row,rowNumber) =>
+  {
+    row.eachCell((cell,colNumber)=>
+    {
+       if(cell.value === searchText)
+        {
+	        output.row = rowNumber;
+	        output.column = colNumber;
+	    }
+    })
+  })
+  return output;
+}
+
+writeExcelTest("Banana","Republic","C:/Users/anandhakumar.r/Downloads/Exceltest.xlsx");
+
+
+To Execute Java Script file:
+node excelDemo.js
+
+
+//Change Column Price Value
+
+Open https://rahulshettyacademy.com/upload-download-test/index.html and Download modify name Exceltest.xlsx
+
+//Code 
+const ExcelJs = require('exceljs');
+async function writeExcelTest(searchText,replaceText,change,filePath)
+{
+   
+    const workbook = new ExcelJs.Workbook();
+    await workbook.xlsx.readFile(filePath)
+    const worksheet = workbook.getWorksheet('Sheet1');
+    const output = await readExcel(worksheet,searchText);
+
+    const cell = worksheet.getCell(output.row,output.column+change.colChange);
+    cell.value = replaceText;
+    await workbook.xlsx.writeFile(filePath);
+	
+}
+
+async function readExcel(worksheet,searchText)
+{
+  let output = {row:-1,column:-1};
+  worksheet.eachRow((row,rowNumber) =>
+  {
+    row.eachCell((cell,colNumber)=>
+    {
+       if(cell.value === searchText)
+        {
+	        output.row = rowNumber;
+	        output.column = colNumber;
+	    }
+    })
+  })
+  return output;
+}
+//Update Mango Price to 350.
+writeExcelTest("Mango",350,{rowChange:0,colChange:2},"C:/Users/anandhakumar.r/Downloads/Exceltest.xlsx");
+
+
+
+//Upload file:
+setInputFiles will work only component type attribute file
+input[type='file']
+await page.locator("#fileinput").setInputFiles("path")
+
+
+
+Download file and Upload Updated File:
+
+const ExcelJs = require("exceljs");
+const {test, expect} = require('@playwright/test');
+
+async function writeExcelTest(searchText,replaceText,change,filePath)
+{
+   
+    const workbook = new ExcelJs.Workbook();
+    await workbook.xlsx.readFile(filePath);
+    const worksheet = workbook.getWorksheet('Sheet1');
+    const output = await readExcel(worksheet,searchText);
+
+    const cell = worksheet.getCell(output.row,output.column+change.colChange);
+    cell.value = replaceText;
+    await workbook.xlsx.writeFile(filePath);
+	
+}
+
+async function readExcel(worksheet,searchText)
+{
+  let output = {row:-1,column:-1};
+  worksheet.eachRow((row,rowNumber) =>
+  {
+    row.eachCell((cell,colNumber)=>
+    {
+       if(cell.value === searchText)
+        {
+	        output.row = rowNumber;
+	        output.column = colNumber;
+	    }
+    })
+  })
+  return output;
+}
+//Update Mango Price to 350.
+//writeExcelTest("Mango",350,{rowChange:0,colChange:2},"C:/Users/anandhakumar.r/Downloads/Exceltest.xlsx");
+
+test('Download and Upload Excel Validation',async({page})=>
+{
+  await page.goto("https://rahulshettyacademy.com/upload-download-test/index.html");
+  const file = page.waitForEvent('download');
+  await page.getByRole('button', { name: 'Download' }).click();
+  const download = await file;
+  const path = await download.path();
+  console.log(path);
+
+//   const downloadpromise = page.waitForEvent('download');
+//   await page.getByRole('button',{name:'Download'}).click();
+//   await downloadpromise;
+ 
+  await writeExcelTest("Mango",350,{rowChange:0,colChange:2}, path);
+  await page.locator('#fileinput').click();
+  await page.locator('#fileinput').setInputFiles(path);
+
+});
+
+
+
+Download file and Upload Updated File and Validation:
+
+const ExcelJs = require("exceljs");
+const {test, expect} = require('@playwright/test');
+
+async function writeExcelTest(searchText,replaceText,change,filePath)
+{
+   
+    const workbook = new ExcelJs.Workbook();
+    await workbook.xlsx.readFile(filePath);
+    const worksheet = workbook.getWorksheet('Sheet1');
+    const output = await readExcel(worksheet,searchText);
+
+    const cell = worksheet.getCell(output.row,output.column+change.colChange);
+    cell.value = replaceText;
+    await workbook.xlsx.writeFile(filePath);
+	
+}
+
+async function readExcel(worksheet,searchText)
+{
+  let output = {row:-1,column:-1};
+  worksheet.eachRow((row,rowNumber) =>
+  {
+    row.eachCell((cell,colNumber)=>
+    {
+       if(cell.value === searchText)
+        {
+	        output.row = rowNumber;
+	        output.column = colNumber;
+	    }
+    })
+  })
+  return output;
+}
+//Update Mango Price to 350.
+//writeExcelTest("Mango",350,{rowChange:0,colChange:2},"C:/Users/anandhakumar.r/Downloads/Exceltest.xlsx");
+
+test('Download and Upload Excel Validation',async({page})=>
+{
+
+  const textSearch = 'Mango';
+  const updateValue = '350';
+
+  await page.goto("https://rahulshettyacademy.com/upload-download-test/index.html");
+  const file = page.waitForEvent('download');
+  await page.getByRole('button', { name: 'Download' }).click();
+  const download = await file;
+  const path = await download.path();
+  console.log(path);
+
+//   const downloadpromise = page.waitForEvent('download');
+//   await page.getByRole('button',{name:'Download'}).click();
+//   await downloadpromise;
+ 
+  await writeExcelTest("Mango",350,{rowChange:0,colChange:2}, path);
+  await page.locator('#fileinput').click();
+  await page.locator('#fileinput').setInputFiles(path);
+
+  const textlocator = page.getByText(textSearch);
+  const desiredRow = await page.getByRole('row').filter({has :textlocator });
+  await expect(desiredRow.locator("#cell-4-undefined")).toContainText(updateValue);
+
+
+});
+
+
+Download and Upload file in the Project file:
+
+Test File:
+const ExcelJs = require("exceljs");
+const {test, expect} = require('@playwright/test');
+const paths = require("node:path");
+
+async function writeExcelTest(searchText,replaceText,change,filePath)
+{
+   
+    const workbook = new ExcelJs.Workbook();
+    await workbook.xlsx.readFile(filePath);
+    const worksheet = workbook.getWorksheet('Sheet1');
+    const output = await readExcel(worksheet,searchText);
+
+    const cell = worksheet.getCell(output.row,output.column+change.colChange);
+    cell.value = replaceText;
+    await workbook.xlsx.writeFile(filePath);
+	
+}
+
+async function readExcel(worksheet,searchText)
+{
+  let output = {row:-1,column:-1};
+  worksheet.eachRow((row,rowNumber) =>
+  {
+    row.eachCell((cell,colNumber)=>
+    {
+       if(cell.value === searchText)
+        {
+	        output.row = rowNumber;
+	        output.column = colNumber;
+	    }
+    })
+  })
+  return output;
+}
+//Update Mango Price to 350.
+//writeExcelTest("Mango",350,{rowChange:0,colChange:2},"C:/Users/anandhakumar.r/Downloads/Exceltest.xlsx");
+
+test('Download and Upload Excel Validation',async({page})=>
+{
+
+  const textSearch = 'Mango';
+  const updateValue = '350';
+
+  await page.goto("https://rahulshettyacademy.com/upload-download-test/index.html");
+
+  const downloadPromise = page.waitForEvent('download');
+  await page.getByRole('button',{name:'Download'}).click();
+  await downloadPromise;
+
+  // const file = page.waitForEvent('download');
+  // await page.getByRole('button', { name: 'Download' }).click();
+  //const download = await file;
+
+  const download = await downloadPromise;
+  const pa = paths.join(__dirname, 'downloads', download.suggestedFilename());
+  await page.waitForTimeout(5e3);
+  const path = download.saveAs(pa);
+  console.log(path);
+
+//   const downloadpromise = page.waitForEvent('download');
+//   await page.getByRole('button',{name:'Download'}).click();
+//   await downloadpromise;
+ 
+  await writeExcelTest("Mango",350,{rowChange:0,colChange:2}, pa);
+  await page.locator('#fileinput').click();
+  await page.locator('#fileinput').setInputFiles(pa);
+
+  const textlocator = page.getByText(textSearch);
+  const desiredRow = await page.getByRole('row').filter({has :textlocator });
+  await expect(desiredRow.locator("#cell-4-undefined")).toContainText(updateValue);
+
+
+});
+
+
+//Get download file path:
+
+  await page.goto("https://rahulshettyacademy.com/upload-download-test/index.html");
+
+  const downloadPromise = page.waitForEvent('download');
+  await page.getByRole('button',{name:'Download'}).click();
+  await downloadPromise;
+
+const download = await downloadPromise;
+const path = await download.path();
+console.log(path);
+
+
+
+
+
+
+
+Page Object Model:
+
+All the Locators goes to particular js file page
+eg. LoginPage.js
+
+
+Login_Page File:
+
+class Login_Page
+{
+
+constructor(page)
+{
+    this.page = page;
+    this.SignIn_button = page.locator("button[type='submit']");
+    this.Username = page.locator("input[name='username']");
+    this.Password = page.locator("input[name='password']") ;
+
+}   
+
+async validLogin(username, password)
+{
+    await this.Username.fill(username);
+    await this.Password.fill(password);
+    await this.SignIn_button.click();
+
+} 
+
+async launch_app()
+{
+    await this.page.goto('https://ec-sit.brokerengage.net/mme/#/login');
+
+}
+}
+module.exports = {Login_Page};
+
+
+Test File:
+
+LoginTest.spec.js 
+
+const {test, expect}= require("@playwright/test");
+const {Login_Page} = require("../Page_Object/Login_Page");
+
+test.only('Login Test',async({page}) =>
+{
+
+    const username = "anandha@mailinator.com";
+    const password = "P@ssword123!";
+    const loginpage = new Login_Page(page);
+    await loginpage.launch_app();
+    await loginpage.validLogin(username, password);
+
+
+
+});
+
+
+Config file:
+
+// @ts-check
+import { defineConfig, devices } from '@playwright/test';
+//Const { devices } = require('@playwright/test');
+
+export default defineConfig({
+  testDir: './tests',
+  timeout: 20 * 10000,
+  expect : {
+	  timeout: 50000,	
+ },
+
+  reporter: 'html',
+  
+  use: {
+    channel: 'chrome',
+    headless : false,
+    screenshot : 'on', 
+    actionTimeout : 40e3,
+  },
+  
+});
+
+
+Custom Config file:
+
+Create new config file instead of default config file.
+file extension playwright.config1.js
+To execute custom config file use below command
+npx playwright test --config playwright.config1.js
+
+// @ts-check
+import { defineConfig, devices } from '@playwright/test';
+//Const { devices } = require('@playwright/test');
+
+export default defineConfig({
+  testDir: './tests',
+  timeout: 20 * 10000,
+  expect : {
+	  timeout: 50000,	
+ },
+
+  reporter: 'html',
+  
+  use: {
+    browserName: 'webkit',
+    headless : true, //it will run in headless mode
+    screenshot : 'on-test-failure', 
+    actionTimeout : 40e3,
+  },
+  
+});
+
+
+Parameterized with different browsers:
+
+Projects : [
+{
+  name : 'safari'
+  use: {
+    browserName: 'webkit',
+    headless : true, //it will run in headless mode
+    screenshot : 'on-test-failure', 
+    trace : 'on',
+    actionTimeout : 40e3,
+  },
+}
+{
+ name : 'chrome'
+  use: {
+    browserName: 'chromium',
+    headless : false, //it will run in headed mode
+    screenshot : 'on', 
+    trace : 'off',
+    actionTimeout : 40e3,
+  }
+ } 
+]
+
+execute in safari browser:
+npx playwright test --config playwright.config1.js --project=safari
+
+execute in chrome browser:
+npx playwright test --config playwright.config1.js --project=chrome
+
+execute in both safari and chrome browser: if we don't give any browsers 
+//it will execute safari in headless mode and chrome in headed mode at the same time. it will use for cross browser testing
+npx playwright test --config playwright.config1.js
+
+
+Browser Minimize and Maximize:
+//Resize the Browser size based on width and height.
+use: {
+    browserName: 'chromium',
+    headless : false, //it will run in headed mode
+    screenshot : 'on', 
+    trace : 'off',
+    viewport : {width:720,height:720}, //Resize the Browser size based on width and height.
+    actionTimeout : 40e3,
+  }
+
+Browser Minimize and Maximize based on Mobile phone size Android or IOS:
+//Resize the Browser size based on mobile devices screen size.
+use: {
+    browserName: 'chromium',
+    headless : false, //it will run in headed mode
+    screenshot : 'on', 
+    trace : 'off',
+    ...devices['iPhone 11'], //Resize the Browser size based on mobile phone display size.
+    actionTimeout : 40e3,
+  }
+
+SSH certificate issue:
+your connection is not private because http only used so we need to click on advance and confirm allow location popup
+use: {
+    browserName: 'chromium',
+    headless : false, //it will run in headed mode
+    screenshot : 'on', 
+    trace : 'off',
+    ignoreHttpsErrors : true,
+    permissions : ['geolocation'],
+}
+
+
+BrowserName, Headles, Screenshots, Trace, Videos, Viewport(Screen Size), SSH(ignoreHttpsErrors, permissions), devices
+
+// @ts-check
+import { defineConfig, devices } from '@playwright/test';
+//Const { devices } = require('@playwright/test');
+
+export default defineConfig({
+  testDir: './tests',
+  timeout: 20 * 10000,
+  expect : {
+	  timeout: 50000,	
+ },
+
+  reporter: 'html',
+  
+  use: {
+    browserName: 'chrome',
+    headless : false,
+    screenshot : 'on',
+    video : 'retain-on-failure',
+    ignoreHttpsErrors : true,
+    permissions : ['geolocations'],
+    trace : 'on',
+    //...devices['']
+    viewport : {width:720,height:720},
+    actionTimeout : 40e3,
+  },
+  
+});
+
+Retries Test Cases if it fails Test Cases executes same test cases:
+
+import { defineConfig, devices } from '@playwright/test';
+//Const { devices } = require('@playwright/test');
+
+export default defineConfig({
+  testDir: './tests',
+  retries : 1, //It will Execute only failed Test cases how many times 1. how many time based on count given.
+  timeout: 20 * 10000,
+  expect : {
+	  timeout: 50000,	
+ },
+
+  reporter: 'html',
+  
+  use: {
+    browserName: 'chrome',
+    headless : false,
+    screenshot : 'on',
+    video : 'retain-on-failure',
+    ignoreHttpsErrors : true,
+    permissions : ['geolocations'],
+    trace : 'on',
+    //...devices['']
+    viewport : {width:720,height:720},
+    actionTimeout : 40e3,
+  },
+  
+});
+
+
+Workers Parallel Execution:
+export default defineConfig({
+  testDir: './tests',
+  retries : 1, //It will Execute only failed Test cases how many times 1. how many time based on count given.
+  workers : 3, //Parallel Execution 3 Test scripts execution at the same time
+  timeout: 20 * 10000,
+  expect : {
+	  timeout: 50000,	
+ },
+
+Execute Multiple Test in Parallel in Same Tests file:
+
+test.describe.configure({mode:'parallel'}); //this line will Execute all the Three tests will execute in Parallel
+test({})
+test({})
+test({})
+
+test.describe.configure({mode:'serial'});  //If any one test fails it will skip all other Test cases
+test({})
+test({})
+test({})
+
+PS Error Because running scripts is disabled on this system.
+Get-ExecutionPolicy
+Set-ExecutionPolicy RemoteSigned
+Set-ExecutionPolicy RemoteSigned -Scope Process
+
+Test Only Particular Test Case:
+test.only({});
+
+Test Skip it will skip Particular test case:
+test.skip({});
+
+Tagging 
+WEB Test: 
+test({'@Web Test login', async({page})
+});
+
+execution command:(--grep - regular expression)
+npx playwright test --grep @Web
+
+API Test: 
+test({'@API Test login', async({page})
+});
+
+execution command:(--grep - regular expression)
+npx playwright test --grep @API
+
+
+Page Object Manager File:
+(POManager.js)
+
+Instead of Creating Many object files. like below
+const loginpage = new Login_Page(page);
+//Test file:
+const poManager = new POManager(page);
+const loginpage = poManager.getLoginPage();
+
+//(POManager.js) file:
+const {Login_Page} = require('./Login_Page');
+
+class POManager
+{
+    constructor(page)
+    {
+        this.page = page;
+        this.loginPage = new Login_Page(this.page);
+    }
+
+    getLoginPage()
+    {
+        return this.loginPage;
+    }
+}
+module.exports = {POManager};
+
+
+
+Drive data from external json file:
+
+Create utils folder.
+Create TestData file .json file extension
+
+{
+    "username" : "anandha@mailinator.com",
+    "password" : "P@ssword123!"
+
+}
+
+Test file:
+//JSON --> String --> js object 
+const dataset = JSON.parse(JSON.stringify(require("../Page_Object/utils/TestData.json")));
+
+await loginpage.validLogin(dataset.username, dataset.password);
+
+
+Parameterize the tests with different data sets:
+These will help to run two times with different credentials
+
+[
+{
+    "username" : "anandha@mailinator.com",
+    "password" : "P@ssword123!",
+    "environment" : "QA"
+
+},
+
+{
+    "username" : "sunpreet@mailinator.com",
+    "password" : "P@ssword123!"
+    "environment" : "UAT"
+}
+]
+
+Test file:
+//JSON --> String --> js object 
+const dataset = JSON.parse(JSON.stringify(require("../Page_Object/utils/TestData.json")));
+
+for(const data for dataset)
+{
+test.only(`Login Test ${data.environment}`,async({page}) =>   //change '' to ``
+{
+await loginpage.validLogin(data.username, data.password);
+})
+}
+
+
+Pass Test as a fixture by extend test annotations: 
+
+create new file for test-base.js
+
+const base = require('@playwright/test');
+
+exports.customtest = base.test.extend(
+{
+testdata:
+{
+    username : "sunpreet@mailinator.com",  //JSON we need to give "" it is js not needed "" for username
+    password : "P@ssword123!"
+    environment : "UAT"
+}
+
+})
+  
+
+Test file:
+const {customtest} = require('../utils/test-base');
+customtest.only('Login Test',async({page,testdata}) =>   
+{
+await loginpage.validLogin(testdata.username, testdata.password);
+})
+}
+
+
+
+Git Comments:
+
+git Initialize Local:
+git init
+
+Remote Add:
+git remote add origin
+
+Git cloning URL: 
+git clone "https://github.com/happyanand/Playwright.git"
+
+Fist Commit:
+git commit -m "first push"
+
+git config --global user.name "Your Name"
+git config --global user.email you@example.com
+
+git remote add origin https://github.com/happyanand/Playwright.git
+
+git push -u origin master
+
+C:\Users\anandhakumar.r\Playwright_Learning\Page_Object_Model> git config --global user.name "happyanand"
+
+C:\Users\anandhakumar.r\Playwright_Learning\Page_Object_Model>git config --global user.email "happyanandit@gmail.com"
+
+
+
+Reports:
+
+allure Report install command:
+npm i -D @playwright/test allure-playwright  
+
+allure Report run command:
+npx playwright test --reporter=line,allure-playwright //it will generate allure report folder
+
+Generate allure Report command:
+allure generate ./allure-results --clean //clean it will clean old html report generate new reports. This command will generate report from results folder
+
+Open or Show allure Report command:
+allure open ./allure-report
+
+Html Reports generate in Playwright-report
+allure Report generate in allure-results
+
+
+Clean Terminal commands:
+clean
+
+
+
+Path Join:
+
+__dir - current directory file name
+.. - one back to directory 
+
+console.log(path.join(__dir, "..", "service.js");
+
+Split directory
+console.log(path.split(pa.slip());
+
+
+BringTOFront:
+
+page1.bringToFront(); //move to Page1 screen
+page2.bringToFront(); //move to Page2 screen
+
+
+
+
+
+
+
+
+
+
+
+
+
