@@ -1,0 +1,166 @@
+Jenkins Schedule:
+
+Examples:
+Run Every Week days Mon to Fri 10 clock
+H 10 * * 1-5
+
+Run Week day at 10:00 AM (10:00):
+H(0-1) 10 * * 1-5
+H/15 10 *  * 1-5
+H/40 10 *  * 1-5
+
+Run every day at 2:00 PM (14:00):
+H(0-1) 14 * * *
+
+Run Every Minutes
+* * * * *
+
+Run Every Hours
+0 * * * *
+
+Run Even Days
+0 0 2-30/2 * *
+
+Run Odd Days
+0 0 1-31/2 * *
+
+Run on 11:15 AM on 20th Aug
+15 11 20 8 *
+
+Run on 11:15 PM on 20th Aug
+15 23 20 8 *
+
+Run on 15th of every month
+H 0 15 * * (or) 0 0 15 * *
+
+Run on 1 AM mid night every day
+0 1 * * * (or) H 1 * * *
+
+Run on 9 PM weekdays only
+H 21 * * 1-5
+
+Run on 9 AM weekends only
+H 9 * * 6-7
+
+Run every Monday only
+H 9 * * 1
+
+Run every 5 days
+0 0 */5 * *
+
+Run every 6 months
+0 0 * */6 *
+
+Run first day of every year
+0 21 1 1 *
+
+
+
+Run Every fifteen minutes (perhaps at :07, :22, :37, :52):
+H/15 * * * * (or) */15 * * * *
+
+Run Once in every two hour slot between 8 AM and 4 PM every weekday (perhaps at 9:38 AM, 11:38 AM, 1:38 PM, 3:38 PM):
+H H(8-16)/2 * * 1-5
+
+Run Once a day on the 1st and 15th of every month except December:
+H H 1,15 1-11 *
+
+
+
+MINUTE	Minutes within the hour (0–59)
+HOUR	The hour of the day (0–23)
+DOM	The day of the month (1–31)
+MONTH	The month (1–12)
+DOW	The day of the week (0–7) where 0 and 7 are Sunday.
+
+# Every Minutes
+* * * * *
+# Every fifteen minutes (perhaps at :07, :22, :37, :52):
+H/15 * * * *
+# Every ten minutes in the first half of every hour (three times, perhaps at :04, :14, :24):
+H(0-29)/10 * * * *
+# Once every two hours at 45 minutes past the hour starting at 9:45 AM and finishing at 3:45 PM every weekday:
+45 9-16/2 * * 1-5
+# Once in every two hour slot between 8 AM and 4 PM every weekday (perhaps at 9:38 AM, 11:38 AM, 1:38 PM, 3:38 PM):
+H H(8-15)/2 * * 1-5
+# Once a day on the 1st and 15th of every month except December:
+H H 1,15 1-11 *
+
+
+1. Run every day at 2:30 PM (14:30):
+Cron Expression: 30 14 * * *
+This will trigger the job at 30 minutes past 2 PM every day.
+2. Run every day at 10:05 AM:
+Cron Expression: 5 10 * * *
+This will trigger the job at 5 minutes past 10 AM every day.
+3. Run every hour at the 15th minute:
+Cron Expression: 15 * * * *
+This will trigger the job every hour at the 15th minute (e.g., 12:15, 1:15, etc.).
+4. Run every day at midnight:
+Cron Expression: 0 0 * * *
+This will trigger the job at 12:00 AM (midnight) every day.
+5. Run every hour at minute 30 (e.g., 1:30, 2:30, etc.):
+Cron Expression: 30 * * * *
+This will trigger the job every hour at the 30th minute.
+6. Run every day at 5:00 PM and 10:00 PM:
+Cron Expression: 0 17,22 * * *
+This will trigger the job at 5:00 PM and 10:00 PM every day.
+
+Run every day at 2:30 PM (14:30):
+Cron Expression: 30 14 * * *
+This will trigger the job at 30 minutes past 2 PM every day.
+
+
+
+
+
+0 10 * * 1-5
+0: The job will run at minute 0 (on the hour).
+10: The job will run at 10 AM.
+*: The job will run on any day of the month.
+*: The job will run in any month.
+1-5: The job will run on weekdays (Monday to Friday, where 1 = Monday and 5 = Friday).
+
+
+
+0 — At minute 0 (i.e., on the hour).
+9 — At 9 AM.
+* — Every day of the month.
+* — Every month.
+1-5 — On weekdays (Monday to Friday, where 1 = Monday and 5 = Friday).
+Save the configuration: Once you've added the cron expression, save the job configuration.
+
+Example Cron Expressions:
+Every weekday at 8:30 AM: 30 8 * * 1-5
+Every weekday at 6 PM: 0 18 * * 1-5
+
+
+
+
+
+
+
+Cron guru - examples
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
