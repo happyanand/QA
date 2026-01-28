@@ -1,0 +1,32 @@
+Eclipse - TestNG
+Maven
+JDK - 21
+JRE - 1.8.0.281
+VPN - TC vpn
+Jenkins
+Gitbash
+
+Paloalto VPN
+
+
+Need to Install required applications and software's
+
+
+Hi ITS Team,
+
+I need to install following applications and software's like
+
+1) Jenkins
+
+2) Git bash
+
+3) VPN
+
+Kindly help me with this.
+
+
+
+
+
+
+
